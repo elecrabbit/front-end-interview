@@ -3,6 +3,7 @@
  */
 export default {
   "v-5b8d0d7e": () => import("/Users/dxy/Downloads/dxy-gzh/Front-end-Interview/docs/guide/README.md"),
+  "v-281299f7": () => import("/Users/dxy/Downloads/dxy-gzh/Front-end-Interview/docs/guide/book.md"),
   "v-8c976b3a": () => import("/Users/dxy/Downloads/dxy-gzh/Front-end-Interview/docs/guide/preface.md"),
   "v-77cab7d0": () => import("/Users/dxy/Downloads/dxy-gzh/Front-end-Interview/docs/README.md") 
 }

@@ -67,9 +67,17 @@ function renderSiderBar() {
             '',
             'preface'
         ]
-  }, {
+  },
+  {
+    title: '推荐',
+    collapsable: false,
+    children: [
+          'book'
+      ]
+  },
+  {
       title: '基础',
       collapsable: false,
-      children: ['/js']
+      children: ['js']
   }])
 }

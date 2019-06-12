@@ -57,6 +57,81 @@ export const siteData = {
       ]
     },
     {
+      "title": "书籍/课程推荐",
+      "frontmatter": {},
+      "regularPath": "/guide/book.html",
+      "relativePath": "guide/book.md",
+      "key": "v-281299f7",
+      "path": "/guide/book.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "书单",
+          "slug": "书单"
+        },
+        {
+          "level": 3,
+          "title": "JavaScript",
+          "slug": "javascript"
+        },
+        {
+          "level": 3,
+          "title": "CSS:",
+          "slug": "css"
+        },
+        {
+          "level": 3,
+          "title": "算法：",
+          "slug": "算法："
+        },
+        {
+          "level": 3,
+          "title": "安全：",
+          "slug": "安全："
+        },
+        {
+          "level": 3,
+          "title": "canvas：",
+          "slug": "canvas："
+        },
+        {
+          "level": 3,
+          "title": "Node",
+          "slug": "node"
+        },
+        {
+          "level": 3,
+          "title": "网络",
+          "slug": "网络"
+        },
+        {
+          "level": 2,
+          "title": "关于知识付费",
+          "slug": "关于知识付费"
+        },
+        {
+          "level": 3,
+          "title": "知乎live",
+          "slug": "知乎live"
+        },
+        {
+          "level": 3,
+          "title": "掘金册子",
+          "slug": "掘金册子"
+        },
+        {
+          "level": 3,
+          "title": "极客时间",
+          "slug": "极客时间"
+        },
+        {
+          "level": 3,
+          "title": "慕课网",
+          "slug": "慕课网"
+        }
+      ]
+    },
+    {
       "title": "为什么会有这个项目",
       "frontmatter": {},
       "regularPath": "/guide/preface.html",
@@ -139,10 +214,17 @@ export const siteData = {
               ]
             },
             {
+              "title": "推荐",
+              "collapsable": false,
+              "children": [
+                "book"
+              ]
+            },
+            {
               "title": "基础",
               "collapsable": false,
               "children": [
-                "/js"
+                "js"
               ]
             }
           ]
