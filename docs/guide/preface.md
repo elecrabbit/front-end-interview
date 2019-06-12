@@ -25,17 +25,6 @@
 
 前端一步步发展到今天，其实已经在发展过程中分化出了不同的方向。
 
-比如，移动web前端,他们大部分时间在为移动设备工作,除了传统前端知识外,还需要运用 hybrid、RN 甚至一些 native 技术
-![移动前端招聘信息]( https://xiaomuzhu-image.oss-cn-beijing.aliyuncs.com/5efdb218b01fbe5842a03131db64eddf.png)
-
-比如,可视化前端,他们大部分时间再跟数据、canvas、svg 等打交道
-![数据可视化招聘]( https://xiaomuzhu-image.oss-cn-beijing.aliyuncs.com/af0f1a1d78a9216a177d8725825f17e0.png)
-
-再比如，图形互动前端，他们离传统意义的前端更远，大部分时间在处理图形学范畴的东西
-![图形互动]( https://xiaomuzhu-image.oss-cn-beijing.aliyuncs.com/1935882f80633f14b9214fdaf026ede1.png)
-
-还有这几年冒出来的,Node 前端,讲道理 node 工程师跟前端的关系已经很小了,但是也挂了前端的头衔,他们的技术要求基本就是个后端,除了也用 js
-![Node 前端]( https://xiaomuzhu-image.oss-cn-beijing.aliyuncs.com/bfe816f0325b3b466e1dea9aacd90b5a.png)
 
 所以,传统前端的面试知识已经不够了,我们的确需要一个更全面的项目,当然,我本人能力有限,只能尽可能先完善这些方向共同的知识点之后再对各个方向进行完善,还有,我的图形学不够看,欢迎图形学的朋友提交PR!
 
