@@ -35,7 +35,7 @@ export const siteData = {
       "path": "/"
     },
     {
-      "title": "哈哈",
+      "title": "前言",
       "frontmatter": {},
       "regularPath": "/guide/",
       "relativePath": "guide/README.md",
@@ -44,13 +44,13 @@ export const siteData = {
       "headers": [
         {
           "level": 2,
-          "title": "sd",
-          "slug": "sd"
+          "title": "为什么会有这个项目?",
+          "slug": "为什么会有这个项目"
         }
       ]
     },
     {
-      "title": "静态资源",
+      "title": "为什么会有这个项目",
       "frontmatter": {},
       "regularPath": "/guide/preface.html",
       "relativePath": "guide/preface.md",
@@ -59,8 +59,23 @@ export const siteData = {
       "headers": [
         {
           "level": 2,
-          "title": "相对路径",
-          "slug": "相对路径"
+          "title": "大量的过时问题",
+          "slug": "大量的过时问题"
+        },
+        {
+          "level": 2,
+          "title": "深入浅出的不多",
+          "slug": "深入浅出的不多"
+        },
+        {
+          "level": 2,
+          "title": "缺乏基础知识",
+          "slug": "缺乏基础知识"
+        },
+        {
+          "level": 2,
+          "title": "方向不够全面",
+          "slug": "方向不够全面"
         }
       ]
     }
@@ -78,7 +93,25 @@ export const siteData = {
             "link": "/guide/"
           }
         ],
-        "sidebar": "auto"
+        "sidebar": {
+          "/guide/": [
+            {
+              "title": "前言",
+              "collapsable": false,
+              "children": [
+                "",
+                "preface"
+              ]
+            },
+            {
+              "title": "基础",
+              "collapsable": false,
+              "children": [
+                "/js"
+              ]
+            }
+          ]
+        }
       }
     }
   },

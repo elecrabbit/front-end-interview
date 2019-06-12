@@ -27,7 +27,9 @@ module.exports = ctx => ({
       '/': {
         editLinkText: '在 GitHub 上编辑此页',
         nav: require('./nav/zh'),
-        sidebar: 'auto'
+        sidebar: {
+            '/guide/': renderSiderBar()
+        }
       }
     }
   },
@@ -57,3 +59,17 @@ module.exports = ctx => ({
   ]
 })
 
+function renderSiderBar() {
+  return ([{
+      title: '前言',
+      collapsable: false,
+      children: [
+            '',
+            'preface'
+        ]
+  }, {
+      title: '基础',
+      collapsable: false,
+      children: ['/js']
+  }])
+}
