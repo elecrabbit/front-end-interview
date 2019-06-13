@@ -89,6 +89,42 @@ meta标签由name和content两个属性来定义，来描述一个HTML网页文�
 
 * href是指向网络资源所在位置（的超链接），用来建立和当前元素或文档之间的连接，当浏览器识别到它他指向的文件时，就会并行下载资源，不会停止对当前文档的处理。
 
+## 知道img的srcset的作用是什么？（追问）
+可以设计响应式图片，我们可以使用两个新的属性srcset 和 sizes来提供更多额外的资源图像和提示，帮助浏览器选择正确的一个资源。
+
+srcset 定义了我们允许浏览器选择的图像集，以及每个图像的大小。
+
+sizes 定义了一组媒体条件（例如屏幕宽度）并且指明当某些媒体条件为真时，什么样的图片尺寸是最佳选择。
+
+所以，有了这些属性，浏览器会：
+
+* 查看设备宽度
+* 检查 sizes 列表中哪个媒体条件是第一个为真
+* 查看给予该媒体查询的槽大小
+* 加载 srcset 列表中引用的最接近所选的槽大小的图像
+
+> srcset提供了根据屏幕条件选取图片的能力
+```html
+<img src="clock-demo-thumb-200.png" 
+     alt="Clock" 
+     srcset="clock-demo-thumb-200.png 200w, 
+             clock-demo-thumb-400.png 400w" 
+     sizes="(min-width: 600px) 200px, 50vw">
+```
+
+## 还有哪一个标签能起到跟srcset相似作用？（追问）
+
+<picture> 元素通过包含零或多个 <source> 元素和一个 <img> 元素来为不同的显示/设备场景提供图像版本。浏览器会选择最匹配的子 <source> 元素，如果没有匹配的，就选择 <img> 元素的 src 属性中的URL。然后，所选图像呈现在<img>元素占据的空间中
+
+> picture同样可以通过不同设备来匹配不同的图像资源
+```html
+<picture>
+    <source srcset="/media/examples/surfer-240-200.jpg"
+            media="(min-width: 800px)">
+    <img src="/media/examples/painted-hand-298-332.jpg" />
+</picture>
+```
+
 ## script标签中defer和async的区别？✨
 
 * defer：浏览器指示脚本在文档被解析后执行，script被异步加载后并不会立刻执行，而是等待文档被解析完毕后执行。
@@ -119,6 +155,6 @@ cookies、localstorage、sessionstorage、Web SQL、IndexedDB
 1. [src与href](https://blog.csdn.net/Panda_m/article/details/78456358)
 2. [语义化](https://www.zhihu.com/question/20455165)
 3. [defer和async的区别](https://segmentfault.com/q/1010000000640869)
-4. [src与href](https://blog.csdn.net/Panda_m/article/details/78456358)
-5. [src与href](https://blog.csdn.net/Panda_m/article/details/78456358)
-6. [src与href](https://blog.csdn.net/Panda_m/article/details/78456358)
+4. [响应式图片MDN](https://developer.mozilla.org/zh-CN/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images)
+5. [张鑫旭-srcset释义](https://www.zhangxinxu.com/wordpress/2014/10/responsive-images-srcset-size-w-descriptor/)
+6. [picture元素-MDN](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/picture)

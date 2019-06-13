@@ -9,26 +9,6 @@ import GlobalLayout from "/Users/dxy/Downloads/dxy-gzh/Front-end-Interview/node_
 injectComponentOption(GlobalLayout, 'mixins', rootMixins)
 export const routes = [
   {
-    name: "v-5b8d0d7e",
-    path: "/guide/",
-    component: GlobalLayout,
-    beforeEnter: (to, from, next) => {
-      ensureAsyncComponentsLoaded("Layout", "v-5b8d0d7e").then(next)
-    },
-  },
-  {
-    path: "/guide/index.html",
-    redirect: "/guide/"
-  },
-  {
-    name: "v-36e82cfa",
-    path: "/guide/htmlBasic.html",
-    component: GlobalLayout,
-    beforeEnter: (to, from, next) => {
-      ensureAsyncComponentsLoaded("Layout", "v-36e82cfa").then(next)
-    },
-  },
-  {
     name: "v-77cab7d0",
     path: "/",
     component: GlobalLayout,
@@ -39,6 +19,18 @@ export const routes = [
   {
     path: "/index.html",
     redirect: "/"
+  },
+  {
+    name: "v-5b8d0d7e",
+    path: "/guide/",
+    component: GlobalLayout,
+    beforeEnter: (to, from, next) => {
+      ensureAsyncComponentsLoaded("Layout", "v-5b8d0d7e").then(next)
+    },
+  },
+  {
+    path: "/guide/index.html",
+    redirect: "/guide/"
   },
   {
     name: "v-8c976b3a",
@@ -54,6 +46,14 @@ export const routes = [
     component: GlobalLayout,
     beforeEnter: (to, from, next) => {
       ensureAsyncComponentsLoaded("Layout", "v-281299f7").then(next)
+    },
+  },
+  {
+    name: "v-36e82cfa",
+    path: "/guide/htmlBasic.html",
+    component: GlobalLayout,
+    beforeEnter: (to, from, next) => {
+      ensureAsyncComponentsLoaded("Layout", "v-36e82cfa").then(next)
     },
   },
   {
