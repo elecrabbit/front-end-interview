@@ -78,6 +78,9 @@ function renderSiderBar() {
   {
       title: '基础',
       collapsable: false,
-      children: ['htmlBasic']
+      children: [
+        'htmlBasic',
+        'cssBasic',
+      ]
   }])
 }

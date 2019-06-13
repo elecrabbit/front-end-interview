@@ -49,6 +49,14 @@ export const routes = [
     },
   },
   {
+    name: "v-db07261a",
+    path: "/guide/cssBasic.html",
+    component: GlobalLayout,
+    beforeEnter: (to, from, next) => {
+      ensureAsyncComponentsLoaded("Layout", "v-db07261a").then(next)
+    },
+  },
+  {
     name: "v-36e82cfa",
     path: "/guide/htmlBasic.html",
     component: GlobalLayout,

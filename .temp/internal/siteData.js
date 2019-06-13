@@ -69,6 +69,11 @@ export const siteData = {
         },
         {
           "level": 3,
+          "title": "Typescript",
+          "slug": "typescript"
+        },
+        {
+          "level": 3,
           "title": "性能优化",
           "slug": "性能优化"
         },
@@ -190,6 +195,131 @@ export const siteData = {
       ]
     },
     {
+      "title": "CSS基础",
+      "frontmatter": {},
+      "regularPath": "/guide/cssBasic.html",
+      "relativePath": "guide/cssBasic.md",
+      "key": "v-db07261a",
+      "path": "/guide/cssBasic.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "CSS选择器的优先级是怎样的？✨",
+          "slug": "css选择器的优先级是怎样的？✨"
+        },
+        {
+          "level": 2,
+          "title": "有哪些方式（CSS）可以隐藏页面元素？",
+          "slug": "有哪些方式（css）可以隐藏页面元素？"
+        },
+        {
+          "level": 2,
+          "title": "CSS有几种定位方式？",
+          "slug": "css有几种定位方式？"
+        },
+        {
+          "level": 2,
+          "title": "如何理解z-index？✨",
+          "slug": "如何理解z-index？✨"
+        },
+        {
+          "level": 2,
+          "title": "如何理解层叠上下文？✨",
+          "slug": "如何理解层叠上下文？✨"
+        },
+        {
+          "level": 3,
+          "title": "是什么？",
+          "slug": "是什么？"
+        },
+        {
+          "level": 3,
+          "title": "如何产生？",
+          "slug": "如何产生？"
+        },
+        {
+          "level": 2,
+          "title": "清除浮动有哪些方法？",
+          "slug": "清除浮动有哪些方法？"
+        },
+        {
+          "level": 2,
+          "title": "你对css sprites的理解，好处是什么？",
+          "slug": "你对css-sprites的理解，好处是什么？"
+        },
+        {
+          "level": 3,
+          "title": "是什么？",
+          "slug": "是什么？-2"
+        },
+        {
+          "level": 3,
+          "title": "如何操作？",
+          "slug": "如何操作？"
+        },
+        {
+          "level": 3,
+          "title": "好处：",
+          "slug": "好处："
+        },
+        {
+          "level": 3,
+          "title": "不足：",
+          "slug": "不足："
+        },
+        {
+          "level": 2,
+          "title": "你对媒体查询的理解？",
+          "slug": "你对媒体查询的理解？"
+        },
+        {
+          "level": 3,
+          "title": "是什么?",
+          "slug": "是什么"
+        },
+        {
+          "level": 3,
+          "title": "如何使用？",
+          "slug": "如何使用？"
+        },
+        {
+          "level": 2,
+          "title": "你对盒模型的理解？ ✨",
+          "slug": "你对盒模型的理解？-✨"
+        },
+        {
+          "level": 3,
+          "title": "是什么？",
+          "slug": "是什么？-3"
+        },
+        {
+          "level": 2,
+          "title": "标准盒模型和怪异盒模型有什么区别？✨",
+          "slug": "标准盒模型和怪异盒模型有什么区别？✨"
+        },
+        {
+          "level": 2,
+          "title": "谈谈对BFC(Block Formatting Context)的理解？ ✨",
+          "slug": "谈谈对bfc-block-formatting-context-的理解？-✨"
+        },
+        {
+          "level": 3,
+          "title": "是什么？",
+          "slug": "是什么？-4"
+        },
+        {
+          "level": 3,
+          "title": "如何形成？",
+          "slug": "如何形成？"
+        },
+        {
+          "level": 3,
+          "title": "作用是什么？",
+          "slug": "作用是什么？"
+        }
+      ]
+    },
+    {
       "title": "HTML基础",
       "frontmatter": {},
       "regularPath": "/guide/htmlBasic.html",
@@ -299,7 +429,8 @@ export const siteData = {
               "title": "基础",
               "collapsable": false,
               "children": [
-                "htmlBasic"
+                "htmlBasic",
+                "cssBasic"
               ]
             }
           ]
