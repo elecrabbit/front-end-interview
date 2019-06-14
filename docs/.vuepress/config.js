@@ -76,12 +76,20 @@ function renderSiderBar() {
       ]
   },
   {
-      title: '基础',
+      title: '前端基础',
       collapsable: false,
       children: [
         'htmlBasic',
         'cssBasic',
         'http',
       ]
-  }])
+  },
+  {
+    title: '前端基础笔试',
+    collapsable: false,
+    children: [
+      'httpWritten',
+    ]
+}
+])
 }

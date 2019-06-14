@@ -90,6 +90,31 @@ export const siteData = {
       ]
     },
     {
+      "title": "HTTP笔试部分",
+      "frontmatter": {},
+      "regularPath": "/guide/httpWritten.html",
+      "relativePath": "guide/httpWritten.md",
+      "key": "v-67c1f0fa",
+      "path": "/guide/httpWritten.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "缓存题",
+          "slug": "缓存题"
+        },
+        {
+          "level": 3,
+          "title": "当点击“重新访问 page 页”链接重新加载该页面后， head.png 如何二次加载？",
+          "slug": "当点击“重新访问-page-页”链接重新加载该页面后，-head-png-如何二次加载？"
+        },
+        {
+          "level": 3,
+          "title": "如果将上述信息中的 Cache-Control 设置为 private，那么结果又会如何呢？",
+          "slug": "如果将上述信息中的-cache-control-设置为-private，那么结果又会如何呢？"
+        }
+      ]
+    },
+    {
       "title": "为什么会有这个项目",
       "frontmatter": {},
       "regularPath": "/guide/preface.html",
@@ -270,106 +295,6 @@ export const siteData = {
       ]
     },
     {
-      "title": "HTTP协议",
-      "frontmatter": {},
-      "regularPath": "/guide/http.html",
-      "relativePath": "guide/http.md",
-      "key": "v-45f2a08e",
-      "path": "/guide/http.html",
-      "headers": [
-        {
-          "level": 2,
-          "title": "HTTP有哪些方法？",
-          "slug": "http有哪些方法？"
-        },
-        {
-          "level": 2,
-          "title": "这些方法的具体作用是什么？",
-          "slug": "这些方法的具体作用是什么？"
-        },
-        {
-          "level": 2,
-          "title": "GET和POST有什么区别？",
-          "slug": "get和post有什么区别？"
-        },
-        {
-          "level": 2,
-          "title": "PUT和POST都是给服务器发送新增资源，有什么区别？",
-          "slug": "put和post都是给服务器发送新增资源，有什么区别？"
-        },
-        {
-          "level": 2,
-          "title": "PUT和PATCH都是给服务器发送修改资源，有什么区别？",
-          "slug": "put和patch都是给服务器发送修改资源，有什么区别？"
-        },
-        {
-          "level": 2,
-          "title": "http的请求报文是什么样的？",
-          "slug": "http的请求报文是什么样的？"
-        },
-        {
-          "level": 2,
-          "title": "http的响应报文是什么样的？",
-          "slug": "http的响应报文是什么样的？"
-        },
-        {
-          "level": 2,
-          "title": "聊一聊HTTP的部首有哪些？",
-          "slug": "聊一聊http的部首有哪些？"
-        },
-        {
-          "level": 2,
-          "title": "聊一聊HTTP的状态码有哪些？",
-          "slug": "聊一聊http的状态码有哪些？"
-        },
-        {
-          "level": 2,
-          "title": "同样是重定向307，303，302的区别？",
-          "slug": "同样是重定向307，303，302的区别？"
-        },
-        {
-          "level": 2,
-          "title": "HTTP的keep-alive是干什么的？",
-          "slug": "http的keep-alive是干什么的？"
-        },
-        {
-          "level": 2,
-          "title": "为什么有了HTTP为什么还要HTTPS？",
-          "slug": "为什么有了http为什么还要https？"
-        },
-        {
-          "level": 2,
-          "title": "HTTPS是如何保证安全的？",
-          "slug": "https是如何保证安全的？"
-        },
-        {
-          "level": 2,
-          "title": "HTTP2相对于HTTP1.x有什么优势和特点？",
-          "slug": "http2相对于http1-x有什么优势和特点？"
-        },
-        {
-          "level": 3,
-          "title": "二进制分帧",
-          "slug": "二进制分帧"
-        },
-        {
-          "level": 3,
-          "title": "头部压缩",
-          "slug": "头部压缩"
-        },
-        {
-          "level": 3,
-          "title": "服务器推送",
-          "slug": "服务器推送"
-        },
-        {
-          "level": 3,
-          "title": "多路复用",
-          "slug": "多路复用"
-        }
-      ]
-    },
-    {
       "title": "CSS基础",
       "frontmatter": {},
       "regularPath": "/guide/cssBasic.html",
@@ -538,6 +463,126 @@ export const siteData = {
           "slug": "关于css的动画与过渡问题"
         }
       ]
+    },
+    {
+      "title": "HTTP协议",
+      "frontmatter": {},
+      "regularPath": "/guide/http.html",
+      "relativePath": "guide/http.md",
+      "key": "v-45f2a08e",
+      "path": "/guide/http.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "HTTP有哪些方法？",
+          "slug": "http有哪些方法？"
+        },
+        {
+          "level": 2,
+          "title": "这些方法的具体作用是什么？",
+          "slug": "这些方法的具体作用是什么？"
+        },
+        {
+          "level": 2,
+          "title": "GET和POST有什么区别？",
+          "slug": "get和post有什么区别？"
+        },
+        {
+          "level": 2,
+          "title": "PUT和POST都是给服务器发送新增资源，有什么区别？",
+          "slug": "put和post都是给服务器发送新增资源，有什么区别？"
+        },
+        {
+          "level": 2,
+          "title": "PUT和PATCH都是给服务器发送修改资源，有什么区别？",
+          "slug": "put和patch都是给服务器发送修改资源，有什么区别？"
+        },
+        {
+          "level": 2,
+          "title": "http的请求报文是什么样的？",
+          "slug": "http的请求报文是什么样的？"
+        },
+        {
+          "level": 2,
+          "title": "http的响应报文是什么样的？",
+          "slug": "http的响应报文是什么样的？"
+        },
+        {
+          "level": 2,
+          "title": "聊一聊HTTP的部首有哪些？",
+          "slug": "聊一聊http的部首有哪些？"
+        },
+        {
+          "level": 2,
+          "title": "聊一聊HTTP的状态码有哪些？",
+          "slug": "聊一聊http的状态码有哪些？"
+        },
+        {
+          "level": 2,
+          "title": "同样是重定向307，303，302的区别？",
+          "slug": "同样是重定向307，303，302的区别？"
+        },
+        {
+          "level": 2,
+          "title": "HTTP的keep-alive是干什么的？",
+          "slug": "http的keep-alive是干什么的？"
+        },
+        {
+          "level": 2,
+          "title": "为什么有了HTTP为什么还要HTTPS？",
+          "slug": "为什么有了http为什么还要https？"
+        },
+        {
+          "level": 2,
+          "title": "HTTPS是如何保证安全的？",
+          "slug": "https是如何保证安全的？"
+        },
+        {
+          "level": 2,
+          "title": "HTTP2相对于HTTP1.x有什么优势和特点？",
+          "slug": "http2相对于http1-x有什么优势和特点？"
+        },
+        {
+          "level": 3,
+          "title": "二进制分帧",
+          "slug": "二进制分帧"
+        },
+        {
+          "level": 3,
+          "title": "头部压缩",
+          "slug": "头部压缩"
+        },
+        {
+          "level": 3,
+          "title": "服务器推送",
+          "slug": "服务器推送"
+        },
+        {
+          "level": 3,
+          "title": "多路复用",
+          "slug": "多路复用"
+        },
+        {
+          "level": 2,
+          "title": "HTTP的缓存的过程是怎样的？",
+          "slug": "http的缓存的过程是怎样的？"
+        },
+        {
+          "level": 2,
+          "title": "什么时候会触发强缓存或者协商缓存？",
+          "slug": "什么时候会触发强缓存或者协商缓存？"
+        },
+        {
+          "level": 3,
+          "title": "强缓存",
+          "slug": "强缓存"
+        },
+        {
+          "level": 3,
+          "title": "协商缓存",
+          "slug": "协商缓存"
+        }
+      ]
     }
   ],
   "themeConfig": {
@@ -571,12 +616,19 @@ export const siteData = {
               ]
             },
             {
-              "title": "基础",
+              "title": "前端基础",
               "collapsable": false,
               "children": [
                 "htmlBasic",
                 "cssBasic",
                 "http"
+              ]
+            },
+            {
+              "title": "前端基础笔试",
+              "collapsable": false,
+              "children": [
+                "httpWritten"
               ]
             }
           ]

@@ -33,6 +33,14 @@ export const routes = [
     redirect: "/guide/"
   },
   {
+    name: "v-67c1f0fa",
+    path: "/guide/httpWritten.html",
+    component: GlobalLayout,
+    beforeEnter: (to, from, next) => {
+      ensureAsyncComponentsLoaded("Layout", "v-67c1f0fa").then(next)
+    },
+  },
+  {
     name: "v-8c976b3a",
     path: "/guide/preface.html",
     component: GlobalLayout,
@@ -57,19 +65,19 @@ export const routes = [
     },
   },
   {
-    name: "v-45f2a08e",
-    path: "/guide/http.html",
-    component: GlobalLayout,
-    beforeEnter: (to, from, next) => {
-      ensureAsyncComponentsLoaded("Layout", "v-45f2a08e").then(next)
-    },
-  },
-  {
     name: "v-db07261a",
     path: "/guide/cssBasic.html",
     component: GlobalLayout,
     beforeEnter: (to, from, next) => {
       ensureAsyncComponentsLoaded("Layout", "v-db07261a").then(next)
+    },
+  },
+  {
+    name: "v-45f2a08e",
+    path: "/guide/http.html",
+    component: GlobalLayout,
+    beforeEnter: (to, from, next) => {
+      ensureAsyncComponentsLoaded("Layout", "v-45f2a08e").then(next)
     },
   },
   {
