@@ -311,7 +311,77 @@ HTTP2中：
 
 > 拓展阅读：[HTTP/2特性及其在实际应用中的表现](https://zhuanlan.zhihu.com/p/30166894)
 
+## HTTP的缓存的过程是怎样的？
+
+通常情况下的步骤是:
+
+1. 客户端向服务器发出请求，请求资源
+2. 服务器返回资源，并通过响应头决定缓存策略
+3. 客户端根据响应头的策略决定是否缓存资源（这里假设是），并将响应头与资源缓存下来
+4. 在客户端再次请求且命中资源的时候，此时客户端去检查上次缓存的缓存策略，根据策略的不同、是否过期等判断是直接读取本地缓存还是与服务器协商缓存
+
+![2019-06-14-19-56-32]( https://xiaomuzhu-image.oss-cn-beijing.aliyuncs.com/0718a83e37b6ab7d8da67ada5c36834b.png)
+
+## 什么时候会触发强缓存或者协商缓存？
+
+### 强缓存
+
+强缓存离不开两个响应头`Expires`与`Cache-Control`
+
+* Expires：Expires是http1.0提出的一个表示资源过期时间的header，它描述的是一个绝对时间，由服务器返回，Expires 受限于本地时间，如果修改了本地时间，可能会造成缓存失效
+
+`Expires: Wed, 11 May 2018 07:20:00 GMT`
+
+* Cache-Control: Cache-Control 出现于 HTTP / 1.1，优先级高于 Expires ,表示的是相对时间
+
+`Cache-Control: max-age=315360000`
+
+目前主流的做法使用`Cache-Control`控制缓存，除了`max-age`控制过期时间外，还有一些不得不提
+
+* Cache-Control: public可以被所有用户缓存，包括终端和CDN等中间代理服务器
+* Cache-Control: private只能被终端浏览器缓存，不允许中继缓存服务器进行缓存
+* Cache-Control: no-cache,先缓存本地，但是在命中缓存之后必须与服务器验证缓存的新鲜度才能使用
+* Cache-Control: no-store，不会产生任何缓存
+
+![2019-06-15-00-08-57]( https://xiaomuzhu-image.oss-cn-beijing.aliyuncs.com/b6dfe07b73d4fd62d167e6024d6fa2e1.png)
+
+在缓存有效期内命中缓存，浏览器会直接读取本地的缓存资源，当缓存过期之后会与服务器进行协商。
+
+### 协商缓存
+
+当第一次请求时服务器返回的响应头中没有Cache-Control和Expires或者Cache-Control和Expires过期抑或它的属性设置为no-cache时，那么浏览器第二次请求时就会与服务器进行协商。
+
+如果缓存和服务端资源的最新版本是一致的，那么就无需再次下载该资源，服务端直接返回304 Not Modified 状态码，如果服务器发现浏览器中的缓存已经是旧版本了，那么服务器就会把最新资源的完整内容返回给浏览器，状态码就是200 Ok。
+
+服务器判断缓存是否是新鲜的方法就是依靠HTTP的另外两组信息
+
+#### Last-Modified/If-Modified-Since
+
+客户端首次请求资源时，服务器会把资源的最新修改时间`Last-Modified:Thu, 19 Feb 2019 08:20:55 GMT`通过响应部首发送给客户端，当再次发送请求是，客户端将服务器返回的修改时间放在请求头`Last-Modified:Thu, 19 Feb 2019 08:20:55 GMT`发送给服务器，服务器再跟服务器上的对应资源进行比对，如果服务器的资源更新，那么返回最新的资源，此时状态码200，当服务器资源跟客户端的请求的部首时间一致，证明客户端的资源是最新的，返回304状态码，表示客户端直接用缓存即可。
+
+#### ETag/If-None-Match
+
+ETag的流程跟Last-Modified是类似的，区别就在于ETag是根据资源内容进行hash，生成一个信息摘要，只要资源内容有变化，这个摘要就会发生巨变，通过这个摘要信息比对，即可确定客户端的缓存资源是否为最新，这比Last-Modified的精确度要更高。
+
+> 响应头
+
+![2019-06-15-00-51-13]( https://xiaomuzhu-image.oss-cn-beijing.aliyuncs.com/be24a51fb3b4c5052cd4b26010d2789f.png)
+
+因此整体的缓存流程图如下：
+
+![缓存](https://user-images.githubusercontent.com/25027560/38223505-d8ab53da-371d-11e8-9263-79814b6971a5.png)
+
+> 图片来源于[博客](https://github.com/amandakelake/blog/issues/41)
+
+---
+
+TODO：
+
+http的整个流程，涉及tcp/ip协议
+
 ---
 参考：
-图解HTTP
-HTTP权威指南
+
+* 图解HTTP
+* HTTP权威指南
+* [HTTP缓存策略](https://foofish.net/http-cache-policy.html)
