@@ -33,11 +33,27 @@ export const routes = [
     redirect: "/guide/"
   },
   {
+    name: "v-b989c5ea",
+    path: "/guide/hoisting.html",
+    component: GlobalLayout,
+    beforeEnter: (to, from, next) => {
+      ensureAsyncComponentsLoaded("Layout", "v-b989c5ea").then(next)
+    },
+  },
+  {
     name: "v-67c1f0fa",
     path: "/guide/httpWritten.html",
     component: GlobalLayout,
     beforeEnter: (to, from, next) => {
       ensureAsyncComponentsLoaded("Layout", "v-67c1f0fa").then(next)
+    },
+  },
+  {
+    name: "v-1588a7c3",
+    path: "/guide/jsBasic.html",
+    component: GlobalLayout,
+    beforeEnter: (to, from, next) => {
+      ensureAsyncComponentsLoaded("Layout", "v-1588a7c3").then(next)
     },
   },
   {

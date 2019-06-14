@@ -90,6 +90,56 @@ export const siteData = {
       ]
     },
     {
+      "title": "JavaScript的『预解释』与『变量提升』",
+      "frontmatter": {},
+      "regularPath": "/guide/hoisting.html",
+      "relativePath": "guide/hoisting.md",
+      "key": "v-b989c5ea",
+      "path": "/guide/hoisting.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "前言",
+          "slug": "前言"
+        },
+        {
+          "level": 2,
+          "title": "从一个实例开始",
+          "slug": "从一个实例开始"
+        },
+        {
+          "level": 2,
+          "title": "avaScript预解释",
+          "slug": "avascript预解释"
+        },
+        {
+          "level": 2,
+          "title": "JavaScript执行环境",
+          "slug": "javascript执行环境"
+        },
+        {
+          "level": 2,
+          "title": "变量提升",
+          "slug": "变量提升"
+        },
+        {
+          "level": 2,
+          "title": "函数声明与函数表达式",
+          "slug": "函数声明与函数表达式"
+        },
+        {
+          "level": 2,
+          "title": "冲突处理",
+          "slug": "冲突处理"
+        },
+        {
+          "level": 2,
+          "title": "ES6中的let",
+          "slug": "es6中的let"
+        }
+      ]
+    },
+    {
       "title": "HTTP笔试部分",
       "frontmatter": {},
       "regularPath": "/guide/httpWritten.html",
@@ -104,13 +154,28 @@ export const siteData = {
         },
         {
           "level": 3,
-          "title": "当点击“重新访问 page 页”链接重新加载该页面后， head.png 如何二次加载？",
-          "slug": "当点击“重新访问-page-页”链接重新加载该页面后，-head-png-如何二次加载？"
+          "title": "问题一：当点击“重新访问 page 页”链接重新加载该页面后， head.png 如何二次加载？",
+          "slug": "问题一：当点击“重新访问-page-页”链接重新加载该页面后，-head-png-如何二次加载？"
         },
         {
           "level": 3,
-          "title": "如果将上述信息中的 Cache-Control 设置为 private，那么结果又会如何呢？",
-          "slug": "如果将上述信息中的-cache-control-设置为-private，那么结果又会如何呢？"
+          "title": "问题二：如果将上述信息中的 Cache-Control 设置为 private，那么结果又会如何呢？",
+          "slug": "问题二：如果将上述信息中的-cache-control-设置为-private，那么结果又会如何呢？"
+        }
+      ]
+    },
+    {
+      "title": "JavaScript基础",
+      "frontmatter": {},
+      "regularPath": "/guide/jsBasic.html",
+      "relativePath": "guide/jsBasic.md",
+      "key": "v-1588a7c3",
+      "path": "/guide/jsBasic.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "解释下变量提升？✨",
+          "slug": "解释下变量提升？✨"
         }
       ]
     },
@@ -621,6 +686,7 @@ export const siteData = {
               "children": [
                 "htmlBasic",
                 "cssBasic",
+                "jsBasic",
                 "http"
               ]
             },
@@ -629,6 +695,13 @@ export const siteData = {
               "collapsable": false,
               "children": [
                 "httpWritten"
+              ]
+            },
+            {
+              "title": "前端原理详解",
+              "collapsable": false,
+              "children": [
+                "hoisting"
               ]
             }
           ]

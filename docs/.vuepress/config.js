@@ -81,6 +81,7 @@ function renderSiderBar() {
       children: [
         'htmlBasic',
         'cssBasic',
+        'jsBasic',
         'http',
       ]
   },
@@ -90,6 +91,13 @@ function renderSiderBar() {
     children: [
       'httpWritten',
     ]
+},
+{
+  title: '前端原理详解',
+  collapsable: false,
+  children: [
+    'hoisting',
+  ]
 }
 ])
 }
