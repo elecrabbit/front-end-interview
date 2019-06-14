@@ -35,6 +35,14 @@ ul ol li .red {
 
 比如第二个例子的B与第一个例子的B相比，1>0,接下来就不需要比较了，第二个选择器的优先级更高。
 
+## link和@import的区别？
+
+* link属于XHTML标签，而@import是CSS提供的。
+* 页面被加载时，link会同时被加载，而@import引用的CSS会等到页面被加载完再加载。
+* import只在IE 5以上才能识别，而link是XHTML标签，无兼容问题。
+* link方式的样式权重高于@import的权重。
+* 使用dom控制样式时的差别。当使用javascript控制dom去改变样式的时候，只能使用link标签，因为@import不是dom可以控制的。
+
 ## 有哪些方式（CSS）可以隐藏页面元素？
 
 * `opacity:0`：本质上是将元素的透明度将为0，就看起来隐藏了，但是依然占据空间且可以交互
@@ -45,6 +53,56 @@ ul ol li .red {
 * `transform: scale(0,0)`: 平面变换，将元素缩放为0，但是依然占据空间，但不可交互
 
 > 还有一些靠绝对定位把元素移到可视区域外，或者用clip-path进行裁剪的操作过于Hack，就不提了。
+
+## em\px\rem区别？
+
+* px：绝对单位，页面按精确像素展示。
+* em：相对单位，基准点为父节点字体的大小，如果自身定义了font-size按自身来计算（浏览器默认字体是16px），整个页面内1em不是一个固定的值。
+* rem：相对单位，可理解为”root em”, 相对根节点html的字体大小来计算，CSS3新加属性，chrome/firefox/IE9+支持
+
+## 块级元素水平居中的方法？
+
+> 如果使用Hack的话，水平居中的方法非常多，我们只介绍主流的，奇葩的见拓展阅读
+
+`margin:0 auto`方法
+
+```css
+  .center{
+      height: 200px;
+      width:200px;
+      margin:0 auto;
+      border:1px solid red;
+  }
+  <div class="center">水平居中</div>
+```
+
+flex布局，目前主流方法
+
+```css
+  .center{
+      display:flex;
+      justify-content:center;
+  }
+  <div class="center">
+      <div class="flex-div">1</div>
+      <div class="flex-div">2</div>
+  </div>
+```
+
+table方法
+
+```css
+  .center{
+      display:table;
+      margin:0 auto;
+      border:1px solid red;
+  }
+  <div class="center">水平居中</div>
+```
+
+还有一些通过position+(margin|transform)等方法的不一样列举了，非重点没必要。
+
+> 拓展阅读: [16种方法实现水平居中垂直居中](https://louiszhai.github.io/2016/03/12/css-center/)
 
 ## CSS有几种定位方式？
 
@@ -130,7 +188,7 @@ CSS 中的z-index属性控制重叠元素的垂直叠加顺序，默认元素的
 
 ## 你对css sprites的理解，好处是什么？
 
-### 是什么？
+### 是什么 ？
 
 雪碧图也叫CSS精灵， 是一CSS图像合成技术，开发人员往往将小图标合并在一起之后的图片称作雪碧图。
 
@@ -152,7 +210,7 @@ CSS 中的z-index属性控制重叠元素的垂直叠加顺序，默认元素的
 
 ## 你对媒体查询的理解？
 
-### 是什么?
+### 是什么
 
 媒体查询由一个可选的媒体类型和零个或多个使用媒体功能的限制了样式表范围的表达式组成，例如宽度、高度和颜色。媒体查询，添加自CSS3，允许内容的呈现针对一个特定范围的输出设备而进行裁剪，而不必改变内容本身,非常适合web网页应对不同型号的设备而做出对应的响应适配。
 
@@ -274,6 +332,49 @@ BFC触发条件:
 <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
 
 > 拓展阅读：[深入理解BFC](https://www.cnblogs.com/xiaohuochai/p/5248536.html)
+
+## 为什么有时候人们用translate来改变位置而不是定位？
+
+translate()是transform的一个值。改变transform或opacity不会触发浏览器重新布局（reflow）或重绘（repaint），只会触发复合（compositions）。而改变绝对定位会触发重新布局，进而触发重绘和复合。transform使浏览器为元素创建一个 GPU 图层，但改变绝对定位会使用到 CPU。 因此translate()更高效，可以缩短平滑动画的绘制时间。
+
+而translate改变位置时，元素依然会占据其原始空间，绝对定位就不会发生这种情况。
+
+> 拓展阅读:[CSS3 3D transform变换-张鑫旭](https://www.zhangxinxu.com/wordpress/2012/09/css3-3d-transform-perspective-animate-transition/)
+
+## 伪类和伪元素的区别是什么？
+
+### 是什么？
+
+ 伪类（pseudo-class） 是一个以冒号(:)作为前缀，被添加到一个选择器末尾的关键字，当你希望样式在特定状态下才被呈现到指定的元素时，你可以往元素的选择器后面加上对应的伪类。
+ 
+ 伪元素用于创建一些不在文档树中的元素，并为其添加样式。比如说，我们可以通过::before来在一个元素前增加一些文本，并为这些文本添加样式。虽然用户可以看到这些文本，但是这些文本实际上不在文档树中。
+
+### 区别
+
+其实上文已经表达清楚两者区别了，伪类是通过在元素选择器上加入伪类改变元素状态，而伪元素通过对元素的操作进行对元素的改变。
+
+我们通过`p::before`对这段文本添加了额外的元素，通过 `p:first-child`改变了文本的样式。
+
+<p class="codepen" data-height="300" data-theme-id="33015" data-default-tab="css,result" data-user="xiaomuzhu" data-slug-hash="qzOXxO" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="qzOXxO">
+  <span>See the Pen <a href="https://codepen.io/xiaomuzhu/pen/qzOXxO/">
+  qzOXxO</a> by Iwobi (<a href="https://codepen.io/xiaomuzhu">@xiaomuzhu</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+<script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+
+> 拓展阅读：[伪类与伪元素](http://www.alloyteam.com/2016/05/summary-of-pseudo-classes-and-pseudo-elements/)
+
+## 你对flex的理解？✨
+
+web应用有不同设备尺寸和分辨率，这时需要响应式界面设计来满足复杂的布局需求，Flex弹性盒模型的优势在于开发人员只是声明布局应该具有的行为，而不需要给出具体的实现方式，浏览器负责完成实际布局，当布局涉及到不定宽度，分布对齐的场景时，就要优先考虑弹性盒布局
+
+> 具体用法移步阮一峰的[flex语法](http://www.ruanyifeng.com/blog/2015/07/flex-grammar.html)、[flex实战](http://www.ruanyifeng.com/blog/2015/07/flex-examples.html)，讲得非常通俗易懂，而且我们一两句话说不清楚。
+
+## 关于CSS的动画与过渡问题
+
+[深入理解CSS动画animation](https://www.cnblogs.com/xiaohuochai/p/5391663.html)
+
+[深入理解CSS过渡transition](https://www.cnblogs.com/xiaohuochai/p/5347930.html)
 
 ---
 参考资料：

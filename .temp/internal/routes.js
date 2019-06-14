@@ -49,19 +49,27 @@ export const routes = [
     },
   },
   {
-    name: "v-db07261a",
-    path: "/guide/cssBasic.html",
-    component: GlobalLayout,
-    beforeEnter: (to, from, next) => {
-      ensureAsyncComponentsLoaded("Layout", "v-db07261a").then(next)
-    },
-  },
-  {
     name: "v-36e82cfa",
     path: "/guide/htmlBasic.html",
     component: GlobalLayout,
     beforeEnter: (to, from, next) => {
       ensureAsyncComponentsLoaded("Layout", "v-36e82cfa").then(next)
+    },
+  },
+  {
+    name: "v-45f2a08e",
+    path: "/guide/http.html",
+    component: GlobalLayout,
+    beforeEnter: (to, from, next) => {
+      ensureAsyncComponentsLoaded("Layout", "v-45f2a08e").then(next)
+    },
+  },
+  {
+    name: "v-db07261a",
+    path: "/guide/cssBasic.html",
+    component: GlobalLayout,
+    beforeEnter: (to, from, next) => {
+      ensureAsyncComponentsLoaded("Layout", "v-db07261a").then(next)
     },
   },
   {

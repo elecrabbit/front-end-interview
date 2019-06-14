@@ -81,6 +81,7 @@ function renderSiderBar() {
       children: [
         'htmlBasic',
         'cssBasic',
+        'http',
       ]
   }])
 }

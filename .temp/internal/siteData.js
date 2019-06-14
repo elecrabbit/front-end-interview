@@ -195,131 +195,6 @@ export const siteData = {
       ]
     },
     {
-      "title": "CSS基础",
-      "frontmatter": {},
-      "regularPath": "/guide/cssBasic.html",
-      "relativePath": "guide/cssBasic.md",
-      "key": "v-db07261a",
-      "path": "/guide/cssBasic.html",
-      "headers": [
-        {
-          "level": 2,
-          "title": "CSS选择器的优先级是怎样的？✨",
-          "slug": "css选择器的优先级是怎样的？✨"
-        },
-        {
-          "level": 2,
-          "title": "有哪些方式（CSS）可以隐藏页面元素？",
-          "slug": "有哪些方式（css）可以隐藏页面元素？"
-        },
-        {
-          "level": 2,
-          "title": "CSS有几种定位方式？",
-          "slug": "css有几种定位方式？"
-        },
-        {
-          "level": 2,
-          "title": "如何理解z-index？✨",
-          "slug": "如何理解z-index？✨"
-        },
-        {
-          "level": 2,
-          "title": "如何理解层叠上下文？✨",
-          "slug": "如何理解层叠上下文？✨"
-        },
-        {
-          "level": 3,
-          "title": "是什么？",
-          "slug": "是什么？"
-        },
-        {
-          "level": 3,
-          "title": "如何产生？",
-          "slug": "如何产生？"
-        },
-        {
-          "level": 2,
-          "title": "清除浮动有哪些方法？",
-          "slug": "清除浮动有哪些方法？"
-        },
-        {
-          "level": 2,
-          "title": "你对css sprites的理解，好处是什么？",
-          "slug": "你对css-sprites的理解，好处是什么？"
-        },
-        {
-          "level": 3,
-          "title": "是什么？",
-          "slug": "是什么？-2"
-        },
-        {
-          "level": 3,
-          "title": "如何操作？",
-          "slug": "如何操作？"
-        },
-        {
-          "level": 3,
-          "title": "好处：",
-          "slug": "好处："
-        },
-        {
-          "level": 3,
-          "title": "不足：",
-          "slug": "不足："
-        },
-        {
-          "level": 2,
-          "title": "你对媒体查询的理解？",
-          "slug": "你对媒体查询的理解？"
-        },
-        {
-          "level": 3,
-          "title": "是什么?",
-          "slug": "是什么"
-        },
-        {
-          "level": 3,
-          "title": "如何使用？",
-          "slug": "如何使用？"
-        },
-        {
-          "level": 2,
-          "title": "你对盒模型的理解？ ✨",
-          "slug": "你对盒模型的理解？-✨"
-        },
-        {
-          "level": 3,
-          "title": "是什么？",
-          "slug": "是什么？-3"
-        },
-        {
-          "level": 2,
-          "title": "标准盒模型和怪异盒模型有什么区别？✨",
-          "slug": "标准盒模型和怪异盒模型有什么区别？✨"
-        },
-        {
-          "level": 2,
-          "title": "谈谈对BFC(Block Formatting Context)的理解？ ✨",
-          "slug": "谈谈对bfc-block-formatting-context-的理解？-✨"
-        },
-        {
-          "level": 3,
-          "title": "是什么？",
-          "slug": "是什么？-4"
-        },
-        {
-          "level": 3,
-          "title": "如何形成？",
-          "slug": "如何形成？"
-        },
-        {
-          "level": 3,
-          "title": "作用是什么？",
-          "slug": "作用是什么？"
-        }
-      ]
-    },
-    {
       "title": "HTML基础",
       "frontmatter": {},
       "regularPath": "/guide/htmlBasic.html",
@@ -393,6 +268,276 @@ export const siteData = {
           "slug": "这些方式的区别是什么？（追问）✨"
         }
       ]
+    },
+    {
+      "title": "HTTP协议",
+      "frontmatter": {},
+      "regularPath": "/guide/http.html",
+      "relativePath": "guide/http.md",
+      "key": "v-45f2a08e",
+      "path": "/guide/http.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "HTTP有哪些方法？",
+          "slug": "http有哪些方法？"
+        },
+        {
+          "level": 2,
+          "title": "这些方法的具体作用是什么？",
+          "slug": "这些方法的具体作用是什么？"
+        },
+        {
+          "level": 2,
+          "title": "GET和POST有什么区别？",
+          "slug": "get和post有什么区别？"
+        },
+        {
+          "level": 2,
+          "title": "PUT和POST都是给服务器发送新增资源，有什么区别？",
+          "slug": "put和post都是给服务器发送新增资源，有什么区别？"
+        },
+        {
+          "level": 2,
+          "title": "PUT和PATCH都是给服务器发送修改资源，有什么区别？",
+          "slug": "put和patch都是给服务器发送修改资源，有什么区别？"
+        },
+        {
+          "level": 2,
+          "title": "http的请求报文是什么样的？",
+          "slug": "http的请求报文是什么样的？"
+        },
+        {
+          "level": 2,
+          "title": "http的响应报文是什么样的？",
+          "slug": "http的响应报文是什么样的？"
+        },
+        {
+          "level": 2,
+          "title": "聊一聊HTTP的部首有哪些？",
+          "slug": "聊一聊http的部首有哪些？"
+        },
+        {
+          "level": 2,
+          "title": "聊一聊HTTP的状态码有哪些？",
+          "slug": "聊一聊http的状态码有哪些？"
+        },
+        {
+          "level": 2,
+          "title": "同样是重定向307，303，302的区别？",
+          "slug": "同样是重定向307，303，302的区别？"
+        },
+        {
+          "level": 2,
+          "title": "HTTP的keep-alive是干什么的？",
+          "slug": "http的keep-alive是干什么的？"
+        },
+        {
+          "level": 2,
+          "title": "为什么有了HTTP为什么还要HTTPS？",
+          "slug": "为什么有了http为什么还要https？"
+        },
+        {
+          "level": 2,
+          "title": "HTTPS是如何保证安全的？",
+          "slug": "https是如何保证安全的？"
+        },
+        {
+          "level": 2,
+          "title": "HTTP2相对于HTTP1.x有什么优势和特点？",
+          "slug": "http2相对于http1-x有什么优势和特点？"
+        },
+        {
+          "level": 3,
+          "title": "二进制分帧",
+          "slug": "二进制分帧"
+        },
+        {
+          "level": 3,
+          "title": "头部压缩",
+          "slug": "头部压缩"
+        },
+        {
+          "level": 3,
+          "title": "服务器推送",
+          "slug": "服务器推送"
+        },
+        {
+          "level": 3,
+          "title": "多路复用",
+          "slug": "多路复用"
+        }
+      ]
+    },
+    {
+      "title": "CSS基础",
+      "frontmatter": {},
+      "regularPath": "/guide/cssBasic.html",
+      "relativePath": "guide/cssBasic.md",
+      "key": "v-db07261a",
+      "path": "/guide/cssBasic.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "CSS选择器的优先级是怎样的？✨",
+          "slug": "css选择器的优先级是怎样的？✨"
+        },
+        {
+          "level": 2,
+          "title": "link和@import的区别？",
+          "slug": "link和-import的区别？"
+        },
+        {
+          "level": 2,
+          "title": "有哪些方式（CSS）可以隐藏页面元素？",
+          "slug": "有哪些方式（css）可以隐藏页面元素？"
+        },
+        {
+          "level": 2,
+          "title": "em\\px\\rem区别？",
+          "slug": "em-px-rem区别？"
+        },
+        {
+          "level": 2,
+          "title": "块级元素水平居中的方法？",
+          "slug": "块级元素水平居中的方法？"
+        },
+        {
+          "level": 2,
+          "title": "CSS有几种定位方式？",
+          "slug": "css有几种定位方式？"
+        },
+        {
+          "level": 2,
+          "title": "如何理解z-index？✨",
+          "slug": "如何理解z-index？✨"
+        },
+        {
+          "level": 2,
+          "title": "如何理解层叠上下文？✨",
+          "slug": "如何理解层叠上下文？✨"
+        },
+        {
+          "level": 3,
+          "title": "是什么？",
+          "slug": "是什么？"
+        },
+        {
+          "level": 3,
+          "title": "如何产生？",
+          "slug": "如何产生？"
+        },
+        {
+          "level": 2,
+          "title": "清除浮动有哪些方法？",
+          "slug": "清除浮动有哪些方法？"
+        },
+        {
+          "level": 2,
+          "title": "你对css sprites的理解，好处是什么？",
+          "slug": "你对css-sprites的理解，好处是什么？"
+        },
+        {
+          "level": 3,
+          "title": "是什么 ？",
+          "slug": "是什么-？"
+        },
+        {
+          "level": 3,
+          "title": "如何操作？",
+          "slug": "如何操作？"
+        },
+        {
+          "level": 3,
+          "title": "好处：",
+          "slug": "好处："
+        },
+        {
+          "level": 3,
+          "title": "不足：",
+          "slug": "不足："
+        },
+        {
+          "level": 2,
+          "title": "你对媒体查询的理解？",
+          "slug": "你对媒体查询的理解？"
+        },
+        {
+          "level": 3,
+          "title": "是什么",
+          "slug": "是什么"
+        },
+        {
+          "level": 3,
+          "title": "如何使用？",
+          "slug": "如何使用？"
+        },
+        {
+          "level": 2,
+          "title": "你对盒模型的理解？ ✨",
+          "slug": "你对盒模型的理解？-✨"
+        },
+        {
+          "level": 3,
+          "title": "是什么？",
+          "slug": "是什么？-2"
+        },
+        {
+          "level": 2,
+          "title": "标准盒模型和怪异盒模型有什么区别？✨",
+          "slug": "标准盒模型和怪异盒模型有什么区别？✨"
+        },
+        {
+          "level": 2,
+          "title": "谈谈对BFC(Block Formatting Context)的理解？ ✨",
+          "slug": "谈谈对bfc-block-formatting-context-的理解？-✨"
+        },
+        {
+          "level": 3,
+          "title": "是什么？",
+          "slug": "是什么？-3"
+        },
+        {
+          "level": 3,
+          "title": "如何形成？",
+          "slug": "如何形成？"
+        },
+        {
+          "level": 3,
+          "title": "作用是什么？",
+          "slug": "作用是什么？"
+        },
+        {
+          "level": 2,
+          "title": "为什么有时候人们用translate来改变位置而不是定位？",
+          "slug": "为什么有时候人们用translate来改变位置而不是定位？"
+        },
+        {
+          "level": 2,
+          "title": "伪类和伪元素的区别是什么？",
+          "slug": "伪类和伪元素的区别是什么？"
+        },
+        {
+          "level": 3,
+          "title": "是什么？",
+          "slug": "是什么？-4"
+        },
+        {
+          "level": 3,
+          "title": "区别",
+          "slug": "区别"
+        },
+        {
+          "level": 2,
+          "title": "你对flex的理解？✨",
+          "slug": "你对flex的理解？✨"
+        },
+        {
+          "level": 2,
+          "title": "关于CSS的动画与过渡问题",
+          "slug": "关于css的动画与过渡问题"
+        }
+      ]
     }
   ],
   "themeConfig": {
@@ -430,7 +575,8 @@ export const siteData = {
               "collapsable": false,
               "children": [
                 "htmlBasic",
-                "cssBasic"
+                "cssBasic",
+                "http"
               ]
             }
           ]
