@@ -90,141 +90,6 @@ export const siteData = {
       ]
     },
     {
-      "title": "JavaScript的『预解释』与『变量提升』",
-      "frontmatter": {},
-      "regularPath": "/guide/hoisting.html",
-      "relativePath": "guide/hoisting.md",
-      "key": "v-b989c5ea",
-      "path": "/guide/hoisting.html",
-      "headers": [
-        {
-          "level": 2,
-          "title": "前言",
-          "slug": "前言"
-        },
-        {
-          "level": 2,
-          "title": "从一个实例开始",
-          "slug": "从一个实例开始"
-        },
-        {
-          "level": 2,
-          "title": "avaScript预解释",
-          "slug": "avascript预解释"
-        },
-        {
-          "level": 2,
-          "title": "JavaScript执行环境",
-          "slug": "javascript执行环境"
-        },
-        {
-          "level": 2,
-          "title": "变量提升",
-          "slug": "变量提升"
-        },
-        {
-          "level": 2,
-          "title": "函数声明与函数表达式",
-          "slug": "函数声明与函数表达式"
-        },
-        {
-          "level": 2,
-          "title": "冲突处理",
-          "slug": "冲突处理"
-        },
-        {
-          "level": 2,
-          "title": "ES6中的let",
-          "slug": "es6中的let"
-        }
-      ]
-    },
-    {
-      "title": "HTTP笔试部分",
-      "frontmatter": {},
-      "regularPath": "/guide/httpWritten.html",
-      "relativePath": "guide/httpWritten.md",
-      "key": "v-67c1f0fa",
-      "path": "/guide/httpWritten.html",
-      "headers": [
-        {
-          "level": 2,
-          "title": "缓存题",
-          "slug": "缓存题"
-        },
-        {
-          "level": 3,
-          "title": "问题一：当点击“重新访问 page 页”链接重新加载该页面后， head.png 如何二次加载？",
-          "slug": "问题一：当点击“重新访问-page-页”链接重新加载该页面后，-head-png-如何二次加载？"
-        },
-        {
-          "level": 3,
-          "title": "问题二：如果将上述信息中的 Cache-Control 设置为 private，那么结果又会如何呢？",
-          "slug": "问题二：如果将上述信息中的-cache-control-设置为-private，那么结果又会如何呢？"
-        }
-      ]
-    },
-    {
-      "title": "JavaScript的运行机制",
-      "frontmatter": {},
-      "regularPath": "/guide/mechanism.html",
-      "relativePath": "guide/mechanism.md",
-      "key": "v-772cb57a",
-      "path": "/guide/mechanism.html",
-      "headers": [
-        {
-          "level": 2,
-          "title": "几个主要概念",
-          "slug": "几个主要概念"
-        },
-        {
-          "level": 3,
-          "title": "JavaScript引擎(JavaScript Engine)",
-          "slug": "javascript引擎-javascript-engine"
-        },
-        {
-          "level": 3,
-          "title": "JavaScript运行时（JavaScript Runtime）",
-          "slug": "javascript运行时（javascript-runtime）"
-        },
-        {
-          "level": 2,
-          "title": "可执行代码",
-          "slug": "可执行代码"
-        }
-      ]
-    },
-    {
-      "title": "为什么会有这个项目",
-      "frontmatter": {},
-      "regularPath": "/guide/preface.html",
-      "relativePath": "guide/preface.md",
-      "key": "v-8c976b3a",
-      "path": "/guide/preface.html",
-      "headers": [
-        {
-          "level": 2,
-          "title": "大量的过时问题",
-          "slug": "大量的过时问题"
-        },
-        {
-          "level": 2,
-          "title": "深入浅出的不多",
-          "slug": "深入浅出的不多"
-        },
-        {
-          "level": 2,
-          "title": "缺乏基础知识",
-          "slug": "缺乏基础知识"
-        },
-        {
-          "level": 2,
-          "title": "方向不够全面",
-          "slug": "方向不够全面"
-        }
-      ]
-    },
-    {
       "title": "书籍/课程推荐",
       "frontmatter": {},
       "regularPath": "/guide/book.html",
@@ -296,161 +161,6 @@ export const siteData = {
           "level": 3,
           "title": "慕课网",
           "slug": "慕课网"
-        }
-      ]
-    },
-    {
-      "title": "HTML基础",
-      "frontmatter": {},
-      "regularPath": "/guide/htmlBasic.html",
-      "relativePath": "guide/htmlBasic.md",
-      "key": "v-36e82cfa",
-      "path": "/guide/htmlBasic.html",
-      "headers": [
-        {
-          "level": 2,
-          "title": "doctype(文档类型) 的作用是什么？✨",
-          "slug": "doctype-文档类型-的作用是什么？✨"
-        },
-        {
-          "level": 2,
-          "title": "这三种模式的区别是什么？(接上一问追问)",
-          "slug": "这三种模式的区别是什么？-接上一问追问"
-        },
-        {
-          "level": 2,
-          "title": "HTML、XML 和 XHTML 有什么区别？",
-          "slug": "html、xml-和-xhtml-有什么区别？"
-        },
-        {
-          "level": 2,
-          "title": "什么是data-属性？",
-          "slug": "什么是data-属性？"
-        },
-        {
-          "level": 2,
-          "title": "你对HTML语义化的理解？✨",
-          "slug": "你对html语义化的理解？✨"
-        },
-        {
-          "level": 2,
-          "title": "HTML5与HTML4的不同之处",
-          "slug": "html5与html4的不同之处"
-        },
-        {
-          "level": 2,
-          "title": "有哪些常用的meta标签？",
-          "slug": "有哪些常用的meta标签？"
-        },
-        {
-          "level": 2,
-          "title": "src和href的区别？",
-          "slug": "src和href的区别？"
-        },
-        {
-          "level": 2,
-          "title": "知道img的srcset的作用是什么？（追问）",
-          "slug": "知道img的srcset的作用是什么？（追问）"
-        },
-        {
-          "level": 2,
-          "title": "还有哪一个标签能起到跟srcset相似作用？（追问）",
-          "slug": "还有哪一个标签能起到跟srcset相似作用？（追问）"
-        },
-        {
-          "level": 2,
-          "title": "script标签中defer和async的区别？✨",
-          "slug": "script标签中defer和async的区别？✨"
-        },
-        {
-          "level": 2,
-          "title": "有几种前端储存的方式？✨",
-          "slug": "有几种前端储存的方式？✨"
-        },
-        {
-          "level": 2,
-          "title": "这些方式的区别是什么？（追问）✨",
-          "slug": "这些方式的区别是什么？（追问）✨"
-        }
-      ]
-    },
-    {
-      "title": "JavaScript基础",
-      "frontmatter": {},
-      "regularPath": "/guide/jsBasic.html",
-      "relativePath": "guide/jsBasic.md",
-      "key": "v-1588a7c3",
-      "path": "/guide/jsBasic.html",
-      "headers": [
-        {
-          "level": 2,
-          "title": "本章索引",
-          "slug": "本章索引"
-        },
-        {
-          "level": 2,
-          "title": "解释下变量提升？✨",
-          "slug": "解释下变量提升？✨"
-        },
-        {
-          "level": 2,
-          "title": "一段JavaScript代码是如何执行的？✨",
-          "slug": "一段javascript代码是如何执行的？✨"
-        },
-        {
-          "level": 2,
-          "title": "理解闭包吗？✨",
-          "slug": "理解闭包吗？✨"
-        },
-        {
-          "level": 3,
-          "title": "闭包是什么",
-          "slug": "闭包是什么"
-        },
-        {
-          "level": 3,
-          "title": "闭包的作用",
-          "slug": "闭包的作用"
-        },
-        {
-          "level": 2,
-          "title": "JavaScript的作用域理解吗？✨",
-          "slug": "javascript的作用域理解吗？✨"
-        },
-        {
-          "level": 2,
-          "title": "谈谈你对原型链的理解？✨",
-          "slug": "谈谈你对原型链的理解？✨"
-        },
-        {
-          "level": 3,
-          "title": "原型对象",
-          "slug": "原型对象"
-        },
-        {
-          "level": 3,
-          "title": "原型链",
-          "slug": "原型链"
-        },
-        {
-          "level": 2,
-          "title": "JavaScript有哪些类型？✨",
-          "slug": "javascript有哪些类型？✨"
-        },
-        {
-          "level": 2,
-          "title": "如何判断是否是数组？",
-          "slug": "如何判断是否是数组？"
-        },
-        {
-          "level": 2,
-          "title": "谈一谈你对this的了解？✨",
-          "slug": "谈一谈你对this的了解？✨"
-        },
-        {
-          "level": 2,
-          "title": "那么箭头函数的this指向哪里？✨",
-          "slug": "那么箭头函数的this指向哪里？✨"
         }
       ]
     },
@@ -625,6 +335,311 @@ export const siteData = {
       ]
     },
     {
+      "title": "Event Loop详解",
+      "frontmatter": {},
+      "regularPath": "/guide/eventLoop.html",
+      "relativePath": "guide/eventLoop.md",
+      "key": "v-66a88163",
+      "path": "/guide/eventLoop.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "前言",
+          "slug": "前言"
+        },
+        {
+          "level": 2,
+          "title": "为啥要弄懂Event Loop",
+          "slug": "为啥要弄懂event-loop"
+        },
+        {
+          "level": 2,
+          "title": "栈、队列的基本概念",
+          "slug": "栈、队列的基本概念"
+        },
+        {
+          "level": 3,
+          "title": "栈（Stack）",
+          "slug": "栈（stack）"
+        },
+        {
+          "level": 3,
+          "title": "队列（Queue）",
+          "slug": "队列（queue）"
+        },
+        {
+          "level": 2,
+          "title": "Event Loop",
+          "slug": "event-loop"
+        },
+        {
+          "level": 3,
+          "title": "MacroTask（宏任务）",
+          "slug": "macrotask（宏任务）"
+        },
+        {
+          "level": 3,
+          "title": "MicroTask（微任务）",
+          "slug": "microtask（微任务）"
+        },
+        {
+          "level": 2,
+          "title": "浏览器中的Event Loop",
+          "slug": "浏览器中的event-loop"
+        },
+        {
+          "level": 3,
+          "title": "JS调用栈",
+          "slug": "js调用栈"
+        },
+        {
+          "level": 3,
+          "title": "同步任务和异步任务",
+          "slug": "同步任务和异步任务"
+        },
+        {
+          "level": 3,
+          "title": "事件循环的进程模型",
+          "slug": "事件循环的进程模型"
+        },
+        {
+          "level": 3,
+          "title": "执行进入microtask检查点时，用户代理会执行以下步骤：",
+          "slug": "执行进入microtask检查点时，用户代理会执行以下步骤："
+        },
+        {
+          "level": 2,
+          "title": "举个例子",
+          "slug": "举个例子"
+        },
+        {
+          "level": 3,
+          "title": "第一次执行：",
+          "slug": "第一次执行："
+        },
+        {
+          "level": 3,
+          "title": "第二次执行：",
+          "slug": "第二次执行："
+        },
+        {
+          "level": 3,
+          "title": "第三次执行：",
+          "slug": "第三次执行："
+        },
+        {
+          "level": 3,
+          "title": "第四次执行：",
+          "slug": "第四次执行："
+        },
+        {
+          "level": 2,
+          "title": "再举个例子",
+          "slug": "再举个例子"
+        },
+        {
+          "level": 3,
+          "title": "关于73以下版本和73版本的区别",
+          "slug": "关于73以下版本和73版本的区别"
+        },
+        {
+          "level": 3,
+          "title": "在老版本中",
+          "slug": "在老版本中"
+        },
+        {
+          "level": 3,
+          "title": "引用贺老师知乎上的一个例子",
+          "slug": "引用贺老师知乎上的一个例子"
+        },
+        {
+          "level": 3,
+          "title": "谷歌（金丝雀）73版本中",
+          "slug": "谷歌（金丝雀）73版本中"
+        },
+        {
+          "level": 3,
+          "title": "详细过程：",
+          "slug": "详细过程："
+        },
+        {
+          "level": 2,
+          "title": "NodeJS的Event Loop",
+          "slug": "nodejs的event-loop"
+        },
+        {
+          "level": 3,
+          "title": "Node的Event loop一共分为6个阶段，每个细节具体如下：",
+          "slug": "node的event-loop一共分为6个阶段，每个细节具体如下："
+        },
+        {
+          "level": 3,
+          "title": "timers",
+          "slug": "timers"
+        },
+        {
+          "level": 3,
+          "title": "pending callbacks",
+          "slug": "pending-callbacks"
+        },
+        {
+          "level": 3,
+          "title": "poll",
+          "slug": "poll"
+        },
+        {
+          "level": 3,
+          "title": "check",
+          "slug": "check"
+        },
+        {
+          "level": 2,
+          "title": "setImmediate() 的setTimeout()的区别",
+          "slug": "setimmediate-的settimeout-的区别"
+        },
+        {
+          "level": 3,
+          "title": "举个例子",
+          "slug": "举个例子-2"
+        },
+        {
+          "level": 2,
+          "title": "Process.nextTick()",
+          "slug": "process-nexttick"
+        },
+        {
+          "level": 3,
+          "title": "例子",
+          "slug": "例子"
+        }
+      ]
+    },
+    {
+      "title": "JavaScript的『预解释』与『变量提升』",
+      "frontmatter": {},
+      "regularPath": "/guide/hoisting.html",
+      "relativePath": "guide/hoisting.md",
+      "key": "v-b989c5ea",
+      "path": "/guide/hoisting.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "前言",
+          "slug": "前言"
+        },
+        {
+          "level": 2,
+          "title": "从一个实例开始",
+          "slug": "从一个实例开始"
+        },
+        {
+          "level": 2,
+          "title": "avaScript预解释",
+          "slug": "avascript预解释"
+        },
+        {
+          "level": 2,
+          "title": "JavaScript执行环境",
+          "slug": "javascript执行环境"
+        },
+        {
+          "level": 2,
+          "title": "变量提升",
+          "slug": "变量提升"
+        },
+        {
+          "level": 2,
+          "title": "函数声明与函数表达式",
+          "slug": "函数声明与函数表达式"
+        },
+        {
+          "level": 2,
+          "title": "冲突处理",
+          "slug": "冲突处理"
+        },
+        {
+          "level": 2,
+          "title": "ES6中的let",
+          "slug": "es6中的let"
+        }
+      ]
+    },
+    {
+      "title": "HTML基础",
+      "frontmatter": {},
+      "regularPath": "/guide/htmlBasic.html",
+      "relativePath": "guide/htmlBasic.md",
+      "key": "v-36e82cfa",
+      "path": "/guide/htmlBasic.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "doctype(文档类型) 的作用是什么？✨",
+          "slug": "doctype-文档类型-的作用是什么？✨"
+        },
+        {
+          "level": 2,
+          "title": "这三种模式的区别是什么？(接上一问追问)",
+          "slug": "这三种模式的区别是什么？-接上一问追问"
+        },
+        {
+          "level": 2,
+          "title": "HTML、XML 和 XHTML 有什么区别？",
+          "slug": "html、xml-和-xhtml-有什么区别？"
+        },
+        {
+          "level": 2,
+          "title": "什么是data-属性？",
+          "slug": "什么是data-属性？"
+        },
+        {
+          "level": 2,
+          "title": "你对HTML语义化的理解？✨",
+          "slug": "你对html语义化的理解？✨"
+        },
+        {
+          "level": 2,
+          "title": "HTML5与HTML4的不同之处",
+          "slug": "html5与html4的不同之处"
+        },
+        {
+          "level": 2,
+          "title": "有哪些常用的meta标签？",
+          "slug": "有哪些常用的meta标签？"
+        },
+        {
+          "level": 2,
+          "title": "src和href的区别？",
+          "slug": "src和href的区别？"
+        },
+        {
+          "level": 2,
+          "title": "知道img的srcset的作用是什么？（追问）",
+          "slug": "知道img的srcset的作用是什么？（追问）"
+        },
+        {
+          "level": 2,
+          "title": "还有哪一个标签能起到跟srcset相似作用？（追问）",
+          "slug": "还有哪一个标签能起到跟srcset相似作用？（追问）"
+        },
+        {
+          "level": 2,
+          "title": "script标签中defer和async的区别？✨",
+          "slug": "script标签中defer和async的区别？✨"
+        },
+        {
+          "level": 2,
+          "title": "有几种前端储存的方式？✨",
+          "slug": "有几种前端储存的方式？✨"
+        },
+        {
+          "level": 2,
+          "title": "这些方式的区别是什么？（追问）✨",
+          "slug": "这些方式的区别是什么？（追问）✨"
+        }
+      ]
+    },
+    {
       "title": "HTTP协议",
       "frontmatter": {},
       "regularPath": "/guide/http.html",
@@ -743,6 +758,216 @@ export const siteData = {
           "slug": "协商缓存"
         }
       ]
+    },
+    {
+      "title": "HTTP笔试部分",
+      "frontmatter": {},
+      "regularPath": "/guide/httpWritten.html",
+      "relativePath": "guide/httpWritten.md",
+      "key": "v-67c1f0fa",
+      "path": "/guide/httpWritten.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "缓存题",
+          "slug": "缓存题"
+        },
+        {
+          "level": 3,
+          "title": "问题一：当点击“重新访问 page 页”链接重新加载该页面后， head.png 如何二次加载？",
+          "slug": "问题一：当点击“重新访问-page-页”链接重新加载该页面后，-head-png-如何二次加载？"
+        },
+        {
+          "level": 3,
+          "title": "问题二：如果将上述信息中的 Cache-Control 设置为 private，那么结果又会如何呢？",
+          "slug": "问题二：如果将上述信息中的-cache-control-设置为-private，那么结果又会如何呢？"
+        }
+      ]
+    },
+    {
+      "title": "JavaScript基础",
+      "frontmatter": {},
+      "regularPath": "/guide/jsBasic.html",
+      "relativePath": "guide/jsBasic.md",
+      "key": "v-1588a7c3",
+      "path": "/guide/jsBasic.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "本章索引",
+          "slug": "本章索引"
+        },
+        {
+          "level": 2,
+          "title": "解释下变量提升？✨",
+          "slug": "解释下变量提升？✨"
+        },
+        {
+          "level": 2,
+          "title": "一段JavaScript代码是如何执行的？✨",
+          "slug": "一段javascript代码是如何执行的？✨"
+        },
+        {
+          "level": 2,
+          "title": "理解闭包吗？✨",
+          "slug": "理解闭包吗？✨"
+        },
+        {
+          "level": 3,
+          "title": "闭包是什么",
+          "slug": "闭包是什么"
+        },
+        {
+          "level": 3,
+          "title": "闭包的作用",
+          "slug": "闭包的作用"
+        },
+        {
+          "level": 2,
+          "title": "JavaScript的作用域链理解吗？✨",
+          "slug": "javascript的作用域链理解吗？✨"
+        },
+        {
+          "level": 2,
+          "title": "谈谈你对原型链的理解？✨",
+          "slug": "谈谈你对原型链的理解？✨"
+        },
+        {
+          "level": 3,
+          "title": "原型对象",
+          "slug": "原型对象"
+        },
+        {
+          "level": 3,
+          "title": "原型链",
+          "slug": "原型链"
+        },
+        {
+          "level": 2,
+          "title": "JavaScript有哪些类型？✨",
+          "slug": "javascript有哪些类型？✨"
+        },
+        {
+          "level": 2,
+          "title": "如何判断是否是数组？",
+          "slug": "如何判断是否是数组？"
+        },
+        {
+          "level": 2,
+          "title": "谈一谈你对this的了解？✨",
+          "slug": "谈一谈你对this的了解？✨"
+        },
+        {
+          "level": 2,
+          "title": "那么箭头函数的this指向哪里？✨",
+          "slug": "那么箭头函数的this指向哪里？✨"
+        }
+      ]
+    },
+    {
+      "title": "JavaScript的运行机制",
+      "frontmatter": {},
+      "regularPath": "/guide/mechanism.html",
+      "relativePath": "guide/mechanism.md",
+      "key": "v-772cb57a",
+      "path": "/guide/mechanism.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "JavaScript的执行环境",
+          "slug": "javascript的执行环境"
+        },
+        {
+          "level": 3,
+          "title": "JavaScript引擎(JavaScript Engine)",
+          "slug": "javascript引擎-javascript-engine"
+        },
+        {
+          "level": 3,
+          "title": "JavaScript运行时（JavaScript Runtime）",
+          "slug": "javascript运行时（javascript-runtime）"
+        },
+        {
+          "level": 3,
+          "title": "可执行代码",
+          "slug": "可执行代码"
+        },
+        {
+          "level": 2,
+          "title": "JavaScript执行",
+          "slug": "javascript执行"
+        },
+        {
+          "level": 3,
+          "title": "堆",
+          "slug": "堆"
+        },
+        {
+          "level": 3,
+          "title": "调用栈",
+          "slug": "调用栈"
+        },
+        {
+          "level": 3,
+          "title": "执行上下文(execution context)",
+          "slug": "执行上下文-execution-context"
+        },
+        {
+          "level": 3,
+          "title": "执行过程",
+          "slug": "执行过程"
+        },
+        {
+          "level": 2,
+          "title": "小结",
+          "slug": "小结"
+        },
+        {
+          "level": 3,
+          "title": "this是怎么被绑定的?",
+          "slug": "this是怎么被绑定的"
+        },
+        {
+          "level": 3,
+          "title": "作用域链是怎么形成的？",
+          "slug": "作用域链是怎么形成的？"
+        },
+        {
+          "level": 3,
+          "title": "闭包是怎么形成的？",
+          "slug": "闭包是怎么形成的？"
+        }
+      ]
+    },
+    {
+      "title": "为什么会有这个项目",
+      "frontmatter": {},
+      "regularPath": "/guide/preface.html",
+      "relativePath": "guide/preface.md",
+      "key": "v-8c976b3a",
+      "path": "/guide/preface.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "大量的过时问题",
+          "slug": "大量的过时问题"
+        },
+        {
+          "level": 2,
+          "title": "深入浅出的不多",
+          "slug": "深入浅出的不多"
+        },
+        {
+          "level": 2,
+          "title": "缺乏基础知识",
+          "slug": "缺乏基础知识"
+        },
+        {
+          "level": 2,
+          "title": "方向不够全面",
+          "slug": "方向不够全面"
+        }
+      ]
     }
   ],
   "themeConfig": {
@@ -797,7 +1022,8 @@ export const siteData = {
               "collapsable": false,
               "children": [
                 "hoisting",
-                "mechanism"
+                "mechanism",
+                "eventLoop"
               ]
             }
           ]

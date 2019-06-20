@@ -98,6 +98,7 @@ function renderSiderBar() {
   children: [
     'hoisting',
     'mechanism',
+    'eventLoop',
   ]
 }
 ])
