@@ -21,17 +21,17 @@
     - [JavaScript有哪些类型？✨](#JavaScript有哪些类型？✨)
     - [如何判断是否是数组？](#如何判断是否是数组？)
     - [聊一聊如何在JavaScript中实现不可变对象？](#聊一聊如何在JavaScript中实现不可变对象？)
-    - [箭头函数的this指向哪里？✨](#那么箭头函数的this指向哪里？✨)
     - [JavaScript的参数是按照什么方式传递的？](#JavaScript的参数是按照什么方式传递的？)
 - 2. js机制
     - [解释下变量提升？✨](#解释下变量提升？✨)
     - [一段JavaScript代码是如何执行的？✨](#一段JavaScript代码是如何执行的？✨)
     - [JavaScript的作用域链理解吗？✨](#JavaScript的作用域链理解吗？✨)
     - [谈一谈你对this的了解？✨](#谈一谈你对this的了解？✨)
+    - [箭头函数的this指向哪里？✨](#那么箭头函数的this指向哪里？✨)
     - [理解闭包吗？✨](#理解闭包吗？✨)
 - 3. js内存
-    - [解释下变量提升？✨](#解释下变量提升？✨)
-    - [面向对象](#面向对象)
+    - [讲讲JavaScript垃圾回收是怎么做的？](#讲讲JavaScript垃圾回收是怎么做的？)
+    - [JavaScript的基本类型和复杂类型是储存在哪里的？](#JavaScript的基本类型和复杂类型是储存在哪里的？)
 - 4. 异步
     - [async/await 是什么？](#async/await是什么？)
     - [async/await 相比于Promise的优势？](#async/await相比于Promise的优势？)
@@ -427,3 +427,16 @@ console.log(a); // { a: 1, b: 2 }
 
 > 原理详解请移步[实现JavaScript不可变数据](#immuatble)
 
+## JavaScript的基本类型和复杂类型是储存在哪里的？
+
+基本类型储存在栈中，但是一旦被闭包引用则成为常住内存，会储存在内存堆中。
+
+复杂类型会储存在内存堆中。
+
+> 原理解析请移步[JavaScript内存管理](#memory.md)
+
+## 讲讲JavaScript垃圾回收是怎么做的？
+
+此过程比较复杂，请看详细解析。
+
+> 原理解析请移步[JavaScript内存管理](#memory.md)

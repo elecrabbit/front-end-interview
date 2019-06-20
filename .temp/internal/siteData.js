@@ -7,89 +7,6 @@ export const siteData = {
   "base": "/",
   "pages": [
     {
-      "title": "Home",
-      "frontmatter": {
-        "home": true,
-        "heroImage": "/logo.svg",
-        "actionText": "开始 →",
-        "actionLink": "/guide/",
-        "features": [
-          {
-            "title": "简洁至上",
-            "details": "追求重点和难点,剔除陈旧的知识。"
-          },
-          {
-            "title": "清晰易懂",
-            "details": "将复杂的问题一一拆解。"
-          },
-          {
-            "title": "紧跟热点",
-            "details": "当下热点技术一网打尽。"
-          }
-        ],
-        "footer": "MIT Licensed | Copyright © 2019-present xiaomuzhu"
-      },
-      "regularPath": "/",
-      "relativePath": "README.md",
-      "key": "v-77cab7d0",
-      "path": "/"
-    },
-    {
-      "title": "指南使用手册",
-      "frontmatter": {},
-      "regularPath": "/guide/",
-      "relativePath": "guide/README.md",
-      "key": "v-5b8d0d7e",
-      "path": "/guide/",
-      "headers": [
-        {
-          "level": 2,
-          "title": "项目结构概览",
-          "slug": "项目结构概览"
-        },
-        {
-          "level": 2,
-          "title": "模块概览",
-          "slug": "模块概览"
-        },
-        {
-          "level": 3,
-          "title": "前端基础",
-          "slug": "前端基础"
-        },
-        {
-          "level": 3,
-          "title": "框架解读",
-          "slug": "框架解读"
-        },
-        {
-          "level": 3,
-          "title": "工程化",
-          "slug": "工程化"
-        },
-        {
-          "level": 3,
-          "title": "Typescript",
-          "slug": "typescript"
-        },
-        {
-          "level": 3,
-          "title": "性能优化",
-          "slug": "性能优化"
-        },
-        {
-          "level": 3,
-          "title": "计算机基础",
-          "slug": "计算机基础"
-        },
-        {
-          "level": 3,
-          "title": "细分领域",
-          "slug": "细分领域"
-        }
-      ]
-    },
-    {
       "title": "书籍/课程推荐",
       "frontmatter": {},
       "regularPath": "/guide/book.html",
@@ -331,186 +248,6 @@ export const siteData = {
           "level": 2,
           "title": "关于CSS的动画与过渡问题",
           "slug": "关于css的动画与过渡问题"
-        }
-      ]
-    },
-    {
-      "title": "Event Loop详解",
-      "frontmatter": {},
-      "regularPath": "/guide/eventLoop.html",
-      "relativePath": "guide/eventLoop.md",
-      "key": "v-66a88163",
-      "path": "/guide/eventLoop.html",
-      "headers": [
-        {
-          "level": 2,
-          "title": "前言",
-          "slug": "前言"
-        },
-        {
-          "level": 2,
-          "title": "为啥要弄懂Event Loop",
-          "slug": "为啥要弄懂event-loop"
-        },
-        {
-          "level": 2,
-          "title": "栈、队列的基本概念",
-          "slug": "栈、队列的基本概念"
-        },
-        {
-          "level": 3,
-          "title": "栈（Stack）",
-          "slug": "栈（stack）"
-        },
-        {
-          "level": 3,
-          "title": "队列（Queue）",
-          "slug": "队列（queue）"
-        },
-        {
-          "level": 2,
-          "title": "Event Loop",
-          "slug": "event-loop"
-        },
-        {
-          "level": 3,
-          "title": "MacroTask（宏任务）",
-          "slug": "macrotask（宏任务）"
-        },
-        {
-          "level": 3,
-          "title": "MicroTask（微任务）",
-          "slug": "microtask（微任务）"
-        },
-        {
-          "level": 2,
-          "title": "浏览器中的Event Loop",
-          "slug": "浏览器中的event-loop"
-        },
-        {
-          "level": 3,
-          "title": "JS调用栈",
-          "slug": "js调用栈"
-        },
-        {
-          "level": 3,
-          "title": "同步任务和异步任务",
-          "slug": "同步任务和异步任务"
-        },
-        {
-          "level": 3,
-          "title": "事件循环的进程模型",
-          "slug": "事件循环的进程模型"
-        },
-        {
-          "level": 3,
-          "title": "执行进入microtask检查点时，用户代理会执行以下步骤：",
-          "slug": "执行进入microtask检查点时，用户代理会执行以下步骤："
-        },
-        {
-          "level": 2,
-          "title": "举个例子",
-          "slug": "举个例子"
-        },
-        {
-          "level": 3,
-          "title": "第一次执行：",
-          "slug": "第一次执行："
-        },
-        {
-          "level": 3,
-          "title": "第二次执行：",
-          "slug": "第二次执行："
-        },
-        {
-          "level": 3,
-          "title": "第三次执行：",
-          "slug": "第三次执行："
-        },
-        {
-          "level": 3,
-          "title": "第四次执行：",
-          "slug": "第四次执行："
-        },
-        {
-          "level": 2,
-          "title": "再举个例子",
-          "slug": "再举个例子"
-        },
-        {
-          "level": 3,
-          "title": "关于73以下版本和73版本的区别",
-          "slug": "关于73以下版本和73版本的区别"
-        },
-        {
-          "level": 3,
-          "title": "在老版本中",
-          "slug": "在老版本中"
-        },
-        {
-          "level": 3,
-          "title": "引用贺老师知乎上的一个例子",
-          "slug": "引用贺老师知乎上的一个例子"
-        },
-        {
-          "level": 3,
-          "title": "谷歌（金丝雀）73版本中",
-          "slug": "谷歌（金丝雀）73版本中"
-        },
-        {
-          "level": 3,
-          "title": "详细过程：",
-          "slug": "详细过程："
-        },
-        {
-          "level": 2,
-          "title": "NodeJS的Event Loop",
-          "slug": "nodejs的event-loop"
-        },
-        {
-          "level": 3,
-          "title": "Node的Event loop一共分为6个阶段，每个细节具体如下：",
-          "slug": "node的event-loop一共分为6个阶段，每个细节具体如下："
-        },
-        {
-          "level": 3,
-          "title": "timers",
-          "slug": "timers"
-        },
-        {
-          "level": 3,
-          "title": "pending callbacks",
-          "slug": "pending-callbacks"
-        },
-        {
-          "level": 3,
-          "title": "poll",
-          "slug": "poll"
-        },
-        {
-          "level": 3,
-          "title": "check",
-          "slug": "check"
-        },
-        {
-          "level": 2,
-          "title": "setImmediate() 的setTimeout()的区别",
-          "slug": "setimmediate-的settimeout-的区别"
-        },
-        {
-          "level": 3,
-          "title": "举个例子",
-          "slug": "举个例子-2"
-        },
-        {
-          "level": 2,
-          "title": "Process.nextTick()",
-          "slug": "process-nexttick"
-        },
-        {
-          "level": 3,
-          "title": "例子",
-          "slug": "例子"
         }
       ]
     },
@@ -760,67 +497,57 @@ export const siteData = {
       ]
     },
     {
-      "title": "HTTP笔试部分",
+      "title": "指南使用手册",
       "frontmatter": {},
-      "regularPath": "/guide/httpWritten.html",
-      "relativePath": "guide/httpWritten.md",
-      "key": "v-67c1f0fa",
-      "path": "/guide/httpWritten.html",
+      "regularPath": "/guide/",
+      "relativePath": "guide/README.md",
+      "key": "v-5b8d0d7e",
+      "path": "/guide/",
       "headers": [
         {
           "level": 2,
-          "title": "缓存题",
-          "slug": "缓存题"
+          "title": "项目结构概览",
+          "slug": "项目结构概览"
         },
-        {
-          "level": 3,
-          "title": "问题一：当点击“重新访问 page 页”链接重新加载该页面后， head.png 如何二次加载？",
-          "slug": "问题一：当点击“重新访问-page-页”链接重新加载该页面后，-head-png-如何二次加载？"
-        },
-        {
-          "level": 3,
-          "title": "问题二：如果将上述信息中的 Cache-Control 设置为 private，那么结果又会如何呢？",
-          "slug": "问题二：如果将上述信息中的-cache-control-设置为-private，那么结果又会如何呢？"
-        }
-      ]
-    },
-    {
-      "title": "实现不可变数据",
-      "frontmatter": {},
-      "regularPath": "/guide/immutable.html",
-      "relativePath": "guide/immutable.md",
-      "key": "v-0b1c6be3",
-      "path": "/guide/immutable.html",
-      "headers": [
         {
           "level": 2,
-          "title": "前言",
-          "slug": "前言"
+          "title": "模块概览",
+          "slug": "模块概览"
         },
         {
           "level": 3,
-          "title": "文章目录",
-          "slug": "文章目录"
+          "title": "前端基础",
+          "slug": "前端基础"
         },
         {
           "level": 3,
-          "title": "1.可变数据的副作用",
-          "slug": "_1-可变数据的副作用"
+          "title": "框架解读",
+          "slug": "框架解读"
         },
         {
           "level": 3,
-          "title": "2.不可变数据的解决方案",
-          "slug": "_2-不可变数据的解决方案"
+          "title": "工程化",
+          "slug": "工程化"
         },
         {
           "level": 3,
-          "title": "3.实现更简单的immutable",
-          "slug": "_3-实现更简单的immutable"
+          "title": "Typescript",
+          "slug": "typescript"
         },
         {
           "level": 3,
-          "title": "总结",
-          "slug": "总结"
+          "title": "性能优化",
+          "slug": "性能优化"
+        },
+        {
+          "level": 3,
+          "title": "计算机基础",
+          "slug": "计算机基础"
+        },
+        {
+          "level": 3,
+          "title": "细分领域",
+          "slug": "细分领域"
         }
       ]
     },
@@ -936,6 +663,56 @@ export const siteData = {
           "level": 2,
           "title": "聊一聊如何在JavaScript中实现不可变对象？",
           "slug": "聊一聊如何在javascript中实现不可变对象？"
+        },
+        {
+          "level": 2,
+          "title": "JavaScript的基本类型和复杂类型是储存在哪里的？",
+          "slug": "javascript的基本类型和复杂类型是储存在哪里的？"
+        },
+        {
+          "level": 2,
+          "title": "讲讲JavaScript垃圾回收是怎么做的？",
+          "slug": "讲讲javascript垃圾回收是怎么做的？"
+        }
+      ]
+    },
+    {
+      "title": "实现不可变数据",
+      "frontmatter": {},
+      "regularPath": "/guide/immutable.html",
+      "relativePath": "guide/immutable.md",
+      "key": "v-0b1c6be3",
+      "path": "/guide/immutable.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "前言",
+          "slug": "前言"
+        },
+        {
+          "level": 3,
+          "title": "文章目录",
+          "slug": "文章目录"
+        },
+        {
+          "level": 3,
+          "title": "1.可变数据的副作用",
+          "slug": "_1-可变数据的副作用"
+        },
+        {
+          "level": 3,
+          "title": "2.不可变数据的解决方案",
+          "slug": "_2-不可变数据的解决方案"
+        },
+        {
+          "level": 3,
+          "title": "3.实现更简单的immutable",
+          "slug": "_3-实现更简单的immutable"
+        },
+        {
+          "level": 3,
+          "title": "总结",
+          "slug": "总结"
         }
       ]
     },
@@ -1095,6 +872,59 @@ export const siteData = {
       ]
     },
     {
+      "title": "Home",
+      "frontmatter": {
+        "home": true,
+        "heroImage": "/logo.svg",
+        "actionText": "开始 →",
+        "actionLink": "/guide/",
+        "features": [
+          {
+            "title": "简洁至上",
+            "details": "追求重点和难点,剔除陈旧的知识。"
+          },
+          {
+            "title": "清晰易懂",
+            "details": "将复杂的问题一一拆解。"
+          },
+          {
+            "title": "紧跟热点",
+            "details": "当下热点技术一网打尽。"
+          }
+        ],
+        "footer": "MIT Licensed | Copyright © 2019-present xiaomuzhu"
+      },
+      "regularPath": "/",
+      "relativePath": "README.md",
+      "key": "v-77cab7d0",
+      "path": "/"
+    },
+    {
+      "title": "HTTP笔试部分",
+      "frontmatter": {},
+      "regularPath": "/guide/httpWritten.html",
+      "relativePath": "guide/httpWritten.md",
+      "key": "v-67c1f0fa",
+      "path": "/guide/httpWritten.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "缓存题",
+          "slug": "缓存题"
+        },
+        {
+          "level": 3,
+          "title": "问题一：当点击“重新访问 page 页”链接重新加载该页面后， head.png 如何二次加载？",
+          "slug": "问题一：当点击“重新访问-page-页”链接重新加载该页面后，-head-png-如何二次加载？"
+        },
+        {
+          "level": 3,
+          "title": "问题二：如果将上述信息中的 Cache-Control 设置为 private，那么结果又会如何呢？",
+          "slug": "问题二：如果将上述信息中的-cache-control-设置为-private，那么结果又会如何呢？"
+        }
+      ]
+    },
+    {
       "title": "为什么会有这个项目",
       "frontmatter": {},
       "regularPath": "/guide/preface.html",
@@ -1121,6 +951,186 @@ export const siteData = {
           "level": 2,
           "title": "方向不够全面",
           "slug": "方向不够全面"
+        }
+      ]
+    },
+    {
+      "title": "Event Loop详解",
+      "frontmatter": {},
+      "regularPath": "/guide/eventLoop.html",
+      "relativePath": "guide/eventLoop.md",
+      "key": "v-66a88163",
+      "path": "/guide/eventLoop.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "前言",
+          "slug": "前言"
+        },
+        {
+          "level": 2,
+          "title": "为啥要弄懂Event Loop",
+          "slug": "为啥要弄懂event-loop"
+        },
+        {
+          "level": 2,
+          "title": "栈、队列的基本概念",
+          "slug": "栈、队列的基本概念"
+        },
+        {
+          "level": 3,
+          "title": "栈（Stack）",
+          "slug": "栈（stack）"
+        },
+        {
+          "level": 3,
+          "title": "队列（Queue）",
+          "slug": "队列（queue）"
+        },
+        {
+          "level": 2,
+          "title": "Event Loop",
+          "slug": "event-loop"
+        },
+        {
+          "level": 3,
+          "title": "MacroTask（宏任务）",
+          "slug": "macrotask（宏任务）"
+        },
+        {
+          "level": 3,
+          "title": "MicroTask（微任务）",
+          "slug": "microtask（微任务）"
+        },
+        {
+          "level": 2,
+          "title": "浏览器中的Event Loop",
+          "slug": "浏览器中的event-loop"
+        },
+        {
+          "level": 3,
+          "title": "JS调用栈",
+          "slug": "js调用栈"
+        },
+        {
+          "level": 3,
+          "title": "同步任务和异步任务",
+          "slug": "同步任务和异步任务"
+        },
+        {
+          "level": 3,
+          "title": "事件循环的进程模型",
+          "slug": "事件循环的进程模型"
+        },
+        {
+          "level": 3,
+          "title": "执行进入microtask检查点时，用户代理会执行以下步骤：",
+          "slug": "执行进入microtask检查点时，用户代理会执行以下步骤："
+        },
+        {
+          "level": 2,
+          "title": "举个例子",
+          "slug": "举个例子"
+        },
+        {
+          "level": 3,
+          "title": "第一次执行：",
+          "slug": "第一次执行："
+        },
+        {
+          "level": 3,
+          "title": "第二次执行：",
+          "slug": "第二次执行："
+        },
+        {
+          "level": 3,
+          "title": "第三次执行：",
+          "slug": "第三次执行："
+        },
+        {
+          "level": 3,
+          "title": "第四次执行：",
+          "slug": "第四次执行："
+        },
+        {
+          "level": 2,
+          "title": "再举个例子",
+          "slug": "再举个例子"
+        },
+        {
+          "level": 3,
+          "title": "关于73以下版本和73版本的区别",
+          "slug": "关于73以下版本和73版本的区别"
+        },
+        {
+          "level": 3,
+          "title": "在老版本中",
+          "slug": "在老版本中"
+        },
+        {
+          "level": 3,
+          "title": "引用贺老师知乎上的一个例子",
+          "slug": "引用贺老师知乎上的一个例子"
+        },
+        {
+          "level": 3,
+          "title": "谷歌（金丝雀）73版本中",
+          "slug": "谷歌（金丝雀）73版本中"
+        },
+        {
+          "level": 3,
+          "title": "详细过程：",
+          "slug": "详细过程："
+        },
+        {
+          "level": 2,
+          "title": "NodeJS的Event Loop",
+          "slug": "nodejs的event-loop"
+        },
+        {
+          "level": 3,
+          "title": "Node的Event loop一共分为6个阶段，每个细节具体如下：",
+          "slug": "node的event-loop一共分为6个阶段，每个细节具体如下："
+        },
+        {
+          "level": 3,
+          "title": "timers",
+          "slug": "timers"
+        },
+        {
+          "level": 3,
+          "title": "pending callbacks",
+          "slug": "pending-callbacks"
+        },
+        {
+          "level": 3,
+          "title": "poll",
+          "slug": "poll"
+        },
+        {
+          "level": 3,
+          "title": "check",
+          "slug": "check"
+        },
+        {
+          "level": 2,
+          "title": "setImmediate() 的setTimeout()的区别",
+          "slug": "setimmediate-的settimeout-的区别"
+        },
+        {
+          "level": 3,
+          "title": "举个例子",
+          "slug": "举个例子-2"
+        },
+        {
+          "level": 2,
+          "title": "Process.nextTick()",
+          "slug": "process-nexttick"
+        },
+        {
+          "level": 3,
+          "title": "例子",
+          "slug": "例子"
         }
       ]
     }
