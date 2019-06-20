@@ -102,6 +102,8 @@ function renderSiderBar() {
     'eventLoop',
     'immutable',
     'memory',
+    'deepclone',
+    'event',
   ]
 }
 ])

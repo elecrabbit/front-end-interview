@@ -2,24 +2,65 @@
 
 主要涉及一些手写代码的题目，这些题目的主要来源如下
 
-* [javascript-questions](https://github.com/lydiahallie/javascript-questions)
 * 平时搜集的手写代码题目
 * 自创的题目
 
 ## 目录
 
-## 所说的
+## 实现防抖函数（debounce）
 
-撒旦
+防抖函数原理：在事件被触发n秒后再执行回调，如果在这n秒内又被触发，则重新计时。
 
-<details><summary><b>答案</b></summary>
-<p>
+那么与节流函数的区别直接看这个动画实现即可。
 
-#### 答案: D
+<iframe src="https://codesandbox.io/embed/static-ce05g?fontsize=14" title="static" allow="geolocation; microphone; camera; midi; vr; accelerometer; gyroscope; payment; ambient-light-sensor; encrypted-media" style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
 
-在函数内部，我们首先通过 `var` 关键字声明了 `name` 变量。这意味着变量被提升了（内存空间在创建阶段就被设置好了），直到程序运行到定义变量位置之前默认值都是 `undefined`。因为当我们打印 `name` 变量时还没有执行到定义变量的位置，因此变量的值保持为 `undefined`。
+手写简化版:
 
-通过 `let` 和 `const` 关键字声明的变量也会提升，但是和 `var` 不同，它们不会被<i>初始化</i>。在我们声明（初始化）之前是不能访问它们的。这个行为被称之为暂时性死区。当我们试图在声明之前访问它们时，JavaScript 将会抛出一个 `ReferenceError` 错误。
+```js
+// 防抖函数
+const debounce = (fn, delay) => {
+  let timer = null;
+  return (...args) => {
+    clearTimeout(timer);
+    timer = setTimeout(() => {
+      fn.apply(this, args);
+    }, delay);
+  };
+};
+```
 
-</p>
-</details>
+适用场景：
+
+* 按钮提交场景：防止多次提交按钮，只执行最后提交的一次
+* 服务端验证场景：表单验证需要服务端配合，只执行一段连续的输入事件的最后一次，还有搜索联想词功能类似
+
+生存环境请用lodash.debounce
+
+## 实现节流函数（throttle）
+
+防抖函数原理:规定在一个单位时间内，只能触发一次函数。如果这个单位时间内触发多次函数，只有一次生效。
+
+// 手写简化版
+
+```js
+// 节流函数
+const throttle = (fn, delay = 500) => {
+  let flag = true;
+  return (...args) => {
+    if (!flag) return;
+    flag = false;
+    setTimeout(() => {
+      fn.apply(this, args);
+      flag = true;
+    }, delay);
+  };
+};
+```
+
+适用场景：
+
+* 拖拽场景：固定时间内只执行一次，防止超高频次触发位置变动
+* 缩放场景：监控浏览器resize
+* 动画场景：避免短时间内多次触发动画引起性能问题
+

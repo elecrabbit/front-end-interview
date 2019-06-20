@@ -49,6 +49,22 @@ export const routes = [
     },
   },
   {
+    name: "v-0415fc43",
+    path: "/guide/deepclone.html",
+    component: GlobalLayout,
+    beforeEnter: (to, from, next) => {
+      ensureAsyncComponentsLoaded("Layout", "v-0415fc43").then(next)
+    },
+  },
+  {
+    name: "v-17edd93a",
+    path: "/guide/event.html",
+    component: GlobalLayout,
+    beforeEnter: (to, from, next) => {
+      ensureAsyncComponentsLoaded("Layout", "v-17edd93a").then(next)
+    },
+  },
+  {
     name: "v-66a88163",
     path: "/guide/eventLoop.html",
     component: GlobalLayout,
