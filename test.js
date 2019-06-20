@@ -1,16 +1,7 @@
-function Person(){
-    var name = 'cxk';
-    this.getName = function(){
-        return name;
-    }
-    this.setName = function(value){
-        name = value;
-    }
+var name = 'cxk'
+
+function say(name) {
+    return `${name} like singing dancing and rap`
 }
 
-const cxk = new Person()
-
-console.log(cxk.getName()) //cxk
-cxk.setName('jntm')
-console.log(cxk.getName()) //jntm
-console.log(name);
+console.log(say(name));

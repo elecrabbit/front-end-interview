@@ -12,6 +12,31 @@
 
 > 我们约定，每个问题后我们标记『✨』的为高频面试题
 
+## 本章索引
+
+本章内容较多，因此提供一个索引：
+
+- 1. js基础
+    - [谈谈你对原型链的理解？ ✨](#谈谈你对原型链的理解？✨)
+    - [JavaScript有哪些类型？✨](#JavaScript有哪些类型？✨)
+    - [如何判断是否是数组？](#如何判断是否是数组？)
+    - [谈一谈你对this的了解？✨](#谈一谈你对this的了解？✨)
+    - [箭头函数的this指向哪里？✨](#那么箭头函数的this指向哪里？✨)
+    - [谈一谈你对this的了解？✨](#谈一谈你对this的了解？✨)
+- 2. js机制
+    - [解释下变量提升？✨](#解释下变量提升？✨)
+    - [一段JavaScript代码是如何执行的？✨](#一段JavaScript代码是如何执行的？✨)
+    - [JavaScript的作用域链理解吗？✨](#JavaScript的作用域链理解吗？✨)
+    - [谈一谈你对this的了解？✨](#谈一谈你对this的了解？✨)
+    - [理解闭包吗？✨](#理解闭包吗？✨)
+- 3. js内存
+    - [解释下变量提升？✨](#解释下变量提升？✨)
+    - [面向对象](#面向对象)
+- 4. 异步
+    - [解释下变量提升？✨](#解释下变量提升？✨)
+    - [面向对象](#面向对象)
+
+
 ## 解释下变量提升？✨
 
 JavaScript引擎的工作方式是，先解析代码，获取所有被声明的变量，然后再一行一行地运行。这造成的结果，就是所有的变量的声明语句，都会被提升到代码的头部，这就叫做变量提升（hoisting）。
@@ -48,6 +73,10 @@ b() // 1
 第二步就是执行，因此js引擎一行一行从上往下执行就造成了当前的结果，这就叫变量提升。
 
 > 原理详解请移步,[预解释与变量提升](hoisting.md)
+
+## 一段JavaScript代码是如何执行的？✨
+
+> 此部分涉及概念较多，请移步[JavaScript执行机制](#mechanism)
 
 ## 理解闭包吗？✨
 
@@ -110,7 +139,17 @@ console.log(name) //name is not defined
 
 函数体内的`var name = 'cxk'`只有`getName`和`setName`两个函数可以访问，外部无法访问，相对于将变量私有化。
 
-## 谈谈你对原型链的理解？ ✨
+## JavaScript的作用域链理解吗？✨
+
+JavaScript属于静态作用域，即声明的作用域是根据程序正文在编译时就确定的，有时也称为词法作用域。
+
+其本质是JavaScript在执行过程中会创造可执行上下文，可执行上下文中的词法环境中含有外部词法环境的引用，我们可以通过这个引用获取外部词法环境的变量、声明等，这些引用串联起来一直指向全局的词法环境，因此形成了作用域链。
+
+![2019-06-20-06-00-27]( https://xiaomuzhu-image.oss-cn-beijing.aliyuncs.com/0f1701f3b7061942ae24a9357f28bc2e.png)
+
+> 原理详解请移步[JavaScript执行机制](#mechanism)
+
+## 谈谈你对原型链的理解？✨
 
 这个问题关键在于两个点，一个是原型对象是什么，另一个是原型链是如何形成的
 
@@ -148,4 +187,143 @@ console.log(Object.prototype.hasOwnProperty("hasOwnProperty")); //true
 > 经典原型链图
 
 ![2019-06-15-05-36-59]( https://xiaomuzhu-image.oss-cn-beijing.aliyuncs.com/282ef60fe1dfe60924c6caeaeab6c550.png)
+
+## JavaScript有哪些类型？✨
+
+JavaScript的类型分为两大类，一类是原始类型，一类是复杂(引用）类型。
+
+原始类型:
+
+* boolean
+* null
+* undefined
+* number
+* string
+* symbol
+
+复杂类型:
+
+* Object
+
+> TDDO 强烈建议阅读 []()，了解类型转换的坑和转换原理
+
+## 如何判断是否是数组？
+
+es6中加入了新的判断方法
+
+```js
+if（Array.isArray(value)）{
+    return true;
+}
+```
+
+在考虑兼容性的情况下可以用toString的方法
+
+```js
+if(!Array.isArray){
+    Array.isArray = function(arg){
+        return Object.prototype.toString.call(arg)==='[object Array]'
+    }
+
+}
+
+```
+
+## 谈一谈你对this的了解？✨
+
+this的指向不是在编写时确定的,而是在执行时确定的，同时，this不同的指向在于遵循了一定的规则。
+
+首先，在默认情况下，this是指向全局对象的，比如在浏览器就是指向window。
+
+```js
+name = "Bale";
+
+function sayName () {
+    console.log(this.name);
+};
+
+sayName(); //"Bale"
+```
+
+其次，如果函数被调用的位置存在上下文对象时，那么函数是被隐式绑定的。
+
+```js
+function f() {
+    console.log( this.name );
+}
+
+var obj = {
+    name: "Messi",
+    f: f
+};
+
+obj.f(); //被调用的位置恰好被对象obj拥有，因此结果是Messi
+```
+
+再次，显示改变this指向，常见的方法就是call、apply、bind
+
+以bind为例:
+
+```js
+function f() {
+    console.log( this.name );
+}
+var obj = {
+    name: "Messi",
+};
+
+var obj1 = {
+     name: "Bale"
+};
+
+f.bind(obj)(); //Messi ,由于bind将obj绑定到f函数上后返回一个新函数,因此需要再在后面加上括号进行执行,这是bind与apply和call的区别
+
+```
+
+最后，也是优先级最高的绑定 new 绑定。
+
+用 new 调用一个构造函数，会创建一个新对象, 在创造这个新对象的过程中,新对象会自动绑定到Person对象的this上，那么 this 自然就指向这个新对象。
+
+```js
+function Person(name) {
+  this.name = name;
+  console.log(name);
+}
+
+var person1 = new Person('Messi'); //Messi
+```
+
+> 绑定优先级:  new绑定 > 显式绑定 >隐式绑定 >默认绑定
+
+## 那么箭头函数的this指向哪里？✨
+
+箭头函数不同于传统JavaScript中的函数,箭头函数并没有属于自己的this,它的所谓的this是捕获其所在上下文的 this 值，作为自己的 this 值,并且由于没有属于自己的this,而箭头函数是不会被new调用的，这个所谓的this也不会被改变.
+
+我们可以用Babel理解一下箭头函数:
+
+```js
+// ES6
+const obj = {
+    getArrow() {
+        return () => {
+            console.log(this === obj);
+        };
+    }
+} 
+```
+
+转化后
+
+```js
+// ES5，由 Babel 转译
+var obj = {
+    getArrow: function getArrow() {
+        var _this = this;
+        return function () {
+            console.log(_this === obj);
+        };
+    }
+};
+```
+
 

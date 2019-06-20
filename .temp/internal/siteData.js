@@ -165,47 +165,32 @@ export const siteData = {
       ]
     },
     {
-      "title": "JavaScript基础",
+      "title": "JavaScript的运行机制",
       "frontmatter": {},
-      "regularPath": "/guide/jsBasic.html",
-      "relativePath": "guide/jsBasic.md",
-      "key": "v-1588a7c3",
-      "path": "/guide/jsBasic.html",
+      "regularPath": "/guide/mechanism.html",
+      "relativePath": "guide/mechanism.md",
+      "key": "v-772cb57a",
+      "path": "/guide/mechanism.html",
       "headers": [
         {
           "level": 2,
-          "title": "解释下变量提升？✨",
-          "slug": "解释下变量提升？✨"
+          "title": "几个主要概念",
+          "slug": "几个主要概念"
+        },
+        {
+          "level": 3,
+          "title": "JavaScript引擎(JavaScript Engine)",
+          "slug": "javascript引擎-javascript-engine"
+        },
+        {
+          "level": 3,
+          "title": "JavaScript运行时（JavaScript Runtime）",
+          "slug": "javascript运行时（javascript-runtime）"
         },
         {
           "level": 2,
-          "title": "理解闭包吗？✨",
-          "slug": "理解闭包吗？✨"
-        },
-        {
-          "level": 3,
-          "title": "闭包是什么",
-          "slug": "闭包是什么"
-        },
-        {
-          "level": 3,
-          "title": "闭包的作用",
-          "slug": "闭包的作用"
-        },
-        {
-          "level": 2,
-          "title": "谈谈你对原型链的理解？ ✨",
-          "slug": "谈谈你对原型链的理解？-✨"
-        },
-        {
-          "level": 3,
-          "title": "原型对象",
-          "slug": "原型对象"
-        },
-        {
-          "level": 3,
-          "title": "原型链",
-          "slug": "原型链"
+          "title": "可执行代码",
+          "slug": "可执行代码"
         }
       ]
     },
@@ -386,6 +371,86 @@ export const siteData = {
           "level": 2,
           "title": "这些方式的区别是什么？（追问）✨",
           "slug": "这些方式的区别是什么？（追问）✨"
+        }
+      ]
+    },
+    {
+      "title": "JavaScript基础",
+      "frontmatter": {},
+      "regularPath": "/guide/jsBasic.html",
+      "relativePath": "guide/jsBasic.md",
+      "key": "v-1588a7c3",
+      "path": "/guide/jsBasic.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "本章索引",
+          "slug": "本章索引"
+        },
+        {
+          "level": 2,
+          "title": "解释下变量提升？✨",
+          "slug": "解释下变量提升？✨"
+        },
+        {
+          "level": 2,
+          "title": "一段JavaScript代码是如何执行的？✨",
+          "slug": "一段javascript代码是如何执行的？✨"
+        },
+        {
+          "level": 2,
+          "title": "理解闭包吗？✨",
+          "slug": "理解闭包吗？✨"
+        },
+        {
+          "level": 3,
+          "title": "闭包是什么",
+          "slug": "闭包是什么"
+        },
+        {
+          "level": 3,
+          "title": "闭包的作用",
+          "slug": "闭包的作用"
+        },
+        {
+          "level": 2,
+          "title": "JavaScript的作用域理解吗？✨",
+          "slug": "javascript的作用域理解吗？✨"
+        },
+        {
+          "level": 2,
+          "title": "谈谈你对原型链的理解？✨",
+          "slug": "谈谈你对原型链的理解？✨"
+        },
+        {
+          "level": 3,
+          "title": "原型对象",
+          "slug": "原型对象"
+        },
+        {
+          "level": 3,
+          "title": "原型链",
+          "slug": "原型链"
+        },
+        {
+          "level": 2,
+          "title": "JavaScript有哪些类型？✨",
+          "slug": "javascript有哪些类型？✨"
+        },
+        {
+          "level": 2,
+          "title": "如何判断是否是数组？",
+          "slug": "如何判断是否是数组？"
+        },
+        {
+          "level": 2,
+          "title": "谈一谈你对this的了解？✨",
+          "slug": "谈一谈你对this的了解？✨"
+        },
+        {
+          "level": 2,
+          "title": "那么箭头函数的this指向哪里？✨",
+          "slug": "那么箭头函数的this指向哪里？✨"
         }
       ]
     },
@@ -731,7 +796,8 @@ export const siteData = {
               "title": "前端原理详解",
               "collapsable": false,
               "children": [
-                "hoisting"
+                "hoisting",
+                "mechanism"
               ]
             }
           ]

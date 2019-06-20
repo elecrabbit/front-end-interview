@@ -49,11 +49,11 @@ export const routes = [
     },
   },
   {
-    name: "v-1588a7c3",
-    path: "/guide/jsBasic.html",
+    name: "v-772cb57a",
+    path: "/guide/mechanism.html",
     component: GlobalLayout,
     beforeEnter: (to, from, next) => {
-      ensureAsyncComponentsLoaded("Layout", "v-1588a7c3").then(next)
+      ensureAsyncComponentsLoaded("Layout", "v-772cb57a").then(next)
     },
   },
   {
@@ -78,6 +78,14 @@ export const routes = [
     component: GlobalLayout,
     beforeEnter: (to, from, next) => {
       ensureAsyncComponentsLoaded("Layout", "v-36e82cfa").then(next)
+    },
+  },
+  {
+    name: "v-1588a7c3",
+    path: "/guide/jsBasic.html",
+    component: GlobalLayout,
+    beforeEnter: (to, from, next) => {
+      ensureAsyncComponentsLoaded("Layout", "v-1588a7c3").then(next)
     },
   },
   {

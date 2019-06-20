@@ -97,6 +97,7 @@ function renderSiderBar() {
   collapsable: false,
   children: [
     'hoisting',
+    'mechanism',
   ]
 }
 ])
