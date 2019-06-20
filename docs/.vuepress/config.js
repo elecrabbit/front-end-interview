@@ -90,6 +90,7 @@ function renderSiderBar() {
     collapsable: false,
     children: [
       'httpWritten',
+      'jsWritten',
     ]
 },
 {
