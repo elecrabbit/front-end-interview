@@ -785,6 +785,46 @@ export const siteData = {
       ]
     },
     {
+      "title": "实现不可变数据",
+      "frontmatter": {},
+      "regularPath": "/guide/immutable.html",
+      "relativePath": "guide/immutable.md",
+      "key": "v-0b1c6be3",
+      "path": "/guide/immutable.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "前言",
+          "slug": "前言"
+        },
+        {
+          "level": 3,
+          "title": "文章目录",
+          "slug": "文章目录"
+        },
+        {
+          "level": 3,
+          "title": "1.可变数据的副作用",
+          "slug": "_1-可变数据的副作用"
+        },
+        {
+          "level": 3,
+          "title": "2.不可变数据的解决方案",
+          "slug": "_2-不可变数据的解决方案"
+        },
+        {
+          "level": 3,
+          "title": "3.实现更简单的immutable",
+          "slug": "_3-实现更简单的immutable"
+        },
+        {
+          "level": 3,
+          "title": "总结",
+          "slug": "总结"
+        }
+      ]
+    },
+    {
       "title": "JavaScript基础",
       "frontmatter": {},
       "regularPath": "/guide/jsBasic.html",
@@ -861,6 +901,41 @@ export const siteData = {
           "level": 2,
           "title": "那么箭头函数的this指向哪里？✨",
           "slug": "那么箭头函数的this指向哪里？✨"
+        },
+        {
+          "level": 2,
+          "title": "async/await是什么？",
+          "slug": "async-await是什么？"
+        },
+        {
+          "level": 2,
+          "title": "async/await相比于Promise的优势？",
+          "slug": "async-await相比于promise的优势？"
+        },
+        {
+          "level": 2,
+          "title": "JavaScript的参数是按照什么方式传递的？",
+          "slug": "javascript的参数是按照什么方式传递的？"
+        },
+        {
+          "level": 3,
+          "title": "基本类型传递方式",
+          "slug": "基本类型传递方式"
+        },
+        {
+          "level": 3,
+          "title": "复杂类型按引用传递?",
+          "slug": "复杂类型按引用传递"
+        },
+        {
+          "level": 3,
+          "title": "按共享传递",
+          "slug": "按共享传递"
+        },
+        {
+          "level": 2,
+          "title": "聊一聊如何在JavaScript中实现不可变对象？",
+          "slug": "聊一聊如何在javascript中实现不可变对象？"
         }
       ]
     },
@@ -936,6 +1011,86 @@ export const siteData = {
           "level": 3,
           "title": "闭包是怎么形成的？",
           "slug": "闭包是怎么形成的？"
+        }
+      ]
+    },
+    {
+      "title": "JavaScript内存管理",
+      "frontmatter": {},
+      "regularPath": "/guide/memory.html",
+      "relativePath": "guide/memory.md",
+      "key": "v-5a9e26c7",
+      "path": "/guide/memory.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "前言",
+          "slug": "前言"
+        },
+        {
+          "level": 2,
+          "title": "内存模型",
+          "slug": "内存模型"
+        },
+        {
+          "level": 2,
+          "title": "生命周期",
+          "slug": "生命周期"
+        },
+        {
+          "level": 2,
+          "title": "内存回收",
+          "slug": "内存回收"
+        },
+        {
+          "level": 3,
+          "title": "V8的内存分代",
+          "slug": "v8的内存分代"
+        },
+        {
+          "level": 3,
+          "title": "Stop The World （全停顿）",
+          "slug": "stop-the-world-（全停顿）"
+        },
+        {
+          "level": 3,
+          "title": "Scavenge 算法",
+          "slug": "scavenge-算法"
+        },
+        {
+          "level": 3,
+          "title": "对象晋升",
+          "slug": "对象晋升"
+        },
+        {
+          "level": 3,
+          "title": "Mark-Sweep & Mark-Compact",
+          "slug": "mark-sweep-mark-compact"
+        },
+        {
+          "level": 3,
+          "title": "Incremental Marking（增量标记）",
+          "slug": "incremental-marking（增量标记）"
+        },
+        {
+          "level": 3,
+          "title": "lazy sweeping（延迟清理）",
+          "slug": "lazy-sweeping（延迟清理）"
+        },
+        {
+          "level": 2,
+          "title": "内存泄露",
+          "slug": "内存泄露"
+        },
+        {
+          "level": 3,
+          "title": "引起内存泄漏的几个禁忌",
+          "slug": "引起内存泄漏的几个禁忌"
+        },
+        {
+          "level": 3,
+          "title": "查看内存泄漏",
+          "slug": "查看内存泄漏"
         }
       ]
     },
@@ -1023,7 +1178,9 @@ export const siteData = {
               "children": [
                 "hoisting",
                 "mechanism",
-                "eventLoop"
+                "eventLoop",
+                "immutable",
+                "memory"
               ]
             }
           ]

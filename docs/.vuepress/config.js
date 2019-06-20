@@ -99,6 +99,8 @@ function renderSiderBar() {
     'hoisting',
     'mechanism',
     'eventLoop',
+    'immutable',
+    'memory',
   ]
 }
 ])

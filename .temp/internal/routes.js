@@ -89,6 +89,14 @@ export const routes = [
     },
   },
   {
+    name: "v-0b1c6be3",
+    path: "/guide/immutable.html",
+    component: GlobalLayout,
+    beforeEnter: (to, from, next) => {
+      ensureAsyncComponentsLoaded("Layout", "v-0b1c6be3").then(next)
+    },
+  },
+  {
     name: "v-1588a7c3",
     path: "/guide/jsBasic.html",
     component: GlobalLayout,
@@ -102,6 +110,14 @@ export const routes = [
     component: GlobalLayout,
     beforeEnter: (to, from, next) => {
       ensureAsyncComponentsLoaded("Layout", "v-772cb57a").then(next)
+    },
+  },
+  {
+    name: "v-5a9e26c7",
+    path: "/guide/memory.html",
+    component: GlobalLayout,
+    beforeEnter: (to, from, next) => {
+      ensureAsyncComponentsLoaded("Layout", "v-5a9e26c7").then(next)
     },
   },
   {
