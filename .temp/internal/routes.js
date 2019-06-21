@@ -29,6 +29,26 @@ export const routes = [
     },
   },
   {
+    name: "v-5b8d0d7e",
+    path: "/guide/",
+    component: GlobalLayout,
+    beforeEnter: (to, from, next) => {
+      ensureAsyncComponentsLoaded("Layout", "v-5b8d0d7e").then(next)
+    },
+  },
+  {
+    path: "/guide/index.html",
+    redirect: "/guide/"
+  },
+  {
+    name: "v-bd40b53a",
+    path: "/guide/browser.html",
+    component: GlobalLayout,
+    beforeEnter: (to, from, next) => {
+      ensureAsyncComponentsLoaded("Layout", "v-bd40b53a").then(next)
+    },
+  },
+  {
     name: "v-db07261a",
     path: "/guide/cssBasic.html",
     component: GlobalLayout,
@@ -42,14 +62,6 @@ export const routes = [
     component: GlobalLayout,
     beforeEnter: (to, from, next) => {
       ensureAsyncComponentsLoaded("Layout", "v-0415fc43").then(next)
-    },
-  },
-  {
-    name: "v-36e82cfa",
-    path: "/guide/htmlBasic.html",
-    component: GlobalLayout,
-    beforeEnter: (to, from, next) => {
-      ensureAsyncComponentsLoaded("Layout", "v-36e82cfa").then(next)
     },
   },
   {
@@ -69,6 +81,22 @@ export const routes = [
     },
   },
   {
+    name: "v-b989c5ea",
+    path: "/guide/hoisting.html",
+    component: GlobalLayout,
+    beforeEnter: (to, from, next) => {
+      ensureAsyncComponentsLoaded("Layout", "v-b989c5ea").then(next)
+    },
+  },
+  {
+    name: "v-36e82cfa",
+    path: "/guide/htmlBasic.html",
+    component: GlobalLayout,
+    beforeEnter: (to, from, next) => {
+      ensureAsyncComponentsLoaded("Layout", "v-36e82cfa").then(next)
+    },
+  },
+  {
     name: "v-45f2a08e",
     path: "/guide/http.html",
     component: GlobalLayout,
@@ -85,23 +113,19 @@ export const routes = [
     },
   },
   {
-    name: "v-5b8d0d7e",
-    path: "/guide/",
+    name: "v-0b1c6be3",
+    path: "/guide/immutable.html",
     component: GlobalLayout,
     beforeEnter: (to, from, next) => {
-      ensureAsyncComponentsLoaded("Layout", "v-5b8d0d7e").then(next)
+      ensureAsyncComponentsLoaded("Layout", "v-0b1c6be3").then(next)
     },
   },
   {
-    path: "/guide/index.html",
-    redirect: "/guide/"
-  },
-  {
-    name: "v-b989c5ea",
-    path: "/guide/hoisting.html",
+    name: "v-1588a7c3",
+    path: "/guide/jsBasic.html",
     component: GlobalLayout,
     beforeEnter: (to, from, next) => {
-      ensureAsyncComponentsLoaded("Layout", "v-b989c5ea").then(next)
+      ensureAsyncComponentsLoaded("Layout", "v-1588a7c3").then(next)
     },
   },
   {
@@ -118,22 +142,6 @@ export const routes = [
     component: GlobalLayout,
     beforeEnter: (to, from, next) => {
       ensureAsyncComponentsLoaded("Layout", "v-772cb57a").then(next)
-    },
-  },
-  {
-    name: "v-0b1c6be3",
-    path: "/guide/immutable.html",
-    component: GlobalLayout,
-    beforeEnter: (to, from, next) => {
-      ensureAsyncComponentsLoaded("Layout", "v-0b1c6be3").then(next)
-    },
-  },
-  {
-    name: "v-1588a7c3",
-    path: "/guide/jsBasic.html",
-    component: GlobalLayout,
-    beforeEnter: (to, from, next) => {
-      ensureAsyncComponentsLoaded("Layout", "v-1588a7c3").then(next)
     },
   },
   {

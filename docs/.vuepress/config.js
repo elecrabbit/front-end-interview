@@ -83,6 +83,7 @@ function renderSiderBar() {
         'cssBasic',
         'jsBasic',
         'http',
+        'browser',
       ]
   },
   {
