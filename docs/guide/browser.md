@@ -29,6 +29,49 @@
 
 值得注意的是，和大多数浏览器不同，Chrome 浏览器的每个标签页都分别对应一个呈现引擎实例。每个标签页都是一个独立的进程。
 
+## 浏览器是如何渲染UI的？
+
+1. 浏览器获取HTML文件，然后对文件进行解析，形成DOM Tree
+2. 与此同时，进行CSS解析，生成Style Rules
+3. 接着将DOM Tree与Style Rules合成为 Render Tree
+4. 接着进入布局（Layout）阶段，也就是为每个节点分配一个应出现在屏幕上的确切坐标
+5. 随后调用GPU进行绘制（Paint），遍历Render Tree的节点，并将元素呈现出来
+
+![2019-06-22-06-48-02]( https://xiaomuzhu-image.oss-cn-beijing.aliyuncs.com/a7c250133a7cbbb05145ec251c1d34e9.png)
+
 ## 浏览器如何解析css选择器？
 
 浏览器会『从右往左』解析CSS选择器。
+
+我们知道DOM Tree与Style Rules合成为 Render Tree，实际上是需要将*Style Rules*附着到DOM Tree上，因此需要根据选择器提供的信息对DOM Tree进行遍历，才能将样式附着到对应的DOM元素上。
+
+以下这段css为例
+
+```css
+.mod-nav h3 span {font-size: 16px;}
+```
+
+我们对应的DOM Tree 如下
+
+![2019-06-22-06-58-56]( https://xiaomuzhu-image.oss-cn-beijing.aliyuncs.com/4fe91032bd748f2509e0f0da3e56dcc1.png)
+
+若从左向右的匹配，过程是：
+
+1. 从 .mod-nav 开始，遍历子节点 header 和子节点 div
+2. 然后各自向子节点遍历。在右侧 div 的分支中
+3. 最后遍历到叶子节点 a ，发现不符合规则，需要回溯到 ul 节点，再遍历下一个 li-a，一颗DOM树的节点动不动上千，这种效率很低。
+
+如果从右至左的匹配：
+
+1. 先找到所有的最右节点 span，对于每一个 span，向上寻找节点 h3
+2. 由 h3再向上寻找 class=mod-nav 的节点
+3. 最后找到根元素 html 则结束这个分支的遍历。
+
+后者匹配性能更好，是因为从右向左的匹配在第一步就筛选掉了大量的不符合条件的最右节点（叶子节点）；而从左向右的匹配规则的性能都浪费在了失败的查找上面。
+
+
+---
+
+参考文章:
+
+* [为什么 CSS 选择器解析的时候是从右往左？](https://segmentfault.com/q/1010000000713509)
