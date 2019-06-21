@@ -21,18 +21,6 @@ export const routes = [
     redirect: "/"
   },
   {
-    name: "v-5b8d0d7e",
-    path: "/guide/",
-    component: GlobalLayout,
-    beforeEnter: (to, from, next) => {
-      ensureAsyncComponentsLoaded("Layout", "v-5b8d0d7e").then(next)
-    },
-  },
-  {
-    path: "/guide/index.html",
-    redirect: "/guide/"
-  },
-  {
     name: "v-281299f7",
     path: "/guide/book.html",
     component: GlobalLayout,
@@ -57,6 +45,14 @@ export const routes = [
     },
   },
   {
+    name: "v-36e82cfa",
+    path: "/guide/htmlBasic.html",
+    component: GlobalLayout,
+    beforeEnter: (to, from, next) => {
+      ensureAsyncComponentsLoaded("Layout", "v-36e82cfa").then(next)
+    },
+  },
+  {
     name: "v-17edd93a",
     path: "/guide/event.html",
     component: GlobalLayout,
@@ -70,22 +66,6 @@ export const routes = [
     component: GlobalLayout,
     beforeEnter: (to, from, next) => {
       ensureAsyncComponentsLoaded("Layout", "v-66a88163").then(next)
-    },
-  },
-  {
-    name: "v-b989c5ea",
-    path: "/guide/hoisting.html",
-    component: GlobalLayout,
-    beforeEnter: (to, from, next) => {
-      ensureAsyncComponentsLoaded("Layout", "v-b989c5ea").then(next)
-    },
-  },
-  {
-    name: "v-36e82cfa",
-    path: "/guide/htmlBasic.html",
-    component: GlobalLayout,
-    beforeEnter: (to, from, next) => {
-      ensureAsyncComponentsLoaded("Layout", "v-36e82cfa").then(next)
     },
   },
   {
@@ -105,19 +85,23 @@ export const routes = [
     },
   },
   {
-    name: "v-0b1c6be3",
-    path: "/guide/immutable.html",
+    name: "v-5b8d0d7e",
+    path: "/guide/",
     component: GlobalLayout,
     beforeEnter: (to, from, next) => {
-      ensureAsyncComponentsLoaded("Layout", "v-0b1c6be3").then(next)
+      ensureAsyncComponentsLoaded("Layout", "v-5b8d0d7e").then(next)
     },
   },
   {
-    name: "v-1588a7c3",
-    path: "/guide/jsBasic.html",
+    path: "/guide/index.html",
+    redirect: "/guide/"
+  },
+  {
+    name: "v-b989c5ea",
+    path: "/guide/hoisting.html",
     component: GlobalLayout,
     beforeEnter: (to, from, next) => {
-      ensureAsyncComponentsLoaded("Layout", "v-1588a7c3").then(next)
+      ensureAsyncComponentsLoaded("Layout", "v-b989c5ea").then(next)
     },
   },
   {
@@ -134,6 +118,22 @@ export const routes = [
     component: GlobalLayout,
     beforeEnter: (to, from, next) => {
       ensureAsyncComponentsLoaded("Layout", "v-772cb57a").then(next)
+    },
+  },
+  {
+    name: "v-0b1c6be3",
+    path: "/guide/immutable.html",
+    component: GlobalLayout,
+    beforeEnter: (to, from, next) => {
+      ensureAsyncComponentsLoaded("Layout", "v-0b1c6be3").then(next)
+    },
+  },
+  {
+    name: "v-1588a7c3",
+    path: "/guide/jsBasic.html",
+    component: GlobalLayout,
+    beforeEnter: (to, from, next) => {
+      ensureAsyncComponentsLoaded("Layout", "v-1588a7c3").then(next)
     },
   },
   {
