@@ -41,19 +41,19 @@ export const routes = [
     },
   },
   {
-    name: "v-bd40b53a",
-    path: "/guide/browser.html",
-    component: GlobalLayout,
-    beforeEnter: (to, from, next) => {
-      ensureAsyncComponentsLoaded("Layout", "v-bd40b53a").then(next)
-    },
-  },
-  {
     name: "v-db07261a",
     path: "/guide/cssBasic.html",
     component: GlobalLayout,
     beforeEnter: (to, from, next) => {
       ensureAsyncComponentsLoaded("Layout", "v-db07261a").then(next)
+    },
+  },
+  {
+    name: "v-bd40b53a",
+    path: "/guide/browser.html",
+    component: GlobalLayout,
+    beforeEnter: (to, from, next) => {
+      ensureAsyncComponentsLoaded("Layout", "v-bd40b53a").then(next)
     },
   },
   {

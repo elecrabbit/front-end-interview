@@ -106,20 +106,41 @@ comet有两种主要实现手段，一种是基于 AJAX 的长轮询（long-poll
 
 ### SSE
 
+> 使用指南请看[Server-Sent Events 教程](https://www.ruanyifeng.com/blog/2017/05/server-sent_events.html)
+
 SSE（Server-Sent Event，服务端推送事件）是一种允许服务端向客户端推送新数据的HTML5技术。
 
 * 优点：基于HTTP而生，因此不需要太多改造就能使用，使用方便，而websocket非常复杂，必须借助成熟的库或框架
 * 缺点：基于文本传输效率没有websocket高，不是严格的双向通信，客户端向服务端发送请求无法复用之前的连接，需要重新发出独立的请求
 
+![2019-06-22-12-33-19]( https://xiaomuzhu-image.oss-cn-beijing.aliyuncs.com/65dd4736a045a46db75029c9cc98008c.png)
+
 ### Websocket
+
+> 使用指南请看[WebSocket 教程](http://www.ruanyifeng.com/blog/2017/05/websocket.html)
 
 Websocket是一个全新的、独立的协议，基于TCP协议，与http协议兼容、却不会融入http协议，仅仅作为html5的一部分，其作用就是在服务器和客户端之间建立实时的双向通信。
 
 * 优点：真正意义上的实时双向通信，性能好，低延迟
 * 缺点：独立与http的协议，因此需要额外的项目改造，使用复杂度高，必须引入成熟的库，无法兼容低版本浏览器
 
+![2019-06-22-12-33-43]( https://xiaomuzhu-image.oss-cn-beijing.aliyuncs.com/a719b927611c7acaf7452f3547918f20.png)
 
-### 
+### Web Worker
+
+> 后面性能优化部分会用到，先做了解
+
+Web Worker 的作用，就是为 JavaScript 创造多线程环境，允许主线程创建 Worker 线程，将一些任务分配给后者运行
+
+> [Web Worker教程](http://www.ruanyifeng.com/blog/2018/07/web-worker.html)
+
+### Service workers
+
+> 后面性能优化部分会用到，先做了解
+
+Service workers 本质上充当Web应用程序与浏览器之间的代理服务器，也可以在网络可用时作为浏览器和网络间的代理，创建有效的离线体验。
+
+> [Service workers教程](https://developer.mozilla.org/zh-CN/docs/Web/API/Service_Worker_API)
 
 ---
 

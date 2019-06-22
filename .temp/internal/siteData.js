@@ -165,71 +165,6 @@ export const siteData = {
       ]
     },
     {
-      "title": "浏览器与新技术",
-      "frontmatter": {},
-      "regularPath": "/guide/browser.html",
-      "relativePath": "guide/browser.md",
-      "key": "v-bd40b53a",
-      "path": "/guide/browser.html",
-      "headers": [
-        {
-          "level": 2,
-          "title": "常见的浏览器内核有哪些?",
-          "slug": "常见的浏览器内核有哪些"
-        },
-        {
-          "level": 2,
-          "title": "浏览器的主要组成部分是什么？",
-          "slug": "浏览器的主要组成部分是什么？"
-        },
-        {
-          "level": 2,
-          "title": "浏览器是如何渲染UI的？",
-          "slug": "浏览器是如何渲染ui的？"
-        },
-        {
-          "level": 2,
-          "title": "浏览器如何解析css选择器？",
-          "slug": "浏览器如何解析css选择器？"
-        },
-        {
-          "level": 2,
-          "title": "DOM Tree是如何构建的？",
-          "slug": "dom-tree是如何构建的？"
-        },
-        {
-          "level": 2,
-          "title": "前端如何实现即时通讯？",
-          "slug": "前端如何实现即时通讯？"
-        },
-        {
-          "level": 3,
-          "title": "短轮询",
-          "slug": "短轮询"
-        },
-        {
-          "level": 3,
-          "title": "comet",
-          "slug": "comet"
-        },
-        {
-          "level": 3,
-          "title": "SSE",
-          "slug": "sse"
-        },
-        {
-          "level": 3,
-          "title": "Websocket",
-          "slug": "websocket"
-        },
-        {
-          "level": 3,
-          "title": "",
-          "slug": ""
-        }
-      ]
-    },
-    {
       "title": "CSS基础",
       "frontmatter": {},
       "regularPath": "/guide/cssBasic.html",
@@ -396,6 +331,76 @@ export const siteData = {
           "level": 2,
           "title": "关于CSS的动画与过渡问题",
           "slug": "关于css的动画与过渡问题"
+        }
+      ]
+    },
+    {
+      "title": "浏览器与新技术",
+      "frontmatter": {},
+      "regularPath": "/guide/browser.html",
+      "relativePath": "guide/browser.md",
+      "key": "v-bd40b53a",
+      "path": "/guide/browser.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "常见的浏览器内核有哪些?",
+          "slug": "常见的浏览器内核有哪些"
+        },
+        {
+          "level": 2,
+          "title": "浏览器的主要组成部分是什么？",
+          "slug": "浏览器的主要组成部分是什么？"
+        },
+        {
+          "level": 2,
+          "title": "浏览器是如何渲染UI的？",
+          "slug": "浏览器是如何渲染ui的？"
+        },
+        {
+          "level": 2,
+          "title": "浏览器如何解析css选择器？",
+          "slug": "浏览器如何解析css选择器？"
+        },
+        {
+          "level": 2,
+          "title": "DOM Tree是如何构建的？",
+          "slug": "dom-tree是如何构建的？"
+        },
+        {
+          "level": 2,
+          "title": "前端如何实现即时通讯？",
+          "slug": "前端如何实现即时通讯？"
+        },
+        {
+          "level": 3,
+          "title": "短轮询",
+          "slug": "短轮询"
+        },
+        {
+          "level": 3,
+          "title": "comet",
+          "slug": "comet"
+        },
+        {
+          "level": 3,
+          "title": "SSE",
+          "slug": "sse"
+        },
+        {
+          "level": 3,
+          "title": "Websocket",
+          "slug": "websocket"
+        },
+        {
+          "level": 3,
+          "title": "Web Worker",
+          "slug": "web-worker"
+        },
+        {
+          "level": 3,
+          "title": "Service workers",
+          "slug": "service-workers"
         }
       ]
     },
