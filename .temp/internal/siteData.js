@@ -199,6 +199,31 @@ export const siteData = {
         },
         {
           "level": 2,
+          "title": "前端如何实现即时通讯？",
+          "slug": "前端如何实现即时通讯？"
+        },
+        {
+          "level": 3,
+          "title": "短轮询",
+          "slug": "短轮询"
+        },
+        {
+          "level": 3,
+          "title": "comet",
+          "slug": "comet"
+        },
+        {
+          "level": 3,
+          "title": "SSE",
+          "slug": "sse"
+        },
+        {
+          "level": 3,
+          "title": "Websocket",
+          "slug": "websocket"
+        },
+        {
+          "level": 3,
           "title": "",
           "slug": ""
         }
