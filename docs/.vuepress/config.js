@@ -84,6 +84,7 @@ function renderSiderBar() {
         'jsBasic',
         'http',
         'browser',
+        'dom'
       ]
   },
   {

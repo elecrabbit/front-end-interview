@@ -475,6 +475,41 @@ export const siteData = {
       ]
     },
     {
+      "title": "DOM与BOM",
+      "frontmatter": {},
+      "regularPath": "/guide/dom.html",
+      "relativePath": "guide/dom.md",
+      "key": "v-1ee26aa3",
+      "path": "/guide/dom.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "DOM的事件模型是什么？",
+          "slug": "dom的事件模型是什么？"
+        },
+        {
+          "level": 2,
+          "title": "DOM的事件流是什么？",
+          "slug": "dom的事件流是什么？"
+        },
+        {
+          "level": 3,
+          "title": "事件冒泡",
+          "slug": "事件冒泡"
+        },
+        {
+          "level": 3,
+          "title": "事件捕获",
+          "slug": "事件捕获"
+        },
+        {
+          "level": 3,
+          "title": "事件流",
+          "slug": "事件流"
+        }
+      ]
+    },
+    {
       "title": "如何实现一个Event",
       "frontmatter": {},
       "regularPath": "/guide/event.html",
@@ -521,56 +556,6 @@ export const siteData = {
           "level": 3,
           "title": "发现问题",
           "slug": "发现问题"
-        }
-      ]
-    },
-    {
-      "title": "JavaScript的『预解释』与『变量提升』",
-      "frontmatter": {},
-      "regularPath": "/guide/hoisting.html",
-      "relativePath": "guide/hoisting.md",
-      "key": "v-b989c5ea",
-      "path": "/guide/hoisting.html",
-      "headers": [
-        {
-          "level": 2,
-          "title": "前言",
-          "slug": "前言"
-        },
-        {
-          "level": 2,
-          "title": "从一个实例开始",
-          "slug": "从一个实例开始"
-        },
-        {
-          "level": 2,
-          "title": "avaScript预解释",
-          "slug": "avascript预解释"
-        },
-        {
-          "level": 2,
-          "title": "JavaScript执行环境",
-          "slug": "javascript执行环境"
-        },
-        {
-          "level": 2,
-          "title": "变量提升",
-          "slug": "变量提升"
-        },
-        {
-          "level": 2,
-          "title": "函数声明与函数表达式",
-          "slug": "函数声明与函数表达式"
-        },
-        {
-          "level": 2,
-          "title": "冲突处理",
-          "slug": "冲突处理"
-        },
-        {
-          "level": 2,
-          "title": "ES6中的let",
-          "slug": "es6中的let"
         }
       ]
     },
@@ -751,6 +736,56 @@ export const siteData = {
           "level": 3,
           "title": "例子",
           "slug": "例子"
+        }
+      ]
+    },
+    {
+      "title": "JavaScript的『预解释』与『变量提升』",
+      "frontmatter": {},
+      "regularPath": "/guide/hoisting.html",
+      "relativePath": "guide/hoisting.md",
+      "key": "v-b989c5ea",
+      "path": "/guide/hoisting.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "前言",
+          "slug": "前言"
+        },
+        {
+          "level": 2,
+          "title": "从一个实例开始",
+          "slug": "从一个实例开始"
+        },
+        {
+          "level": 2,
+          "title": "avaScript预解释",
+          "slug": "avascript预解释"
+        },
+        {
+          "level": 2,
+          "title": "JavaScript执行环境",
+          "slug": "javascript执行环境"
+        },
+        {
+          "level": 2,
+          "title": "变量提升",
+          "slug": "变量提升"
+        },
+        {
+          "level": 2,
+          "title": "函数声明与函数表达式",
+          "slug": "函数声明与函数表达式"
+        },
+        {
+          "level": 2,
+          "title": "冲突处理",
+          "slug": "冲突处理"
+        },
+        {
+          "level": 2,
+          "title": "ES6中的let",
+          "slug": "es6中的let"
         }
       ]
     },
@@ -1438,7 +1473,8 @@ export const siteData = {
                 "cssBasic",
                 "jsBasic",
                 "http",
-                "browser"
+                "browser",
+                "dom"
               ]
             },
             {

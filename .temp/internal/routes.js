@@ -65,6 +65,14 @@ export const routes = [
     },
   },
   {
+    name: "v-1ee26aa3",
+    path: "/guide/dom.html",
+    component: GlobalLayout,
+    beforeEnter: (to, from, next) => {
+      ensureAsyncComponentsLoaded("Layout", "v-1ee26aa3").then(next)
+    },
+  },
+  {
     name: "v-17edd93a",
     path: "/guide/event.html",
     component: GlobalLayout,
@@ -73,19 +81,19 @@ export const routes = [
     },
   },
   {
-    name: "v-b989c5ea",
-    path: "/guide/hoisting.html",
-    component: GlobalLayout,
-    beforeEnter: (to, from, next) => {
-      ensureAsyncComponentsLoaded("Layout", "v-b989c5ea").then(next)
-    },
-  },
-  {
     name: "v-66a88163",
     path: "/guide/eventLoop.html",
     component: GlobalLayout,
     beforeEnter: (to, from, next) => {
       ensureAsyncComponentsLoaded("Layout", "v-66a88163").then(next)
+    },
+  },
+  {
+    name: "v-b989c5ea",
+    path: "/guide/hoisting.html",
+    component: GlobalLayout,
+    beforeEnter: (to, from, next) => {
+      ensureAsyncComponentsLoaded("Layout", "v-b989c5ea").then(next)
     },
   },
   {
