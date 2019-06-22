@@ -21,6 +21,14 @@ export const routes = [
     redirect: "/"
   },
   {
+    name: "v-281299f7",
+    path: "/guide/book.html",
+    component: GlobalLayout,
+    beforeEnter: (to, from, next) => {
+      ensureAsyncComponentsLoaded("Layout", "v-281299f7").then(next)
+    },
+  },
+  {
     name: "v-5b8d0d7e",
     path: "/guide/",
     component: GlobalLayout,
@@ -31,14 +39,6 @@ export const routes = [
   {
     path: "/guide/index.html",
     redirect: "/guide/"
-  },
-  {
-    name: "v-281299f7",
-    path: "/guide/book.html",
-    component: GlobalLayout,
-    beforeEnter: (to, from, next) => {
-      ensureAsyncComponentsLoaded("Layout", "v-281299f7").then(next)
-    },
   },
   {
     name: "v-bd40b53a",

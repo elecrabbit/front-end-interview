@@ -1,4 +1,4 @@
-# DOM与BOM
+# DOM
 
 前端框架大行其道的今天，我们直接操作DOM的时候变得更少了，因此不妨复习一下DOM的[基本知识](http://luopq.com/2015/11/30/javascript-dom/)
 
@@ -101,3 +101,44 @@ alert("W3C Hello");
 1. 进行事件捕获，为截获事件提供了机会
 2. 实际的目标接收到事件
 3. 冒泡阶段，可以在这个阶段对事件做出响应
+
+## 什么是事件委托?
+
+事件委托就是利用事件冒泡，只指定一个事件处理程序，就可以管理某一类型的所有事件.
+
+在绑定大量事件的时候往往选择事件委托。
+
+```html
+<ul id="parent">
+  <li class="child">one</li>
+  <li class="child">two</li>
+  <li class="child">three</li>
+  ...
+</ul>
+
+<script type="text/javascript">
+  //父元素
+  var dom= document.getElementById('parent');
+
+  //父元素绑定事件，代理子元素的点击事件
+  dom.onclick= function(event) {
+    var event= event || window.event;
+    var curTarget= event.target || event.srcElement;
+
+    if (curTarget.tagName.toLowerCase() == 'li') {
+      //事件处理
+    }
+  }
+</script>
+
+```
+
+优点:
+
+* 节省内存占用，减少事件注册
+* 新增子对象时无需再次对其绑定事件，适合动态添加元素
+
+局限性:
+
+* focus、blur 之类的事件本身没有事件冒泡机制，所以无法委托
+* mousemove、mouseout 这样的事件，虽然有事件冒泡，但是只能不断通过位置去计算定位，对性能消耗高，不适合事件委托

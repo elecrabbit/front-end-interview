@@ -3,8 +3,8 @@
  */
 export default {
   "v-77cab7d0": () => import("/Users/dxy/Downloads/dxy-gzh/Front-end-Interview/docs/README.md"),
-  "v-5b8d0d7e": () => import("/Users/dxy/Downloads/dxy-gzh/Front-end-Interview/docs/guide/README.md"),
   "v-281299f7": () => import("/Users/dxy/Downloads/dxy-gzh/Front-end-Interview/docs/guide/book.md"),
+  "v-5b8d0d7e": () => import("/Users/dxy/Downloads/dxy-gzh/Front-end-Interview/docs/guide/README.md"),
   "v-bd40b53a": () => import("/Users/dxy/Downloads/dxy-gzh/Front-end-Interview/docs/guide/browser.md"),
   "v-db07261a": () => import("/Users/dxy/Downloads/dxy-gzh/Front-end-Interview/docs/guide/cssBasic.md"),
   "v-0415fc43": () => import("/Users/dxy/Downloads/dxy-gzh/Front-end-Interview/docs/guide/deepclone.md"),

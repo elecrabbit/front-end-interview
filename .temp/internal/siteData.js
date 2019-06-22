@@ -35,61 +35,6 @@ export const siteData = {
       "path": "/"
     },
     {
-      "title": "指南使用手册",
-      "frontmatter": {},
-      "regularPath": "/guide/",
-      "relativePath": "guide/README.md",
-      "key": "v-5b8d0d7e",
-      "path": "/guide/",
-      "headers": [
-        {
-          "level": 2,
-          "title": "项目结构概览",
-          "slug": "项目结构概览"
-        },
-        {
-          "level": 2,
-          "title": "模块概览",
-          "slug": "模块概览"
-        },
-        {
-          "level": 3,
-          "title": "前端基础",
-          "slug": "前端基础"
-        },
-        {
-          "level": 3,
-          "title": "框架解读",
-          "slug": "框架解读"
-        },
-        {
-          "level": 3,
-          "title": "工程化",
-          "slug": "工程化"
-        },
-        {
-          "level": 3,
-          "title": "Typescript",
-          "slug": "typescript"
-        },
-        {
-          "level": 3,
-          "title": "性能优化",
-          "slug": "性能优化"
-        },
-        {
-          "level": 3,
-          "title": "计算机基础",
-          "slug": "计算机基础"
-        },
-        {
-          "level": 3,
-          "title": "细分领域",
-          "slug": "细分领域"
-        }
-      ]
-    },
-    {
       "title": "书籍/课程推荐",
       "frontmatter": {},
       "regularPath": "/guide/book.html",
@@ -161,6 +106,61 @@ export const siteData = {
           "level": 3,
           "title": "慕课网",
           "slug": "慕课网"
+        }
+      ]
+    },
+    {
+      "title": "指南使用手册",
+      "frontmatter": {},
+      "regularPath": "/guide/",
+      "relativePath": "guide/README.md",
+      "key": "v-5b8d0d7e",
+      "path": "/guide/",
+      "headers": [
+        {
+          "level": 2,
+          "title": "项目结构概览",
+          "slug": "项目结构概览"
+        },
+        {
+          "level": 2,
+          "title": "模块概览",
+          "slug": "模块概览"
+        },
+        {
+          "level": 3,
+          "title": "前端基础",
+          "slug": "前端基础"
+        },
+        {
+          "level": 3,
+          "title": "框架解读",
+          "slug": "框架解读"
+        },
+        {
+          "level": 3,
+          "title": "工程化",
+          "slug": "工程化"
+        },
+        {
+          "level": 3,
+          "title": "Typescript",
+          "slug": "typescript"
+        },
+        {
+          "level": 3,
+          "title": "性能优化",
+          "slug": "性能优化"
+        },
+        {
+          "level": 3,
+          "title": "计算机基础",
+          "slug": "计算机基础"
+        },
+        {
+          "level": 3,
+          "title": "细分领域",
+          "slug": "细分领域"
         }
       ]
     },
@@ -475,7 +475,7 @@ export const siteData = {
       ]
     },
     {
-      "title": "DOM与BOM",
+      "title": "DOM",
       "frontmatter": {},
       "regularPath": "/guide/dom.html",
       "relativePath": "guide/dom.md",
@@ -506,6 +506,11 @@ export const siteData = {
           "level": 3,
           "title": "事件流",
           "slug": "事件流"
+        },
+        {
+          "level": 2,
+          "title": "什么是事件委托?",
+          "slug": "什么是事件委托"
         }
       ]
     },
