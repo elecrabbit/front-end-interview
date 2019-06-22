@@ -165,6 +165,106 @@ export const siteData = {
       ]
     },
     {
+      "title": "浏览器与新技术",
+      "frontmatter": {},
+      "regularPath": "/guide/browser.html",
+      "relativePath": "guide/browser.md",
+      "key": "v-bd40b53a",
+      "path": "/guide/browser.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "常见的浏览器内核有哪些?",
+          "slug": "常见的浏览器内核有哪些"
+        },
+        {
+          "level": 2,
+          "title": "浏览器的主要组成部分是什么？",
+          "slug": "浏览器的主要组成部分是什么？"
+        },
+        {
+          "level": 2,
+          "title": "浏览器是如何渲染UI的？",
+          "slug": "浏览器是如何渲染ui的？"
+        },
+        {
+          "level": 2,
+          "title": "浏览器如何解析css选择器？",
+          "slug": "浏览器如何解析css选择器？"
+        },
+        {
+          "level": 2,
+          "title": "DOM Tree是如何构建的？",
+          "slug": "dom-tree是如何构建的？"
+        },
+        {
+          "level": 2,
+          "title": "浏览器重绘与重排的区别？",
+          "slug": "浏览器重绘与重排的区别？"
+        },
+        {
+          "level": 2,
+          "title": "如何触发重排和重绘？",
+          "slug": "如何触发重排和重绘？"
+        },
+        {
+          "level": 2,
+          "title": "如何避免重绘或者重排？",
+          "slug": "如何避免重绘或者重排？"
+        },
+        {
+          "level": 3,
+          "title": "集中改变样式",
+          "slug": "集中改变样式"
+        },
+        {
+          "level": 3,
+          "title": "使用DocumentFragment",
+          "slug": "使用documentfragment"
+        },
+        {
+          "level": 3,
+          "title": "提升为合成层",
+          "slug": "提升为合成层"
+        },
+        {
+          "level": 2,
+          "title": "前端如何实现即时通讯？",
+          "slug": "前端如何实现即时通讯？"
+        },
+        {
+          "level": 3,
+          "title": "短轮询",
+          "slug": "短轮询"
+        },
+        {
+          "level": 3,
+          "title": "comet",
+          "slug": "comet"
+        },
+        {
+          "level": 3,
+          "title": "SSE",
+          "slug": "sse"
+        },
+        {
+          "level": 3,
+          "title": "Websocket",
+          "slug": "websocket"
+        },
+        {
+          "level": 3,
+          "title": "Web Worker",
+          "slug": "web-worker"
+        },
+        {
+          "level": 3,
+          "title": "Service workers",
+          "slug": "service-workers"
+        }
+      ]
+    },
+    {
       "title": "CSS基础",
       "frontmatter": {},
       "regularPath": "/guide/cssBasic.html",
@@ -335,76 +435,6 @@ export const siteData = {
       ]
     },
     {
-      "title": "浏览器与新技术",
-      "frontmatter": {},
-      "regularPath": "/guide/browser.html",
-      "relativePath": "guide/browser.md",
-      "key": "v-bd40b53a",
-      "path": "/guide/browser.html",
-      "headers": [
-        {
-          "level": 2,
-          "title": "常见的浏览器内核有哪些?",
-          "slug": "常见的浏览器内核有哪些"
-        },
-        {
-          "level": 2,
-          "title": "浏览器的主要组成部分是什么？",
-          "slug": "浏览器的主要组成部分是什么？"
-        },
-        {
-          "level": 2,
-          "title": "浏览器是如何渲染UI的？",
-          "slug": "浏览器是如何渲染ui的？"
-        },
-        {
-          "level": 2,
-          "title": "浏览器如何解析css选择器？",
-          "slug": "浏览器如何解析css选择器？"
-        },
-        {
-          "level": 2,
-          "title": "DOM Tree是如何构建的？",
-          "slug": "dom-tree是如何构建的？"
-        },
-        {
-          "level": 2,
-          "title": "前端如何实现即时通讯？",
-          "slug": "前端如何实现即时通讯？"
-        },
-        {
-          "level": 3,
-          "title": "短轮询",
-          "slug": "短轮询"
-        },
-        {
-          "level": 3,
-          "title": "comet",
-          "slug": "comet"
-        },
-        {
-          "level": 3,
-          "title": "SSE",
-          "slug": "sse"
-        },
-        {
-          "level": 3,
-          "title": "Websocket",
-          "slug": "websocket"
-        },
-        {
-          "level": 3,
-          "title": "Web Worker",
-          "slug": "web-worker"
-        },
-        {
-          "level": 3,
-          "title": "Service workers",
-          "slug": "service-workers"
-        }
-      ]
-    },
-    {
       "title": "实现深克隆",
       "frontmatter": {},
       "regularPath": "/guide/deepclone.html",
@@ -491,6 +521,56 @@ export const siteData = {
           "level": 3,
           "title": "发现问题",
           "slug": "发现问题"
+        }
+      ]
+    },
+    {
+      "title": "JavaScript的『预解释』与『变量提升』",
+      "frontmatter": {},
+      "regularPath": "/guide/hoisting.html",
+      "relativePath": "guide/hoisting.md",
+      "key": "v-b989c5ea",
+      "path": "/guide/hoisting.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "前言",
+          "slug": "前言"
+        },
+        {
+          "level": 2,
+          "title": "从一个实例开始",
+          "slug": "从一个实例开始"
+        },
+        {
+          "level": 2,
+          "title": "avaScript预解释",
+          "slug": "avascript预解释"
+        },
+        {
+          "level": 2,
+          "title": "JavaScript执行环境",
+          "slug": "javascript执行环境"
+        },
+        {
+          "level": 2,
+          "title": "变量提升",
+          "slug": "变量提升"
+        },
+        {
+          "level": 2,
+          "title": "函数声明与函数表达式",
+          "slug": "函数声明与函数表达式"
+        },
+        {
+          "level": 2,
+          "title": "冲突处理",
+          "slug": "冲突处理"
+        },
+        {
+          "level": 2,
+          "title": "ES6中的let",
+          "slug": "es6中的let"
         }
       ]
     },
@@ -671,56 +751,6 @@ export const siteData = {
           "level": 3,
           "title": "例子",
           "slug": "例子"
-        }
-      ]
-    },
-    {
-      "title": "JavaScript的『预解释』与『变量提升』",
-      "frontmatter": {},
-      "regularPath": "/guide/hoisting.html",
-      "relativePath": "guide/hoisting.md",
-      "key": "v-b989c5ea",
-      "path": "/guide/hoisting.html",
-      "headers": [
-        {
-          "level": 2,
-          "title": "前言",
-          "slug": "前言"
-        },
-        {
-          "level": 2,
-          "title": "从一个实例开始",
-          "slug": "从一个实例开始"
-        },
-        {
-          "level": 2,
-          "title": "avaScript预解释",
-          "slug": "avascript预解释"
-        },
-        {
-          "level": 2,
-          "title": "JavaScript执行环境",
-          "slug": "javascript执行环境"
-        },
-        {
-          "level": 2,
-          "title": "变量提升",
-          "slug": "变量提升"
-        },
-        {
-          "level": 2,
-          "title": "函数声明与函数表达式",
-          "slug": "函数声明与函数表达式"
-        },
-        {
-          "level": 2,
-          "title": "冲突处理",
-          "slug": "冲突处理"
-        },
-        {
-          "level": 2,
-          "title": "ES6中的let",
-          "slug": "es6中的let"
         }
       ]
     },

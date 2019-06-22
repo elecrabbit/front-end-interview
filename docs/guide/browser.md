@@ -79,6 +79,78 @@ Tree
 
 ![2019-06-22-11-48-00]( https://xiaomuzhu-image.oss-cn-beijing.aliyuncs.com/6ccc9594a0dc0a616804780992d4298d.png)
 
+## 浏览器重绘与重排的区别？
+
+* 重排: 部分渲染树（或者整个渲染树）需要重新分析并且节点尺寸需要重新计算，表现为重新生成布局，重新排列元素
+* 重绘: 由于节点的几何属性发生改变或者由于样式发生改变，例如改变元素背景色时，屏幕上的部分内容需要更新，表现为某些元素的外观被改变
+
+单单改变元素的外观，肯定不会引起网页重新生成布局，但当浏览器完成重排之后，将会重新绘制受到此次重排影响的部分
+
+重排和重绘代价是高昂的，它们会破坏用户体验，并且让UI展示非常迟缓，而相比之下重排的性能影响更大，在两者无法避免的情况下，一般我们宁可选择代价更小的重绘。
+
+『重绘』不一定会出现『重排』，『重排』必然会出现『重绘』。
+
+## 如何触发重排和重绘？
+
+任何改变用来构建渲染树的信息都会导致一次重排或重绘：
+
+* 添加、删除、更新DOM节点
+* 通过display: none隐藏一个DOM节点-触发重排和重绘
+* 通过visibility: hidden隐藏一个DOM节点-只触发重绘，因为没有几何变化
+* 移动或者给页面中的DOM节点添加动画
+* 添加一个样式表，调整样式属性
+* 用户行为，例如调整窗口大小，改变字号，或者滚动。
+
+## 如何避免重绘或者重排？
+
+### 集中改变样式
+
+我们往往通过改变class的方式来集中改变样式
+
+```js
+// 判断是否是黑色系样式
+const theme = isDark ? 'dark' : 'light'
+
+// 根据判断来设置不同的class
+ele.setAttribute('className', theme)
+```
+
+### 使用DocumentFragment
+
+我们可以通过createDocumentFragment创建一个游离于DOM树之外的节点，然后在此节点上批量操作，最后插入DOM树中，因此只触发一次重排
+
+```js
+var fragment = document.createDocumentFragment();
+
+for (let i = 0;i<10;i++){
+  let node = document.createElement("p");
+  node.innerHTML = i;
+  fragment.appendChild(node);
+}
+
+document.body.appendChild(fragment);
+```
+
+### 提升为合成层
+
+将元素提升为合成层有以下优点：
+
+* 合成层的位图，会交由 GPU 合成，比 CPU 处理要快
+* 当需要 repaint 时，只需要 repaint 本身，不会影响到其他的层
+* 对于 transform 和 opacity 效果，不会触发 layout 和 paint
+
+提升合成层的最好方式是使用 CSS 的 will-change 属性：
+
+```css
+#target {
+  will-change: transform;
+}
+```
+
+> 关于合成层的详解请移步[无线性能优化：Composite](http://taobaofed.org/blog/2016/04/25/performance-composite/)
+
+
+
 ## 前端如何实现即时通讯？
 
 ### 短轮询

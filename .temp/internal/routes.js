@@ -41,19 +41,19 @@ export const routes = [
     },
   },
   {
-    name: "v-db07261a",
-    path: "/guide/cssBasic.html",
-    component: GlobalLayout,
-    beforeEnter: (to, from, next) => {
-      ensureAsyncComponentsLoaded("Layout", "v-db07261a").then(next)
-    },
-  },
-  {
     name: "v-bd40b53a",
     path: "/guide/browser.html",
     component: GlobalLayout,
     beforeEnter: (to, from, next) => {
       ensureAsyncComponentsLoaded("Layout", "v-bd40b53a").then(next)
+    },
+  },
+  {
+    name: "v-db07261a",
+    path: "/guide/cssBasic.html",
+    component: GlobalLayout,
+    beforeEnter: (to, from, next) => {
+      ensureAsyncComponentsLoaded("Layout", "v-db07261a").then(next)
     },
   },
   {
@@ -73,19 +73,19 @@ export const routes = [
     },
   },
   {
-    name: "v-66a88163",
-    path: "/guide/eventLoop.html",
-    component: GlobalLayout,
-    beforeEnter: (to, from, next) => {
-      ensureAsyncComponentsLoaded("Layout", "v-66a88163").then(next)
-    },
-  },
-  {
     name: "v-b989c5ea",
     path: "/guide/hoisting.html",
     component: GlobalLayout,
     beforeEnter: (to, from, next) => {
       ensureAsyncComponentsLoaded("Layout", "v-b989c5ea").then(next)
+    },
+  },
+  {
+    name: "v-66a88163",
+    path: "/guide/eventLoop.html",
+    component: GlobalLayout,
+    beforeEnter: (to, from, next) => {
+      ensureAsyncComponentsLoaded("Layout", "v-66a88163").then(next)
     },
   },
   {
