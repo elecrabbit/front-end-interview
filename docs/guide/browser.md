@@ -69,6 +69,17 @@
 
 后者匹配性能更好，是因为从右向左的匹配在第一步就筛选掉了大量的不符合条件的最右节点（叶子节点）；而从左向右的匹配规则的性能都浪费在了失败的查找上面。
 
+## DOM Tree是如何构建的？
+
+1. 转码: 浏览器将接收到的二进制数据按照指定编码格式转化为HTML字符串
+2. 生成Tokens: 之后开始parser，浏览器会将HTML字符串解析成Tokens
+3. 构建Nodes: 对Node添加特定的属性，通过指针确定 Node 的父、子、兄弟关系和所属 treeScope
+4. 生成DOM Tree: 通过node包含的指针确定的关系构建出DOM
+Tree
+
+![2019-06-22-11-48-00]( https://xiaomuzhu-image.oss-cn-beijing.aliyuncs.com/6ccc9594a0dc0a616804780992d4298d.png)
+
+## 
 
 ---
 
