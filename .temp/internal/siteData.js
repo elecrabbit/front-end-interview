@@ -35,6 +35,61 @@ export const siteData = {
       "path": "/"
     },
     {
+      "title": "指南使用手册",
+      "frontmatter": {},
+      "regularPath": "/guide/",
+      "relativePath": "guide/README.md",
+      "key": "v-5b8d0d7e",
+      "path": "/guide/",
+      "headers": [
+        {
+          "level": 2,
+          "title": "项目结构概览",
+          "slug": "项目结构概览"
+        },
+        {
+          "level": 2,
+          "title": "模块概览",
+          "slug": "模块概览"
+        },
+        {
+          "level": 3,
+          "title": "前端基础",
+          "slug": "前端基础"
+        },
+        {
+          "level": 3,
+          "title": "框架解读",
+          "slug": "框架解读"
+        },
+        {
+          "level": 3,
+          "title": "工程化",
+          "slug": "工程化"
+        },
+        {
+          "level": 3,
+          "title": "Typescript",
+          "slug": "typescript"
+        },
+        {
+          "level": 3,
+          "title": "性能优化",
+          "slug": "性能优化"
+        },
+        {
+          "level": 3,
+          "title": "计算机基础",
+          "slug": "计算机基础"
+        },
+        {
+          "level": 3,
+          "title": "细分领域",
+          "slug": "细分领域"
+        }
+      ]
+    },
+    {
       "title": "书籍/课程推荐",
       "frontmatter": {},
       "regularPath": "/guide/book.html",
@@ -106,61 +161,6 @@ export const siteData = {
           "level": 3,
           "title": "慕课网",
           "slug": "慕课网"
-        }
-      ]
-    },
-    {
-      "title": "指南使用手册",
-      "frontmatter": {},
-      "regularPath": "/guide/",
-      "relativePath": "guide/README.md",
-      "key": "v-5b8d0d7e",
-      "path": "/guide/",
-      "headers": [
-        {
-          "level": 2,
-          "title": "项目结构概览",
-          "slug": "项目结构概览"
-        },
-        {
-          "level": 2,
-          "title": "模块概览",
-          "slug": "模块概览"
-        },
-        {
-          "level": 3,
-          "title": "前端基础",
-          "slug": "前端基础"
-        },
-        {
-          "level": 3,
-          "title": "框架解读",
-          "slug": "框架解读"
-        },
-        {
-          "level": 3,
-          "title": "工程化",
-          "slug": "工程化"
-        },
-        {
-          "level": 3,
-          "title": "Typescript",
-          "slug": "typescript"
-        },
-        {
-          "level": 3,
-          "title": "性能优化",
-          "slug": "性能优化"
-        },
-        {
-          "level": 3,
-          "title": "计算机基础",
-          "slug": "计算机基础"
-        },
-        {
-          "level": 3,
-          "title": "细分领域",
-          "slug": "细分领域"
         }
       ]
     },
@@ -473,6 +473,14 @@ export const siteData = {
           "slug": "总结"
         }
       ]
+    },
+    {
+      "title": "设计模式",
+      "frontmatter": {},
+      "regularPath": "/guide/designPatterns.html",
+      "relativePath": "guide/designPatterns.md",
+      "key": "v-84d55172",
+      "path": "/guide/designPatterns.html"
     },
     {
       "title": "DOM",
@@ -1438,6 +1446,51 @@ export const siteData = {
           "slug": "方向不够全面"
         }
       ]
+    },
+    {
+      "title": "Vue",
+      "frontmatter": {},
+      "regularPath": "/guide/vue.html",
+      "relativePath": "guide/vue.md",
+      "key": "v-7faf6c23",
+      "path": "/guide/vue.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "你对Vue生命周期的理解？",
+          "slug": "你对vue生命周期的理解？"
+        },
+        {
+          "level": 3,
+          "title": "生命周期是什么",
+          "slug": "生命周期是什么"
+        },
+        {
+          "level": 3,
+          "title": "各个生命周期的作用",
+          "slug": "各个生命周期的作用"
+        },
+        {
+          "level": 3,
+          "title": "生命周期示意图",
+          "slug": "生命周期示意图"
+        },
+        {
+          "level": 2,
+          "title": "异步请求适合在哪个生命周期调用？",
+          "slug": "异步请求适合在哪个生命周期调用？"
+        },
+        {
+          "level": 2,
+          "title": "Vue组件如何通信？",
+          "slug": "vue组件如何通信？"
+        },
+        {
+          "level": 2,
+          "title": "",
+          "slug": ""
+        }
+      ]
     }
   ],
   "themeConfig": {
@@ -1479,7 +1532,8 @@ export const siteData = {
                 "jsBasic",
                 "http",
                 "browser",
-                "dom"
+                "dom",
+                "designPatterns"
               ]
             },
             {
@@ -1501,6 +1555,13 @@ export const siteData = {
                 "memory",
                 "deepclone",
                 "event"
+              ]
+            },
+            {
+              "title": "前端框架",
+              "collapsable": false,
+              "children": [
+                "vue"
               ]
             }
           ]

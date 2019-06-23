@@ -84,7 +84,8 @@ function renderSiderBar() {
         'jsBasic',
         'http',
         'browser',
-        'dom'
+        'dom',
+        'designPatterns',
       ]
   },
   {
@@ -107,6 +108,13 @@ function renderSiderBar() {
     'deepclone',
     'event',
   ]
-}
+},
+{
+  title: '前端框架',
+  collapsable: false,
+  children: [
+        'vue',
+    ]
+},
 ])
 }

@@ -21,14 +21,6 @@ export const routes = [
     redirect: "/"
   },
   {
-    name: "v-281299f7",
-    path: "/guide/book.html",
-    component: GlobalLayout,
-    beforeEnter: (to, from, next) => {
-      ensureAsyncComponentsLoaded("Layout", "v-281299f7").then(next)
-    },
-  },
-  {
     name: "v-5b8d0d7e",
     path: "/guide/",
     component: GlobalLayout,
@@ -39,6 +31,14 @@ export const routes = [
   {
     path: "/guide/index.html",
     redirect: "/guide/"
+  },
+  {
+    name: "v-281299f7",
+    path: "/guide/book.html",
+    component: GlobalLayout,
+    beforeEnter: (to, from, next) => {
+      ensureAsyncComponentsLoaded("Layout", "v-281299f7").then(next)
+    },
   },
   {
     name: "v-bd40b53a",
@@ -62,6 +62,14 @@ export const routes = [
     component: GlobalLayout,
     beforeEnter: (to, from, next) => {
       ensureAsyncComponentsLoaded("Layout", "v-0415fc43").then(next)
+    },
+  },
+  {
+    name: "v-84d55172",
+    path: "/guide/designPatterns.html",
+    component: GlobalLayout,
+    beforeEnter: (to, from, next) => {
+      ensureAsyncComponentsLoaded("Layout", "v-84d55172").then(next)
     },
   },
   {
@@ -166,6 +174,14 @@ export const routes = [
     component: GlobalLayout,
     beforeEnter: (to, from, next) => {
       ensureAsyncComponentsLoaded("Layout", "v-8c976b3a").then(next)
+    },
+  },
+  {
+    name: "v-7faf6c23",
+    path: "/guide/vue.html",
+    component: GlobalLayout,
+    beforeEnter: (to, from, next) => {
+      ensureAsyncComponentsLoaded("Layout", "v-7faf6c23").then(next)
     },
   },
   {
