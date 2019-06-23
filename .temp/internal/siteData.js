@@ -475,14 +475,6 @@ export const siteData = {
       ]
     },
     {
-      "title": "设计模式",
-      "frontmatter": {},
-      "regularPath": "/guide/designPatterns.html",
-      "relativePath": "guide/designPatterns.md",
-      "key": "v-84d55172",
-      "path": "/guide/designPatterns.html"
-    },
-    {
       "title": "DOM",
       "frontmatter": {},
       "regularPath": "/guide/dom.html",
@@ -521,6 +513,14 @@ export const siteData = {
           "slug": "什么是事件委托"
         }
       ]
+    },
+    {
+      "title": "设计模式",
+      "frontmatter": {},
+      "regularPath": "/guide/designPatterns.html",
+      "relativePath": "guide/designPatterns.md",
+      "key": "v-84d55172",
+      "path": "/guide/designPatterns.html"
     },
     {
       "title": "如何实现一个Event",
@@ -803,81 +803,6 @@ export const siteData = {
       ]
     },
     {
-      "title": "HTML基础",
-      "frontmatter": {},
-      "regularPath": "/guide/htmlBasic.html",
-      "relativePath": "guide/htmlBasic.md",
-      "key": "v-36e82cfa",
-      "path": "/guide/htmlBasic.html",
-      "headers": [
-        {
-          "level": 2,
-          "title": "doctype(文档类型) 的作用是什么？✨",
-          "slug": "doctype-文档类型-的作用是什么？✨"
-        },
-        {
-          "level": 2,
-          "title": "这三种模式的区别是什么？(接上一问追问)",
-          "slug": "这三种模式的区别是什么？-接上一问追问"
-        },
-        {
-          "level": 2,
-          "title": "HTML、XML 和 XHTML 有什么区别？",
-          "slug": "html、xml-和-xhtml-有什么区别？"
-        },
-        {
-          "level": 2,
-          "title": "什么是data-属性？",
-          "slug": "什么是data-属性？"
-        },
-        {
-          "level": 2,
-          "title": "你对HTML语义化的理解？✨",
-          "slug": "你对html语义化的理解？✨"
-        },
-        {
-          "level": 2,
-          "title": "HTML5与HTML4的不同之处",
-          "slug": "html5与html4的不同之处"
-        },
-        {
-          "level": 2,
-          "title": "有哪些常用的meta标签？",
-          "slug": "有哪些常用的meta标签？"
-        },
-        {
-          "level": 2,
-          "title": "src和href的区别？",
-          "slug": "src和href的区别？"
-        },
-        {
-          "level": 2,
-          "title": "知道img的srcset的作用是什么？（追问）",
-          "slug": "知道img的srcset的作用是什么？（追问）"
-        },
-        {
-          "level": 2,
-          "title": "还有哪一个标签能起到跟srcset相似作用？（追问）",
-          "slug": "还有哪一个标签能起到跟srcset相似作用？（追问）"
-        },
-        {
-          "level": 2,
-          "title": "script标签中defer和async的区别？✨",
-          "slug": "script标签中defer和async的区别？✨"
-        },
-        {
-          "level": 2,
-          "title": "有几种前端储存的方式？✨",
-          "slug": "有几种前端储存的方式？✨"
-        },
-        {
-          "level": 2,
-          "title": "这些方式的区别是什么？（追问）✨",
-          "slug": "这些方式的区别是什么？（追问）✨"
-        }
-      ]
-    },
-    {
       "title": "HTTP协议",
       "frontmatter": {},
       "regularPath": "/guide/http.html",
@@ -998,6 +923,81 @@ export const siteData = {
       ]
     },
     {
+      "title": "HTML基础",
+      "frontmatter": {},
+      "regularPath": "/guide/htmlBasic.html",
+      "relativePath": "guide/htmlBasic.md",
+      "key": "v-36e82cfa",
+      "path": "/guide/htmlBasic.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "doctype(文档类型) 的作用是什么？✨",
+          "slug": "doctype-文档类型-的作用是什么？✨"
+        },
+        {
+          "level": 2,
+          "title": "这三种模式的区别是什么？(接上一问追问)",
+          "slug": "这三种模式的区别是什么？-接上一问追问"
+        },
+        {
+          "level": 2,
+          "title": "HTML、XML 和 XHTML 有什么区别？",
+          "slug": "html、xml-和-xhtml-有什么区别？"
+        },
+        {
+          "level": 2,
+          "title": "什么是data-属性？",
+          "slug": "什么是data-属性？"
+        },
+        {
+          "level": 2,
+          "title": "你对HTML语义化的理解？✨",
+          "slug": "你对html语义化的理解？✨"
+        },
+        {
+          "level": 2,
+          "title": "HTML5与HTML4的不同之处",
+          "slug": "html5与html4的不同之处"
+        },
+        {
+          "level": 2,
+          "title": "有哪些常用的meta标签？",
+          "slug": "有哪些常用的meta标签？"
+        },
+        {
+          "level": 2,
+          "title": "src和href的区别？",
+          "slug": "src和href的区别？"
+        },
+        {
+          "level": 2,
+          "title": "知道img的srcset的作用是什么？（追问）",
+          "slug": "知道img的srcset的作用是什么？（追问）"
+        },
+        {
+          "level": 2,
+          "title": "还有哪一个标签能起到跟srcset相似作用？（追问）",
+          "slug": "还有哪一个标签能起到跟srcset相似作用？（追问）"
+        },
+        {
+          "level": 2,
+          "title": "script标签中defer和async的区别？✨",
+          "slug": "script标签中defer和async的区别？✨"
+        },
+        {
+          "level": 2,
+          "title": "有几种前端储存的方式？✨",
+          "slug": "有几种前端储存的方式？✨"
+        },
+        {
+          "level": 2,
+          "title": "这些方式的区别是什么？（追问）✨",
+          "slug": "这些方式的区别是什么？（追问）✨"
+        }
+      ]
+    },
+    {
       "title": "HTTP笔试部分",
       "frontmatter": {},
       "regularPath": "/guide/httpWritten.html",
@@ -1107,6 +1107,51 @@ export const siteData = {
         },
         {
           "level": 2,
+          "title": "js有哪些类型？",
+          "slug": "js有哪些类型？"
+        },
+        {
+          "level": 2,
+          "title": "为什么会有BigInt的提案？",
+          "slug": "为什么会有bigint的提案？"
+        },
+        {
+          "level": 2,
+          "title": "null与undefined的区别是什么？",
+          "slug": "null与undefined的区别是什么？"
+        },
+        {
+          "level": 2,
+          "title": "0.1+0.2为什么不等于0.3？",
+          "slug": "_0-1-0-2为什么不等于0-3？"
+        },
+        {
+          "level": 3,
+          "title": "将 0.1 转换为二进制表示",
+          "slug": "将-0-1-转换为二进制表示"
+        },
+        {
+          "level": 3,
+          "title": "通过科学计数法表示",
+          "slug": "通过科学计数法表示"
+        },
+        {
+          "level": 3,
+          "title": "转换为 IEEE 754 标准表示",
+          "slug": "转换为-ieee-754-标准表示"
+        },
+        {
+          "level": 2,
+          "title": "类型转换的规则有哪些？",
+          "slug": "类型转换的规则有哪些？"
+        },
+        {
+          "level": 2,
+          "title": "类型转换的原理是什么？",
+          "slug": "类型转换的原理是什么？"
+        },
+        {
+          "level": 2,
           "title": "谈谈你对原型链的理解？✨",
           "slug": "谈谈你对原型链的理解？✨"
         },
@@ -1119,11 +1164,6 @@ export const siteData = {
           "level": 3,
           "title": "原型链",
           "slug": "原型链"
-        },
-        {
-          "level": 2,
-          "title": "JavaScript有哪些类型？✨",
-          "slug": "javascript有哪些类型？✨"
         },
         {
           "level": 2,
@@ -1446,6 +1486,13 @@ export const siteData = {
           "slug": "方向不够全面"
         }
       ]
+    },
+    {
+      "frontmatter": {},
+      "regularPath": "/guide/type.html",
+      "relativePath": "guide/type.md",
+      "key": "v-34495f56",
+      "path": "/guide/type.html"
     },
     {
       "title": "Vue",

@@ -18,10 +18,15 @@
 
 - 1. js基础
     - [谈谈你对原型链的理解？ ✨](#谈谈你对原型链的理解？✨)
-    - [JavaScript有哪些类型？✨](#JavaScript有哪些类型？✨)
     - [如何判断是否是数组？](#如何判断是否是数组？)
     - [聊一聊如何在JavaScript中实现不可变对象？](#聊一聊如何在JavaScript中实现不可变对象？)
     - [JavaScript的参数是按照什么方式传递的？](#JavaScript的参数是按照什么方式传递的？)
+    - [js有哪些类型?](#js有哪些类型？)
+    - [为什么会有BigInt的提案？](#为什么会有BigInt的提案？)
+    - [null与undefined的区别是什么？](#null与undefined的区别是什么？)
+    - [0.1+0.2为什么不等于0.3？](#0.1+0.2为什么不等于0.3？)
+    - [类型转换的规则有哪些？](#类型转换的规则有哪些？)
+    - [类型转换的原理是什么？](#类型转换的原理是什么？)
 - 2. js机制
     - [解释下变量提升？✨](#解释下变量提升？✨)
     - [一段JavaScript代码是如何执行的？✨](#一段JavaScript代码是如何执行的？✨)
@@ -149,6 +154,199 @@ JavaScript属于静态作用域，即声明的作用域是根据程序正文在�
 
 > 原理详解请移步[JavaScript执行机制](#mechanism)
 
+## js有哪些类型？
+
+JavaScript的类型分为两大类，一类是原始类型，一类是复杂(引用）类型。
+
+原始类型:
+
+* boolean
+* null
+* undefined
+* number
+* string
+* symbol
+
+复杂类型:
+
+* Object
+
+还有一个没有正式发布但即将被加入标准的原始类型BigInt。
+
+## 为什么会有BigInt的提案？
+
+JavaScript中Number.MAX_SAFE_INTEGER表示最大安全数字,计算结果是9007199254740991，即在这个数范围内不会出现精度丢失（小数除外）。
+
+但是一旦超过这个范围，js就会出现计算不准确的情况，这在大数计算的时候不得不依靠一些第三方库进行解决，因此官方提出了BigInt来解决此问题。
+
+## null与undefined的区别是什么？
+
+null表示为空，代表此处不应该有值的存在，一个对象可以是null，代表是个空对象，而null本身也是对象。
+
+undefined表示『不存在』，JavaScript是一门动态类型语言，成员除了表示存在的空值外，还有可能根本就不存在（因为存不存在只在运行期才知道），这就是undefined的意义所在。
+
+## 0.1+0.2为什么不等于0.3？
+
+![2019-06-23-09-24-06]( https://xiaomuzhu-image.oss-cn-beijing.aliyuncs.com/b9aa4056155df1baae69d6de5a0ac322.png)
+
+JS 的 `Number` 类型遵循的是 IEEE 754 标准，使用的是 64 位固定长度来表示。
+
+IEEE 754 浮点数由三个域组成，分别为 sign bit (符号位)、exponent bias (指数偏移值) 和 fraction (分数值)。64 位中，sign bit 占 1 位，exponent bias 占 11 位，fraction 占 52 位。
+
+通过公式表示浮点数的值 **value = sign x exponent x fraction**<br />**<br />当一个数为正数，sign bit 为 0，当为负数时，sign bit 为 1.
+
+以 0.1 转换为 IEEE 754 标准表示为例解释一下如何求 exponent bias 和 fraction。转换过程主要经历 3 个过程：
+
+1. 将 0.1 转换为二进制表示
+1. 将转换后的二进制通过科学计数法表示
+1. 将通过科学计数法表示的二进制转换为 IEEE 754 标准表示
+
+
+### 将 0.1 转换为二进制表示
+
+回顾一下一个数的小数部分如何转换为二进制。一个数的小数部分，乘以 2，然后取整数部分的结果，再用计算后的小数部分重复计算，直到小数部分为 0 。
+
+因此 0.1 转换为二进制表示的过程如下：
+
+| 小数 | x2 的结果 | 整数部分 |
+| :---: | :---: | :---: |
+| 0.1 | 0.2 | 0 |
+| 0.2 | 0.4 | 0 |
+| 0.4 | 0.8 | 0 |
+| 0.8 | 1.6 | 1 |
+| 0.6 | 1.2 | 1 |
+| 0.2 | 0.4 | 0 |
+| 0.4 | 0.8 | 0 |
+| 0.8 | 1.6 | 1 |
+| 0.6 | 1.2 | 1 |
+| ... | ... | ... |
+
+得到 0.1 的二进制表示为 0.00011...(无限重复 0011)
+
+### 通过科学计数法表示
+
+0.00011...(无限重复 0011) 通过科学计数法表示则是 1.10011001...(无线重复 1001)*2
+
+### 转换为 IEEE 754 标准表示
+
+当经过科学计数法表示之后，就可以求得 exponent bias 和 fraction 了。
+
+exponent bias (指数偏移值) **等于** 双精度浮点数**固定偏移值** (2-1) 加上指数实际值(即 2 中的 -4) 的 **11 位二进制表示**。为什么是 11 位？因为 exponent bias 在 64 位中占 11 位。
+
+因此 0.1 的 exponent bias **等于** 1023 + (-4) = 1019 的11 位二进制表示，即 011 1111 1011。
+
+再来获取 0.1 的 fraction，fraction 就是 1.10011001...(无线重复 1001) 中的小数位，由于 fraction 占 52位所以抽取 52 位小数，1001...(中间有 11 个 1001)...1010 **(请注意最后四位，是 1010 而不是 1001，因为四舍五入有进位，这个进位就是造成 0.1 + 0.2 不等于 0.3 的原因)**
+
+```
+    0       011 1111 1011   1001...( 11 x 1001)...1010
+(sign bit) (exponent bias)      (fraction)
+```
+
+此时如果将这个数转换为十进制，可以发现值已经变为 0.100000000000000005551115123126 而不是 0.1 了，因此这个计算精度就出现了问题。
+
+## 类型转换的规则有哪些？
+
+在if语句、逻辑语句、数学运算逻辑、==等情况下都可能出现隐士类型转换。
+
+![2019-06-23-09-32-17]( https://xiaomuzhu-image.oss-cn-beijing.aliyuncs.com/c378afab84afcdf430aec5229649faee.png)
+
+## 类型转换的原理是什么？
+
+
+**类型转换**指的是将一种类型转换为另一种类型,例如:
+```javascript
+var b = 2;
+var a = String(b);
+console.log(typeof a); //string
+```
+
+当然,**类型转换**分为显式和隐式,但是不管是隐式转换还是显式转换,都会遵循一定的原理,由于JavaScript是一门动态类型的语言,可以随时赋予任意值,但是各种运算符或条件判断中是需要特定类型的,因此JavaScript引擎会在运算时为变量设定类型.
+
+这看起来很美好,JavaScript引擎帮我们搞定了`类型`的问题,但是引擎毕竟不是ASI(超级人工智能),它的很多动作会跟我们预期相去甚远,我们可以从一到面试题开始.
+
+```javascript
+{}+[] //0
+```
+
+
+答案是0
+
+是什么原因造成了上述结果呢?那么我们得从ECMA-262中提到的转换规则和抽象操作说起,有兴趣的童鞋可以仔细阅读下这浩如烟海的[语言规范](http://ecma-international.org/ecma-262/5.1/),如果没这个耐心还是往下看.
+
+这是JavaScript种类型转换可以从**原始类型**转为**引用类型**,同样可以将**引用类型**转为**原始类型**,转为原始类型的抽象操作为`ToPrimitive`,而后续更加细分的操作为:`ToNumber ToString ToBoolean`。
+
+为了更深入的探究JavaScript引擎是如何处理代码中类型转换问题的,就需要看 ECMA-262详细的规范,从而探究其内部原理,我们从这段内部原理示意代码开始.
+
+```javascript
+// ECMA-262, section 9.1, page 30. Use null/undefined for no hint,
+// (1) for number hint, and (2) for string hint.
+function ToPrimitive(x, hint) {  
+  // Fast case check.
+  if (IS_STRING(x)) return x;
+  // Normal behavior.
+  if (!IS_SPEC_OBJECT(x)) return x;
+  if (IS_SYMBOL_WRAPPER(x)) throw MakeTypeError(kSymbolToPrimitive);
+  if (hint == NO_HINT) hint = (IS_DATE(x)) ? STRING_HINT : NUMBER_HINT;
+  return (hint == NUMBER_HINT) ? DefaultNumber(x) : DefaultString(x);
+}
+
+// ECMA-262, section 8.6.2.6, page 28.
+function DefaultNumber(x) {  
+  if (!IS_SYMBOL_WRAPPER(x)) {
+    var valueOf = x.valueOf;
+    if (IS_SPEC_FUNCTION(valueOf)) {
+      var v = %_CallFunction(x, valueOf);
+      if (IsPrimitive(v)) return v;
+    }
+
+    var toString = x.toString;
+    if (IS_SPEC_FUNCTION(toString)) {
+      var s = %_CallFunction(x, toString);
+      if (IsPrimitive(s)) return s;
+    }
+  }
+  throw MakeTypeError(kCannotConvertToPrimitive);
+}
+
+// ECMA-262, section 8.6.2.6, page 28.
+function DefaultString(x) {  
+  if (!IS_SYMBOL_WRAPPER(x)) {
+    var toString = x.toString;
+    if (IS_SPEC_FUNCTION(toString)) {
+      var s = %_CallFunction(x, toString);
+      if (IsPrimitive(s)) return s;
+    }
+
+    var valueOf = x.valueOf;
+    if (IS_SPEC_FUNCTION(valueOf)) {
+      var v = %_CallFunction(x, valueOf);
+      if (IsPrimitive(v)) return v;
+    }
+  }
+  throw MakeTypeError(kCannotConvertToPrimitive);
+}
+```
+
+上面代码的逻辑是这样的：
+
+1. 如果变量为字符串，直接返回.
+2. 如果`!IS_SPEC_OBJECT(x)`，直接返回.
+3. 如果`IS_SYMBOL_WRAPPER(x)`，则抛出异常.
+4. 否则会根据传入的`hint`来调用`DefaultNumber`和`DefaultString`，比如如果为`Date`对象，会调用`DefaultString`.
+5. `DefaultNumber`：首`先x.valueOf`，如果为`primitive`，则返回`valueOf`后的值，否则继续调用`x.toString`，如果为`primitive`，则返回`toString`后的值，否则抛出异常
+6. `DefaultString`：和`DefaultNumber`正好相反，先调用`toString`，如果不是`primitive`再调用`valueOf`.
+
+那讲了实现原理，这个`ToPrimitive`有什么用呢？实际很多操作会调用`ToPrimitive`，比如加、相等或比较操。在进行加操作时会将左右操作数转换为`primitive`，然后进行相加。
+
+下面来个实例，({}) + 1（将{}放在括号中是为了内核将其认为一个代码块）会输出啥？可能日常写代码并不会这样写，不过网上出过类似的面试题。
+
+加操作只有左右运算符同时为`String或Number`时会执行对应的`%_StringAdd或%NumberAdd`，下面看下`({}) + 1`内部会经过哪些步骤：
+
+`{}`和`1`首先会调用ToPrimitive
+`{}`会走到`DefaultNumber`，首先会调用`valueOf`，返回的是`Object` `{}`，不是primitive类型，从而继续走到`toString`，返回`[object Object]`，是`String`类型
+最后加操作，结果为`[object Object]1`
+再比如有人问你`[] + 1`输出啥时，你可能知道应该怎么去计算了，先对`[]`调用`ToPrimitive`，返回空字符串，最后结果为"1"。
+
 ## 谈谈你对原型链的理解？✨
 
 这个问题关键在于两个点，一个是原型对象是什么，另一个是原型链是如何形成的
@@ -187,25 +385,6 @@ console.log(Object.prototype.hasOwnProperty("hasOwnProperty")); //true
 > 经典原型链图
 
 ![2019-06-15-05-36-59]( https://xiaomuzhu-image.oss-cn-beijing.aliyuncs.com/282ef60fe1dfe60924c6caeaeab6c550.png)
-
-## JavaScript有哪些类型？✨
-
-JavaScript的类型分为两大类，一类是原始类型，一类是复杂(引用）类型。
-
-原始类型:
-
-* boolean
-* null
-* undefined
-* number
-* string
-* symbol
-
-复杂类型:
-
-* Object
-
-> TDDO 强烈建议阅读 []()，了解类型转换的坑和转换原理
 
 ## 如何判断是否是数组？
 
