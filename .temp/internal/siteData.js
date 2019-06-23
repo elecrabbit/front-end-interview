@@ -475,6 +475,14 @@ export const siteData = {
       ]
     },
     {
+      "title": "设计模式",
+      "frontmatter": {},
+      "regularPath": "/guide/designPatterns.html",
+      "relativePath": "guide/designPatterns.md",
+      "key": "v-84d55172",
+      "path": "/guide/designPatterns.html"
+    },
+    {
       "title": "DOM",
       "frontmatter": {},
       "regularPath": "/guide/dom.html",
@@ -513,14 +521,6 @@ export const siteData = {
           "slug": "什么是事件委托"
         }
       ]
-    },
-    {
-      "title": "设计模式",
-      "frontmatter": {},
-      "regularPath": "/guide/designPatterns.html",
-      "relativePath": "guide/designPatterns.md",
-      "key": "v-84d55172",
-      "path": "/guide/designPatterns.html"
     },
     {
       "title": "如何实现一个Event",
@@ -803,6 +803,81 @@ export const siteData = {
       ]
     },
     {
+      "title": "HTML基础",
+      "frontmatter": {},
+      "regularPath": "/guide/htmlBasic.html",
+      "relativePath": "guide/htmlBasic.md",
+      "key": "v-36e82cfa",
+      "path": "/guide/htmlBasic.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "doctype(文档类型) 的作用是什么？✨",
+          "slug": "doctype-文档类型-的作用是什么？✨"
+        },
+        {
+          "level": 2,
+          "title": "这三种模式的区别是什么？(接上一问追问)",
+          "slug": "这三种模式的区别是什么？-接上一问追问"
+        },
+        {
+          "level": 2,
+          "title": "HTML、XML 和 XHTML 有什么区别？",
+          "slug": "html、xml-和-xhtml-有什么区别？"
+        },
+        {
+          "level": 2,
+          "title": "什么是data-属性？",
+          "slug": "什么是data-属性？"
+        },
+        {
+          "level": 2,
+          "title": "你对HTML语义化的理解？✨",
+          "slug": "你对html语义化的理解？✨"
+        },
+        {
+          "level": 2,
+          "title": "HTML5与HTML4的不同之处",
+          "slug": "html5与html4的不同之处"
+        },
+        {
+          "level": 2,
+          "title": "有哪些常用的meta标签？",
+          "slug": "有哪些常用的meta标签？"
+        },
+        {
+          "level": 2,
+          "title": "src和href的区别？",
+          "slug": "src和href的区别？"
+        },
+        {
+          "level": 2,
+          "title": "知道img的srcset的作用是什么？（追问）",
+          "slug": "知道img的srcset的作用是什么？（追问）"
+        },
+        {
+          "level": 2,
+          "title": "还有哪一个标签能起到跟srcset相似作用？（追问）",
+          "slug": "还有哪一个标签能起到跟srcset相似作用？（追问）"
+        },
+        {
+          "level": 2,
+          "title": "script标签中defer和async的区别？✨",
+          "slug": "script标签中defer和async的区别？✨"
+        },
+        {
+          "level": 2,
+          "title": "有几种前端储存的方式？✨",
+          "slug": "有几种前端储存的方式？✨"
+        },
+        {
+          "level": 2,
+          "title": "这些方式的区别是什么？（追问）✨",
+          "slug": "这些方式的区别是什么？（追问）✨"
+        }
+      ]
+    },
+    {
       "title": "HTTP协议",
       "frontmatter": {},
       "regularPath": "/guide/http.html",
@@ -923,81 +998,6 @@ export const siteData = {
       ]
     },
     {
-      "title": "HTML基础",
-      "frontmatter": {},
-      "regularPath": "/guide/htmlBasic.html",
-      "relativePath": "guide/htmlBasic.md",
-      "key": "v-36e82cfa",
-      "path": "/guide/htmlBasic.html",
-      "headers": [
-        {
-          "level": 2,
-          "title": "doctype(文档类型) 的作用是什么？✨",
-          "slug": "doctype-文档类型-的作用是什么？✨"
-        },
-        {
-          "level": 2,
-          "title": "这三种模式的区别是什么？(接上一问追问)",
-          "slug": "这三种模式的区别是什么？-接上一问追问"
-        },
-        {
-          "level": 2,
-          "title": "HTML、XML 和 XHTML 有什么区别？",
-          "slug": "html、xml-和-xhtml-有什么区别？"
-        },
-        {
-          "level": 2,
-          "title": "什么是data-属性？",
-          "slug": "什么是data-属性？"
-        },
-        {
-          "level": 2,
-          "title": "你对HTML语义化的理解？✨",
-          "slug": "你对html语义化的理解？✨"
-        },
-        {
-          "level": 2,
-          "title": "HTML5与HTML4的不同之处",
-          "slug": "html5与html4的不同之处"
-        },
-        {
-          "level": 2,
-          "title": "有哪些常用的meta标签？",
-          "slug": "有哪些常用的meta标签？"
-        },
-        {
-          "level": 2,
-          "title": "src和href的区别？",
-          "slug": "src和href的区别？"
-        },
-        {
-          "level": 2,
-          "title": "知道img的srcset的作用是什么？（追问）",
-          "slug": "知道img的srcset的作用是什么？（追问）"
-        },
-        {
-          "level": 2,
-          "title": "还有哪一个标签能起到跟srcset相似作用？（追问）",
-          "slug": "还有哪一个标签能起到跟srcset相似作用？（追问）"
-        },
-        {
-          "level": 2,
-          "title": "script标签中defer和async的区别？✨",
-          "slug": "script标签中defer和async的区别？✨"
-        },
-        {
-          "level": 2,
-          "title": "有几种前端储存的方式？✨",
-          "slug": "有几种前端储存的方式？✨"
-        },
-        {
-          "level": 2,
-          "title": "这些方式的区别是什么？（追问）✨",
-          "slug": "这些方式的区别是什么？（追问）✨"
-        }
-      ]
-    },
-    {
       "title": "HTTP笔试部分",
       "frontmatter": {},
       "regularPath": "/guide/httpWritten.html",
@@ -1104,6 +1104,11 @@ export const siteData = {
           "level": 2,
           "title": "JavaScript的作用域链理解吗？✨",
           "slug": "javascript的作用域链理解吗？✨"
+        },
+        {
+          "level": 2,
+          "title": "ES6模块与CommonJS模块有什么区别？",
+          "slug": "es6模块与commonjs模块有什么区别？"
         },
         {
           "level": 2,
@@ -1454,6 +1459,76 @@ export const siteData = {
           "level": 3,
           "title": "查看内存泄漏",
           "slug": "查看内存泄漏"
+        }
+      ]
+    },
+    {
+      "title": "前言",
+      "frontmatter": {},
+      "regularPath": "/guide/performance.html",
+      "relativePath": "guide/performance.md",
+      "key": "v-1ae20e3a",
+      "path": "/guide/performance.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "文章目录",
+          "slug": "文章目录"
+        },
+        {
+          "level": 2,
+          "title": "1.首屏加载",
+          "slug": "_1-首屏加载"
+        },
+        {
+          "level": 3,
+          "title": "1.1 白屏的定义",
+          "slug": "_1-1-白屏的定义"
+        },
+        {
+          "level": 3,
+          "title": "1.2 白屏加载的问题分析",
+          "slug": "_1-2-白屏加载的问题分析"
+        },
+        {
+          "level": 3,
+          "title": "1.3 白屏的性能优化",
+          "slug": "_1-3-白屏的性能优化"
+        },
+        {
+          "level": 3,
+          "title": "1.4 FMP(首次有意义绘制)",
+          "slug": "_1-4-fmp-首次有意义绘制"
+        },
+        {
+          "level": 3,
+          "title": "1.5 TTI(可交互时间)",
+          "slug": "_1-5-tti-可交互时间"
+        },
+        {
+          "level": 3,
+          "title": "2 组件加载",
+          "slug": "_2-组件加载"
+        },
+        {
+          "level": 3,
+          "title": "2.1 组件懒加载",
+          "slug": "_2-1-组件懒加载"
+        },
+        {
+          "level": 3,
+          "title": "2.2 组件预加载",
+          "slug": "_2-2-组件预加载"
+        },
+        {
+          "level": 3,
+          "title": "2.3 keep-alive",
+          "slug": "_2-3-keep-alive"
+        },
+        {
+          "level": 2,
+          "title": "小结",
+          "slug": "小结"
         }
       ]
     },
