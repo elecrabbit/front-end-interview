@@ -6,8 +6,7 @@
 
 我们就来看一下如何实现一个深克隆,当然面试中没有让你完整实现的时候,但是你一定要搞清楚其中的坑在哪里,才可以轻松应对面试官的追问.
 　　
-* JavaScript原始类型:Undefined、Null、Boolean、Number、String、Symbol
-
+* JavaScript原始类型: Undefined、Null、Boolean、Number、String、Symbol
 * JavaScript引用类型:Object
 
 ## 浅克隆

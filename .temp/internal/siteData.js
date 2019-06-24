@@ -7,34 +7,6 @@ export const siteData = {
   "base": "/",
   "pages": [
     {
-      "title": "Home",
-      "frontmatter": {
-        "home": true,
-        "heroImage": "/logo.svg",
-        "actionText": "开始 →",
-        "actionLink": "/guide/",
-        "features": [
-          {
-            "title": "简洁至上",
-            "details": "追求重点和难点,剔除陈旧的知识。"
-          },
-          {
-            "title": "清晰易懂",
-            "details": "将复杂的问题一一拆解。"
-          },
-          {
-            "title": "紧跟热点",
-            "details": "当下热点技术一网打尽。"
-          }
-        ],
-        "footer": "MIT Licensed | Copyright © 2019-present xiaomuzhu"
-      },
-      "regularPath": "/",
-      "relativePath": "README.md",
-      "key": "v-77cab7d0",
-      "path": "/"
-    },
-    {
       "title": "指南使用手册",
       "frontmatter": {},
       "regularPath": "/guide/",
@@ -86,81 +58,6 @@ export const siteData = {
           "level": 3,
           "title": "细分领域",
           "slug": "细分领域"
-        }
-      ]
-    },
-    {
-      "title": "书籍/课程推荐",
-      "frontmatter": {},
-      "regularPath": "/guide/book.html",
-      "relativePath": "guide/book.md",
-      "key": "v-281299f7",
-      "path": "/guide/book.html",
-      "headers": [
-        {
-          "level": 2,
-          "title": "书单",
-          "slug": "书单"
-        },
-        {
-          "level": 3,
-          "title": "JavaScript",
-          "slug": "javascript"
-        },
-        {
-          "level": 3,
-          "title": "CSS:",
-          "slug": "css"
-        },
-        {
-          "level": 3,
-          "title": "算法：",
-          "slug": "算法："
-        },
-        {
-          "level": 3,
-          "title": "安全：",
-          "slug": "安全："
-        },
-        {
-          "level": 3,
-          "title": "canvas：",
-          "slug": "canvas："
-        },
-        {
-          "level": 3,
-          "title": "Node",
-          "slug": "node"
-        },
-        {
-          "level": 3,
-          "title": "网络",
-          "slug": "网络"
-        },
-        {
-          "level": 2,
-          "title": "关于知识付费",
-          "slug": "关于知识付费"
-        },
-        {
-          "level": 3,
-          "title": "知乎live",
-          "slug": "知乎live"
-        },
-        {
-          "level": 3,
-          "title": "掘金册子",
-          "slug": "掘金册子"
-        },
-        {
-          "level": 3,
-          "title": "极客时间",
-          "slug": "极客时间"
-        },
-        {
-          "level": 3,
-          "title": "慕课网",
-          "slug": "慕课网"
         }
       ]
     },
@@ -261,6 +158,94 @@ export const siteData = {
           "level": 3,
           "title": "Service workers",
           "slug": "service-workers"
+        },
+        {
+          "level": 2,
+          "title": "什么是浏览器同源策略？",
+          "slug": "什么是浏览器同源策略？"
+        },
+        {
+          "level": 2,
+          "title": "如何实现跨域？",
+          "slug": "如何实现跨域？"
+        },
+        {
+          "level": 3,
+          "title": "最经典的跨域方案jsonp",
+          "slug": "最经典的跨域方案jsonp"
+        },
+        {
+          "level": 3,
+          "title": "最流行的跨域方案cors",
+          "slug": "最流行的跨域方案cors"
+        }
+      ]
+    },
+    {
+      "title": "Home",
+      "frontmatter": {
+        "home": true,
+        "heroImage": "/logo.svg",
+        "actionText": "开始 →",
+        "actionLink": "/guide/",
+        "features": [
+          {
+            "title": "简洁至上",
+            "details": "追求重点和难点,剔除陈旧的知识。"
+          },
+          {
+            "title": "清晰易懂",
+            "details": "将复杂的问题一一拆解。"
+          },
+          {
+            "title": "紧跟热点",
+            "details": "当下热点技术一网打尽。"
+          }
+        ],
+        "footer": "MIT Licensed | Copyright © 2019-present xiaomuzhu"
+      },
+      "regularPath": "/",
+      "relativePath": "README.md",
+      "key": "v-77cab7d0",
+      "path": "/"
+    },
+    {
+      "title": "实现深克隆",
+      "frontmatter": {},
+      "regularPath": "/guide/deepclone.html",
+      "relativePath": "guide/deepclone.md",
+      "key": "v-0415fc43",
+      "path": "/guide/deepclone.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "前言",
+          "slug": "前言"
+        },
+        {
+          "level": 2,
+          "title": "浅克隆",
+          "slug": "浅克隆"
+        },
+        {
+          "level": 2,
+          "title": "深克隆",
+          "slug": "深克隆"
+        },
+        {
+          "level": 3,
+          "title": "JSON.parse方法",
+          "slug": "json-parse方法"
+        },
+        {
+          "level": 3,
+          "title": "2.2 构造一个深克隆函数",
+          "slug": "_2-2-构造一个深克隆函数"
+        },
+        {
+          "level": 2,
+          "title": "总结",
+          "slug": "总结"
         }
       ]
     },
@@ -435,42 +420,77 @@ export const siteData = {
       ]
     },
     {
-      "title": "实现深克隆",
+      "title": "书籍/课程推荐",
       "frontmatter": {},
-      "regularPath": "/guide/deepclone.html",
-      "relativePath": "guide/deepclone.md",
-      "key": "v-0415fc43",
-      "path": "/guide/deepclone.html",
+      "regularPath": "/guide/book.html",
+      "relativePath": "guide/book.md",
+      "key": "v-281299f7",
+      "path": "/guide/book.html",
       "headers": [
         {
           "level": 2,
-          "title": "前言",
-          "slug": "前言"
-        },
-        {
-          "level": 2,
-          "title": "浅克隆",
-          "slug": "浅克隆"
-        },
-        {
-          "level": 2,
-          "title": "深克隆",
-          "slug": "深克隆"
+          "title": "书单",
+          "slug": "书单"
         },
         {
           "level": 3,
-          "title": "JSON.parse方法",
-          "slug": "json-parse方法"
+          "title": "JavaScript",
+          "slug": "javascript"
         },
         {
           "level": 3,
-          "title": "2.2 构造一个深克隆函数",
-          "slug": "_2-2-构造一个深克隆函数"
+          "title": "CSS:",
+          "slug": "css"
+        },
+        {
+          "level": 3,
+          "title": "算法：",
+          "slug": "算法："
+        },
+        {
+          "level": 3,
+          "title": "安全：",
+          "slug": "安全："
+        },
+        {
+          "level": 3,
+          "title": "canvas：",
+          "slug": "canvas："
+        },
+        {
+          "level": 3,
+          "title": "Node",
+          "slug": "node"
+        },
+        {
+          "level": 3,
+          "title": "网络",
+          "slug": "网络"
         },
         {
           "level": 2,
-          "title": "总结",
-          "slug": "总结"
+          "title": "关于知识付费",
+          "slug": "关于知识付费"
+        },
+        {
+          "level": 3,
+          "title": "知乎live",
+          "slug": "知乎live"
+        },
+        {
+          "level": 3,
+          "title": "掘金册子",
+          "slug": "掘金册子"
+        },
+        {
+          "level": 3,
+          "title": "极客时间",
+          "slug": "极客时间"
+        },
+        {
+          "level": 3,
+          "title": "慕课网",
+          "slug": "慕课网"
         }
       ]
     },
@@ -481,46 +501,6 @@ export const siteData = {
       "relativePath": "guide/designPatterns.md",
       "key": "v-84d55172",
       "path": "/guide/designPatterns.html"
-    },
-    {
-      "title": "DOM",
-      "frontmatter": {},
-      "regularPath": "/guide/dom.html",
-      "relativePath": "guide/dom.md",
-      "key": "v-1ee26aa3",
-      "path": "/guide/dom.html",
-      "headers": [
-        {
-          "level": 2,
-          "title": "DOM的事件模型是什么？",
-          "slug": "dom的事件模型是什么？"
-        },
-        {
-          "level": 2,
-          "title": "DOM的事件流是什么？",
-          "slug": "dom的事件流是什么？"
-        },
-        {
-          "level": 3,
-          "title": "事件冒泡",
-          "slug": "事件冒泡"
-        },
-        {
-          "level": 3,
-          "title": "事件捕获",
-          "slug": "事件捕获"
-        },
-        {
-          "level": 3,
-          "title": "事件流",
-          "slug": "事件流"
-        },
-        {
-          "level": 2,
-          "title": "什么是事件委托?",
-          "slug": "什么是事件委托"
-        }
-      ]
     },
     {
       "title": "如何实现一个Event",
@@ -569,6 +549,46 @@ export const siteData = {
           "level": 3,
           "title": "发现问题",
           "slug": "发现问题"
+        }
+      ]
+    },
+    {
+      "title": "DOM",
+      "frontmatter": {},
+      "regularPath": "/guide/dom.html",
+      "relativePath": "guide/dom.md",
+      "key": "v-1ee26aa3",
+      "path": "/guide/dom.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "DOM的事件模型是什么？",
+          "slug": "dom的事件模型是什么？"
+        },
+        {
+          "level": 2,
+          "title": "DOM的事件流是什么？",
+          "slug": "dom的事件流是什么？"
+        },
+        {
+          "level": 3,
+          "title": "事件冒泡",
+          "slug": "事件冒泡"
+        },
+        {
+          "level": 3,
+          "title": "事件捕获",
+          "slug": "事件捕获"
+        },
+        {
+          "level": 3,
+          "title": "事件流",
+          "slug": "事件流"
+        },
+        {
+          "level": 2,
+          "title": "什么是事件委托?",
+          "slug": "什么是事件委托"
         }
       ]
     },
@@ -803,6 +823,31 @@ export const siteData = {
       ]
     },
     {
+      "title": "HTTP笔试部分",
+      "frontmatter": {},
+      "regularPath": "/guide/httpWritten.html",
+      "relativePath": "guide/httpWritten.md",
+      "key": "v-67c1f0fa",
+      "path": "/guide/httpWritten.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "缓存题",
+          "slug": "缓存题"
+        },
+        {
+          "level": 3,
+          "title": "问题一：当点击“重新访问 page 页”链接重新加载该页面后， head.png 如何二次加载？",
+          "slug": "问题一：当点击“重新访问-page-页”链接重新加载该页面后，-head-png-如何二次加载？"
+        },
+        {
+          "level": 3,
+          "title": "问题二：如果将上述信息中的 Cache-Control 设置为 private，那么结果又会如何呢？",
+          "slug": "问题二：如果将上述信息中的-cache-control-设置为-private，那么结果又会如何呢？"
+        }
+      ]
+    },
+    {
       "title": "HTML基础",
       "frontmatter": {},
       "regularPath": "/guide/htmlBasic.html",
@@ -994,31 +1039,6 @@ export const siteData = {
           "level": 3,
           "title": "协商缓存",
           "slug": "协商缓存"
-        }
-      ]
-    },
-    {
-      "title": "HTTP笔试部分",
-      "frontmatter": {},
-      "regularPath": "/guide/httpWritten.html",
-      "relativePath": "guide/httpWritten.md",
-      "key": "v-67c1f0fa",
-      "path": "/guide/httpWritten.html",
-      "headers": [
-        {
-          "level": 2,
-          "title": "缓存题",
-          "slug": "缓存题"
-        },
-        {
-          "level": 3,
-          "title": "问题一：当点击“重新访问 page 页”链接重新加载该页面后， head.png 如何二次加载？",
-          "slug": "问题一：当点击“重新访问-page-页”链接重新加载该页面后，-head-png-如何二次加载？"
-        },
-        {
-          "level": 3,
-          "title": "问题二：如果将上述信息中的 Cache-Control 设置为 private，那么结果又会如何呢？",
-          "slug": "问题二：如果将上述信息中的-cache-control-设置为-private，那么结果又会如何呢？"
         }
       ]
     },
@@ -1233,6 +1253,76 @@ export const siteData = {
       ]
     },
     {
+      "title": "前言",
+      "frontmatter": {},
+      "regularPath": "/guide/performance.html",
+      "relativePath": "guide/performance.md",
+      "key": "v-1ae20e3a",
+      "path": "/guide/performance.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "文章目录",
+          "slug": "文章目录"
+        },
+        {
+          "level": 2,
+          "title": "1.首屏加载",
+          "slug": "_1-首屏加载"
+        },
+        {
+          "level": 3,
+          "title": "1.1 白屏的定义",
+          "slug": "_1-1-白屏的定义"
+        },
+        {
+          "level": 3,
+          "title": "1.2 白屏加载的问题分析",
+          "slug": "_1-2-白屏加载的问题分析"
+        },
+        {
+          "level": 3,
+          "title": "1.3 白屏的性能优化",
+          "slug": "_1-3-白屏的性能优化"
+        },
+        {
+          "level": 3,
+          "title": "1.4 FMP(首次有意义绘制)",
+          "slug": "_1-4-fmp-首次有意义绘制"
+        },
+        {
+          "level": 3,
+          "title": "1.5 TTI(可交互时间)",
+          "slug": "_1-5-tti-可交互时间"
+        },
+        {
+          "level": 3,
+          "title": "2 组件加载",
+          "slug": "_2-组件加载"
+        },
+        {
+          "level": 3,
+          "title": "2.1 组件懒加载",
+          "slug": "_2-1-组件懒加载"
+        },
+        {
+          "level": 3,
+          "title": "2.2 组件预加载",
+          "slug": "_2-2-组件预加载"
+        },
+        {
+          "level": 3,
+          "title": "2.3 keep-alive",
+          "slug": "_2-3-keep-alive"
+        },
+        {
+          "level": 2,
+          "title": "小结",
+          "slug": "小结"
+        }
+      ]
+    },
+    {
       "title": "JavaScript笔试部分",
       "frontmatter": {},
       "regularPath": "/guide/jsWritten.html",
@@ -1383,6 +1473,43 @@ export const siteData = {
       ]
     },
     {
+      "frontmatter": {},
+      "regularPath": "/guide/type.html",
+      "relativePath": "guide/type.md",
+      "key": "v-34495f56",
+      "path": "/guide/type.html"
+    },
+    {
+      "title": "为什么会有这个项目",
+      "frontmatter": {},
+      "regularPath": "/guide/preface.html",
+      "relativePath": "guide/preface.md",
+      "key": "v-8c976b3a",
+      "path": "/guide/preface.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "大量的过时问题",
+          "slug": "大量的过时问题"
+        },
+        {
+          "level": 2,
+          "title": "深入浅出的不多",
+          "slug": "深入浅出的不多"
+        },
+        {
+          "level": 2,
+          "title": "缺乏基础知识",
+          "slug": "缺乏基础知识"
+        },
+        {
+          "level": 2,
+          "title": "方向不够全面",
+          "slug": "方向不够全面"
+        }
+      ]
+    },
+    {
       "title": "JavaScript内存管理",
       "frontmatter": {},
       "regularPath": "/guide/memory.html",
@@ -1461,113 +1588,6 @@ export const siteData = {
           "slug": "查看内存泄漏"
         }
       ]
-    },
-    {
-      "title": "前言",
-      "frontmatter": {},
-      "regularPath": "/guide/performance.html",
-      "relativePath": "guide/performance.md",
-      "key": "v-1ae20e3a",
-      "path": "/guide/performance.html",
-      "headers": [
-        {
-          "level": 2,
-          "title": "文章目录",
-          "slug": "文章目录"
-        },
-        {
-          "level": 2,
-          "title": "1.首屏加载",
-          "slug": "_1-首屏加载"
-        },
-        {
-          "level": 3,
-          "title": "1.1 白屏的定义",
-          "slug": "_1-1-白屏的定义"
-        },
-        {
-          "level": 3,
-          "title": "1.2 白屏加载的问题分析",
-          "slug": "_1-2-白屏加载的问题分析"
-        },
-        {
-          "level": 3,
-          "title": "1.3 白屏的性能优化",
-          "slug": "_1-3-白屏的性能优化"
-        },
-        {
-          "level": 3,
-          "title": "1.4 FMP(首次有意义绘制)",
-          "slug": "_1-4-fmp-首次有意义绘制"
-        },
-        {
-          "level": 3,
-          "title": "1.5 TTI(可交互时间)",
-          "slug": "_1-5-tti-可交互时间"
-        },
-        {
-          "level": 3,
-          "title": "2 组件加载",
-          "slug": "_2-组件加载"
-        },
-        {
-          "level": 3,
-          "title": "2.1 组件懒加载",
-          "slug": "_2-1-组件懒加载"
-        },
-        {
-          "level": 3,
-          "title": "2.2 组件预加载",
-          "slug": "_2-2-组件预加载"
-        },
-        {
-          "level": 3,
-          "title": "2.3 keep-alive",
-          "slug": "_2-3-keep-alive"
-        },
-        {
-          "level": 2,
-          "title": "小结",
-          "slug": "小结"
-        }
-      ]
-    },
-    {
-      "title": "为什么会有这个项目",
-      "frontmatter": {},
-      "regularPath": "/guide/preface.html",
-      "relativePath": "guide/preface.md",
-      "key": "v-8c976b3a",
-      "path": "/guide/preface.html",
-      "headers": [
-        {
-          "level": 2,
-          "title": "大量的过时问题",
-          "slug": "大量的过时问题"
-        },
-        {
-          "level": 2,
-          "title": "深入浅出的不多",
-          "slug": "深入浅出的不多"
-        },
-        {
-          "level": 2,
-          "title": "缺乏基础知识",
-          "slug": "缺乏基础知识"
-        },
-        {
-          "level": 2,
-          "title": "方向不够全面",
-          "slug": "方向不够全面"
-        }
-      ]
-    },
-    {
-      "frontmatter": {},
-      "regularPath": "/guide/type.html",
-      "relativePath": "guide/type.md",
-      "key": "v-34495f56",
-      "path": "/guide/type.html"
     },
     {
       "title": "Vue",

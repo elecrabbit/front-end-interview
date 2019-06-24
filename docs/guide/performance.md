@@ -258,7 +258,7 @@ polyfill是为了浏览器兼容性而生,是否需要 polyfill 应该有客户�
 
 解决这个问题的方法很简单,直接引入 `<script src="https://cdn.polyfill.io/v2/polyfill.min.js"></script>` 即可,而对于 Vue 开发者就更友好了,vue-cli 现在生成的模板就自带这个引用.
 
-[image.png](https://user-gold-cdn.xitu.io/2019/6/12/16b49fbec505ac72?w=773&h=483&f=png&s=75223)
+![image.png](https://user-gold-cdn.xitu.io/2019/6/12/16b49fbec505ac72?w=773&h=483&f=png&s=75223)
 
 这个原理就是服务商通过识别不同浏览器的浏览器User Agent，使得服务器能够识别客户使用的操作系统及版本、CPU 类型、浏览器及版本、浏览器渲染引擎、浏览器语言、浏览器插件等，然后根据这个信息判断是否需要加载 polyfill,开发者在浏览器的 network 就可以查看User Agent。
 
