@@ -82,7 +82,6 @@ function renderSiderBar() {
         'htmlBasic',
         'cssBasic',
         'jsBasic',
-        'http',
         'browser',
         'dom',
         'designPatterns',
@@ -114,6 +113,14 @@ function renderSiderBar() {
   collapsable: false,
   children: [
         'vue',
+    ]
+},
+{
+  title: '计算机基础',
+  collapsable: false,
+  children: [
+        'http',
+        'tcp',
     ]
 },
 ])
