@@ -7,39 +7,11 @@ export const siteData = {
   "base": "/",
   "pages": [
     {
-      "title": "Home",
-      "frontmatter": {
-        "home": true,
-        "heroImage": "/logo.svg",
-        "actionText": "开始 →",
-        "actionLink": "/guide/",
-        "features": [
-          {
-            "title": "简洁至上",
-            "details": "追求重点和难点,剔除陈旧的知识。"
-          },
-          {
-            "title": "清晰易懂",
-            "details": "将复杂的问题一一拆解。"
-          },
-          {
-            "title": "紧跟热点",
-            "details": "当下热点技术一网打尽。"
-          }
-        ],
-        "footer": "MIT Licensed | Copyright © 2019-present xiaomuzhu"
-      },
-      "regularPath": "/",
-      "relativePath": "README.md",
-      "key": "v-77cab7d0",
-      "path": "/"
-    },
-    {
       "title": "指南使用手册",
       "frontmatter": {},
       "regularPath": "/guide/",
       "relativePath": "guide/README.md",
-      "key": "v-5b8d0d7e",
+      "key": "v-a6b0f6ea",
       "path": "/guide/",
       "headers": [
         {
@@ -94,7 +66,7 @@ export const siteData = {
       "frontmatter": {},
       "regularPath": "/guide/book.html",
       "relativePath": "guide/book.md",
-      "key": "v-281299f7",
+      "key": "v-38038a4a",
       "path": "/guide/book.html",
       "headers": [
         {
@@ -165,11 +137,39 @@ export const siteData = {
       ]
     },
     {
+      "title": "Home",
+      "frontmatter": {
+        "home": true,
+        "heroImage": "/logo.svg",
+        "actionText": "开始 →",
+        "actionLink": "/guide/",
+        "features": [
+          {
+            "title": "简洁至上",
+            "details": "追求重点和难点,剔除陈旧的知识。"
+          },
+          {
+            "title": "清晰易懂",
+            "details": "将复杂的问题一一拆解。"
+          },
+          {
+            "title": "紧跟热点",
+            "details": "当下热点技术一网打尽。"
+          }
+        ],
+        "footer": "MIT Licensed | Copyright © 2019-present xiaomuzhu"
+      },
+      "regularPath": "/",
+      "relativePath": "README.md",
+      "key": "v-7364f2b6",
+      "path": "/"
+    },
+    {
       "title": "浏览器与新技术",
       "frontmatter": {},
       "regularPath": "/guide/browser.html",
       "relativePath": "guide/browser.md",
-      "key": "v-bd40b53a",
+      "key": "v-08fc6914",
       "path": "/guide/browser.html",
       "headers": [
         {
@@ -299,7 +299,7 @@ export const siteData = {
       "frontmatter": {},
       "regularPath": "/guide/cssBasic.html",
       "relativePath": "guide/cssBasic.md",
-      "key": "v-db07261a",
+      "key": "v-26a54b74",
       "path": "/guide/cssBasic.html",
       "headers": [
         {
@@ -469,7 +469,7 @@ export const siteData = {
       "frontmatter": {},
       "regularPath": "/guide/deepclone.html",
       "relativePath": "guide/deepclone.md",
-      "key": "v-0415fc43",
+      "key": "v-d47e3e54",
       "path": "/guide/deepclone.html",
       "headers": [
         {
@@ -505,11 +505,36 @@ export const siteData = {
       ]
     },
     {
+      "title": "手写组件",
+      "frontmatter": {},
+      "regularPath": "/guide/component.html",
+      "relativePath": "guide/component.md",
+      "key": "v-909d7754",
+      "path": "/guide/component.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "实现轮播图组件",
+          "slug": "实现轮播图组件"
+        },
+        {
+          "level": 2,
+          "title": "实现级联选择组件",
+          "slug": "实现级联选择组件"
+        },
+        {
+          "level": 2,
+          "title": "实现自动完成组件",
+          "slug": "实现自动完成组件"
+        }
+      ]
+    },
+    {
       "title": "设计模式",
       "frontmatter": {},
       "regularPath": "/guide/designPatterns.html",
       "relativePath": "guide/designPatterns.md",
-      "key": "v-84d55172",
+      "key": "v-1d743fcc",
       "path": "/guide/designPatterns.html"
     },
     {
@@ -517,7 +542,7 @@ export const siteData = {
       "frontmatter": {},
       "regularPath": "/guide/dom.html",
       "relativePath": "guide/dom.md",
-      "key": "v-1ee26aa3",
+      "key": "v-d62d5894",
       "path": "/guide/dom.html",
       "headers": [
         {
@@ -557,7 +582,7 @@ export const siteData = {
       "frontmatter": {},
       "regularPath": "/guide/event.html",
       "relativePath": "guide/event.md",
-      "key": "v-17edd93a",
+      "key": "v-69018a14",
       "path": "/guide/event.html",
       "headers": [
         {
@@ -603,11 +628,61 @@ export const siteData = {
       ]
     },
     {
+      "title": "JavaScript的『预解释』与『变量提升』",
+      "frontmatter": {},
+      "regularPath": "/guide/hoisting.html",
+      "relativePath": "guide/hoisting.md",
+      "key": "v-0527eb44",
+      "path": "/guide/hoisting.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "前言",
+          "slug": "前言"
+        },
+        {
+          "level": 2,
+          "title": "从一个实例开始",
+          "slug": "从一个实例开始"
+        },
+        {
+          "level": 2,
+          "title": "avaScript预解释",
+          "slug": "avascript预解释"
+        },
+        {
+          "level": 2,
+          "title": "JavaScript执行环境",
+          "slug": "javascript执行环境"
+        },
+        {
+          "level": 2,
+          "title": "变量提升",
+          "slug": "变量提升"
+        },
+        {
+          "level": 2,
+          "title": "函数声明与函数表达式",
+          "slug": "函数声明与函数表达式"
+        },
+        {
+          "level": 2,
+          "title": "冲突处理",
+          "slug": "冲突处理"
+        },
+        {
+          "level": 2,
+          "title": "ES6中的let",
+          "slug": "es6中的let"
+        }
+      ]
+    },
+    {
       "title": "Event Loop详解",
       "frontmatter": {},
       "regularPath": "/guide/eventLoop.html",
       "relativePath": "guide/eventLoop.md",
-      "key": "v-66a88163",
+      "key": "v-0f593414",
       "path": "/guide/eventLoop.html",
       "headers": [
         {
@@ -783,61 +858,11 @@ export const siteData = {
       ]
     },
     {
-      "title": "JavaScript的『预解释』与『变量提升』",
-      "frontmatter": {},
-      "regularPath": "/guide/hoisting.html",
-      "relativePath": "guide/hoisting.md",
-      "key": "v-b989c5ea",
-      "path": "/guide/hoisting.html",
-      "headers": [
-        {
-          "level": 2,
-          "title": "前言",
-          "slug": "前言"
-        },
-        {
-          "level": 2,
-          "title": "从一个实例开始",
-          "slug": "从一个实例开始"
-        },
-        {
-          "level": 2,
-          "title": "avaScript预解释",
-          "slug": "avascript预解释"
-        },
-        {
-          "level": 2,
-          "title": "JavaScript执行环境",
-          "slug": "javascript执行环境"
-        },
-        {
-          "level": 2,
-          "title": "变量提升",
-          "slug": "变量提升"
-        },
-        {
-          "level": 2,
-          "title": "函数声明与函数表达式",
-          "slug": "函数声明与函数表达式"
-        },
-        {
-          "level": 2,
-          "title": "冲突处理",
-          "slug": "冲突处理"
-        },
-        {
-          "level": 2,
-          "title": "ES6中的let",
-          "slug": "es6中的let"
-        }
-      ]
-    },
-    {
       "title": "HTML基础",
       "frontmatter": {},
       "regularPath": "/guide/htmlBasic.html",
       "relativePath": "guide/htmlBasic.md",
-      "key": "v-36e82cfa",
+      "key": "v-7636ce16",
       "path": "/guide/htmlBasic.html",
       "headers": [
         {
@@ -912,7 +937,7 @@ export const siteData = {
       "frontmatter": {},
       "regularPath": "/guide/http.html",
       "relativePath": "guide/http.md",
-      "key": "v-45f2a08e",
+      "key": "v-2610bfe8",
       "path": "/guide/http.html",
       "headers": [
         {
@@ -1032,7 +1057,7 @@ export const siteData = {
       "frontmatter": {},
       "regularPath": "/guide/httpWritten.html",
       "relativePath": "guide/httpWritten.md",
-      "key": "v-67c1f0fa",
+      "key": "v-0dcf6a96",
       "path": "/guide/httpWritten.html",
       "headers": [
         {
@@ -1057,7 +1082,7 @@ export const siteData = {
       "frontmatter": {},
       "regularPath": "/guide/immutable.html",
       "relativePath": "guide/immutable.md",
-      "key": "v-0b1c6be3",
+      "key": "v-c6715f14",
       "path": "/guide/immutable.html",
       "headers": [
         {
@@ -1097,7 +1122,7 @@ export const siteData = {
       "frontmatter": {},
       "regularPath": "/guide/jsBasic.html",
       "relativePath": "guide/jsBasic.md",
-      "key": "v-1588a7c3",
+      "key": "v-6faacdd6",
       "path": "/guide/jsBasic.html",
       "headers": [
         {
@@ -1267,7 +1292,7 @@ export const siteData = {
       "frontmatter": {},
       "regularPath": "/guide/jsWritten.html",
       "relativePath": "guide/jsWritten.md",
-      "key": "v-2366ef63",
+      "key": "v-95dc5814",
       "path": "/guide/jsWritten.html",
       "headers": [
         {
@@ -1338,86 +1363,11 @@ export const siteData = {
       ]
     },
     {
-      "title": "JavaScript的运行机制",
-      "frontmatter": {},
-      "regularPath": "/guide/mechanism.html",
-      "relativePath": "guide/mechanism.md",
-      "key": "v-772cb57a",
-      "path": "/guide/mechanism.html",
-      "headers": [
-        {
-          "level": 2,
-          "title": "JavaScript的执行环境",
-          "slug": "javascript的执行环境"
-        },
-        {
-          "level": 3,
-          "title": "JavaScript引擎(JavaScript Engine)",
-          "slug": "javascript引擎-javascript-engine"
-        },
-        {
-          "level": 3,
-          "title": "JavaScript运行时（JavaScript Runtime）",
-          "slug": "javascript运行时（javascript-runtime）"
-        },
-        {
-          "level": 3,
-          "title": "可执行代码",
-          "slug": "可执行代码"
-        },
-        {
-          "level": 2,
-          "title": "JavaScript执行",
-          "slug": "javascript执行"
-        },
-        {
-          "level": 3,
-          "title": "堆",
-          "slug": "堆"
-        },
-        {
-          "level": 3,
-          "title": "调用栈",
-          "slug": "调用栈"
-        },
-        {
-          "level": 3,
-          "title": "执行上下文(execution context)",
-          "slug": "执行上下文-execution-context"
-        },
-        {
-          "level": 3,
-          "title": "执行过程",
-          "slug": "执行过程"
-        },
-        {
-          "level": 2,
-          "title": "小结",
-          "slug": "小结"
-        },
-        {
-          "level": 3,
-          "title": "this是怎么被绑定的?",
-          "slug": "this是怎么被绑定的"
-        },
-        {
-          "level": 3,
-          "title": "作用域链是怎么形成的？",
-          "slug": "作用域链是怎么形成的？"
-        },
-        {
-          "level": 3,
-          "title": "闭包是怎么形成的？",
-          "slug": "闭包是怎么形成的？"
-        }
-      ]
-    },
-    {
       "title": "JavaScript内存管理",
       "frontmatter": {},
       "regularPath": "/guide/memory.html",
       "relativePath": "guide/memory.md",
-      "key": "v-5a9e26c7",
+      "key": "v-2d28b59a",
       "path": "/guide/memory.html",
       "headers": [
         {
@@ -1493,11 +1443,86 @@ export const siteData = {
       ]
     },
     {
+      "title": "JavaScript的运行机制",
+      "frontmatter": {},
+      "regularPath": "/guide/mechanism.html",
+      "relativePath": "guide/mechanism.md",
+      "key": "v-561489d6",
+      "path": "/guide/mechanism.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "JavaScript的执行环境",
+          "slug": "javascript的执行环境"
+        },
+        {
+          "level": 3,
+          "title": "JavaScript引擎(JavaScript Engine)",
+          "slug": "javascript引擎-javascript-engine"
+        },
+        {
+          "level": 3,
+          "title": "JavaScript运行时（JavaScript Runtime）",
+          "slug": "javascript运行时（javascript-runtime）"
+        },
+        {
+          "level": 3,
+          "title": "可执行代码",
+          "slug": "可执行代码"
+        },
+        {
+          "level": 2,
+          "title": "JavaScript执行",
+          "slug": "javascript执行"
+        },
+        {
+          "level": 3,
+          "title": "堆",
+          "slug": "堆"
+        },
+        {
+          "level": 3,
+          "title": "调用栈",
+          "slug": "调用栈"
+        },
+        {
+          "level": 3,
+          "title": "执行上下文(execution context)",
+          "slug": "执行上下文-execution-context"
+        },
+        {
+          "level": 3,
+          "title": "执行过程",
+          "slug": "执行过程"
+        },
+        {
+          "level": 2,
+          "title": "小结",
+          "slug": "小结"
+        },
+        {
+          "level": 3,
+          "title": "this是怎么被绑定的?",
+          "slug": "this是怎么被绑定的"
+        },
+        {
+          "level": 3,
+          "title": "作用域链是怎么形成的？",
+          "slug": "作用域链是怎么形成的？"
+        },
+        {
+          "level": 3,
+          "title": "闭包是怎么形成的？",
+          "slug": "闭包是怎么形成的？"
+        }
+      ]
+    },
+    {
       "title": "前言",
       "frontmatter": {},
       "regularPath": "/guide/performance.html",
       "relativePath": "guide/performance.md",
-      "key": "v-1ae20e3a",
+      "key": "v-343f5bf6",
       "path": "/guide/performance.html",
       "headers": [
         {
@@ -1567,7 +1592,7 @@ export const siteData = {
       "frontmatter": {},
       "regularPath": "/guide/preface.html",
       "relativePath": "guide/preface.md",
-      "key": "v-8c976b3a",
+      "key": "v-13d67076",
       "path": "/guide/preface.html",
       "headers": [
         {
@@ -1593,11 +1618,93 @@ export const siteData = {
       ]
     },
     {
+      "title": "React面试题",
+      "frontmatter": {},
+      "regularPath": "/guide/react.html",
+      "relativePath": "guide/react.md",
+      "key": "v-7f195d96",
+      "path": "/guide/react.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "React最新的生命周期是怎样的?",
+          "slug": "react最新的生命周期是怎样的"
+        },
+        {
+          "level": 2,
+          "title": "React的请求应该放在哪个生命周期中?",
+          "slug": "react的请求应该放在哪个生命周期中"
+        },
+        {
+          "level": 2,
+          "title": "setState到底是异步还是同步?",
+          "slug": "setstate到底是异步还是同步"
+        },
+        {
+          "level": 2,
+          "title": "React组件通信如何实现?",
+          "slug": "react组件通信如何实现"
+        },
+        {
+          "level": 2,
+          "title": "React有哪些优化性能是手段?",
+          "slug": "react有哪些优化性能是手段"
+        },
+        {
+          "level": 2,
+          "title": "React如何进行组件/逻辑复用?",
+          "slug": "react如何进行组件-逻辑复用"
+        },
+        {
+          "level": 2,
+          "title": "你是如何理解fiber架构的?",
+          "slug": "你是如何理解fiber架构的"
+        },
+        {
+          "level": 2,
+          "title": "你对 Time Slice的理解?",
+          "slug": "你对-time-slice的理解"
+        },
+        {
+          "level": 2,
+          "title": "redux的工作流程?",
+          "slug": "redux的工作流程"
+        },
+        {
+          "level": 2,
+          "title": "react-redux是如何工作的?",
+          "slug": "react-redux是如何工作的"
+        },
+        {
+          "level": 2,
+          "title": "redux与mobx的区别?",
+          "slug": "redux与mobx的区别"
+        },
+        {
+          "level": 2,
+          "title": "redux中如何进行异步操作?",
+          "slug": "redux中如何进行异步操作"
+        },
+        {
+          "level": 2,
+          "title": "redux异步中间件之间的优劣?",
+          "slug": "redux异步中间件之间的优劣"
+        }
+      ]
+    },
+    {
+      "frontmatter": {},
+      "regularPath": "/guide/type.html",
+      "relativePath": "guide/type.md",
+      "key": "v-14677eb0",
+      "path": "/guide/type.html"
+    },
+    {
       "title": "TCP面试题",
       "frontmatter": {},
       "regularPath": "/guide/tcp.html",
       "relativePath": "guide/tcp.md",
-      "key": "v-7e416c43",
+      "key": "v-176f5554",
       "path": "/guide/tcp.html",
       "headers": [
         {
@@ -1648,20 +1755,28 @@ export const siteData = {
       ]
     },
     {
-      "frontmatter": {},
-      "regularPath": "/guide/type.html",
-      "relativePath": "guide/type.md",
-      "key": "v-34495f56",
-      "path": "/guide/type.html"
-    },
-    {
-      "title": "Vue",
+      "title": "Vue面试题",
       "frontmatter": {},
       "regularPath": "/guide/vue.html",
       "relativePath": "guide/vue.md",
-      "key": "v-7faf6c23",
+      "key": "v-14935594",
       "path": "/guide/vue.html",
       "headers": [
+        {
+          "level": 2,
+          "title": "你对MVVM的理解?",
+          "slug": "你对mvvm的理解"
+        },
+        {
+          "level": 3,
+          "title": "MVVM是什么?",
+          "slug": "mvvm是什么"
+        },
+        {
+          "level": 3,
+          "title": "MVVM的优缺点?",
+          "slug": "mvvm的优缺点"
+        },
         {
           "level": 2,
           "title": "你对Vue生命周期的理解？",
@@ -1694,8 +1809,58 @@ export const siteData = {
         },
         {
           "level": 2,
-          "title": "",
-          "slug": ""
+          "title": "computed和watch有什么区别?",
+          "slug": "computed和watch有什么区别"
+        },
+        {
+          "level": 2,
+          "title": "Vue是如何实现双向绑定的?",
+          "slug": "vue是如何实现双向绑定的"
+        },
+        {
+          "level": 2,
+          "title": "Proxy与Object.defineProperty的优劣对比?",
+          "slug": "proxy与object-defineproperty的优劣对比"
+        },
+        {
+          "level": 2,
+          "title": "你是如何理解Vue的响应式系统的?",
+          "slug": "你是如何理解vue的响应式系统的"
+        },
+        {
+          "level": 2,
+          "title": "虚拟DOM的优劣如何?",
+          "slug": "虚拟dom的优劣如何"
+        },
+        {
+          "level": 2,
+          "title": "虚拟DOM实现原理?",
+          "slug": "虚拟dom实现原理"
+        },
+        {
+          "level": 2,
+          "title": "既然Vue通过数据劫持可以精准探测数据变化,为什么还需要虚拟DOM进行diff检测差异?",
+          "slug": "既然vue通过数据劫持可以精准探测数据变化-为什么还需要虚拟dom进行diff检测差异"
+        },
+        {
+          "level": 2,
+          "title": "Vue为什么没有类似于React中shouldComponentUpdate的生命周期？",
+          "slug": "vue为什么没有类似于react中shouldcomponentupdate的生命周期？"
+        },
+        {
+          "level": 2,
+          "title": "Vue中的key到底有什么用？",
+          "slug": "vue中的key到底有什么用？"
+        },
+        {
+          "level": 2,
+          "title": "Vue如何解析指令?",
+          "slug": "vue如何解析指令"
+        },
+        {
+          "level": 2,
+          "title": "Vuex原理?",
+          "slug": "vuex原理"
         }
       ]
     }
