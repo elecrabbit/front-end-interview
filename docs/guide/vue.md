@@ -102,7 +102,62 @@ watch:
 
 ## Vue是如何实现双向绑定的?
 
+利用`Object.defineProperty`劫持对象的访问器,在属性值发生变化时我们可以获取变化,然后根据变化进行后续响应,在vue3.0中通过Proxy代理对象进行类似的操作。
+
+```JavaScript
+// 这是将要被劫持的对象
+const data = {
+  name: '',
+};
+
+function say(name) {
+  if (name === '古天乐') {
+    console.log('给大家推荐一款超好玩的游戏');
+  } else if (name === '渣渣辉') {
+    console.log('戏我演过很多,可游戏我只玩贪玩懒月');
+  } else {
+    console.log('来做我的兄弟');
+  }
+}
+
+// 遍历对象,对其属性值进行劫持
+Object.keys(data).forEach(function(key) {
+  Object.defineProperty(data, key, {
+    enumerable: true,
+    configurable: true,
+    get: function() {
+      console.log('get');
+    },
+    set: function(newVal) {
+      // 当属性值发生变化时我们可以进行额外操作
+      console.log(`大家好,我系${newVal}`);
+      say(newVal);
+    },
+  });
+});
+
+data.name = '渣渣辉';
+//大家好,我系渣渣辉
+//戏我演过很多,可游戏我只玩贪玩懒月
+```
+
+> 详细实现见[Proxy比defineproperty优劣对比?](devsProxy.md)
+
 ## Proxy与Object.defineProperty的优劣对比?
+
+Proxy的优势如下:
+
+* Proxy可以直接监听对象而非属性
+* Proxy可以直接监听数组的变化
+* Proxy有多达13种拦截方法,不限于apply、ownKeys、deleteProperty、has等等是`Object.defineProperty`不具备的
+* Proxy返回的是一个新对象,我们可以只操作新的对象达到目的,而`Object.defineProperty`只能遍历对象属性直接修改
+* Proxy作为新标准将受到浏览器厂商重点持续的性能优化，也就是传说中的新标准的性能红利
+
+Object.defineProperty的优势如下:
+
+* 兼容性好,支持IE9
+
+> 详细实现见[Proxy比defineproperty优劣对比?](devsProxy.md)
 
 ## 你是如何理解Vue的响应式系统的?
 

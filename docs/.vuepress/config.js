@@ -69,6 +69,15 @@ function renderSiderBar() {
         ]
   },
   {
+    title: '面试技巧',
+    collapsable: false,
+    children: [
+          'resume',
+          'project',
+          'hr'
+      ]
+  },
+  {
     title: '推荐',
     collapsable: false,
     children: [
@@ -112,7 +121,22 @@ function renderSiderBar() {
   title: '前端框架',
   collapsable: false,
   children: [
+        'framework',
         'vue',
+    ]
+},
+{
+  title: '框架原理详解',
+  collapsable: false,
+  children: [
+        'vuePrinciple',
+    ]
+},
+{
+  title: '安全',
+  collapsable: false,
+  children: [
+        'vuePrinciple',
     ]
 },
 {
