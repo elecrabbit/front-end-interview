@@ -161,16 +161,80 @@ Object.defineProperty的优势如下:
 
 ## 你是如何理解Vue的响应式系统的?
 
+![2019-07-22-16-29-59]( https://xiaomuzhu-image.oss-cn-beijing.aliyuncs.com/d5bfe6c9f35554783bd618edc15ec274.png)
+
+响应式系统简述:
+
+* 任何一个 Vue Component 都有一个与之对应的 Watcher 实例。
+* Vue 的 data 上的属性会被添加 getter 和 setter 属性。
+* 当 Vue Component render 函数被执行的时候, data 上会被 触碰(touch), 即被读, getter 方法会被调用, 此时 Vue 会去记录此 Vue component 所依赖的所有 data。(这一过程被称为依赖收集)
+* data 被改动时（主要是用户操作）, 即被写, setter 方法会被调用, 此时 Vue 会去通知所有依赖于此 data 的组件去调用他们的 render 函数进行更新。
+
 ## 虚拟DOM的优劣如何?
+
+优点:
+
+* 保证性能下限: 虚拟DOM可以经过diff找出最小差异,然后批量进行patch,这种操作虽然比不上手动优化,但是比起粗暴的DOM操作性能要好很多,因此虚拟DOM可以保证性能下限
+* 无需手动操作DOM: 虚拟DOM的diff和patch都是在一次更新中自动进行的,我们无需手动操作DOM,极大提高开发效率
+* 跨平台: 虚拟DOM本质上是JavaScript对象,而DOM与平台强相关,相比之下虚拟DOM可以进行更方便地跨平台操作,例如服务器渲染、移动端开发等等
+
+缺点:
+
+* 无法进行极致优化: 在一些性能要求极高的应用中虚拟DOM无法进行针对性的极致优化,比如VScode采用直接手动操作DOM的方式进行极端的性能优化
 
 ## 虚拟DOM实现原理?
 
+
+## 虚拟DOM的diff算法?
+
+我们可以先假设有新旧两个数组代表新旧两个vnode数组:
+
+```js
+[1, 2, 3, 4, 5] // old
+[1, 4, 6, 1000, 100, 5] // new
+```
+
+这个时候会有新旧
+
 ## 既然Vue通过数据劫持可以精准探测数据变化,为什么还需要虚拟DOM进行diff检测差异?
+
+考点: Vue的变化侦测原理
+
+前置知识: 依赖收集、虚拟DOM、响应式系统
+
+现代前端框架有两种方式侦测变化,一种是pull一种是push
+
+pull: 其代表为React,我们可以回忆一下React是如何侦测到变化的,我们通常会用`setState`API显式更新,然后React会进行一层层的Virtual Dom Diff操作找出差异,然后Patch到DOM上,React从一开始就不知道到底是哪发生了变化,只是知道「有变化了」,然后再进行比较暴力的Diff操作查找「哪发生变化了」，另外一个代表就是Angular的脏检查操作。
+
+push: Vue的响应式系统则是push的代表,当Vue程序初始化的时候就会对数据data进行依赖的收集,一但数据发生变化,响应式系统就会立刻得知,因此Vue是一开始就知道是「在哪发生变化了」,但是这又会产生一个问题,如果你熟悉Vue的响应式系统就知道,通常一个绑定一个数据就需要一个Watcher,一但我们的绑定细粒度过高就会产生大量的Watcher,这会带来内存以及依赖追踪的开销,而细粒度过低会无法精准侦测变化,因此Vue的设计是选择中等细粒度的方案,在组件级别进行push侦测的方式,也就是那套响应式系统,通常我们会第一时间侦测到发生变化的组件,然后在组件内部进行Virtual Dom Diff获取更加具体的差异,而Virtual Dom Diff则是pull操作,Vue是push+pull结合的方式进行变化侦测的.
 
 ## Vue为什么没有类似于React中shouldComponentUpdate的生命周期？
 
+考点: Vue的变化侦测原理
+
+前置知识: 依赖收集、虚拟DOM、响应式系统
+
+根本原因是Vue与React的变化侦测方式有所不同
+
+React是pull的方式侦测变化,当React知道发生变化后,会使用Virtual Dom Diff进行差异检测,但是很多组件实际上是肯定不会发生变化的,这个时候需要用shouldComponentUpdate进行手动操作来减少diff,从而提高程序整体的性能.
+
+Vue是pull+push的方式侦测变化的,在一开始就知道那个组件发生了变化,因此在push的阶段并不需要手动控制diff,而组件内部采用的diff方式实际上是可以引入类似于shouldComponentUpdate相关生命周期的,但是通常合理大小的组件不会有过量的diff,手动优化的价值有限,因此目前Vue并没有考虑引入shouldComponentUpdate这种手动优化的生命周期.
+
 ## Vue中的key到底有什么用？
 
+`key`是为Vue中的vnode标记的唯一id,通过这个key,我们的diff操作可以更准确、更快速
+
+diff算法的过程中,先会进行新旧节点的首尾交叉对比,当无法匹配的时候会用新节点的`key`与旧节点进行比对,然后超出差异.
+
+> diff程可以概括为：oldCh和newCh各有两个头尾的变量StartIdx和EndIdx，它们的2个变量相互比较，一共有4种比较方式。如果4种比较都没匹配，如果设置了key，就会用key进行比较，在比较的过程中，变量会往中间靠，一旦StartIdx>EndIdx表明oldCh和newCh至少有一个已经遍历完了，就会结束比较,这四种比较方式就是首、尾、旧尾新头、旧头新尾.
+
+* 准确: 如果不加`key`,那么vue会选择复用节点(Vue的就地更新策略),导致之前节点的状态被保留下来,会产生一系列的bug.
+* 快速: key的唯一性可以被Map数据结构充分利用,相比于遍历查找的时间复杂度O(n),Map的时间复杂度仅仅为O(1).
+
+![2019-07-26-14-52-57]( https://xiaomuzhu-image.oss-cn-beijing.aliyuncs.com/8edce49381a9f6198faa60d7af73f74b.png)
+
 ## Vue如何解析指令?
+
+
 
 ## Vuex原理?
