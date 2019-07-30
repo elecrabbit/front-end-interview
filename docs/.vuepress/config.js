@@ -123,6 +123,7 @@ function renderSiderBar() {
   children: [
         'framework',
         'vue',
+        'react',
     ]
 },
 {
@@ -130,6 +131,7 @@ function renderSiderBar() {
   collapsable: false,
   children: [
         'vuePrinciple',
+        'virtualDom',
     ]
 },
 {

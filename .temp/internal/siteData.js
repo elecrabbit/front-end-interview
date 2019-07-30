@@ -35,61 +35,6 @@ export const siteData = {
       "path": "/"
     },
     {
-      "title": "指南使用手册",
-      "frontmatter": {},
-      "regularPath": "/guide/",
-      "relativePath": "guide/README.md",
-      "key": "v-a6b0f6ea",
-      "path": "/guide/",
-      "headers": [
-        {
-          "level": 2,
-          "title": "项目结构概览",
-          "slug": "项目结构概览"
-        },
-        {
-          "level": 2,
-          "title": "模块概览",
-          "slug": "模块概览"
-        },
-        {
-          "level": 3,
-          "title": "前端基础",
-          "slug": "前端基础"
-        },
-        {
-          "level": 3,
-          "title": "框架解读",
-          "slug": "框架解读"
-        },
-        {
-          "level": 3,
-          "title": "工程化",
-          "slug": "工程化"
-        },
-        {
-          "level": 3,
-          "title": "Typescript",
-          "slug": "typescript"
-        },
-        {
-          "level": 3,
-          "title": "性能优化",
-          "slug": "性能优化"
-        },
-        {
-          "level": 3,
-          "title": "计算机基础",
-          "slug": "计算机基础"
-        },
-        {
-          "level": 3,
-          "title": "细分领域",
-          "slug": "细分领域"
-        }
-      ]
-    },
-    {
       "title": "书籍/课程推荐",
       "frontmatter": {},
       "regularPath": "/guide/book.html",
@@ -161,6 +106,61 @@ export const siteData = {
           "level": 3,
           "title": "慕课网",
           "slug": "慕课网"
+        }
+      ]
+    },
+    {
+      "title": "指南使用手册",
+      "frontmatter": {},
+      "regularPath": "/guide/",
+      "relativePath": "guide/README.md",
+      "key": "v-a6b0f6ea",
+      "path": "/guide/",
+      "headers": [
+        {
+          "level": 2,
+          "title": "项目结构概览",
+          "slug": "项目结构概览"
+        },
+        {
+          "level": 2,
+          "title": "模块概览",
+          "slug": "模块概览"
+        },
+        {
+          "level": 3,
+          "title": "前端基础",
+          "slug": "前端基础"
+        },
+        {
+          "level": 3,
+          "title": "框架解读",
+          "slug": "框架解读"
+        },
+        {
+          "level": 3,
+          "title": "工程化",
+          "slug": "工程化"
+        },
+        {
+          "level": 3,
+          "title": "Typescript",
+          "slug": "typescript"
+        },
+        {
+          "level": 3,
+          "title": "性能优化",
+          "slug": "性能优化"
+        },
+        {
+          "level": 3,
+          "title": "计算机基础",
+          "slug": "计算机基础"
+        },
+        {
+          "level": 3,
+          "title": "细分领域",
+          "slug": "细分领域"
         }
       ]
     },
@@ -291,96 +291,6 @@ export const siteData = {
           "level": 3,
           "title": "其它跨域方案",
           "slug": "其它跨域方案"
-        }
-      ]
-    },
-    {
-      "title": "手写组件",
-      "frontmatter": {},
-      "regularPath": "/guide/component.html",
-      "relativePath": "guide/component.md",
-      "key": "v-909d7754",
-      "path": "/guide/component.html",
-      "headers": [
-        {
-          "level": 2,
-          "title": "实现轮播图组件",
-          "slug": "实现轮播图组件"
-        },
-        {
-          "level": 2,
-          "title": "实现级联选择组件",
-          "slug": "实现级联选择组件"
-        },
-        {
-          "level": 2,
-          "title": "实现自动完成组件",
-          "slug": "实现自动完成组件"
-        }
-      ]
-    },
-    {
-      "title": "Proxy比defineproperty优劣对比?",
-      "frontmatter": {},
-      "regularPath": "/guide/devsProxy.html",
-      "relativePath": "guide/devsProxy.md",
-      "key": "v-7b8fa194",
-      "path": "/guide/devsProxy.html",
-      "headers": [
-        {
-          "level": 2,
-          "title": "前言",
-          "slug": "前言"
-        },
-        {
-          "level": 2,
-          "title": "基于数据劫持实现的双向绑定的特点",
-          "slug": "基于数据劫持实现的双向绑定的特点"
-        },
-        {
-          "level": 3,
-          "title": "1.1 什么是数据劫持",
-          "slug": "_1-1-什么是数据劫持"
-        },
-        {
-          "level": 3,
-          "title": "1.2 数据劫持的优势",
-          "slug": "_1-2-数据劫持的优势"
-        },
-        {
-          "level": 3,
-          "title": "1.3 基于数据劫持双向绑定的实现思路",
-          "slug": "_1-3-基于数据劫持双向绑定的实现思路"
-        },
-        {
-          "level": 2,
-          "title": "2.基于Object.defineProperty双向绑定的特点",
-          "slug": "_2-基于object-defineproperty双向绑定的特点"
-        },
-        {
-          "level": 3,
-          "title": "2.1 极简版的双向绑定",
-          "slug": "_2-1-极简版的双向绑定"
-        },
-        {
-          "level": 2,
-          "title": "3.Proxy实现的双向绑定的特点",
-          "slug": "_3-proxy实现的双向绑定的特点"
-        },
-        {
-          "level": 3,
-          "title": "3.1 Proxy可以直接监听对象而非属性",
-          "slug": "_3-1-proxy可以直接监听对象而非属性"
-        },
-        {
-          "level": 3,
-          "title": "3.2 Proxy可以直接监听数组的变化",
-          "slug": "_3-2-proxy可以直接监听数组的变化"
-        },
-        {
-          "level": 3,
-          "title": "3.3 Proxy的其他优势",
-          "slug": "_3-3-proxy的其他优势"
         }
       ]
     },
@@ -555,42 +465,37 @@ export const siteData = {
       ]
     },
     {
+      "title": "手写组件",
+      "frontmatter": {},
+      "regularPath": "/guide/component.html",
+      "relativePath": "guide/component.md",
+      "key": "v-909d7754",
+      "path": "/guide/component.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "实现轮播图组件",
+          "slug": "实现轮播图组件"
+        },
+        {
+          "level": 2,
+          "title": "实现级联选择组件",
+          "slug": "实现级联选择组件"
+        },
+        {
+          "level": 2,
+          "title": "实现自动完成组件",
+          "slug": "实现自动完成组件"
+        }
+      ]
+    },
+    {
       "title": "设计模式",
       "frontmatter": {},
       "regularPath": "/guide/designPatterns.html",
       "relativePath": "guide/designPatterns.md",
       "key": "v-1d743fcc",
       "path": "/guide/designPatterns.html"
-    },
-    {
-      "title": "关于前端框架的面试须知",
-      "frontmatter": {},
-      "regularPath": "/guide/framework.html",
-      "relativePath": "guide/framework.md",
-      "key": "v-1aa489f6",
-      "path": "/guide/framework.html",
-      "headers": [
-        {
-          "level": 2,
-          "title": "准备框架相关知识的误区",
-          "slug": "准备框架相关知识的误区"
-        },
-        {
-          "level": 3,
-          "title": "不要为了读源码而读源码",
-          "slug": "不要为了读源码而读源码"
-        },
-        {
-          "level": 3,
-          "title": "不建议读源码解读的文章",
-          "slug": "不建议读源码解读的文章"
-        },
-        {
-          "level": 3,
-          "title": "不建议为了面试而读源码",
-          "slug": "不建议为了面试而读源码"
-        }
-      ]
     },
     {
       "title": "实现深克隆",
@@ -633,6 +538,71 @@ export const siteData = {
       ]
     },
     {
+      "title": "Proxy比defineproperty优劣对比?",
+      "frontmatter": {},
+      "regularPath": "/guide/devsProxy.html",
+      "relativePath": "guide/devsProxy.md",
+      "key": "v-7b8fa194",
+      "path": "/guide/devsProxy.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "前言",
+          "slug": "前言"
+        },
+        {
+          "level": 2,
+          "title": "基于数据劫持实现的双向绑定的特点",
+          "slug": "基于数据劫持实现的双向绑定的特点"
+        },
+        {
+          "level": 3,
+          "title": "1.1 什么是数据劫持",
+          "slug": "_1-1-什么是数据劫持"
+        },
+        {
+          "level": 3,
+          "title": "1.2 数据劫持的优势",
+          "slug": "_1-2-数据劫持的优势"
+        },
+        {
+          "level": 3,
+          "title": "1.3 基于数据劫持双向绑定的实现思路",
+          "slug": "_1-3-基于数据劫持双向绑定的实现思路"
+        },
+        {
+          "level": 2,
+          "title": "2.基于Object.defineProperty双向绑定的特点",
+          "slug": "_2-基于object-defineproperty双向绑定的特点"
+        },
+        {
+          "level": 3,
+          "title": "2.1 极简版的双向绑定",
+          "slug": "_2-1-极简版的双向绑定"
+        },
+        {
+          "level": 2,
+          "title": "3.Proxy实现的双向绑定的特点",
+          "slug": "_3-proxy实现的双向绑定的特点"
+        },
+        {
+          "level": 3,
+          "title": "3.1 Proxy可以直接监听对象而非属性",
+          "slug": "_3-1-proxy可以直接监听对象而非属性"
+        },
+        {
+          "level": 3,
+          "title": "3.2 Proxy可以直接监听数组的变化",
+          "slug": "_3-2-proxy可以直接监听数组的变化"
+        },
+        {
+          "level": 3,
+          "title": "3.3 Proxy的其他优势",
+          "slug": "_3-3-proxy的其他优势"
+        }
+      ]
+    },
+    {
       "title": "DOM",
       "frontmatter": {},
       "regularPath": "/guide/dom.html",
@@ -669,6 +639,56 @@ export const siteData = {
           "level": 2,
           "title": "什么是事件委托?",
           "slug": "什么是事件委托"
+        }
+      ]
+    },
+    {
+      "title": "如何实现一个Event",
+      "frontmatter": {},
+      "regularPath": "/guide/event.html",
+      "relativePath": "guide/event.md",
+      "key": "v-69018a14",
+      "path": "/guide/event.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "前言",
+          "slug": "前言"
+        },
+        {
+          "level": 2,
+          "title": "基本构造",
+          "slug": "基本构造"
+        },
+        {
+          "level": 3,
+          "title": "初始化class",
+          "slug": "初始化class"
+        },
+        {
+          "level": 3,
+          "title": "监听与触发",
+          "slug": "监听与触发"
+        },
+        {
+          "level": 2,
+          "title": "升级改造",
+          "slug": "升级改造"
+        },
+        {
+          "level": 3,
+          "title": "监听/触发器升级",
+          "slug": "监听-触发器升级"
+        },
+        {
+          "level": 3,
+          "title": "移除监听",
+          "slug": "移除监听"
+        },
+        {
+          "level": 3,
+          "title": "发现问题",
+          "slug": "发现问题"
         }
       ]
     },
@@ -853,52 +873,32 @@ export const siteData = {
       ]
     },
     {
-      "title": "如何实现一个Event",
+      "title": "关于前端框架的面试须知",
       "frontmatter": {},
-      "regularPath": "/guide/event.html",
-      "relativePath": "guide/event.md",
-      "key": "v-69018a14",
-      "path": "/guide/event.html",
+      "regularPath": "/guide/framework.html",
+      "relativePath": "guide/framework.md",
+      "key": "v-1aa489f6",
+      "path": "/guide/framework.html",
       "headers": [
         {
           "level": 2,
-          "title": "前言",
-          "slug": "前言"
-        },
-        {
-          "level": 2,
-          "title": "基本构造",
-          "slug": "基本构造"
+          "title": "准备框架相关知识的误区",
+          "slug": "准备框架相关知识的误区"
         },
         {
           "level": 3,
-          "title": "初始化class",
-          "slug": "初始化class"
+          "title": "不要为了读源码而读源码",
+          "slug": "不要为了读源码而读源码"
         },
         {
           "level": 3,
-          "title": "监听与触发",
-          "slug": "监听与触发"
-        },
-        {
-          "level": 2,
-          "title": "升级改造",
-          "slug": "升级改造"
+          "title": "不建议读源码解读的文章",
+          "slug": "不建议读源码解读的文章"
         },
         {
           "level": 3,
-          "title": "监听/触发器升级",
-          "slug": "监听-触发器升级"
-        },
-        {
-          "level": 3,
-          "title": "移除监听",
-          "slug": "移除监听"
-        },
-        {
-          "level": 3,
-          "title": "发现问题",
-          "slug": "发现问题"
+          "title": "不建议为了面试而读源码",
+          "slug": "不建议为了面试而读源码"
         }
       ]
     },
@@ -949,81 +949,6 @@ export const siteData = {
           "level": 2,
           "title": "ES6中的let",
           "slug": "es6中的let"
-        }
-      ]
-    },
-    {
-      "title": "HTML基础",
-      "frontmatter": {},
-      "regularPath": "/guide/htmlBasic.html",
-      "relativePath": "guide/htmlBasic.md",
-      "key": "v-7636ce16",
-      "path": "/guide/htmlBasic.html",
-      "headers": [
-        {
-          "level": 2,
-          "title": "doctype(文档类型) 的作用是什么？✨",
-          "slug": "doctype-文档类型-的作用是什么？✨"
-        },
-        {
-          "level": 2,
-          "title": "这三种模式的区别是什么？(接上一问追问)",
-          "slug": "这三种模式的区别是什么？-接上一问追问"
-        },
-        {
-          "level": 2,
-          "title": "HTML、XML 和 XHTML 有什么区别？",
-          "slug": "html、xml-和-xhtml-有什么区别？"
-        },
-        {
-          "level": 2,
-          "title": "什么是data-属性？",
-          "slug": "什么是data-属性？"
-        },
-        {
-          "level": 2,
-          "title": "你对HTML语义化的理解？✨",
-          "slug": "你对html语义化的理解？✨"
-        },
-        {
-          "level": 2,
-          "title": "HTML5与HTML4的不同之处",
-          "slug": "html5与html4的不同之处"
-        },
-        {
-          "level": 2,
-          "title": "有哪些常用的meta标签？",
-          "slug": "有哪些常用的meta标签？"
-        },
-        {
-          "level": 2,
-          "title": "src和href的区别？",
-          "slug": "src和href的区别？"
-        },
-        {
-          "level": 2,
-          "title": "知道img的srcset的作用是什么？（追问）",
-          "slug": "知道img的srcset的作用是什么？（追问）"
-        },
-        {
-          "level": 2,
-          "title": "还有哪一个标签能起到跟srcset相似作用？（追问）",
-          "slug": "还有哪一个标签能起到跟srcset相似作用？（追问）"
-        },
-        {
-          "level": 2,
-          "title": "script标签中defer和async的区别？✨",
-          "slug": "script标签中defer和async的区别？✨"
-        },
-        {
-          "level": 2,
-          "title": "有几种前端储存的方式？✨",
-          "slug": "有几种前端储存的方式？✨"
-        },
-        {
-          "level": 2,
-          "title": "这些方式的区别是什么？（追问）✨",
-          "slug": "这些方式的区别是什么？（追问）✨"
         }
       ]
     },
@@ -1148,6 +1073,106 @@ export const siteData = {
       ]
     },
     {
+      "title": "HTML基础",
+      "frontmatter": {},
+      "regularPath": "/guide/htmlBasic.html",
+      "relativePath": "guide/htmlBasic.md",
+      "key": "v-7636ce16",
+      "path": "/guide/htmlBasic.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "doctype(文档类型) 的作用是什么？✨",
+          "slug": "doctype-文档类型-的作用是什么？✨"
+        },
+        {
+          "level": 2,
+          "title": "这三种模式的区别是什么？(接上一问追问)",
+          "slug": "这三种模式的区别是什么？-接上一问追问"
+        },
+        {
+          "level": 2,
+          "title": "HTML、XML 和 XHTML 有什么区别？",
+          "slug": "html、xml-和-xhtml-有什么区别？"
+        },
+        {
+          "level": 2,
+          "title": "什么是data-属性？",
+          "slug": "什么是data-属性？"
+        },
+        {
+          "level": 2,
+          "title": "你对HTML语义化的理解？✨",
+          "slug": "你对html语义化的理解？✨"
+        },
+        {
+          "level": 2,
+          "title": "HTML5与HTML4的不同之处",
+          "slug": "html5与html4的不同之处"
+        },
+        {
+          "level": 2,
+          "title": "有哪些常用的meta标签？",
+          "slug": "有哪些常用的meta标签？"
+        },
+        {
+          "level": 2,
+          "title": "src和href的区别？",
+          "slug": "src和href的区别？"
+        },
+        {
+          "level": 2,
+          "title": "知道img的srcset的作用是什么？（追问）",
+          "slug": "知道img的srcset的作用是什么？（追问）"
+        },
+        {
+          "level": 2,
+          "title": "还有哪一个标签能起到跟srcset相似作用？（追问）",
+          "slug": "还有哪一个标签能起到跟srcset相似作用？（追问）"
+        },
+        {
+          "level": 2,
+          "title": "script标签中defer和async的区别？✨",
+          "slug": "script标签中defer和async的区别？✨"
+        },
+        {
+          "level": 2,
+          "title": "有几种前端储存的方式？✨",
+          "slug": "有几种前端储存的方式？✨"
+        },
+        {
+          "level": 2,
+          "title": "这些方式的区别是什么？（追问）✨",
+          "slug": "这些方式的区别是什么？（追问）✨"
+        }
+      ]
+    },
+    {
+      "title": "HTTP笔试部分",
+      "frontmatter": {},
+      "regularPath": "/guide/httpWritten.html",
+      "relativePath": "guide/httpWritten.md",
+      "key": "v-0dcf6a96",
+      "path": "/guide/httpWritten.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "缓存题",
+          "slug": "缓存题"
+        },
+        {
+          "level": 3,
+          "title": "问题一：当点击“重新访问 page 页”链接重新加载该页面后， head.png 如何二次加载？",
+          "slug": "问题一：当点击“重新访问-page-页”链接重新加载该页面后，-head-png-如何二次加载？"
+        },
+        {
+          "level": 3,
+          "title": "问题二：如果将上述信息中的 Cache-Control 设置为 private，那么结果又会如何呢？",
+          "slug": "问题二：如果将上述信息中的-cache-control-设置为-private，那么结果又会如何呢？"
+        }
+      ]
+    },
+    {
       "title": "实现不可变数据",
       "frontmatter": {},
       "regularPath": "/guide/immutable.html",
@@ -1184,31 +1209,6 @@ export const siteData = {
           "level": 3,
           "title": "总结",
           "slug": "总结"
-        }
-      ]
-    },
-    {
-      "title": "HTTP笔试部分",
-      "frontmatter": {},
-      "regularPath": "/guide/httpWritten.html",
-      "relativePath": "guide/httpWritten.md",
-      "key": "v-0dcf6a96",
-      "path": "/guide/httpWritten.html",
-      "headers": [
-        {
-          "level": 2,
-          "title": "缓存题",
-          "slug": "缓存题"
-        },
-        {
-          "level": 3,
-          "title": "问题一：当点击“重新访问 page 页”链接重新加载该页面后， head.png 如何二次加载？",
-          "slug": "问题一：当点击“重新访问-page-页”链接重新加载该页面后，-head-png-如何二次加载？"
-        },
-        {
-          "level": 3,
-          "title": "问题二：如果将上述信息中的 Cache-Control 设置为 private，那么结果又会如何呢？",
-          "slug": "问题二：如果将上述信息中的-cache-control-设置为-private，那么结果又会如何呢？"
         }
       ]
     },
@@ -1383,146 +1383,6 @@ export const siteData = {
       ]
     },
     {
-      "title": "JavaScript的运行机制",
-      "frontmatter": {},
-      "regularPath": "/guide/mechanism.html",
-      "relativePath": "guide/mechanism.md",
-      "key": "v-561489d6",
-      "path": "/guide/mechanism.html",
-      "headers": [
-        {
-          "level": 2,
-          "title": "JavaScript的执行环境",
-          "slug": "javascript的执行环境"
-        },
-        {
-          "level": 3,
-          "title": "JavaScript引擎(JavaScript Engine)",
-          "slug": "javascript引擎-javascript-engine"
-        },
-        {
-          "level": 3,
-          "title": "JavaScript运行时（JavaScript Runtime）",
-          "slug": "javascript运行时（javascript-runtime）"
-        },
-        {
-          "level": 3,
-          "title": "可执行代码",
-          "slug": "可执行代码"
-        },
-        {
-          "level": 2,
-          "title": "JavaScript执行",
-          "slug": "javascript执行"
-        },
-        {
-          "level": 3,
-          "title": "堆",
-          "slug": "堆"
-        },
-        {
-          "level": 3,
-          "title": "调用栈",
-          "slug": "调用栈"
-        },
-        {
-          "level": 3,
-          "title": "执行上下文(execution context)",
-          "slug": "执行上下文-execution-context"
-        },
-        {
-          "level": 3,
-          "title": "执行过程",
-          "slug": "执行过程"
-        },
-        {
-          "level": 2,
-          "title": "小结",
-          "slug": "小结"
-        },
-        {
-          "level": 3,
-          "title": "this是怎么被绑定的?",
-          "slug": "this是怎么被绑定的"
-        },
-        {
-          "level": 3,
-          "title": "作用域链是怎么形成的？",
-          "slug": "作用域链是怎么形成的？"
-        },
-        {
-          "level": 3,
-          "title": "闭包是怎么形成的？",
-          "slug": "闭包是怎么形成的？"
-        }
-      ]
-    },
-    {
-      "title": "技术面试",
-      "frontmatter": {},
-      "regularPath": "/guide/project.html",
-      "relativePath": "guide/project.md",
-      "key": "v-571d1f56",
-      "path": "/guide/project.html",
-      "headers": [
-        {
-          "level": 2,
-          "title": "自我介绍",
-          "slug": "自我介绍"
-        },
-        {
-          "level": 3,
-          "title": "为什么需要自我介绍",
-          "slug": "为什么需要自我介绍"
-        },
-        {
-          "level": 3,
-          "title": "自我介绍的几个必备要素",
-          "slug": "自我介绍的几个必备要素"
-        },
-        {
-          "level": 3,
-          "title": "自我介绍要有目的性",
-          "slug": "自我介绍要有目的性"
-        },
-        {
-          "level": 3,
-          "title": "如何准备自我介绍",
-          "slug": "如何准备自我介绍"
-        },
-        {
-          "level": 2,
-          "title": "技术考察",
-          "slug": "技术考察"
-        },
-        {
-          "level": 3,
-          "title": "多重提问",
-          "slug": "多重提问"
-        },
-        {
-          "level": 3,
-          "title": "答题法则",
-          "slug": "答题法则"
-        },
-        {
-          "level": 3,
-          "title": "刻意引导",
-          "slug": "刻意引导"
-        },
-        {
-          "level": 2,
-          "title": "向面试官提问",
-          "slug": "向面试官提问"
-        },
-        {
-          "level": 2,
-          "title": "总结",
-          "slug": "总结"
-        }
-      ]
-    },
-    {
       "title": "JavaScript笔试部分",
       "frontmatter": {},
       "regularPath": "/guide/jsWritten.html",
@@ -1594,6 +1454,81 @@ export const siteData = {
           "level": 2,
           "title": "实现Promise",
           "slug": "实现promise"
+        }
+      ]
+    },
+    {
+      "title": "JavaScript的运行机制",
+      "frontmatter": {},
+      "regularPath": "/guide/mechanism.html",
+      "relativePath": "guide/mechanism.md",
+      "key": "v-561489d6",
+      "path": "/guide/mechanism.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "JavaScript的执行环境",
+          "slug": "javascript的执行环境"
+        },
+        {
+          "level": 3,
+          "title": "JavaScript引擎(JavaScript Engine)",
+          "slug": "javascript引擎-javascript-engine"
+        },
+        {
+          "level": 3,
+          "title": "JavaScript运行时（JavaScript Runtime）",
+          "slug": "javascript运行时（javascript-runtime）"
+        },
+        {
+          "level": 3,
+          "title": "可执行代码",
+          "slug": "可执行代码"
+        },
+        {
+          "level": 2,
+          "title": "JavaScript执行",
+          "slug": "javascript执行"
+        },
+        {
+          "level": 3,
+          "title": "堆",
+          "slug": "堆"
+        },
+        {
+          "level": 3,
+          "title": "调用栈",
+          "slug": "调用栈"
+        },
+        {
+          "level": 3,
+          "title": "执行上下文(execution context)",
+          "slug": "执行上下文-execution-context"
+        },
+        {
+          "level": 3,
+          "title": "执行过程",
+          "slug": "执行过程"
+        },
+        {
+          "level": 2,
+          "title": "小结",
+          "slug": "小结"
+        },
+        {
+          "level": 3,
+          "title": "this是怎么被绑定的?",
+          "slug": "this是怎么被绑定的"
+        },
+        {
+          "level": 3,
+          "title": "作用域链是怎么形成的？",
+          "slug": "作用域链是怎么形成的？"
+        },
+        {
+          "level": 3,
+          "title": "闭包是怎么形成的？",
+          "slug": "闭包是怎么形成的？"
         }
       ]
     },
@@ -1676,13 +1611,6 @@ export const siteData = {
           "slug": "查看内存泄漏"
         }
       ]
-    },
-    {
-      "frontmatter": {},
-      "regularPath": "/guide/type.html",
-      "relativePath": "guide/type.md",
-      "key": "v-14677eb0",
-      "path": "/guide/type.html"
     },
     {
       "title": "前言",
@@ -1785,6 +1713,208 @@ export const siteData = {
       ]
     },
     {
+      "title": "技术面试",
+      "frontmatter": {},
+      "regularPath": "/guide/project.html",
+      "relativePath": "guide/project.md",
+      "key": "v-571d1f56",
+      "path": "/guide/project.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "自我介绍",
+          "slug": "自我介绍"
+        },
+        {
+          "level": 3,
+          "title": "为什么需要自我介绍",
+          "slug": "为什么需要自我介绍"
+        },
+        {
+          "level": 3,
+          "title": "自我介绍的几个必备要素",
+          "slug": "自我介绍的几个必备要素"
+        },
+        {
+          "level": 3,
+          "title": "自我介绍要有目的性",
+          "slug": "自我介绍要有目的性"
+        },
+        {
+          "level": 3,
+          "title": "如何准备自我介绍",
+          "slug": "如何准备自我介绍"
+        },
+        {
+          "level": 2,
+          "title": "技术考察",
+          "slug": "技术考察"
+        },
+        {
+          "level": 3,
+          "title": "多重提问",
+          "slug": "多重提问"
+        },
+        {
+          "level": 3,
+          "title": "答题法则",
+          "slug": "答题法则"
+        },
+        {
+          "level": 3,
+          "title": "刻意引导",
+          "slug": "刻意引导"
+        },
+        {
+          "level": 2,
+          "title": "向面试官提问",
+          "slug": "向面试官提问"
+        },
+        {
+          "level": 2,
+          "title": "总结",
+          "slug": "总结"
+        }
+      ]
+    },
+    {
+      "title": "React面试题",
+      "frontmatter": {},
+      "regularPath": "/guide/react.html",
+      "relativePath": "guide/react.md",
+      "key": "v-7f195d96",
+      "path": "/guide/react.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "React最新的生命周期是怎样的?",
+          "slug": "react最新的生命周期是怎样的"
+        },
+        {
+          "level": 2,
+          "title": "React的请求应该放在哪个生命周期中?",
+          "slug": "react的请求应该放在哪个生命周期中"
+        },
+        {
+          "level": 2,
+          "title": "setState到底是异步还是同步?",
+          "slug": "setstate到底是异步还是同步"
+        },
+        {
+          "level": 2,
+          "title": "React组件通信如何实现?",
+          "slug": "react组件通信如何实现"
+        },
+        {
+          "level": 2,
+          "title": "React有哪些优化性能是手段?",
+          "slug": "react有哪些优化性能是手段"
+        },
+        {
+          "level": 2,
+          "title": "React如何进行组件/逻辑复用?",
+          "slug": "react如何进行组件-逻辑复用"
+        },
+        {
+          "level": 2,
+          "title": "你是如何理解fiber架构的?",
+          "slug": "你是如何理解fiber架构的"
+        },
+        {
+          "level": 2,
+          "title": "你对 Time Slice的理解?",
+          "slug": "你对-time-slice的理解"
+        },
+        {
+          "level": 2,
+          "title": "redux的工作流程?",
+          "slug": "redux的工作流程"
+        },
+        {
+          "level": 2,
+          "title": "react-redux是如何工作的?",
+          "slug": "react-redux是如何工作的"
+        },
+        {
+          "level": 2,
+          "title": "redux与mobx的区别?",
+          "slug": "redux与mobx的区别"
+        },
+        {
+          "level": 2,
+          "title": "redux中如何进行异步操作?",
+          "slug": "redux中如何进行异步操作"
+        },
+        {
+          "level": 2,
+          "title": "redux异步中间件之间的优劣?",
+          "slug": "redux异步中间件之间的优劣"
+        }
+      ]
+    },
+    {
+      "title": "TCP面试题",
+      "frontmatter": {},
+      "regularPath": "/guide/tcp.html",
+      "relativePath": "guide/tcp.md",
+      "key": "v-176f5554",
+      "path": "/guide/tcp.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "TCP 的特性",
+          "slug": "tcp-的特性"
+        },
+        {
+          "level": 2,
+          "title": "请简述TCP\\UDP的区别",
+          "slug": "请简述tcp-udp的区别"
+        },
+        {
+          "level": 2,
+          "title": "TCP粘包是怎么回事，如何处理? ✨",
+          "slug": "tcp粘包是怎么回事，如何处理-✨"
+        },
+        {
+          "level": 2,
+          "title": "为什么udp不会粘包？",
+          "slug": "为什么udp不会粘包？"
+        },
+        {
+          "level": 2,
+          "title": "如何理解 TCP backlog？",
+          "slug": "如何理解-tcp-backlog？"
+        },
+        {
+          "level": 2,
+          "title": "常用端口号与对应的服务",
+          "slug": "常用端口号与对应的服务"
+        },
+        {
+          "level": 2,
+          "title": "说一说OSI七层模型",
+          "slug": "说一说osi七层模型"
+        },
+        {
+          "level": 2,
+          "title": "讲一下三次握手？✨",
+          "slug": "讲一下三次握手？✨"
+        },
+        {
+          "level": 2,
+          "title": "讲一下四次握手？✨",
+          "slug": "讲一下四次握手？✨"
+        }
+      ]
+    },
+    {
+      "frontmatter": {},
+      "regularPath": "/guide/type.html",
+      "relativePath": "guide/type.md",
+      "key": "v-14677eb0",
+      "path": "/guide/type.html"
+    },
+    {
       "title": "虚拟DOM原理",
       "frontmatter": {},
       "regularPath": "/guide/virtualDom.html",
@@ -1804,13 +1934,33 @@ export const siteData = {
         },
         {
           "level": 2,
-          "title": "Virtual DOM的三个关键要素",
-          "slug": "virtual-dom的三个关键要素"
+          "title": "Virtual DOM的关键要素",
+          "slug": "virtual-dom的关键要素"
         },
         {
           "level": 3,
           "title": "Virtual DOM的创建",
           "slug": "virtual-dom的创建"
+        },
+        {
+          "level": 3,
+          "title": "Virtual DOM Tree的创建",
+          "slug": "virtual-dom-tree的创建"
+        },
+        {
+          "level": 3,
+          "title": "Virtual DOM 的更新",
+          "slug": "virtual-dom-的更新"
+        },
+        {
+          "level": 3,
+          "title": "Virtual DOM 的diff",
+          "slug": "virtual-dom-的diff"
+        },
+        {
+          "level": 2,
+          "title": "Virtual DOM的优化",
+          "slug": "virtual-dom的优化"
         }
       ]
     },
@@ -1899,11 +2049,6 @@ export const siteData = {
         },
         {
           "level": 2,
-          "title": "虚拟DOM的diff算法?",
-          "slug": "虚拟dom的diff算法"
-        },
-        {
-          "level": 2,
           "title": "既然Vue通过数据劫持可以精准探测数据变化,为什么还需要虚拟DOM进行diff检测差异?",
           "slug": "既然vue通过数据劫持可以精准探测数据变化-为什么还需要虚拟dom进行diff检测差异"
         },
@@ -1926,136 +2071,6 @@ export const siteData = {
           "level": 2,
           "title": "Vuex原理?",
           "slug": "vuex原理"
-        }
-      ]
-    },
-    {
-      "title": "TCP面试题",
-      "frontmatter": {},
-      "regularPath": "/guide/tcp.html",
-      "relativePath": "guide/tcp.md",
-      "key": "v-176f5554",
-      "path": "/guide/tcp.html",
-      "headers": [
-        {
-          "level": 2,
-          "title": "TCP 的特性",
-          "slug": "tcp-的特性"
-        },
-        {
-          "level": 2,
-          "title": "请简述TCP\\UDP的区别",
-          "slug": "请简述tcp-udp的区别"
-        },
-        {
-          "level": 2,
-          "title": "TCP粘包是怎么回事，如何处理? ✨",
-          "slug": "tcp粘包是怎么回事，如何处理-✨"
-        },
-        {
-          "level": 2,
-          "title": "为什么udp不会粘包？",
-          "slug": "为什么udp不会粘包？"
-        },
-        {
-          "level": 2,
-          "title": "如何理解 TCP backlog？",
-          "slug": "如何理解-tcp-backlog？"
-        },
-        {
-          "level": 2,
-          "title": "常用端口号与对应的服务",
-          "slug": "常用端口号与对应的服务"
-        },
-        {
-          "level": 2,
-          "title": "说一说OSI七层模型",
-          "slug": "说一说osi七层模型"
-        },
-        {
-          "level": 2,
-          "title": "讲一下三次握手？✨",
-          "slug": "讲一下三次握手？✨"
-        },
-        {
-          "level": 2,
-          "title": "讲一下四次握手？✨",
-          "slug": "讲一下四次握手？✨"
-        }
-      ]
-    },
-    {
-      "title": "React面试题",
-      "frontmatter": {},
-      "regularPath": "/guide/react.html",
-      "relativePath": "guide/react.md",
-      "key": "v-7f195d96",
-      "path": "/guide/react.html",
-      "headers": [
-        {
-          "level": 2,
-          "title": "React最新的生命周期是怎样的?",
-          "slug": "react最新的生命周期是怎样的"
-        },
-        {
-          "level": 2,
-          "title": "React的请求应该放在哪个生命周期中?",
-          "slug": "react的请求应该放在哪个生命周期中"
-        },
-        {
-          "level": 2,
-          "title": "setState到底是异步还是同步?",
-          "slug": "setstate到底是异步还是同步"
-        },
-        {
-          "level": 2,
-          "title": "React组件通信如何实现?",
-          "slug": "react组件通信如何实现"
-        },
-        {
-          "level": 2,
-          "title": "React有哪些优化性能是手段?",
-          "slug": "react有哪些优化性能是手段"
-        },
-        {
-          "level": 2,
-          "title": "React如何进行组件/逻辑复用?",
-          "slug": "react如何进行组件-逻辑复用"
-        },
-        {
-          "level": 2,
-          "title": "你是如何理解fiber架构的?",
-          "slug": "你是如何理解fiber架构的"
-        },
-        {
-          "level": 2,
-          "title": "你对 Time Slice的理解?",
-          "slug": "你对-time-slice的理解"
-        },
-        {
-          "level": 2,
-          "title": "redux的工作流程?",
-          "slug": "redux的工作流程"
-        },
-        {
-          "level": 2,
-          "title": "react-redux是如何工作的?",
-          "slug": "react-redux是如何工作的"
-        },
-        {
-          "level": 2,
-          "title": "redux与mobx的区别?",
-          "slug": "redux与mobx的区别"
-        },
-        {
-          "level": 2,
-          "title": "redux中如何进行异步操作?",
-          "slug": "redux中如何进行异步操作"
-        },
-        {
-          "level": 2,
-          "title": "redux异步中间件之间的优劣?",
-          "slug": "redux异步中间件之间的优劣"
         }
       ]
     }
@@ -2137,14 +2152,16 @@ export const siteData = {
               "collapsable": false,
               "children": [
                 "framework",
-                "vue"
+                "vue",
+                "react"
               ]
             },
             {
               "title": "框架原理详解",
               "collapsable": false,
               "children": [
-                "vuePrinciple"
+                "vuePrinciple",
+                "virtualDom"
               ]
             },
             {
