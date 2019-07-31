@@ -82,7 +82,7 @@ b() // 1
 
 ## 一段JavaScript代码是如何执行的？✨
 
-> 此部分涉及概念较多，请移步[JavaScript执行机制](#mechanism)
+> 此部分涉及概念较多，请移步[JavaScript执行机制](mechanism)
 
 ## 理解闭包吗？✨
 

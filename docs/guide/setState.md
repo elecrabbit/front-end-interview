@@ -1,6 +1,6 @@
 # setState到底是异步的还是同步的?
 
-本文来自于知乎作者[虹晨](https://www.zhihu.com/people/super-huang-59/activities)的[你真的理解setState吗？](https://zhuanlan.zhihu.com/p/39512941),这我见过最能讲清楚setState原理的文章了.
+本文来自于知乎作者[虹晨](https://www.zhihu.com/people/super-huang-59/activities)的[你真的理解setState吗？](https://zhuanlan.zhihu.com/p/39512941),这我见过最能讲清楚setState同步or异步原理的文章了.
 
 ---
 

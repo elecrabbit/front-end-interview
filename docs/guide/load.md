@@ -1,4 +1,6 @@
-# 前言
+# 前端性能优化-加载篇
+
+## 前言
 
 虽然前端开发作为 GUI 开发的一种,但是存在其特殊性,前端的特殊性就在于“动态”二字，传统 GUI 开发，不管是桌面应用还是移动端应用都是需要预先下载的,只有先下载应用程序才会在本地操作系统运行,而前端不同,它是“动态增量”式的,我们的前端应用往往是实时加载执行的,并不需要预先下载,这就造成了一个问题,前端开发中往往最影响性能的不是什么计算或者渲染,而是加载速度,加载速度会直接影响用户体验和网站留存。
 
@@ -10,12 +12,7 @@
 
 因此,我们要强调即使没有对性能有实质的优化,通过设计提高用户体验的这个过程,也算是性能优化,因为 GUI 开发直面用户,你让用户有了性能快的 **错觉**,这也叫性能优化了,毕竟用户觉得快,才是真的快...
 
-## 文章目录
-
-1. 首屏加载优化
-1. 路由跳转加载优化
-
-## 1.首屏加载
+## 首屏加载
 
 首屏加载是被讨论最多的话题,一方面web 前端首屏的加载性能的确普遍较差,另一方面,首屏的加载速度至关重要,很多时候过长的白屏会导致用户还没有体验到网站功能的时候就流失了,首屏速度是用户留存的关键点。
 
@@ -34,7 +31,7 @@
 
 在第一个疑问和第二个疑问之间的等待期,会出现白屏,这是优化的关键.
 
-### 1.1 白屏的定义
+### 白屏的定义
 
 不管是我们如何优化性能,首屏必然是会出现白屏的,因为这是前端开发这项技术的特点决定的。
 
@@ -44,27 +41,27 @@
 
 以webapp 版的微博为例(微博为数不多的的良心产品),经过 Lighthouse(谷歌的网站测试工具)它的白屏加载时间为 2s,是非常好的成绩。
 
-![image.png](https://user-gold-cdn.xitu.io/2019/6/12/16b49fbdc4b1e2f7?w=450&h=47&f=png&s=4225)
+![2019-07-31-19-14-17]( https://xiaomuzhu-image.oss-cn-beijing.aliyuncs.com/fa2b80975d3afb262094a697de6cc40b.png)
 
-### 1.2 白屏加载的问题分析
+### 白屏加载的问题分析
 
 在现代前端应用开发中,我们往往会用 webpack 等打包器进行打包,很多情况下如果我们不进行优化,就会出现很多体积巨大的 chunk,有的甚至在 5M 左右(我第一次用 webpack1.x 打包的时候打出了 8M 的包),这些 chunk 是加载速度的杀手。
 
 浏览器通常都有并发请求的限制,以 Chrome 为例,它的并发请求就为 6 个,这导致我们必须在请求完前 6 个之后,才能继续进行后续请求,这也影响我们资源的加载速度。
 
-![](https://user-gold-cdn.xitu.io/2019/6/12/16b49fbdc414fa9c?w=1030&h=562&f=gif&s=105613)
+![2019-07-31-19-14-46]( https://xiaomuzhu-image.oss-cn-beijing.aliyuncs.com/52db275acf1a28ac5d05df4be1c6fa5a.png)
 
 当然了,网络、带宽这是自始至终都影响加载速度的因素，白屏也不例外.
 
-### 1.3 白屏的性能优化
+### 白屏的性能优化
 
 我们先梳理下白屏时间内发生了什么:
 
 1. 回车按下,浏览器解析网址,进行 DNS 查询,查询返回 IP,通过 IP 发出 HTTP(S) 请求
-1. 服务器返回HTML,浏览器开始解析 HTML,此时触发请求 js 和 css 资源
-1. js 被加载,开始执行 js,调用各种函数创建 DOM 并渲染到根节点,直到第一个可见元素产生
+2. 服务器返回HTML,浏览器开始解析 HTML,此时触发请求 js 和 css 资源
+3. js 被加载,开始执行 js,调用各种函数创建 DOM 并渲染到根节点,直到第一个可见元素产生
 
-#### 1.3.1 loading 提示
+#### loading 提示
 
 如果你用的是以 webpack 为基础的前端框架工程体系,那么你的index.html 文件一定是这样的:
 
@@ -78,7 +75,7 @@ webpack 配置:
 
 ![2019-06-23-12-20-14]( https://xiaomuzhu-image.oss-cn-beijing.aliyuncs.com/d3ca5a9ee75428bc53d8751caabdc19e.png)
 
-#### 1.3.2 (伪)服务端渲染
+#### (伪)服务端渲染
 
 那么既然在 HTML 加载到 js 执行期间会有时间等待,那么为什么不直接服务端渲染呢?直接返回的 HTML 就是带完整 DOM 结构的,省得还得调用 js 执行各种创建 dom 的工作,不仅如此还对 SEO 友好。
 
@@ -88,30 +85,30 @@ webpack 配置:
 
 [prerender-spa-plugin](https://github.com/chrisvfritz/prerender-spa-plugin)就是基于以上原理的插件,此插件在本地模拟浏览器环境,预先执行我们的打包文件,这样通过解析就可以获取首屏的 HTML,在正常环境中,我们就可以返回预先解析好的 HTML 了。
 
-#### 1.3.3 开启 HTTP2
+#### 开启 HTTP2
 
 我们看到在获取 html 之后我们需要自上而下解析,在解析到 `script` 相关标签的时候才能请求相关资源,而且由于浏览器并发限制,我们最多一次性请求 6 次,那么有没有办法破解这些困境呢?
 
 http2 是非常好的解决办法,http2 本身的机制就足够快:
 
 1. http2采用二进制分帧的方式进行通信,而 http1.x 是用文本,http2 的效率更高
-1. http2 可以进行多路复用,即跟同一个域名通信,仅需要一个 TCP 建立请求通道,请求与响应可以同时基于此通道进行双向通信,而 http1.x 每次请求需要建立 TCP,多次请求需要多次连接,还有并发限制,十分耗时
+2. http2 可以进行多路复用,即跟同一个域名通信,仅需要一个 TCP 建立请求通道,请求与响应可以同时基于此通道进行双向通信,而 http1.x 每次请求需要建立 TCP,多次请求需要多次连接,还有并发限制,十分耗时
 
-![image.png](https://user-gold-cdn.xitu.io/2019/6/12/16b49fbdc4d40474?w=671&h=92&f=png&s=61739)
+![2019-07-31-19-15-09]( https://xiaomuzhu-image.oss-cn-beijing.aliyuncs.com/dc661bd9cf910d748dcc71acc0807302.png)
 
 3. http2 可以头部压缩,能够节省消息头占用的网络的流量,而HTTP/1.x每次请求，都会携带大量冗余头信息，浪费了很多带宽资源
 
 例如：下图中的两个请求， 请求一发送了所有的头部字段，第二个请求则只需要发送差异数据，这样可以减少冗余数据，降低开销
 
-![image.png](https://user-gold-cdn.xitu.io/2019/6/12/16b49fbeb9dd4c10?w=523&h=293&f=png&s=104147)
+![2019-07-31-19-15-21]( https://xiaomuzhu-image.oss-cn-beijing.aliyuncs.com/2ed47fef193ef61ea9dffea402f5a7ba.png)
 
-4. http2可以进行服务端推送,我们平时解析 HTML 后碰到相关标签才会进而请求 css 和 js 资源,而 http2 可以直接将相关资源直接推送,无需请求,这大大减少了多次请求的耗时
+1. http2可以进行服务端推送,我们平时解析 HTML 后碰到相关标签才会进而请求 css 和 js 资源,而 http2 可以直接将相关资源直接推送,无需请求,这大大减少了多次请求的耗时
 
 我们可以点击[此网站](https://http2.akamai.com/demo) 进行 http2 的测试
 
 ps: 我曾经做个一个测试,http2 在网络通畅+高性能设备下的表现没有比 http1.1有明显的优势,但是网络越差,设备越差的情况下 http2 对加载的影响是质的,可以说 http2 是为移动 web 而生的,反而在光纤加持的高性能PC 上优势不太明显.
 
-#### 1.3.4 开启浏览器缓存
+#### 开启浏览器缓存
 
 既然 http 请求如此麻烦,能不能我们避免 http 请求或者降低 http 请求的负载来实现性能优化呢?
 
@@ -138,16 +135,15 @@ ps: 我曾经做个一个测试,http2 在网络通畅+高性能设备下的表�
 
 当无本地缓存的时候是这样的:
 
-![](https://user-gold-cdn.xitu.io/2019/6/12/16b49fbdb638a4df?w=598&h=283&f=png&s=21027)
+![2019-07-31-19-15-36]( https://xiaomuzhu-image.oss-cn-beijing.aliyuncs.com/2fc71757878153f1080f94f17d494215.png)
 
 当有本地缓存但没过期的时候是这样的:
 
-![image.png](https://user-gold-cdn.xitu.io/2019/6/12/16b49fbf1b5183d2?w=610&h=280&f=png&s=26151)
+![2019-07-31-19-15-45]( https://xiaomuzhu-image.oss-cn-beijing.aliyuncs.com/9aed38819e96ba6299e3516cc7086b4f.png)
 
 当缓存过期了会进行协商缓存:
 
-![image.png](https://user-gold-cdn.xitu.io/2019/6/12/16b49fbe059d630a?w=634&h=336&f=png&s=24780)
-
+![2019-07-31-19-15-53]( https://xiaomuzhu-image.oss-cn-beijing.aliyuncs.com/369dc7a833461550e7360456fb09d18f.png)
 了解到了浏览器的基本缓存机制我们就好进行优化了.
 
 通常情况下我们的 WebApp 是有我们的自身代码和第三方库组成的,我们自身的代码是会常常变动的,而第三方库除非有较大的版本升级,不然是不会变的,所以第三方库和我们的代码需要分开打包,我们可以给第三方库设置一个较长的强缓存时间,这样就不会频繁请求第三方库的代码了。
@@ -178,24 +174,27 @@ SplitChunksPlugin配置示意如下:
 
 ![2019-06-23-12-09-16]( https://xiaomuzhu-image.oss-cn-beijing.aliyuncs.com/1a0b6fb5dd3ec0741214d092e982408c.png)
 
-![image.png](https://user-gold-cdn.xitu.io/2019/6/12/16b49fbe0c481272?w=315&h=275&f=png&s=56971)![image.png](https://user-gold-cdn.xitu.io/2019/6/12/16b49fbe186bfe7d?w=399&h=255&f=png&s=59313)
+![2019-07-31-19-16-12]( https://xiaomuzhu-image.oss-cn-beijing.aliyuncs.com/a4f2af0355da6da4ea8a4368dd39f963.png)
+
+![2019-07-31-19-16-22]( https://xiaomuzhu-image.oss-cn-beijing.aliyuncs.com/2d980cd7ec6e2a15c62c893ae7846000.png)
 
 我们通过 http 缓存+webpack hash 缓存策略使得前端项目充分利用了缓存的优势,但是 webpack 之所以需要传说中的 **webpack配置工程师** 是有原因的,因为 webpack 本身是玄学,还是以上图为例,如果你 chunk2的相关代码去除了一个依赖或者引入了新的但是已经存在工程中依赖,会怎么样呢?
 
 我们正常的期望是,只有 chunk2 发生变化了,但是事实上是大量不相干的 chunk 的 hash 发生了变动,这就导致我们缓存策略失效了,下图是变更后的 hash,我们用红圈圈起来的都是 hash 变动的,而事实上我们只变动了 chunk2 相关的代码,为什么会这样呢?
 
-![image.png](https://user-gold-cdn.xitu.io/2019/6/12/16b49fbe30f3bb4b?w=450&h=283&f=png&s=69219)
+![2019-07-31-19-16-34]( https://xiaomuzhu-image.oss-cn-beijing.aliyuncs.com/ba6c148a1239dc4ad85a320377ffa32c.png)
 
 原因是 webpack 会给每个 chunk 搭上 id,这个 id 是自增的,比如 chunk 0 中的id 为 0,一旦我们引入新的依赖,chunk 的自增会被打乱,这个时候又因为 hashchunk 根据内容生成 hash,这就导致了 id 的变动致使 hashchunk 发生巨变,虽然代码内容根本没有变化。
 
-![image.png](https://user-gold-cdn.xitu.io/2019/6/12/16b49fbe4e0e4631?w=741&h=69&f=png&s=18511)
+![2019-07-31-19-16-46]( https://xiaomuzhu-image.oss-cn-beijing.aliyuncs.com/4f82f94a68e0683ebe7e954ce3f594bc.png)
 
 这个问题我们需要额外引入一个插件HashedModuleIdsPlugin,他用非自增的方式进行 chunk id 的命名,可以解决这个问题,虽然 webpack 号称 0 配置了,但是这个常用功能没有内置,要等到下个版本了。
 
-![image.png](https://user-gold-cdn.xitu.io/2019/6/12/16b49fbe34db18c2?w=702&h=242&f=png&s=47689)
+![2019-07-31-19-16-59]( https://xiaomuzhu-image.oss-cn-beijing.aliyuncs.com/bf5728d917a054ac13caab120bf6856a.png)
+
 > webpack hash缓存相关内容建议阅读此[文章](https://github.com/pigcan/blog/issues/9) 作为拓展
 
-### 1.4 FMP(首次有意义绘制)
+### FMP(首次有意义绘制)
 
 在白屏结束之后,页面开始渲染,但是此时的页面还只是出现个别无意义的元素,比如下拉菜单按钮、或者乱序的元素、导航等等，这些元素虽然是页面的组成部分但是没有意义.
 
@@ -211,7 +210,7 @@ Skeleton是一个好方法,Skeleton现在已经很开始被广泛应用了,它�
 
 比如微博的Skeleton就做的很不错
 
-![image.png](https://user-gold-cdn.xitu.io/2019/6/12/16b49fbe4ec193e5?w=275&h=469&f=png&s=49576)
+![2019-07-31-19-17-11]( https://xiaomuzhu-image.oss-cn-beijing.aliyuncs.com/24f0c6b63710f5552da5cf9de59f7250.png)
 
 在不同框架上都有相应的Skeleton实现
 
@@ -224,12 +223,12 @@ Skeleton是一个好方法,Skeleton现在已经很开始被广泛应用了,它�
 
 然后就是基本的 vue 文件编写了,直接看文档即可。
 
-### 1.5 **TTI(可交互时间)**
+### TTI(可交互时间)
 
 当有意义的内容渲染出来之后,用户会尝试与页面交互,这个时候页面并不是加载完毕了,而是看起来页面加载完毕了,事实上这个时候 JavaScript 脚本依然在密集得执行.
 > 我们看到在页面已经基本呈现的情况下,依然有大量的脚本在执行
 
-![image.png](https://user-gold-cdn.xitu.io/2019/6/12/16b49fbec516662f?w=359&h=360&f=png&s=33666)
+![2019-07-31-19-17-25]( https://xiaomuzhu-image.oss-cn-beijing.aliyuncs.com/96ae8d581c92acdb15f3a42766ceb3bc.png)
 
 这个时候页面并不是可交互的,直到TTI 的到来,TTI 到来之后用户就可以跟页面进行正常交互的,TTI 一般没有特别精确的测量方法,普遍认为满足**FMP && DOMContentLoader事件触发 && 页面视觉加载85%**这几个条件后,TTI 就算是到来了。
 
@@ -240,7 +239,7 @@ Skeleton是一个好方法,Skeleton现在已经很开始被广泛应用了,它�
 
 JavaScript 的体积问题我们上一节交代过了一些,我们可以用SplitChunksPlugin拆库的方法减小体积,除此之外还有一些方法,我们下文会交代。
 
-#### 1.5.1 Tree Shaking
+#### Tree Shaking
 
 Tree Shaking虽然出现很早了,比如js基础库的事实标准打包工具 rollup 就是Tree Shaking的祖师爷,react用 rollup 打包之后体积减少了 30%,这就是Tree Shaking的厉害之处。
 
@@ -252,19 +251,19 @@ Tree Shaking的作用就是,通过程序流分析找出你代码中无用的代�
 
 坑 2: 第三方库不可控,我们已经知道Tree Shaking的程序分析依赖 ESM,但是市面上很多库为了兼容性依然只暴露出了ES5 版本的代码,这导致Tree Shaking对很多第三方库是无效的,所以我们要尽量依赖有 ESM 的库,比如之前有一个 ESM 版的 lodash(lodash-es),我们就可以这样引用了`import { dobounce } from 'lodash-es'`
 
-#### 1.5.2 polyfill动态加载
+#### polyfill动态加载
 
 polyfill是为了浏览器兼容性而生,是否需要 polyfill 应该有客户端的浏览器自己决定,而不是开发者决定,但是我们在很长一段时间里都是开发者将各种 polyfill 打包,其实很多情况下导致用户加载了根本没有必要的代码.
 
 解决这个问题的方法很简单,直接引入 `<script src="https://cdn.polyfill.io/v2/polyfill.min.js"></script>` 即可,而对于 Vue 开发者就更友好了,vue-cli 现在生成的模板就自带这个引用.
 
-![image.png](https://user-gold-cdn.xitu.io/2019/6/12/16b49fbec505ac72?w=773&h=483&f=png&s=75223)
+![2019-07-31-19-17-37]( https://xiaomuzhu-image.oss-cn-beijing.aliyuncs.com/b8d4288c3a3bd990abf0dc38b9714b2c.png)
 
 这个原理就是服务商通过识别不同浏览器的浏览器User Agent，使得服务器能够识别客户使用的操作系统及版本、CPU 类型、浏览器及版本、浏览器渲染引擎、浏览器语言、浏览器插件等，然后根据这个信息判断是否需要加载 polyfill,开发者在浏览器的 network 就可以查看User Agent。
 
-![image.png](https://user-gold-cdn.xitu.io/2019/6/12/16b49fbefe4e1347?w=421&h=127&f=png&s=25713)
+![2019-07-31-19-17-46]( https://xiaomuzhu-image.oss-cn-beijing.aliyuncs.com/8bf1649002875b4451054ff8bef57e99.png)
 
-#### 1.5.3 动态加载 ES6 代码
+#### 动态加载 ES6 代码
 
 既然 polyfill 能动态加载,那么 es5 和 es6+的代码能不能动态加载呢?是的,但是这样有什么意义呢?es6 会更快吗?
 
@@ -278,22 +277,20 @@ polyfill是为了浏览器兼容性而生,是否需要 polyfill 应该有客户�
 
 体积大小对比:
 
-![image.png](https://user-gold-cdn.xitu.io/2019/6/12/16b49fbeff68c169?w=548&h=164&f=png&s=11218)
-
+![2019-07-31-19-17-58]( https://xiaomuzhu-image.oss-cn-beijing.aliyuncs.com/89fab4e86c8a5c3e4077aca481e7ea55.png)
 执行时间对比:
 
-![image.png](https://user-gold-cdn.xitu.io/2019/6/12/16b49fbf01a32c02?w=576&h=168&f=png&s=15098)
-
+![2019-07-31-19-18-08]( https://xiaomuzhu-image.oss-cn-beijing.aliyuncs.com/12e43133ad47d28ccbbcb25d1a0b3c5f.png)
 双方对比的结果是,es6 的代码体积在小了一倍的同时,性能高出一倍.
 
-#### 1.5.4 路由级别拆解代码
+#### 路由级别拆解代码
 
 我们在上文中已经通过SplitChunksPlugin将第三方库进行了抽离,但是在首屏加载过程中依然有很多冗余代码,比如我们的首页是个登录界面,那么其实用到的代码很简单
 
 1. 框架的基础库例如 vue redux 等等
-1. ui 框架的部分 form 组件和按钮组件等等
-1. 一个简单的布局组件
-1. 其它少量逻辑和样式
+2. ui 框架的部分 form 组件和按钮组件等等
+3. 一个简单的布局组件
+4. 其它少量逻辑和样式
 
 登录界面的代码是很少的,为什么不只加载登录界面的代码呢?
 
@@ -307,9 +304,9 @@ polyfill是为了浏览器兼容性而生,是否需要 polyfill 应该有客户�
 
 你的登录页面会被单独打包.
 
-对于react,其内置的 `React.lazy()` 就可以动态加载路由和组件,效果与 vue 大同小异,当然 `lazy()` 目前还没有支持服务端渲染,如果想在服务端渲染使用,可以用[React Loadable](https://link.juejin.im/?target=https%3A%2F%2Fgithub.com%2Fjamiebuilds%2Freact-loadable).
+对于react,其内置的 `React.lazy()` 就可以动态加载路由和组件,效果与 vue 大同小异,当然 `lazy()` 目前还没有支持服务端渲染,如果想在服务端渲染使用,可以用[React Loadable](https://github.com/jamiebuilds/react-loadable).
 
-### 2 组件加载
+## 组件加载
 
 路由其实是一个大组件,很多时候人们忽略了路由跳转之间的加载优化,更多的时候我们的精力都留在首屏加载之上,但是路由跳转间的加载同样重要,如果加载过慢同样影响用户体验。
 
@@ -333,9 +330,9 @@ polyfill是为了浏览器兼容性而生,是否需要 polyfill 应该有客户�
 
 我们看到在加载过程中有超过 6000ms 再进行 JavaScript 的解析和执行
 
-![image.png](https://user-gold-cdn.xitu.io/2019/6/12/16b49fbf3aeeee29?w=300&h=102&f=png&s=12295)
+![2019-07-31-19-19-05]( https://xiaomuzhu-image.oss-cn-beijing.aliyuncs.com/75eddc2a84708d5cdf857355e48bd9f7.png)
 
-### 2.1 组件懒加载
+### 组件懒加载
 
 Code Splitting不仅可以进行路由分割,甚至可以进行组件级别的代码分割,当然是用方式也是大同小异,组件的级别的分割带来的好处是我们可以在页面的加载中只渲染部分必须的组件,而其余的组件可以按需加载.
 
@@ -343,33 +340,37 @@ Code Splitting不仅可以进行路由分割,甚至可以进行组件级别的�
 
 路由分割 vs 组件分割
 
-![image.png](https://user-gold-cdn.xitu.io/2019/6/12/16b49fbf5b5a8b6e?w=876&h=349&f=png&s=91268)<br />我们可以以一个demo 为例来分析一下组件级别分割的方法与技巧.<br />我们假设一个场景,比如我们在做一个打卡应用,有一个需求是我们点击下拉菜单选择相关的习惯,查看近一周的打卡情况.
+![2019-07-31-19-19-18]( https://xiaomuzhu-image.oss-cn-beijing.aliyuncs.com/d77d1602674b7a7d4f7a8132ebaba798.png)
+
+我们可以以一个demo 为例来分析一下组件级别分割的方法与技巧.
+
+我们假设一个场景,比如我们在做一个打卡应用,有一个需求是我们点击下拉菜单选择相关的习惯,查看近一周的打卡情况.
 
 我们的 demo 是这样子:
 
-![QQ20190611-105233.gif](https://user-gold-cdn.xitu.io/2019/6/12/16b49fbf62d4183e?w=419&h=378&f=gif&s=2878033)
+![2019-07-31-19-19-35]( https://xiaomuzhu-image.oss-cn-beijing.aliyuncs.com/54fb72a11b0cc00cca625074c2c91932.png)
 
 我们先对比一下有组件分割和无组件分割的资源加载情况(开发环境下无压缩)
 
 无组件分割,我们看到有一个非常大的chunk,因为这个组件除了我们的代码外,还包含了 antd 组件和 Echarts 图表以及 React 框架部分代码
 
-![image.png](https://user-gold-cdn.xitu.io/2019/6/12/16b49fbf6dee9c1f?w=573&h=150&f=png&s=39966)
+![2019-07-31-19-19-50]( https://xiaomuzhu-image.oss-cn-beijing.aliyuncs.com/13641322fc7030f0e540baa325ef92e1.png)
 
 组件分割后,初始页面体积下降明显,路由间跳转的初始页面加载体积变小意味着更快的加载速度
 
-![image.png](https://user-gold-cdn.xitu.io/2019/6/12/16b49fbf6e229cde?w=476&h=84&f=png&s=18743)
+![2019-07-31-19-19-58]( https://xiaomuzhu-image.oss-cn-beijing.aliyuncs.com/f13b8cfb812d00fe0563cc23e8bb6560.png)
 
 其实组件分割的方法跟路由分割差不多,也是通过 lazy + Suspense 的方法进行组件懒加载
 
 ![2019-06-23-12-17-31]( https://xiaomuzhu-image.oss-cn-beijing.aliyuncs.com/acb105852beac16a9255e7d97db6acd4.png)
 
-### 2.2 组件预加载
+### 组件预加载
 
 我们通过组件懒加载将页面的初始渲染的资源体积降低了下来,提高了加载性能,但是组件的性能又出现了问题,还是上一个 demo,我们把初始页面的 3.9m 的体积减少到了1.7m,页面的加载是迅速了,但是组件的加载却变慢了.
 
 原因是其余的 2m 资源的压力全部压在了图表组件上(Echarts 的体积缘故),因此当我们点击菜单加载图表的时候会出现 1-2s 的 loading 延迟,如下:
 
-![image.png](https://user-gold-cdn.xitu.io/2019/6/12/16b49fbf7663d20e?w=508&h=160&f=png&s=7514)
+![2019-07-31-19-20-12]( https://xiaomuzhu-image.oss-cn-beijing.aliyuncs.com/bc82825ef3f612df9d8f0a326fd05869.png)
 
 我们能不能提前把图表加载进来,避免图表渲染中加载时间过长的问题?这种提前加载的方法就是组件的预加载.
 
@@ -379,7 +380,7 @@ Code Splitting不仅可以进行路由分割,甚至可以进行组件级别的�
 
 [demo地址](https://github.com/xiaomuzhu/preload-lazy-component)
 
-### 2.3 keep-alive
+### keep-alive
 
 对于使用 vue 的开发者 keep-alive 这个 API 应该是最熟悉不过了,keep-alive 的作用是在页面已经跳转后依然不销毁组件,保存组件对应的实例在内存中,当此页面再次需要渲染的时候就可以利用已经缓存的组件实例了。
 
@@ -388,7 +389,7 @@ Code Splitting不仅可以进行路由分割,甚至可以进行组件级别的�
 但是在 React 中并没有对应的实现,而[官方 issue](https://github.com/facebook/react/issues/12039#issuecomment-411621949) 中官方也明确不会添加类似的 API,但是给出了两个自行实现的方法:
 
 * 利用全局状态管理工具例如 redux 进行状态缓存
-* 利用 `style={{display: 'none'}}` 进行控制
+* 利用 ![2019-07-31-19-11-07]( https://xiaomuzhu-image.oss-cn-beijing.aliyuncs.com/bf82e3d17070f706abf635a9d7506304.png) 进行控制
 
 如果你看了这两个建议就知道不靠谱,redux 已经足够啰嗦了,我们为了缓存状态而利用 redux 这种全局方案,其额外的工作量和复杂度提升是得不偿失的,用 `dispaly` 控制显示是个很简单的方法,但是也足够粗暴,我们会损失很多可操作的空间,比如动画。
 

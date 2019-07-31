@@ -109,12 +109,12 @@ function renderSiderBar() {
   collapsable: false,
   children: [
     'hoisting',
-    'mechanism',
     'eventLoop',
     'immutable',
     'memory',
     'deepclone',
     'event',
+    'mechanism',
   ]
 },
 {
@@ -132,6 +132,7 @@ function renderSiderBar() {
   children: [
         'virtualDom',
         'devsProxy',
+        'setState',
     ]
 },
 {
