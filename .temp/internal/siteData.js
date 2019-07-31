@@ -7,34 +7,6 @@ export const siteData = {
   "base": "/",
   "pages": [
     {
-      "title": "Home",
-      "frontmatter": {
-        "home": true,
-        "heroImage": "/logo.svg",
-        "actionText": "开始 →",
-        "actionLink": "/guide/",
-        "features": [
-          {
-            "title": "简洁至上",
-            "details": "追求重点和难点,剔除陈旧的知识。"
-          },
-          {
-            "title": "清晰易懂",
-            "details": "将复杂的问题一一拆解。"
-          },
-          {
-            "title": "紧跟热点",
-            "details": "当下热点技术一网打尽。"
-          }
-        ],
-        "footer": "MIT Licensed | Copyright © 2019-present xiaomuzhu"
-      },
-      "regularPath": "/",
-      "relativePath": "README.md",
-      "key": "v-7364f2b6",
-      "path": "/"
-    },
-    {
       "title": "指南使用手册",
       "frontmatter": {},
       "regularPath": "/guide/",
@@ -86,6 +58,99 @@ export const siteData = {
           "level": 3,
           "title": "细分领域",
           "slug": "细分领域"
+        }
+      ]
+    },
+    {
+      "title": "Home",
+      "frontmatter": {
+        "home": true,
+        "heroImage": "/logo.svg",
+        "actionText": "开始 →",
+        "actionLink": "/guide/",
+        "features": [
+          {
+            "title": "简洁至上",
+            "details": "追求重点和难点,剔除陈旧的知识。"
+          },
+          {
+            "title": "清晰易懂",
+            "details": "将复杂的问题一一拆解。"
+          },
+          {
+            "title": "紧跟热点",
+            "details": "当下热点技术一网打尽。"
+          }
+        ],
+        "footer": "MIT Licensed | Copyright © 2019-present xiaomuzhu"
+      },
+      "regularPath": "/",
+      "relativePath": "README.md",
+      "key": "v-7364f2b6",
+      "path": "/"
+    },
+    {
+      "title": "React组件复用指南",
+      "frontmatter": {},
+      "regularPath": "/guide/abstract.html",
+      "relativePath": "guide/abstract.md",
+      "key": "v-5db7e350",
+      "path": "/guide/abstract.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "高阶组件(HOC)",
+          "slug": "高阶组件-hoc"
+        },
+        {
+          "level": 3,
+          "title": "什么是高阶组件？",
+          "slug": "什么是高阶组件？"
+        },
+        {
+          "level": 3,
+          "title": "HOC 工厂的实现方法",
+          "slug": "hoc-工厂的实现方法"
+        },
+        {
+          "level": 3,
+          "title": "反向继承(Inheritance Inversion)",
+          "slug": "反向继承-inheritance-inversion"
+        },
+        {
+          "level": 2,
+          "title": "Inheritance Inversion 的高阶组件不一定会解析完整子树",
+          "slug": "inheritance-inversion-的高阶组件不一定会解析完整子树"
+        },
+        {
+          "level": 3,
+          "title": "附录 A: HOC 和参数",
+          "slug": "附录-a-hoc-和参数"
+        },
+        {
+          "level": 2,
+          "title": "渲染属性(Render Props)",
+          "slug": "渲染属性-render-props"
+        },
+        {
+          "level": 3,
+          "title": "Mixins 存在的问题",
+          "slug": "mixins-存在的问题"
+        },
+        {
+          "level": 3,
+          "title": "HOC 是新的 Mixin",
+          "slug": "hoc-是新的-mixin"
+        },
+        {
+          "level": 3,
+          "title": "Render Props",
+          "slug": "render-props"
+        },
+        {
+          "level": 3,
+          "title": "Render Props > HOCs",
+          "slug": "render-props-hocs"
         }
       ]
     },
@@ -295,31 +360,6 @@ export const siteData = {
       ]
     },
     {
-      "title": "手写组件",
-      "frontmatter": {},
-      "regularPath": "/guide/component.html",
-      "relativePath": "guide/component.md",
-      "key": "v-909d7754",
-      "path": "/guide/component.html",
-      "headers": [
-        {
-          "level": 2,
-          "title": "实现轮播图组件",
-          "slug": "实现轮播图组件"
-        },
-        {
-          "level": 2,
-          "title": "实现级联选择组件",
-          "slug": "实现级联选择组件"
-        },
-        {
-          "level": 2,
-          "title": "实现自动完成组件",
-          "slug": "实现自动完成组件"
-        }
-      ]
-    },
-    {
       "title": "CSS基础",
       "frontmatter": {},
       "regularPath": "/guide/cssBasic.html",
@@ -490,6 +530,31 @@ export const siteData = {
       ]
     },
     {
+      "title": "手写组件",
+      "frontmatter": {},
+      "regularPath": "/guide/component.html",
+      "relativePath": "guide/component.md",
+      "key": "v-909d7754",
+      "path": "/guide/component.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "实现轮播图组件",
+          "slug": "实现轮播图组件"
+        },
+        {
+          "level": 2,
+          "title": "实现级联选择组件",
+          "slug": "实现级联选择组件"
+        },
+        {
+          "level": 2,
+          "title": "实现自动完成组件",
+          "slug": "实现自动完成组件"
+        }
+      ]
+    },
+    {
       "title": "实现深克隆",
       "frontmatter": {},
       "regularPath": "/guide/deepclone.html",
@@ -603,46 +668,6 @@ export const siteData = {
       ]
     },
     {
-      "title": "DOM",
-      "frontmatter": {},
-      "regularPath": "/guide/dom.html",
-      "relativePath": "guide/dom.md",
-      "key": "v-d62d5894",
-      "path": "/guide/dom.html",
-      "headers": [
-        {
-          "level": 2,
-          "title": "DOM的事件模型是什么？",
-          "slug": "dom的事件模型是什么？"
-        },
-        {
-          "level": 2,
-          "title": "DOM的事件流是什么？",
-          "slug": "dom的事件流是什么？"
-        },
-        {
-          "level": 3,
-          "title": "事件冒泡",
-          "slug": "事件冒泡"
-        },
-        {
-          "level": 3,
-          "title": "事件捕获",
-          "slug": "事件捕获"
-        },
-        {
-          "level": 3,
-          "title": "事件流",
-          "slug": "事件流"
-        },
-        {
-          "level": 2,
-          "title": "什么是事件委托?",
-          "slug": "什么是事件委托"
-        }
-      ]
-    },
-    {
       "title": "如何实现一个Event",
       "frontmatter": {},
       "regularPath": "/guide/event.html",
@@ -689,6 +714,46 @@ export const siteData = {
           "level": 3,
           "title": "发现问题",
           "slug": "发现问题"
+        }
+      ]
+    },
+    {
+      "title": "DOM",
+      "frontmatter": {},
+      "regularPath": "/guide/dom.html",
+      "relativePath": "guide/dom.md",
+      "key": "v-d62d5894",
+      "path": "/guide/dom.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "DOM的事件模型是什么？",
+          "slug": "dom的事件模型是什么？"
+        },
+        {
+          "level": 2,
+          "title": "DOM的事件流是什么？",
+          "slug": "dom的事件流是什么？"
+        },
+        {
+          "level": 3,
+          "title": "事件冒泡",
+          "slug": "事件冒泡"
+        },
+        {
+          "level": 3,
+          "title": "事件捕获",
+          "slug": "事件捕获"
+        },
+        {
+          "level": 3,
+          "title": "事件流",
+          "slug": "事件流"
+        },
+        {
+          "level": 2,
+          "title": "什么是事件委托?",
+          "slug": "什么是事件委托"
         }
       ]
     },
@@ -953,81 +1018,6 @@ export const siteData = {
       ]
     },
     {
-      "title": "HTML基础",
-      "frontmatter": {},
-      "regularPath": "/guide/htmlBasic.html",
-      "relativePath": "guide/htmlBasic.md",
-      "key": "v-7636ce16",
-      "path": "/guide/htmlBasic.html",
-      "headers": [
-        {
-          "level": 2,
-          "title": "doctype(文档类型) 的作用是什么？✨",
-          "slug": "doctype-文档类型-的作用是什么？✨"
-        },
-        {
-          "level": 2,
-          "title": "这三种模式的区别是什么？(接上一问追问)",
-          "slug": "这三种模式的区别是什么？-接上一问追问"
-        },
-        {
-          "level": 2,
-          "title": "HTML、XML 和 XHTML 有什么区别？",
-          "slug": "html、xml-和-xhtml-有什么区别？"
-        },
-        {
-          "level": 2,
-          "title": "什么是data-属性？",
-          "slug": "什么是data-属性？"
-        },
-        {
-          "level": 2,
-          "title": "你对HTML语义化的理解？✨",
-          "slug": "你对html语义化的理解？✨"
-        },
-        {
-          "level": 2,
-          "title": "HTML5与HTML4的不同之处",
-          "slug": "html5与html4的不同之处"
-        },
-        {
-          "level": 2,
-          "title": "有哪些常用的meta标签？",
-          "slug": "有哪些常用的meta标签？"
-        },
-        {
-          "level": 2,
-          "title": "src和href的区别？",
-          "slug": "src和href的区别？"
-        },
-        {
-          "level": 2,
-          "title": "知道img的srcset的作用是什么？（追问）",
-          "slug": "知道img的srcset的作用是什么？（追问）"
-        },
-        {
-          "level": 2,
-          "title": "还有哪一个标签能起到跟srcset相似作用？（追问）",
-          "slug": "还有哪一个标签能起到跟srcset相似作用？（追问）"
-        },
-        {
-          "level": 2,
-          "title": "script标签中defer和async的区别？✨",
-          "slug": "script标签中defer和async的区别？✨"
-        },
-        {
-          "level": 2,
-          "title": "有几种前端储存的方式？✨",
-          "slug": "有几种前端储存的方式？✨"
-        },
-        {
-          "level": 2,
-          "title": "这些方式的区别是什么？（追问）✨",
-          "slug": "这些方式的区别是什么？（追问）✨"
-        }
-      ]
-    },
-    {
       "title": "HTTP协议",
       "frontmatter": {},
       "regularPath": "/guide/http.html",
@@ -1148,6 +1138,81 @@ export const siteData = {
       ]
     },
     {
+      "title": "HTML基础",
+      "frontmatter": {},
+      "regularPath": "/guide/htmlBasic.html",
+      "relativePath": "guide/htmlBasic.md",
+      "key": "v-7636ce16",
+      "path": "/guide/htmlBasic.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "doctype(文档类型) 的作用是什么？✨",
+          "slug": "doctype-文档类型-的作用是什么？✨"
+        },
+        {
+          "level": 2,
+          "title": "这三种模式的区别是什么？(接上一问追问)",
+          "slug": "这三种模式的区别是什么？-接上一问追问"
+        },
+        {
+          "level": 2,
+          "title": "HTML、XML 和 XHTML 有什么区别？",
+          "slug": "html、xml-和-xhtml-有什么区别？"
+        },
+        {
+          "level": 2,
+          "title": "什么是data-属性？",
+          "slug": "什么是data-属性？"
+        },
+        {
+          "level": 2,
+          "title": "你对HTML语义化的理解？✨",
+          "slug": "你对html语义化的理解？✨"
+        },
+        {
+          "level": 2,
+          "title": "HTML5与HTML4的不同之处",
+          "slug": "html5与html4的不同之处"
+        },
+        {
+          "level": 2,
+          "title": "有哪些常用的meta标签？",
+          "slug": "有哪些常用的meta标签？"
+        },
+        {
+          "level": 2,
+          "title": "src和href的区别？",
+          "slug": "src和href的区别？"
+        },
+        {
+          "level": 2,
+          "title": "知道img的srcset的作用是什么？（追问）",
+          "slug": "知道img的srcset的作用是什么？（追问）"
+        },
+        {
+          "level": 2,
+          "title": "还有哪一个标签能起到跟srcset相似作用？（追问）",
+          "slug": "还有哪一个标签能起到跟srcset相似作用？（追问）"
+        },
+        {
+          "level": 2,
+          "title": "script标签中defer和async的区别？✨",
+          "slug": "script标签中defer和async的区别？✨"
+        },
+        {
+          "level": 2,
+          "title": "有几种前端储存的方式？✨",
+          "slug": "有几种前端储存的方式？✨"
+        },
+        {
+          "level": 2,
+          "title": "这些方式的区别是什么？（追问）✨",
+          "slug": "这些方式的区别是什么？（追问）✨"
+        }
+      ]
+    },
+    {
       "title": "HTTP笔试部分",
       "frontmatter": {},
       "regularPath": "/guide/httpWritten.html",
@@ -1209,246 +1274,6 @@ export const siteData = {
           "level": 3,
           "title": "总结",
           "slug": "总结"
-        }
-      ]
-    },
-    {
-      "title": "JavaScript基础",
-      "frontmatter": {},
-      "regularPath": "/guide/jsBasic.html",
-      "relativePath": "guide/jsBasic.md",
-      "key": "v-6faacdd6",
-      "path": "/guide/jsBasic.html",
-      "headers": [
-        {
-          "level": 2,
-          "title": "本章索引",
-          "slug": "本章索引"
-        },
-        {
-          "level": 2,
-          "title": "解释下变量提升？✨",
-          "slug": "解释下变量提升？✨"
-        },
-        {
-          "level": 2,
-          "title": "一段JavaScript代码是如何执行的？✨",
-          "slug": "一段javascript代码是如何执行的？✨"
-        },
-        {
-          "level": 2,
-          "title": "理解闭包吗？✨",
-          "slug": "理解闭包吗？✨"
-        },
-        {
-          "level": 3,
-          "title": "闭包是什么",
-          "slug": "闭包是什么"
-        },
-        {
-          "level": 3,
-          "title": "闭包的作用",
-          "slug": "闭包的作用"
-        },
-        {
-          "level": 2,
-          "title": "JavaScript的作用域链理解吗？✨",
-          "slug": "javascript的作用域链理解吗？✨"
-        },
-        {
-          "level": 2,
-          "title": "ES6模块与CommonJS模块有什么区别？",
-          "slug": "es6模块与commonjs模块有什么区别？"
-        },
-        {
-          "level": 2,
-          "title": "js有哪些类型？",
-          "slug": "js有哪些类型？"
-        },
-        {
-          "level": 2,
-          "title": "为什么会有BigInt的提案？",
-          "slug": "为什么会有bigint的提案？"
-        },
-        {
-          "level": 2,
-          "title": "null与undefined的区别是什么？",
-          "slug": "null与undefined的区别是什么？"
-        },
-        {
-          "level": 2,
-          "title": "0.1+0.2为什么不等于0.3？",
-          "slug": "_0-1-0-2为什么不等于0-3？"
-        },
-        {
-          "level": 3,
-          "title": "将 0.1 转换为二进制表示",
-          "slug": "将-0-1-转换为二进制表示"
-        },
-        {
-          "level": 3,
-          "title": "通过科学计数法表示",
-          "slug": "通过科学计数法表示"
-        },
-        {
-          "level": 3,
-          "title": "转换为 IEEE 754 标准表示",
-          "slug": "转换为-ieee-754-标准表示"
-        },
-        {
-          "level": 2,
-          "title": "类型转换的规则有哪些？",
-          "slug": "类型转换的规则有哪些？"
-        },
-        {
-          "level": 2,
-          "title": "类型转换的原理是什么？",
-          "slug": "类型转换的原理是什么？"
-        },
-        {
-          "level": 2,
-          "title": "谈谈你对原型链的理解？✨",
-          "slug": "谈谈你对原型链的理解？✨"
-        },
-        {
-          "level": 3,
-          "title": "原型对象",
-          "slug": "原型对象"
-        },
-        {
-          "level": 3,
-          "title": "原型链",
-          "slug": "原型链"
-        },
-        {
-          "level": 2,
-          "title": "如何判断是否是数组？",
-          "slug": "如何判断是否是数组？"
-        },
-        {
-          "level": 2,
-          "title": "谈一谈你对this的了解？✨",
-          "slug": "谈一谈你对this的了解？✨"
-        },
-        {
-          "level": 2,
-          "title": "那么箭头函数的this指向哪里？✨",
-          "slug": "那么箭头函数的this指向哪里？✨"
-        },
-        {
-          "level": 2,
-          "title": "async/await是什么？",
-          "slug": "async-await是什么？"
-        },
-        {
-          "level": 2,
-          "title": "async/await相比于Promise的优势？",
-          "slug": "async-await相比于promise的优势？"
-        },
-        {
-          "level": 2,
-          "title": "JavaScript的参数是按照什么方式传递的？",
-          "slug": "javascript的参数是按照什么方式传递的？"
-        },
-        {
-          "level": 3,
-          "title": "基本类型传递方式",
-          "slug": "基本类型传递方式"
-        },
-        {
-          "level": 3,
-          "title": "复杂类型按引用传递?",
-          "slug": "复杂类型按引用传递"
-        },
-        {
-          "level": 3,
-          "title": "按共享传递",
-          "slug": "按共享传递"
-        },
-        {
-          "level": 2,
-          "title": "聊一聊如何在JavaScript中实现不可变对象？",
-          "slug": "聊一聊如何在javascript中实现不可变对象？"
-        },
-        {
-          "level": 2,
-          "title": "JavaScript的基本类型和复杂类型是储存在哪里的？",
-          "slug": "javascript的基本类型和复杂类型是储存在哪里的？"
-        },
-        {
-          "level": 2,
-          "title": "讲讲JavaScript垃圾回收是怎么做的？",
-          "slug": "讲讲javascript垃圾回收是怎么做的？"
-        }
-      ]
-    },
-    {
-      "title": "前端性能优化-加载篇",
-      "frontmatter": {},
-      "regularPath": "/guide/load.html",
-      "relativePath": "guide/load.md",
-      "key": "v-1b672d60",
-      "path": "/guide/load.html",
-      "headers": [
-        {
-          "level": 2,
-          "title": "前言",
-          "slug": "前言"
-        },
-        {
-          "level": 2,
-          "title": "首屏加载",
-          "slug": "首屏加载"
-        },
-        {
-          "level": 3,
-          "title": "白屏的定义",
-          "slug": "白屏的定义"
-        },
-        {
-          "level": 3,
-          "title": "白屏加载的问题分析",
-          "slug": "白屏加载的问题分析"
-        },
-        {
-          "level": 3,
-          "title": "白屏的性能优化",
-          "slug": "白屏的性能优化"
-        },
-        {
-          "level": 3,
-          "title": "FMP(首次有意义绘制)",
-          "slug": "fmp-首次有意义绘制"
-        },
-        {
-          "level": 3,
-          "title": "TTI(可交互时间)",
-          "slug": "tti-可交互时间"
-        },
-        {
-          "level": 2,
-          "title": "组件加载",
-          "slug": "组件加载"
-        },
-        {
-          "level": 3,
-          "title": "组件懒加载",
-          "slug": "组件懒加载"
-        },
-        {
-          "level": 3,
-          "title": "组件预加载",
-          "slug": "组件预加载"
-        },
-        {
-          "level": 3,
-          "title": "keep-alive",
-          "slug": "keep-alive"
-        },
-        {
-          "level": 2,
-          "title": "小结",
-          "slug": "小结"
         }
       ]
     },
@@ -1524,6 +1349,76 @@ export const siteData = {
           "level": 2,
           "title": "实现Promise",
           "slug": "实现promise"
+        }
+      ]
+    },
+    {
+      "title": "前端性能优化-加载篇",
+      "frontmatter": {},
+      "regularPath": "/guide/load.html",
+      "relativePath": "guide/load.md",
+      "key": "v-1b672d60",
+      "path": "/guide/load.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "前言",
+          "slug": "前言"
+        },
+        {
+          "level": 2,
+          "title": "首屏加载",
+          "slug": "首屏加载"
+        },
+        {
+          "level": 3,
+          "title": "白屏的定义",
+          "slug": "白屏的定义"
+        },
+        {
+          "level": 3,
+          "title": "白屏加载的问题分析",
+          "slug": "白屏加载的问题分析"
+        },
+        {
+          "level": 3,
+          "title": "白屏的性能优化",
+          "slug": "白屏的性能优化"
+        },
+        {
+          "level": 3,
+          "title": "FMP(首次有意义绘制)",
+          "slug": "fmp-首次有意义绘制"
+        },
+        {
+          "level": 3,
+          "title": "TTI(可交互时间)",
+          "slug": "tti-可交互时间"
+        },
+        {
+          "level": 2,
+          "title": "组件加载",
+          "slug": "组件加载"
+        },
+        {
+          "level": 3,
+          "title": "组件懒加载",
+          "slug": "组件懒加载"
+        },
+        {
+          "level": 3,
+          "title": "组件预加载",
+          "slug": "组件预加载"
+        },
+        {
+          "level": 3,
+          "title": "keep-alive",
+          "slug": "keep-alive"
+        },
+        {
+          "level": 2,
+          "title": "小结",
+          "slug": "小结"
         }
       ]
     },
@@ -1778,6 +1673,176 @@ export const siteData = {
       ]
     },
     {
+      "title": "JavaScript基础",
+      "frontmatter": {},
+      "regularPath": "/guide/jsBasic.html",
+      "relativePath": "guide/jsBasic.md",
+      "key": "v-6faacdd6",
+      "path": "/guide/jsBasic.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "本章索引",
+          "slug": "本章索引"
+        },
+        {
+          "level": 2,
+          "title": "解释下变量提升？✨",
+          "slug": "解释下变量提升？✨"
+        },
+        {
+          "level": 2,
+          "title": "一段JavaScript代码是如何执行的？✨",
+          "slug": "一段javascript代码是如何执行的？✨"
+        },
+        {
+          "level": 2,
+          "title": "理解闭包吗？✨",
+          "slug": "理解闭包吗？✨"
+        },
+        {
+          "level": 3,
+          "title": "闭包是什么",
+          "slug": "闭包是什么"
+        },
+        {
+          "level": 3,
+          "title": "闭包的作用",
+          "slug": "闭包的作用"
+        },
+        {
+          "level": 2,
+          "title": "JavaScript的作用域链理解吗？✨",
+          "slug": "javascript的作用域链理解吗？✨"
+        },
+        {
+          "level": 2,
+          "title": "ES6模块与CommonJS模块有什么区别？",
+          "slug": "es6模块与commonjs模块有什么区别？"
+        },
+        {
+          "level": 2,
+          "title": "js有哪些类型？",
+          "slug": "js有哪些类型？"
+        },
+        {
+          "level": 2,
+          "title": "为什么会有BigInt的提案？",
+          "slug": "为什么会有bigint的提案？"
+        },
+        {
+          "level": 2,
+          "title": "null与undefined的区别是什么？",
+          "slug": "null与undefined的区别是什么？"
+        },
+        {
+          "level": 2,
+          "title": "0.1+0.2为什么不等于0.3？",
+          "slug": "_0-1-0-2为什么不等于0-3？"
+        },
+        {
+          "level": 3,
+          "title": "将 0.1 转换为二进制表示",
+          "slug": "将-0-1-转换为二进制表示"
+        },
+        {
+          "level": 3,
+          "title": "通过科学计数法表示",
+          "slug": "通过科学计数法表示"
+        },
+        {
+          "level": 3,
+          "title": "转换为 IEEE 754 标准表示",
+          "slug": "转换为-ieee-754-标准表示"
+        },
+        {
+          "level": 2,
+          "title": "类型转换的规则有哪些？",
+          "slug": "类型转换的规则有哪些？"
+        },
+        {
+          "level": 2,
+          "title": "类型转换的原理是什么？",
+          "slug": "类型转换的原理是什么？"
+        },
+        {
+          "level": 2,
+          "title": "谈谈你对原型链的理解？✨",
+          "slug": "谈谈你对原型链的理解？✨"
+        },
+        {
+          "level": 3,
+          "title": "原型对象",
+          "slug": "原型对象"
+        },
+        {
+          "level": 3,
+          "title": "原型链",
+          "slug": "原型链"
+        },
+        {
+          "level": 2,
+          "title": "如何判断是否是数组？",
+          "slug": "如何判断是否是数组？"
+        },
+        {
+          "level": 2,
+          "title": "谈一谈你对this的了解？✨",
+          "slug": "谈一谈你对this的了解？✨"
+        },
+        {
+          "level": 2,
+          "title": "那么箭头函数的this指向哪里？✨",
+          "slug": "那么箭头函数的this指向哪里？✨"
+        },
+        {
+          "level": 2,
+          "title": "async/await是什么？",
+          "slug": "async-await是什么？"
+        },
+        {
+          "level": 2,
+          "title": "async/await相比于Promise的优势？",
+          "slug": "async-await相比于promise的优势？"
+        },
+        {
+          "level": 2,
+          "title": "JavaScript的参数是按照什么方式传递的？",
+          "slug": "javascript的参数是按照什么方式传递的？"
+        },
+        {
+          "level": 3,
+          "title": "基本类型传递方式",
+          "slug": "基本类型传递方式"
+        },
+        {
+          "level": 3,
+          "title": "复杂类型按引用传递?",
+          "slug": "复杂类型按引用传递"
+        },
+        {
+          "level": 3,
+          "title": "按共享传递",
+          "slug": "按共享传递"
+        },
+        {
+          "level": 2,
+          "title": "聊一聊如何在JavaScript中实现不可变对象？",
+          "slug": "聊一聊如何在javascript中实现不可变对象？"
+        },
+        {
+          "level": 2,
+          "title": "JavaScript的基本类型和复杂类型是储存在哪里的？",
+          "slug": "javascript的基本类型和复杂类型是储存在哪里的？"
+        },
+        {
+          "level": 2,
+          "title": "讲讲JavaScript垃圾回收是怎么做的？",
+          "slug": "讲讲javascript垃圾回收是怎么做的？"
+        }
+      ]
+    },
+    {
       "title": "React面试题",
       "frontmatter": {},
       "regularPath": "/guide/react.html",
@@ -1903,66 +1968,61 @@ export const siteData = {
       ]
     },
     {
+      "title": "虚拟DOM原理",
+      "frontmatter": {},
+      "regularPath": "/guide/virtualDom.html",
+      "relativePath": "guide/virtualDom.md",
+      "key": "v-b3cc06a4",
+      "path": "/guide/virtualDom.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "什么是Virtual DOM",
+          "slug": "什么是virtual-dom"
+        },
+        {
+          "level": 2,
+          "title": "为什么需要Virtual DOM",
+          "slug": "为什么需要virtual-dom"
+        },
+        {
+          "level": 2,
+          "title": "Virtual DOM的关键要素",
+          "slug": "virtual-dom的关键要素"
+        },
+        {
+          "level": 3,
+          "title": "Virtual DOM的创建",
+          "slug": "virtual-dom的创建"
+        },
+        {
+          "level": 3,
+          "title": "Virtual DOM Tree的创建",
+          "slug": "virtual-dom-tree的创建"
+        },
+        {
+          "level": 3,
+          "title": "Virtual DOM 的更新",
+          "slug": "virtual-dom-的更新"
+        },
+        {
+          "level": 3,
+          "title": "Virtual DOM 的diff",
+          "slug": "virtual-dom-的diff"
+        },
+        {
+          "level": 2,
+          "title": "Virtual DOM的优化",
+          "slug": "virtual-dom的优化"
+        }
+      ]
+    },
+    {
       "frontmatter": {},
       "regularPath": "/guide/type.html",
       "relativePath": "guide/type.md",
       "key": "v-14677eb0",
       "path": "/guide/type.html"
-    },
-    {
-      "title": "TCP面试题",
-      "frontmatter": {},
-      "regularPath": "/guide/tcp.html",
-      "relativePath": "guide/tcp.md",
-      "key": "v-176f5554",
-      "path": "/guide/tcp.html",
-      "headers": [
-        {
-          "level": 2,
-          "title": "TCP 的特性",
-          "slug": "tcp-的特性"
-        },
-        {
-          "level": 2,
-          "title": "请简述TCP\\UDP的区别",
-          "slug": "请简述tcp-udp的区别"
-        },
-        {
-          "level": 2,
-          "title": "TCP粘包是怎么回事，如何处理? ✨",
-          "slug": "tcp粘包是怎么回事，如何处理-✨"
-        },
-        {
-          "level": 2,
-          "title": "为什么udp不会粘包？",
-          "slug": "为什么udp不会粘包？"
-        },
-        {
-          "level": 2,
-          "title": "如何理解 TCP backlog？",
-          "slug": "如何理解-tcp-backlog？"
-        },
-        {
-          "level": 2,
-          "title": "常用端口号与对应的服务",
-          "slug": "常用端口号与对应的服务"
-        },
-        {
-          "level": 2,
-          "title": "说一说OSI七层模型",
-          "slug": "说一说osi七层模型"
-        },
-        {
-          "level": 2,
-          "title": "讲一下三次握手？✨",
-          "slug": "讲一下三次握手？✨"
-        },
-        {
-          "level": 2,
-          "title": "讲一下四次握手？✨",
-          "slug": "讲一下四次握手？✨"
-        }
-      ]
     },
     {
       "title": "Vue面试题",
@@ -2075,52 +2135,57 @@ export const siteData = {
       ]
     },
     {
-      "title": "虚拟DOM原理",
+      "title": "TCP面试题",
       "frontmatter": {},
-      "regularPath": "/guide/virtualDom.html",
-      "relativePath": "guide/virtualDom.md",
-      "key": "v-b3cc06a4",
-      "path": "/guide/virtualDom.html",
+      "regularPath": "/guide/tcp.html",
+      "relativePath": "guide/tcp.md",
+      "key": "v-176f5554",
+      "path": "/guide/tcp.html",
       "headers": [
         {
           "level": 2,
-          "title": "什么是Virtual DOM",
-          "slug": "什么是virtual-dom"
+          "title": "TCP 的特性",
+          "slug": "tcp-的特性"
         },
         {
           "level": 2,
-          "title": "为什么需要Virtual DOM",
-          "slug": "为什么需要virtual-dom"
+          "title": "请简述TCP\\UDP的区别",
+          "slug": "请简述tcp-udp的区别"
         },
         {
           "level": 2,
-          "title": "Virtual DOM的关键要素",
-          "slug": "virtual-dom的关键要素"
-        },
-        {
-          "level": 3,
-          "title": "Virtual DOM的创建",
-          "slug": "virtual-dom的创建"
-        },
-        {
-          "level": 3,
-          "title": "Virtual DOM Tree的创建",
-          "slug": "virtual-dom-tree的创建"
-        },
-        {
-          "level": 3,
-          "title": "Virtual DOM 的更新",
-          "slug": "virtual-dom-的更新"
-        },
-        {
-          "level": 3,
-          "title": "Virtual DOM 的diff",
-          "slug": "virtual-dom-的diff"
+          "title": "TCP粘包是怎么回事，如何处理? ✨",
+          "slug": "tcp粘包是怎么回事，如何处理-✨"
         },
         {
           "level": 2,
-          "title": "Virtual DOM的优化",
-          "slug": "virtual-dom的优化"
+          "title": "为什么udp不会粘包？",
+          "slug": "为什么udp不会粘包？"
+        },
+        {
+          "level": 2,
+          "title": "如何理解 TCP backlog？",
+          "slug": "如何理解-tcp-backlog？"
+        },
+        {
+          "level": 2,
+          "title": "常用端口号与对应的服务",
+          "slug": "常用端口号与对应的服务"
+        },
+        {
+          "level": 2,
+          "title": "说一说OSI七层模型",
+          "slug": "说一说osi七层模型"
+        },
+        {
+          "level": 2,
+          "title": "讲一下三次握手？✨",
+          "slug": "讲一下三次握手？✨"
+        },
+        {
+          "level": 2,
+          "title": "讲一下四次握手？✨",
+          "slug": "讲一下四次握手？✨"
         }
       ]
     }
