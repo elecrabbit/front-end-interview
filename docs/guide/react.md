@@ -2,6 +2,12 @@
 
 ## React最新的生命周期是怎样的?
 
+
+
+![2019-07-31-14-30-17]( https://xiaomuzhu-image.oss-cn-beijing.aliyuncs.com/5938ab9354c1aa40bd4637f976ece8b9.png)
+
+> 一个查看react生命周期的网站: http://projects.wojtekmaj.pl/react-lifecycle-methods-diagram/
+
 ## React的请求应该放在哪个生命周期中?
 
 ## setState到底是异步还是同步?

@@ -130,8 +130,15 @@ function renderSiderBar() {
   title: '框架原理详解',
   collapsable: false,
   children: [
-        'vuePrinciple',
         'virtualDom',
+        'devsProxy',
+    ]
+},
+{
+  title: '性能优化',
+  collapsable: false,
+  children: [
+        'load',
     ]
 },
 {
@@ -143,6 +150,14 @@ function renderSiderBar() {
 },
 {
   title: '计算机基础',
+  collapsable: false,
+  children: [
+        'http',
+        'tcp',
+    ]
+},
+{
+  title: '数据结构与算法',
   collapsable: false,
   children: [
         'http',
