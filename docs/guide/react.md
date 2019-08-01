@@ -136,6 +136,21 @@ Mixin的缺陷：
     - 分割在不同声明周期中的逻辑使得代码难以理解和维护
     - 代码复用成本高（高阶组件容易使代码量剧增）
 
+**React Hooks缺陷:**
+
+* 额外的学习成本（Functional Component 与 Class Component 之间的困惑）
+
+* 写法上有限制（不能出现在条件、循环中），并且写法限制增加了重构成本
+
+* 破坏了PureComponent、React.memo浅比较的性能优化效果（为了取最新的props和state，每次render()都要重新创建事件处函数）
+
+* 在闭包场景可能会引用到旧的state、props值
+
+* 内部实现上不直观（依赖一份可变的全局状态，不再那么“纯”）
+
+* React.memo并不能完全替代shouldComponentUpdate（因为拿不到 state change，只针对 props change）
+
+> 关于react-hooks的评价来源于官方[react-hooks RFC](https://github.com/reactjs/rfcs/blob/master/text/0068-react-hooks.md#drawbacks)
 
 ## 你是如何理解fiber的?
 
@@ -180,9 +195,9 @@ React 16之前 ，`reconcilation ` 算法实际上是递归，想要中断递�
 
 然后我们过下整个工作流程：
 
-1. 首先，用户（通过View）发出Action，发出方式就用到了dispatch方法。<br />
-2. 然后，Store自动调用Reducer，并且传入两个参数：当前State和收到的Action，Reducer会返回新的State<br />
-3. State一旦有变化，Store就会调用监听函数，来更新View。<br />
+1. 首先，用户（通过View）发出Action，发出方式就用到了dispatch方法。
+2. 然后，Store自动调用Reducer，并且传入两个参数：当前State和收到的Action，Reducer会返回新的State
+3. State一旦有变化，Store就会调用监听函数，来更新View。
 
 到这儿为止，一次用户交互流程结束。可以看到，在整个流程中数据都是单向流动的，这种方式保证了流程的清晰。
 
@@ -190,8 +205,79 @@ React 16之前 ，`reconcilation ` 算法实际上是递归，想要中断递�
 
 ## react-redux是如何工作的?
 
+* Provider: Provider的作用是从最外部封装了整个应用，并向connect模块传递store
+* connect: 负责连接React和Redux
+    - 获取state: connect通过context获取Provider中的store，通过store.getState()获取整个store tree 上所有state
+    - 包装原组件: 将state和action通过props的方式传入到原组件内部wrapWithConnect返回一个ReactComponent对象Connect，Connect重新render外部传入的原组件WrappedComponent，并把connect中传入的mapStateToProps, mapDispatchToProps与组件上原有的props合并后，通过属性的方式传给WrappedComponent
+    - 监听store tree变化: connect缓存了store tree中state的状态,通过当前state状态和变更前state状态进行比较,从而确定是否调用`this.setState()`方法触发Connect及其子组件的重新渲染
+
+![2019-08-01-22-21-51]( https://xiaomuzhu-image.oss-cn-beijing.aliyuncs.com/710f0a9f0a8e6a320f55fa0ca795a3c7.png)
+
 ## redux与mobx的区别?
+
+**两者对比:**
+
+* redux将数据保存在单一的store中，mobx将数据保存在分散的多个store中
+* redux使用plain object保存数据，需要手动处理变化后的操作；mobx适用observable保存数据，数据变化后自动处理响应的操作
+* redux使用不可变状态，这意味着状态是只读的，不能直接去修改它，而是应该返回一个新的状态，同时使用纯函数；mobx中的状态是可变的，可以直接对其进行修改
+* mobx相对来说比较简单，在其中有很多的抽象，mobx更多的使用面向对象的编程思维；redux会比较复杂，因为其中的函数式编程思想掌握起来不是那么容易，同时需要借助一系列的中间件来处理异步和副作用
+* mobx中有更多的抽象和封装，调试会比较困难，同时结果也难以预测；而redux提供能够进行时间回溯的开发工具，同时其纯函数以及更少的抽象，让调试变得更加的容易
+
+**场景辨析:**
+
+基于以上区别,我们可以简单得分析一下两者的不同使用场景.
+
+mobx更适合数据不复杂的应用: mobx难以调试,很多状态无法回溯,面对复杂度高的应用时,往往力不从心.
+
+redux适合有回溯需求的应用: 比如一个画板应用、一个表格应用，很多时候需要撤销、重做等操作，由于redux不可变的特性，天然支持这些操作.
+
+mobx适合短平快的项目: mobx上手简单,样板代码少,可以很大程度上提高开发效率.
+
+当然mobx和redux也并不一定是非此即彼的关系,你也可以在项目中用redux作为全局状态管理,用mobx作为组件局部状态管理器来用.
 
 ## redux中如何进行异步操作?
 
+当然,我们可以在`componentDidmount`中直接进行请求无须借助redux.
+
+但是在一定规模的项目中,上述方法很难进行异步流的管理,通常情况下我们会借助redux的异步中间件进行异步处理.
+
+redux异步流中间件其实有很多,但是当下主流的异步中间件只有两种redux-thunk、redux-saga，当然redux-observable可能也有资格占据一席之地,其余的异步中间件不管是社区活跃度还是npm下载量都比较差了.
+
 ## redux异步中间件之间的优劣?
+
+**redux-thunk优点:**
+
+* 体积小: redux-thunk的实现方式很简单,只有不到20行代码
+* 使用简单: redux-thunk没有引入像redux-saga或者redux-observable额外的范式,上手简单
+
+**redux-thunk缺陷:**
+
+* 样板代码过多: 与redux本身一样,通常一个请求需要大量的代码,而且很多都是重复性质的
+* 耦合严重: 异步操作与redux的action偶合在一起,不方便管理
+* 功能孱弱: 有一些实际开发中常用的功能需要自己进行封装
+
+**redux-saga优点:**
+
+* 异步解耦: 异步操作被被转移到单独 saga.js 中，不再是掺杂在 action.js 或 component.js 中
+* action摆脱thunk function: dispatch 的参数依然是一个纯粹的 action (FSA)，而不是充满 “黑魔法” thunk function
+* 异常处理: 受益于 generator function 的 saga 实现，代码异常/请求失败 都可以直接通过 try/catch 语法直接捕获处理
+* 功能强大: redux-saga提供了大量的Saga 辅助函数和Effect 创建器供开发者使用,开发者无须封装或者简单封装即可使用
+* 灵活: redux-saga可以将多个Saga可以串行/并行组合起来,形成一个非常实用的异步flow
+* 易测试，提供了各种case的测试方案，包括mock task，分支覆盖等等
+
+**redux-saga缺陷:**
+
+* 额外的学习成本: redux-saga不仅在使用难以理解的 generator function,而且有数十个API,学习成本远超redux-thunk,最重要的是你的额外学习成本是只服务于这个库的,与redux-observable不同,redux-observable虽然也有额外学习成本但是背后是rxjs和一整套思想
+* 体积庞大: 体积略大,代码近2000行，min版25KB左右
+* 功能过剩: 实际上并发控制等功能很难用到,但是我们依然需要引入这些代码
+* ts支持不友好: yield无法返回TS类型
+
+**redux-observable优点:**
+
+* 功能最强: 由于背靠rxjs这个强大的响应式编程的库,借助rxjs的操作符,你可以几乎做任何你能想到的异步处理
+* 背靠rxjs: 由于有rxjs的加持,如果你已经学习了rxjs,redux-observable的学习成本并不高,而且随着rxjs的升级redux-observable也会变得更强大
+
+**redux-observable缺陷:**
+
+* 学习成本奇高: 如果你不会rxjs,则需要额外学习两个复杂的库
+* 社区一般: redux-observable的下载量只有redux-saga的1/5,社区也不够活跃,在复杂异步流中间件这个层面redux-saga仍处于领导地位
