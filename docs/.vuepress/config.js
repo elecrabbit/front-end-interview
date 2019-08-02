@@ -136,6 +136,13 @@ function renderSiderBar() {
     ]
 },
 {
+  title: '框架实战技巧',
+  collapsable: false,
+  children: [
+        'component',
+    ]
+},
+{
   title: '性能优化',
   collapsable: false,
   children: [
