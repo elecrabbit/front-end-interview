@@ -35,61 +35,6 @@ export const siteData = {
       "path": "/"
     },
     {
-      "title": "指南使用手册",
-      "frontmatter": {},
-      "regularPath": "/guide/",
-      "relativePath": "guide/README.md",
-      "key": "v-a6b0f6ea",
-      "path": "/guide/",
-      "headers": [
-        {
-          "level": 2,
-          "title": "项目结构概览",
-          "slug": "项目结构概览"
-        },
-        {
-          "level": 2,
-          "title": "模块概览",
-          "slug": "模块概览"
-        },
-        {
-          "level": 3,
-          "title": "前端基础",
-          "slug": "前端基础"
-        },
-        {
-          "level": 3,
-          "title": "框架解读",
-          "slug": "框架解读"
-        },
-        {
-          "level": 3,
-          "title": "工程化",
-          "slug": "工程化"
-        },
-        {
-          "level": 3,
-          "title": "Typescript",
-          "slug": "typescript"
-        },
-        {
-          "level": 3,
-          "title": "性能优化",
-          "slug": "性能优化"
-        },
-        {
-          "level": 3,
-          "title": "计算机基础",
-          "slug": "计算机基础"
-        },
-        {
-          "level": 3,
-          "title": "细分领域",
-          "slug": "细分领域"
-        }
-      ]
-    },
-    {
       "title": "React组件复用指南",
       "frontmatter": {},
       "regularPath": "/guide/abstract.html",
@@ -151,81 +96,6 @@ export const siteData = {
           "level": 3,
           "title": "Render Props > HOCs",
           "slug": "render-props-hocs"
-        }
-      ]
-    },
-    {
-      "title": "书籍/课程推荐",
-      "frontmatter": {},
-      "regularPath": "/guide/book.html",
-      "relativePath": "guide/book.md",
-      "key": "v-38038a4a",
-      "path": "/guide/book.html",
-      "headers": [
-        {
-          "level": 2,
-          "title": "书单",
-          "slug": "书单"
-        },
-        {
-          "level": 3,
-          "title": "JavaScript",
-          "slug": "javascript"
-        },
-        {
-          "level": 3,
-          "title": "CSS:",
-          "slug": "css"
-        },
-        {
-          "level": 3,
-          "title": "算法：",
-          "slug": "算法："
-        },
-        {
-          "level": 3,
-          "title": "安全：",
-          "slug": "安全："
-        },
-        {
-          "level": 3,
-          "title": "canvas：",
-          "slug": "canvas："
-        },
-        {
-          "level": 3,
-          "title": "Node",
-          "slug": "node"
-        },
-        {
-          "level": 3,
-          "title": "网络",
-          "slug": "网络"
-        },
-        {
-          "level": 2,
-          "title": "关于知识付费",
-          "slug": "关于知识付费"
-        },
-        {
-          "level": 3,
-          "title": "知乎live",
-          "slug": "知乎live"
-        },
-        {
-          "level": 3,
-          "title": "掘金册子",
-          "slug": "掘金册子"
-        },
-        {
-          "level": 3,
-          "title": "极客时间",
-          "slug": "极客时间"
-        },
-        {
-          "level": 3,
-          "title": "慕课网",
-          "slug": "慕课网"
         }
       ]
     },
@@ -360,112 +230,132 @@ export const siteData = {
       ]
     },
     {
-      "title": "手写组件",
+      "title": "书籍/课程推荐",
       "frontmatter": {},
-      "regularPath": "/guide/component.html",
-      "relativePath": "guide/component.md",
-      "key": "v-909d7754",
-      "path": "/guide/component.html",
+      "regularPath": "/guide/book.html",
+      "relativePath": "guide/book.md",
+      "key": "v-38038a4a",
+      "path": "/guide/book.html",
       "headers": [
         {
           "level": 2,
-          "title": "实现轮播图组件",
-          "slug": "实现轮播图组件"
+          "title": "书单",
+          "slug": "书单"
+        },
+        {
+          "level": 3,
+          "title": "JavaScript",
+          "slug": "javascript"
+        },
+        {
+          "level": 3,
+          "title": "CSS:",
+          "slug": "css"
+        },
+        {
+          "level": 3,
+          "title": "算法：",
+          "slug": "算法："
+        },
+        {
+          "level": 3,
+          "title": "安全：",
+          "slug": "安全："
+        },
+        {
+          "level": 3,
+          "title": "canvas：",
+          "slug": "canvas："
+        },
+        {
+          "level": 3,
+          "title": "Node",
+          "slug": "node"
+        },
+        {
+          "level": 3,
+          "title": "网络",
+          "slug": "网络"
         },
         {
           "level": 2,
-          "title": "实现级联选择组件",
-          "slug": "实现级联选择组件"
+          "title": "关于知识付费",
+          "slug": "关于知识付费"
         },
         {
-          "level": 2,
-          "title": "实现自动完成组件",
-          "slug": "实现自动完成组件"
+          "level": 3,
+          "title": "知乎live",
+          "slug": "知乎live"
+        },
+        {
+          "level": 3,
+          "title": "掘金册子",
+          "slug": "掘金册子"
+        },
+        {
+          "level": 3,
+          "title": "极客时间",
+          "slug": "极客时间"
+        },
+        {
+          "level": 3,
+          "title": "慕课网",
+          "slug": "慕课网"
         }
       ]
     },
     {
-      "title": "如何搭建一个组件库的开发环境",
+      "title": "指南使用手册",
       "frontmatter": {},
-      "regularPath": "/guide/componentCli.html",
-      "relativePath": "guide/componentCli.md",
-      "key": "v-9ec1af54",
-      "path": "/guide/componentCli.html",
+      "regularPath": "/guide/",
+      "relativePath": "guide/README.md",
+      "key": "v-a6b0f6ea",
+      "path": "/guide/",
       "headers": [
         {
           "level": 2,
-          "title": "前言",
-          "slug": "前言"
+          "title": "项目结构概览",
+          "slug": "项目结构概览"
         },
         {
           "level": 2,
-          "title": "前端组件库的设计原则",
-          "slug": "前端组件库的设计原则"
+          "title": "模块概览",
+          "slug": "模块概览"
         },
         {
           "level": 3,
-          "title": "1.1 细粒度的考量",
-          "slug": "_1-1-细粒度的考量"
+          "title": "前端基础",
+          "slug": "前端基础"
         },
         {
           "level": 3,
-          "title": "1.2 通用性考量",
-          "slug": "_1-2-通用性考量"
-        },
-        {
-          "level": 2,
-          "title": "2 技术选型",
-          "slug": "_2-技术选型"
+          "title": "框架解读",
+          "slug": "框架解读"
         },
         {
           "level": 3,
-          "title": "2.1 css 解决方案",
-          "slug": "_2-1-css-解决方案"
+          "title": "工程化",
+          "slug": "工程化"
         },
         {
           "level": 3,
-          "title": "2.2 js 解决方案",
-          "slug": "_2-2-js-解决方案"
-        },
-        {
-          "level": 2,
-          "title": "3. 如何快速启动一个组件库项目",
-          "slug": "_3-如何快速启动一个组件库项目"
+          "title": "Typescript",
+          "slug": "typescript"
         },
         {
           "level": 3,
-          "title": "3.1 打包工具(rollup vs webpack)",
-          "slug": "_3-1-打包工具-rollup-vs-webpack"
+          "title": "性能优化",
+          "slug": "性能优化"
         },
         {
           "level": 3,
-          "title": "3.2 代码检测",
-          "slug": "_3-2-代码检测"
+          "title": "计算机基础",
+          "slug": "计算机基础"
         },
         {
           "level": 3,
-          "title": "3.3 commit 规范",
-          "slug": "_3-3-commit-规范"
-        },
-        {
-          "level": 3,
-          "title": "3.4 测试工具",
-          "slug": "_3-4-测试工具"
-        },
-        {
-          "level": 3,
-          "title": "3.5 其它",
-          "slug": "_3-5-其它"
-        },
-        {
-          "level": 3,
-          "title": "3.6 快速启动脚手架",
-          "slug": "_3-6-快速启动脚手架"
-        },
-        {
-          "level": 3,
-          "title": "参考链接",
-          "slug": "参考链接"
+          "title": "细分领域",
+          "slug": "细分领域"
         }
       ]
     },
@@ -640,6 +530,51 @@ export const siteData = {
       ]
     },
     {
+      "title": "手写组件",
+      "frontmatter": {},
+      "regularPath": "/guide/component.html",
+      "relativePath": "guide/component.md",
+      "key": "v-909d7754",
+      "path": "/guide/component.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "实现轮播图组件",
+          "slug": "实现轮播图组件"
+        },
+        {
+          "level": 3,
+          "title": "轮播图基本原理",
+          "slug": "轮播图基本原理"
+        },
+        {
+          "level": 3,
+          "title": "轮播图基础实现",
+          "slug": "轮播图基础实现"
+        },
+        {
+          "level": 3,
+          "title": "轮播图的动画效果",
+          "slug": "轮播图的动画效果"
+        },
+        {
+          "level": 3,
+          "title": "改进方向",
+          "slug": "改进方向"
+        },
+        {
+          "level": 2,
+          "title": "实现级联选择组件",
+          "slug": "实现级联选择组件"
+        },
+        {
+          "level": 2,
+          "title": "实现自动完成组件",
+          "slug": "实现自动完成组件"
+        }
+      ]
+    },
+    {
       "title": "实现深克隆",
       "frontmatter": {},
       "regularPath": "/guide/deepclone.html",
@@ -680,12 +615,112 @@ export const siteData = {
       ]
     },
     {
+      "title": "框架通用面试题",
+      "frontmatter": {},
+      "regularPath": "/guide/common.html",
+      "relativePath": "guide/common.md",
+      "key": "v-c64d1774",
+      "path": "/guide/common.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "为什么选择使用框架而不是原生?",
+          "slug": "为什么选择使用框架而不是原生"
+        }
+      ]
+    },
+    {
       "title": "设计模式",
       "frontmatter": {},
       "regularPath": "/guide/designPatterns.html",
       "relativePath": "guide/designPatterns.md",
       "key": "v-1d743fcc",
       "path": "/guide/designPatterns.html"
+    },
+    {
+      "title": "如何搭建一个组件库的开发环境",
+      "frontmatter": {},
+      "regularPath": "/guide/componentCli.html",
+      "relativePath": "guide/componentCli.md",
+      "key": "v-9ec1af54",
+      "path": "/guide/componentCli.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "前言",
+          "slug": "前言"
+        },
+        {
+          "level": 2,
+          "title": "前端组件库的设计原则",
+          "slug": "前端组件库的设计原则"
+        },
+        {
+          "level": 3,
+          "title": "1.1 细粒度的考量",
+          "slug": "_1-1-细粒度的考量"
+        },
+        {
+          "level": 3,
+          "title": "1.2 通用性考量",
+          "slug": "_1-2-通用性考量"
+        },
+        {
+          "level": 2,
+          "title": "2 技术选型",
+          "slug": "_2-技术选型"
+        },
+        {
+          "level": 3,
+          "title": "2.1 css 解决方案",
+          "slug": "_2-1-css-解决方案"
+        },
+        {
+          "level": 3,
+          "title": "2.2 js 解决方案",
+          "slug": "_2-2-js-解决方案"
+        },
+        {
+          "level": 2,
+          "title": "3. 如何快速启动一个组件库项目",
+          "slug": "_3-如何快速启动一个组件库项目"
+        },
+        {
+          "level": 3,
+          "title": "3.1 打包工具(rollup vs webpack)",
+          "slug": "_3-1-打包工具-rollup-vs-webpack"
+        },
+        {
+          "level": 3,
+          "title": "3.2 代码检测",
+          "slug": "_3-2-代码检测"
+        },
+        {
+          "level": 3,
+          "title": "3.3 commit 规范",
+          "slug": "_3-3-commit-规范"
+        },
+        {
+          "level": 3,
+          "title": "3.4 测试工具",
+          "slug": "_3-4-测试工具"
+        },
+        {
+          "level": 3,
+          "title": "3.5 其它",
+          "slug": "_3-5-其它"
+        },
+        {
+          "level": 3,
+          "title": "3.6 快速启动脚手架",
+          "slug": "_3-6-快速启动脚手架"
+        },
+        {
+          "level": 3,
+          "title": "参考链接",
+          "slug": "参考链接"
+        }
+      ]
     },
     {
       "title": "Proxy比defineproperty优劣对比?",
@@ -753,46 +788,6 @@ export const siteData = {
       ]
     },
     {
-      "title": "DOM",
-      "frontmatter": {},
-      "regularPath": "/guide/dom.html",
-      "relativePath": "guide/dom.md",
-      "key": "v-d62d5894",
-      "path": "/guide/dom.html",
-      "headers": [
-        {
-          "level": 2,
-          "title": "DOM的事件模型是什么？",
-          "slug": "dom的事件模型是什么？"
-        },
-        {
-          "level": 2,
-          "title": "DOM的事件流是什么？",
-          "slug": "dom的事件流是什么？"
-        },
-        {
-          "level": 3,
-          "title": "事件冒泡",
-          "slug": "事件冒泡"
-        },
-        {
-          "level": 3,
-          "title": "事件捕获",
-          "slug": "事件捕获"
-        },
-        {
-          "level": 3,
-          "title": "事件流",
-          "slug": "事件流"
-        },
-        {
-          "level": 2,
-          "title": "什么是事件委托?",
-          "slug": "什么是事件委托"
-        }
-      ]
-    },
-    {
       "title": "如何实现一个Event",
       "frontmatter": {},
       "regularPath": "/guide/event.html",
@@ -839,6 +834,46 @@ export const siteData = {
           "level": 3,
           "title": "发现问题",
           "slug": "发现问题"
+        }
+      ]
+    },
+    {
+      "title": "DOM",
+      "frontmatter": {},
+      "regularPath": "/guide/dom.html",
+      "relativePath": "guide/dom.md",
+      "key": "v-d62d5894",
+      "path": "/guide/dom.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "DOM的事件模型是什么？",
+          "slug": "dom的事件模型是什么？"
+        },
+        {
+          "level": 2,
+          "title": "DOM的事件流是什么？",
+          "slug": "dom的事件流是什么？"
+        },
+        {
+          "level": 3,
+          "title": "事件冒泡",
+          "slug": "事件冒泡"
+        },
+        {
+          "level": 3,
+          "title": "事件捕获",
+          "slug": "事件捕获"
+        },
+        {
+          "level": 3,
+          "title": "事件流",
+          "slug": "事件流"
+        },
+        {
+          "level": 2,
+          "title": "什么是事件委托?",
+          "slug": "什么是事件委托"
         }
       ]
     },
@@ -1143,56 +1178,6 @@ export const siteData = {
       ]
     },
     {
-      "title": "JavaScript的『预解释』与『变量提升』",
-      "frontmatter": {},
-      "regularPath": "/guide/hoisting.html",
-      "relativePath": "guide/hoisting.md",
-      "key": "v-0527eb44",
-      "path": "/guide/hoisting.html",
-      "headers": [
-        {
-          "level": 2,
-          "title": "前言",
-          "slug": "前言"
-        },
-        {
-          "level": 2,
-          "title": "从一个实例开始",
-          "slug": "从一个实例开始"
-        },
-        {
-          "level": 2,
-          "title": "avaScript预解释",
-          "slug": "avascript预解释"
-        },
-        {
-          "level": 2,
-          "title": "JavaScript执行环境",
-          "slug": "javascript执行环境"
-        },
-        {
-          "level": 2,
-          "title": "变量提升",
-          "slug": "变量提升"
-        },
-        {
-          "level": 2,
-          "title": "函数声明与函数表达式",
-          "slug": "函数声明与函数表达式"
-        },
-        {
-          "level": 2,
-          "title": "冲突处理",
-          "slug": "冲突处理"
-        },
-        {
-          "level": 2,
-          "title": "ES6中的let",
-          "slug": "es6中的let"
-        }
-      ]
-    },
-    {
       "title": "HTML基础",
       "frontmatter": {},
       "regularPath": "/guide/htmlBasic.html",
@@ -1264,6 +1249,81 @@ export const siteData = {
           "level": 2,
           "title": "这些方式的区别是什么？（追问）✨",
           "slug": "这些方式的区别是什么？（追问）✨"
+        }
+      ]
+    },
+    {
+      "title": "JavaScript的『预解释』与『变量提升』",
+      "frontmatter": {},
+      "regularPath": "/guide/hoisting.html",
+      "relativePath": "guide/hoisting.md",
+      "key": "v-0527eb44",
+      "path": "/guide/hoisting.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "前言",
+          "slug": "前言"
+        },
+        {
+          "level": 2,
+          "title": "从一个实例开始",
+          "slug": "从一个实例开始"
+        },
+        {
+          "level": 2,
+          "title": "avaScript预解释",
+          "slug": "avascript预解释"
+        },
+        {
+          "level": 2,
+          "title": "JavaScript执行环境",
+          "slug": "javascript执行环境"
+        },
+        {
+          "level": 2,
+          "title": "变量提升",
+          "slug": "变量提升"
+        },
+        {
+          "level": 2,
+          "title": "函数声明与函数表达式",
+          "slug": "函数声明与函数表达式"
+        },
+        {
+          "level": 2,
+          "title": "冲突处理",
+          "slug": "冲突处理"
+        },
+        {
+          "level": 2,
+          "title": "ES6中的let",
+          "slug": "es6中的let"
+        }
+      ]
+    },
+    {
+      "title": "HTTP笔试部分",
+      "frontmatter": {},
+      "regularPath": "/guide/httpWritten.html",
+      "relativePath": "guide/httpWritten.md",
+      "key": "v-0dcf6a96",
+      "path": "/guide/httpWritten.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "缓存题",
+          "slug": "缓存题"
+        },
+        {
+          "level": 3,
+          "title": "问题一：当点击“重新访问 page 页”链接重新加载该页面后， head.png 如何二次加载？",
+          "slug": "问题一：当点击“重新访问-page-页”链接重新加载该页面后，-head-png-如何二次加载？"
+        },
+        {
+          "level": 3,
+          "title": "问题二：如果将上述信息中的 Cache-Control 设置为 private，那么结果又会如何呢？",
+          "slug": "问题二：如果将上述信息中的-cache-control-设置为-private，那么结果又会如何呢？"
         }
       ]
     },
@@ -1388,31 +1448,6 @@ export const siteData = {
       ]
     },
     {
-      "title": "HTTP笔试部分",
-      "frontmatter": {},
-      "regularPath": "/guide/httpWritten.html",
-      "relativePath": "guide/httpWritten.md",
-      "key": "v-0dcf6a96",
-      "path": "/guide/httpWritten.html",
-      "headers": [
-        {
-          "level": 2,
-          "title": "缓存题",
-          "slug": "缓存题"
-        },
-        {
-          "level": 3,
-          "title": "问题一：当点击“重新访问 page 页”链接重新加载该页面后， head.png 如何二次加载？",
-          "slug": "问题一：当点击“重新访问-page-页”链接重新加载该页面后，-head-png-如何二次加载？"
-        },
-        {
-          "level": 3,
-          "title": "问题二：如果将上述信息中的 Cache-Control 设置为 private，那么结果又会如何呢？",
-          "slug": "问题二：如果将上述信息中的-cache-control-设置为-private，那么结果又会如何呢？"
-        }
-      ]
-    },
-    {
       "title": "实现不可变数据",
       "frontmatter": {},
       "regularPath": "/guide/immutable.html",
@@ -1449,6 +1484,156 @@ export const siteData = {
           "level": 3,
           "title": "总结",
           "slug": "总结"
+        }
+      ]
+    },
+    {
+      "title": "JavaScript笔试部分",
+      "frontmatter": {},
+      "regularPath": "/guide/jsWritten.html",
+      "relativePath": "guide/jsWritten.md",
+      "key": "v-95dc5814",
+      "path": "/guide/jsWritten.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "实现防抖函数（debounce）",
+          "slug": "实现防抖函数（debounce）"
+        },
+        {
+          "level": 2,
+          "title": "实现节流函数（throttle）",
+          "slug": "实现节流函数（throttle）"
+        },
+        {
+          "level": 2,
+          "title": "深克隆（deepclone）",
+          "slug": "深克隆（deepclone）"
+        },
+        {
+          "level": 2,
+          "title": "实现Event(event bus)",
+          "slug": "实现event-event-bus"
+        },
+        {
+          "level": 2,
+          "title": "实现instanceOf",
+          "slug": "实现instanceof"
+        },
+        {
+          "level": 2,
+          "title": "模拟new",
+          "slug": "模拟new"
+        },
+        {
+          "level": 2,
+          "title": "实现一个call",
+          "slug": "实现一个call"
+        },
+        {
+          "level": 2,
+          "title": "实现apply方法",
+          "slug": "实现apply方法"
+        },
+        {
+          "level": 2,
+          "title": "实现bind",
+          "slug": "实现bind"
+        },
+        {
+          "level": 2,
+          "title": "模拟Object.create",
+          "slug": "模拟object-create"
+        },
+        {
+          "level": 2,
+          "title": "实现类的继承",
+          "slug": "实现类的继承"
+        },
+        {
+          "level": 2,
+          "title": "实现JSON.parse",
+          "slug": "实现json-parse"
+        },
+        {
+          "level": 2,
+          "title": "实现Promise",
+          "slug": "实现promise"
+        }
+      ]
+    },
+    {
+      "title": "JavaScript的运行机制",
+      "frontmatter": {},
+      "regularPath": "/guide/mechanism.html",
+      "relativePath": "guide/mechanism.md",
+      "key": "v-561489d6",
+      "path": "/guide/mechanism.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "JavaScript的执行环境",
+          "slug": "javascript的执行环境"
+        },
+        {
+          "level": 3,
+          "title": "JavaScript引擎(JavaScript Engine)",
+          "slug": "javascript引擎-javascript-engine"
+        },
+        {
+          "level": 3,
+          "title": "JavaScript运行时（JavaScript Runtime）",
+          "slug": "javascript运行时（javascript-runtime）"
+        },
+        {
+          "level": 3,
+          "title": "可执行代码",
+          "slug": "可执行代码"
+        },
+        {
+          "level": 2,
+          "title": "JavaScript执行",
+          "slug": "javascript执行"
+        },
+        {
+          "level": 3,
+          "title": "堆",
+          "slug": "堆"
+        },
+        {
+          "level": 3,
+          "title": "调用栈",
+          "slug": "调用栈"
+        },
+        {
+          "level": 3,
+          "title": "执行上下文(execution context)",
+          "slug": "执行上下文-execution-context"
+        },
+        {
+          "level": 3,
+          "title": "执行过程",
+          "slug": "执行过程"
+        },
+        {
+          "level": 2,
+          "title": "小结",
+          "slug": "小结"
+        },
+        {
+          "level": 3,
+          "title": "this是怎么被绑定的?",
+          "slug": "this是怎么被绑定的"
+        },
+        {
+          "level": 3,
+          "title": "作用域链是怎么形成的？",
+          "slug": "作用域链是怎么形成的？"
+        },
+        {
+          "level": 3,
+          "title": "闭包是怎么形成的？",
+          "slug": "闭包是怎么形成的？"
         }
       ]
     },
@@ -1623,81 +1808,6 @@ export const siteData = {
       ]
     },
     {
-      "title": "JavaScript笔试部分",
-      "frontmatter": {},
-      "regularPath": "/guide/jsWritten.html",
-      "relativePath": "guide/jsWritten.md",
-      "key": "v-95dc5814",
-      "path": "/guide/jsWritten.html",
-      "headers": [
-        {
-          "level": 2,
-          "title": "实现防抖函数（debounce）",
-          "slug": "实现防抖函数（debounce）"
-        },
-        {
-          "level": 2,
-          "title": "实现节流函数（throttle）",
-          "slug": "实现节流函数（throttle）"
-        },
-        {
-          "level": 2,
-          "title": "深克隆（deepclone）",
-          "slug": "深克隆（deepclone）"
-        },
-        {
-          "level": 2,
-          "title": "实现Event(event bus)",
-          "slug": "实现event-event-bus"
-        },
-        {
-          "level": 2,
-          "title": "实现instanceOf",
-          "slug": "实现instanceof"
-        },
-        {
-          "level": 2,
-          "title": "模拟new",
-          "slug": "模拟new"
-        },
-        {
-          "level": 2,
-          "title": "实现一个call",
-          "slug": "实现一个call"
-        },
-        {
-          "level": 2,
-          "title": "实现apply方法",
-          "slug": "实现apply方法"
-        },
-        {
-          "level": 2,
-          "title": "实现bind",
-          "slug": "实现bind"
-        },
-        {
-          "level": 2,
-          "title": "模拟Object.create",
-          "slug": "模拟object-create"
-        },
-        {
-          "level": 2,
-          "title": "实现类的继承",
-          "slug": "实现类的继承"
-        },
-        {
-          "level": 2,
-          "title": "实现JSON.parse",
-          "slug": "实现json-parse"
-        },
-        {
-          "level": 2,
-          "title": "实现Promise",
-          "slug": "实现promise"
-        }
-      ]
-    },
-    {
       "title": "前端性能优化-加载篇",
       "frontmatter": {},
       "regularPath": "/guide/load.html",
@@ -1764,81 +1874,6 @@ export const siteData = {
           "level": 2,
           "title": "小结",
           "slug": "小结"
-        }
-      ]
-    },
-    {
-      "title": "JavaScript的运行机制",
-      "frontmatter": {},
-      "regularPath": "/guide/mechanism.html",
-      "relativePath": "guide/mechanism.md",
-      "key": "v-561489d6",
-      "path": "/guide/mechanism.html",
-      "headers": [
-        {
-          "level": 2,
-          "title": "JavaScript的执行环境",
-          "slug": "javascript的执行环境"
-        },
-        {
-          "level": 3,
-          "title": "JavaScript引擎(JavaScript Engine)",
-          "slug": "javascript引擎-javascript-engine"
-        },
-        {
-          "level": 3,
-          "title": "JavaScript运行时（JavaScript Runtime）",
-          "slug": "javascript运行时（javascript-runtime）"
-        },
-        {
-          "level": 3,
-          "title": "可执行代码",
-          "slug": "可执行代码"
-        },
-        {
-          "level": 2,
-          "title": "JavaScript执行",
-          "slug": "javascript执行"
-        },
-        {
-          "level": 3,
-          "title": "堆",
-          "slug": "堆"
-        },
-        {
-          "level": 3,
-          "title": "调用栈",
-          "slug": "调用栈"
-        },
-        {
-          "level": 3,
-          "title": "执行上下文(execution context)",
-          "slug": "执行上下文-execution-context"
-        },
-        {
-          "level": 3,
-          "title": "执行过程",
-          "slug": "执行过程"
-        },
-        {
-          "level": 2,
-          "title": "小结",
-          "slug": "小结"
-        },
-        {
-          "level": 3,
-          "title": "this是怎么被绑定的?",
-          "slug": "this是怎么被绑定的"
-        },
-        {
-          "level": 3,
-          "title": "作用域链是怎么形成的？",
-          "slug": "作用域链是怎么形成的？"
-        },
-        {
-          "level": 3,
-          "title": "闭包是怎么形成的？",
-          "slug": "闭包是怎么形成的？"
         }
       ]
     },
@@ -2253,6 +2288,13 @@ export const siteData = {
       ]
     },
     {
+      "frontmatter": {},
+      "regularPath": "/guide/reactivity.html",
+      "relativePath": "guide/reactivity.md",
+      "key": "v-1f0a8450",
+      "path": "/guide/reactivity.html"
+    },
+    {
       "title": "setState到底是异步的还是同步的?",
       "frontmatter": {},
       "regularPath": "/guide/setState.html",
@@ -2354,63 +2396,6 @@ export const siteData = {
           "level": 2,
           "title": "讲一下四次握手？✨",
           "slug": "讲一下四次握手？✨"
-        }
-      ]
-    },
-    {
-      "frontmatter": {},
-      "regularPath": "/guide/type.html",
-      "relativePath": "guide/type.md",
-      "key": "v-14677eb0",
-      "path": "/guide/type.html"
-    },
-    {
-      "title": "虚拟DOM原理",
-      "frontmatter": {},
-      "regularPath": "/guide/virtualDom.html",
-      "relativePath": "guide/virtualDom.md",
-      "key": "v-b3cc06a4",
-      "path": "/guide/virtualDom.html",
-      "headers": [
-        {
-          "level": 2,
-          "title": "什么是Virtual DOM",
-          "slug": "什么是virtual-dom"
-        },
-        {
-          "level": 2,
-          "title": "为什么需要Virtual DOM",
-          "slug": "为什么需要virtual-dom"
-        },
-        {
-          "level": 2,
-          "title": "Virtual DOM的关键要素",
-          "slug": "virtual-dom的关键要素"
-        },
-        {
-          "level": 3,
-          "title": "Virtual DOM的创建",
-          "slug": "virtual-dom的创建"
-        },
-        {
-          "level": 3,
-          "title": "Virtual DOM Tree的创建",
-          "slug": "virtual-dom-tree的创建"
-        },
-        {
-          "level": 3,
-          "title": "Virtual DOM 的更新",
-          "slug": "virtual-dom-的更新"
-        },
-        {
-          "level": 3,
-          "title": "Virtual DOM 的diff",
-          "slug": "virtual-dom-的diff"
-        },
-        {
-          "level": 2,
-          "title": "Virtual DOM的优化",
-          "slug": "virtual-dom的优化"
         }
       ]
     },
@@ -2521,6 +2506,63 @@ export const siteData = {
           "level": 2,
           "title": "Vuex原理?",
           "slug": "vuex原理"
+        }
+      ]
+    },
+    {
+      "frontmatter": {},
+      "regularPath": "/guide/type.html",
+      "relativePath": "guide/type.md",
+      "key": "v-14677eb0",
+      "path": "/guide/type.html"
+    },
+    {
+      "title": "虚拟DOM原理",
+      "frontmatter": {},
+      "regularPath": "/guide/virtualDom.html",
+      "relativePath": "guide/virtualDom.md",
+      "key": "v-b3cc06a4",
+      "path": "/guide/virtualDom.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "什么是Virtual DOM",
+          "slug": "什么是virtual-dom"
+        },
+        {
+          "level": 2,
+          "title": "为什么需要Virtual DOM",
+          "slug": "为什么需要virtual-dom"
+        },
+        {
+          "level": 2,
+          "title": "Virtual DOM的关键要素",
+          "slug": "virtual-dom的关键要素"
+        },
+        {
+          "level": 3,
+          "title": "Virtual DOM的创建",
+          "slug": "virtual-dom的创建"
+        },
+        {
+          "level": 3,
+          "title": "Virtual DOM Tree的创建",
+          "slug": "virtual-dom-tree的创建"
+        },
+        {
+          "level": 3,
+          "title": "Virtual DOM 的更新",
+          "slug": "virtual-dom-的更新"
+        },
+        {
+          "level": 3,
+          "title": "Virtual DOM 的diff",
+          "slug": "virtual-dom-的diff"
+        },
+        {
+          "level": 2,
+          "title": "Virtual DOM的优化",
+          "slug": "virtual-dom的优化"
         }
       ]
     }
