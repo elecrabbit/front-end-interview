@@ -44,6 +44,10 @@ const incrementAction = () => ({
     type: increment
 })
 
+const initState = {
+    count: 0
+}
+
 function counter(state, action) {
     switch (action.type) {
         case 'INCREMENT':
@@ -56,8 +60,27 @@ function counter(state, action) {
       }
 }
 
+
+const changeStatus = 'CHANGESTATUS'
+
+const changeStatusAction = () => ({
+    type: changeStatus
+})
+
 const initState = {
-    count: 0
+    isLogin: false
+}
+
+function Status(state, action) {
+    switch (action.type) {
+        case 'CHANGESTATUS':
+          return {
+            ...state,
+            count: !state.isLogin
+          }
+        default:
+          return state;
+      }
 }
 
 const store = createStore(initState, counter)
@@ -66,9 +89,9 @@ const s = store.getState()
 
 store.subscribe(() => {
     let state = store.getState();
-    console.log(state.count); // 1
+    console.log(state.count);
 })
 
-store.changeState(incrementAction())
-store.changeState(incrementAction())
+store.changeState(incrementAction()) // 1
+store.changeState(incrementAction()) // 2
 
