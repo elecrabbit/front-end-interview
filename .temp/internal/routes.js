@@ -21,14 +21,6 @@ export const routes = [
     redirect: "/"
   },
   {
-    name: "v-38038a4a",
-    path: "/guide/book.html",
-    component: GlobalLayout,
-    beforeEnter: (to, from, next) => {
-      ensureAsyncComponentsLoaded("Layout", "v-38038a4a").then(next)
-    },
-  },
-  {
     name: "v-a6b0f6ea",
     path: "/guide/",
     component: GlobalLayout,
@@ -46,6 +38,22 @@ export const routes = [
     component: GlobalLayout,
     beforeEnter: (to, from, next) => {
       ensureAsyncComponentsLoaded("Layout", "v-5db7e350").then(next)
+    },
+  },
+  {
+    name: "v-6ce1c4f6",
+    path: "/guide/babel.html",
+    component: GlobalLayout,
+    beforeEnter: (to, from, next) => {
+      ensureAsyncComponentsLoaded("Layout", "v-6ce1c4f6").then(next)
+    },
+  },
+  {
+    name: "v-38038a4a",
+    path: "/guide/book.html",
+    component: GlobalLayout,
+    beforeEnter: (to, from, next) => {
+      ensureAsyncComponentsLoaded("Layout", "v-38038a4a").then(next)
     },
   },
   {
@@ -121,19 +129,19 @@ export const routes = [
     },
   },
   {
-    name: "v-69018a14",
-    path: "/guide/event.html",
-    component: GlobalLayout,
-    beforeEnter: (to, from, next) => {
-      ensureAsyncComponentsLoaded("Layout", "v-69018a14").then(next)
-    },
-  },
-  {
     name: "v-0f593414",
     path: "/guide/eventLoop.html",
     component: GlobalLayout,
     beforeEnter: (to, from, next) => {
       ensureAsyncComponentsLoaded("Layout", "v-0f593414").then(next)
+    },
+  },
+  {
+    name: "v-69018a14",
+    path: "/guide/event.html",
+    component: GlobalLayout,
+    beforeEnter: (to, from, next) => {
+      ensureAsyncComponentsLoaded("Layout", "v-69018a14").then(next)
     },
   },
   {
@@ -161,14 +169,6 @@ export const routes = [
     },
   },
   {
-    name: "v-7636ce16",
-    path: "/guide/htmlBasic.html",
-    component: GlobalLayout,
-    beforeEnter: (to, from, next) => {
-      ensureAsyncComponentsLoaded("Layout", "v-7636ce16").then(next)
-    },
-  },
-  {
     name: "v-2610bfe8",
     path: "/guide/http.html",
     component: GlobalLayout,
@@ -177,11 +177,11 @@ export const routes = [
     },
   },
   {
-    name: "v-0dcf6a96",
-    path: "/guide/httpWritten.html",
+    name: "v-7636ce16",
+    path: "/guide/htmlBasic.html",
     component: GlobalLayout,
     beforeEnter: (to, from, next) => {
-      ensureAsyncComponentsLoaded("Layout", "v-0dcf6a96").then(next)
+      ensureAsyncComponentsLoaded("Layout", "v-7636ce16").then(next)
     },
   },
   {
@@ -193,11 +193,27 @@ export const routes = [
     },
   },
   {
+    name: "v-0dcf6a96",
+    path: "/guide/httpWritten.html",
+    component: GlobalLayout,
+    beforeEnter: (to, from, next) => {
+      ensureAsyncComponentsLoaded("Layout", "v-0dcf6a96").then(next)
+    },
+  },
+  {
     name: "v-6faacdd6",
     path: "/guide/jsBasic.html",
     component: GlobalLayout,
     beforeEnter: (to, from, next) => {
       ensureAsyncComponentsLoaded("Layout", "v-6faacdd6").then(next)
+    },
+  },
+  {
+    name: "v-1b672d60",
+    path: "/guide/load.html",
+    component: GlobalLayout,
+    beforeEnter: (to, from, next) => {
+      ensureAsyncComponentsLoaded("Layout", "v-1b672d60").then(next)
     },
   },
   {
@@ -209,11 +225,11 @@ export const routes = [
     },
   },
   {
-    name: "v-1b672d60",
-    path: "/guide/load.html",
+    name: "v-561489d6",
+    path: "/guide/mechanism.html",
     component: GlobalLayout,
     beforeEnter: (to, from, next) => {
-      ensureAsyncComponentsLoaded("Layout", "v-1b672d60").then(next)
+      ensureAsyncComponentsLoaded("Layout", "v-561489d6").then(next)
     },
   },
   {
@@ -233,11 +249,11 @@ export const routes = [
     },
   },
   {
-    name: "v-561489d6",
-    path: "/guide/mechanism.html",
+    name: "v-7f195d96",
+    path: "/guide/react.html",
     component: GlobalLayout,
     beforeEnter: (to, from, next) => {
-      ensureAsyncComponentsLoaded("Layout", "v-561489d6").then(next)
+      ensureAsyncComponentsLoaded("Layout", "v-7f195d96").then(next)
     },
   },
   {
@@ -246,14 +262,6 @@ export const routes = [
     component: GlobalLayout,
     beforeEnter: (to, from, next) => {
       ensureAsyncComponentsLoaded("Layout", "v-571d1f56").then(next)
-    },
-  },
-  {
-    name: "v-7f195d96",
-    path: "/guide/react.html",
-    component: GlobalLayout,
-    beforeEnter: (to, from, next) => {
-      ensureAsyncComponentsLoaded("Layout", "v-7f195d96").then(next)
     },
   },
   {

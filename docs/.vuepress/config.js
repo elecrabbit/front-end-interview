@@ -155,8 +155,8 @@ function renderSiderBar() {
   children: [
         'webpack',
         'babel',
-        'git',
-        'test'
+        // 'git',
+        // 'test'
     ]
 },
 {

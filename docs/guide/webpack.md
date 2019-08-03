@@ -26,20 +26,23 @@ Webpack是基于模块化打包的工具:
 
 ## 有哪些常见的Loader？
 
-- file-loader：把文件输出到一个文件夹中，在代码中通过相对 URL 去引用输出的文件
-- url-loader：和 file-loader 类似，但是能在文件很小的情况下以 base64 的方式把文件内容注入到代码中去
-- source-map-loader：加载额外的 Source Map 文件，以方便断点调试
-- image-loader：加载并且压缩图片文件
-- babel-loader：把 ES6 转换成 ES5
-- css-loader：加载 CSS，支持模块化、压缩、文件导入等特性
-- style-loader：把 CSS 代码注入到 JavaScript 中，通过 DOM 操作去加载 CSS。
-- eslint-loader：通过 ESLint 检查 JavaScript 代码
+* file-loader：把文件输出到一个文件夹中，在代码中通过相对 URL 去引用输出的文件
+* url-loader：和 file-loader 类似，但是能在文件很小的情况下以 base64 的方式把文件内容注入到代码中去
+* source-map-loader：加载额外的 Source Map 文件，以方便断点调试
+* image-loader：加载并且压缩图片文件
+* babel-loader：把 ES6 转换成 ES5
+* css-loader：加载 CSS，支持模块化、压缩、文件导入等特性
+* style-loader：把 CSS 代码注入到 JavaScript 中，通过 DOM 操作去加载 CSS。
+* eslint-loader：通过 ESLint 检查 JavaScript 代码
 
 ## 有哪些常见的Plugin？
 
-- define-plugin：定义环境变量
-- commons-chunk-plugin：提取公共代码
-- uglifyjs-webpack-plugin：通过`UglifyES`压缩`ES6`代码
+* define-plugin：定义环境变量
+* html-webpack-plugin：简化html文件创建
+* uglifyjs-webpack-plugin：通过`UglifyES`压缩`ES6`代码
+* webpack-parallel-uglify-plugin: 多核压缩,提高压缩速度
+* webpack-bundle-analyzer: 可视化webpack输出文件的体积
+* mini-css-extract-plugin: CSS提取到单独的文件中,支持按需加载
 
 ## 分别介绍bundle，chunk，module是什么
 
@@ -49,15 +52,15 @@ Webpack是基于模块化打包的工具:
 
 ## Loader和Plugin的不同？
 
-**不同的作用**
+**不同的作用:**
 
-- **Loader**直译为"加载器"。Webpack将一切文件视为模块，但是webpack原生是只能解析js文件，如果想将其他文件也打包的话，就会用到`loader`。 所以Loader的作用是让webpack拥有了加载和解析_非JavaScript文件_的能力。
-- **Plugin**直译为"插件"。Plugin可以扩展webpack的功能，让webpack具有更多的灵活性。 在 Webpack 运行的生命周期中会广播出许多事件，Plugin 可以监听这些事件，在合适的时机通过 Webpack 提供的 API 改变输出结果。
+* **Loader**直译为"加载器"。Webpack将一切文件视为模块，但是webpack原生是只能解析js文件，如果想将其他文件也打包的话，就会用到`loader`。 所以Loader的作用是让webpack拥有了加载和解析_非JavaScript文件_的能力。
+* **Plugin**直译为"插件"。Plugin可以扩展webpack的功能，让webpack具有更多的灵活性。 在 Webpack 运行的生命周期中会广播出许多事件，Plugin 可以监听这些事件，在合适的时机通过 Webpack 提供的 API 改变输出结果。
 
-**不同的用法**
+**不同的用法:**
 
-- **Loader**在`module.rules`中配置，也就是说他作为模块的解析规则而存在。 类型为数组，每一项都是一个`Object`，里面描述了对于什么类型的文件（`test`），使用什么加载(`loader`)和使用的参数（`options`）
-- **Plugin**在`plugins`中单独配置。 类型为数组，每一项是一个`plugin`的实例，参数都通过构造函数传入。
+* **Loader**在`module.rules`中配置，也就是说他作为模块的解析规则而存在。 类型为数组，每一项都是一个`Object`，里面描述了对于什么类型的文件（`test`），使用什么加载(`loader`)和使用的参数（`options`）
+* **Plugin**在`plugins`中单独配置。 类型为数组，每一项是一个`plugin`的实例，参数都通过构造函数传入。
 
 ## webpack的构建流程是什么?
 
@@ -74,6 +77,8 @@ Webpack 的运行流程是一个串行的过程，从启动到结束会依次执
 在以上过程中，Webpack 会在特定的时间点广播出特定的事件，插件在监听到感兴趣的事件后会执行特定的逻辑，并且插件可以调用 Webpack 提供的 API 改变 Webpack 的运行结果。
 
 > 来源于[深入浅出webpack第五章](https://wangchong.tech/webpack/5%E5%8E%9F%E7%90%86/5-1%E5%B7%A5%E4%BD%9C%E5%8E%9F%E7%90%86%E6%A6%82%E6%8B%AC.html)
+
+> 拓展阅读[细说 webpack 之流程篇](http://taobaofed.org/blog/2016/09/09/webpack-flow/)
 
 ## 是否写过Loader和Plugin？描述一下编写loader或plugin的思路？
 
@@ -104,15 +109,30 @@ webpack的热更新又称热替换（Hot Module Replacement），缩写为HMR。
 
 > 详细原理解析来源于知乎饿了么前端[Webpack HMR 原理解析](https://zhuanlan.zhihu.com/p/30669007)
 
-## 如何利用webpack来优化前端性能？（提高性能和体验）
+## 如何用webpack来优化前端性能？
 
 用webpack优化前端性能是指优化webpack的输出结果，让打包的最终结果在浏览器运行快速高效。
 
-- 压缩代码。删除多余的代码、注释、简化代码的写法等等方式。可以利用webpack的`UglifyJsPlugin`和`ParallelUglifyPlugin`来压缩JS文件， 利用`cssnano`（css-loader?minimize）来压缩css
-- 利用CDN加速。在构建过程中，将引用的静态资源路径修改为CDN上对应的路径。可以利用webpack对于`output`参数和各loader的`publicPath`参数来修改资源路径
-- 删除死代码（Tree Shaking）。将代码中永远不会走到的片段删除掉。可以通过在启动webpack时追加参数`--optimize-minimize`来实现
-- 提取公共代码。
+* 压缩代码:删除多余的代码、注释、简化代码的写法等等方式。可以利用webpack的`UglifyJsPlugin`和`ParallelUglifyPlugin`来压缩JS文件， 利用`cssnano`（css-loader?minimize）来压缩css
+*  
+* 利用CDN加速: 在构建过程中，将引用的静态资源路径修改为CDN上对应的路径。可以利用webpack对于`output`参数和各loader的`publicPath`参数来修改资源路径
+* Tree Shaking: 将代码中永远不会走到的片段删除掉。可以通过在启动webpack时追加参数`--optimize-minimize`来实现
+* Code Splitting: 将代码按路由维度或者组件分块(chunk),这样做到按需加载,同时可以充分利用浏览器缓存
+* 提取公共第三方库:  SplitChunksPlugin插件来进行公共模块抽取,利用浏览器缓存可以长期缓存这些无需频繁变动的公共代码
 
+> 详解可以参照[前端性能优化-加载](load.md)
+
+## 如何提高webpack的打包速度?
+
+* happypack: 利用进程并行编译loader,利用缓存来使得 rebuild 更快,遗憾的是作者表示已经不会继续开发此项目,类似的替代者是[thread-loader](https://github.com/webpack-contrib/thread-loader)
+* [外部扩展(externals)](https://webpack.docschina.org/configuration/externals/): 将不怎么需要更新的第三方库脱离webpack打包，不被打入bundle中，从而减少打包时间,比如jQuery用script标签引入
+* dll: 采用webpack的 DllPlugin 和 DllReferencePlugin 引入dll，让一些基本不会改动的代码先打包成静态资源,避免反复编译浪费时间
+* 利用缓存: `webpack.cache`、babel-loader.cacheDirectory、`HappyPack.cache`都可以利用缓存提高rebuild效率
+* 缩小文件搜索范围: 比如babel-loader插件,如果你的文件仅存在于src中,那么可以`include: path.resolve(__dirname, 'src')`,当然绝大多数情况下这种操作的提升有限,除非不小心build了node_modules文件
+
+> 实战文章推荐[使用webpack4提升180%编译速度
+Tool
+](https://louiszhai.github.io/2019/01/04/webpack4/)
 
 ## 如何提高webpack的构建速度？
 

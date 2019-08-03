@@ -35,81 +35,6 @@ export const siteData = {
       "path": "/"
     },
     {
-      "title": "书籍/课程推荐",
-      "frontmatter": {},
-      "regularPath": "/guide/book.html",
-      "relativePath": "guide/book.md",
-      "key": "v-38038a4a",
-      "path": "/guide/book.html",
-      "headers": [
-        {
-          "level": 2,
-          "title": "书单",
-          "slug": "书单"
-        },
-        {
-          "level": 3,
-          "title": "JavaScript",
-          "slug": "javascript"
-        },
-        {
-          "level": 3,
-          "title": "CSS:",
-          "slug": "css"
-        },
-        {
-          "level": 3,
-          "title": "算法：",
-          "slug": "算法："
-        },
-        {
-          "level": 3,
-          "title": "安全：",
-          "slug": "安全："
-        },
-        {
-          "level": 3,
-          "title": "canvas：",
-          "slug": "canvas："
-        },
-        {
-          "level": 3,
-          "title": "Node",
-          "slug": "node"
-        },
-        {
-          "level": 3,
-          "title": "网络",
-          "slug": "网络"
-        },
-        {
-          "level": 2,
-          "title": "关于知识付费",
-          "slug": "关于知识付费"
-        },
-        {
-          "level": 3,
-          "title": "知乎live",
-          "slug": "知乎live"
-        },
-        {
-          "level": 3,
-          "title": "掘金册子",
-          "slug": "掘金册子"
-        },
-        {
-          "level": 3,
-          "title": "极客时间",
-          "slug": "极客时间"
-        },
-        {
-          "level": 3,
-          "title": "慕课网",
-          "slug": "慕课网"
-        }
-      ]
-    },
-    {
       "title": "指南使用手册",
       "frontmatter": {},
       "regularPath": "/guide/",
@@ -226,6 +151,88 @@ export const siteData = {
           "level": 3,
           "title": "Render Props > HOCs",
           "slug": "render-props-hocs"
+        }
+      ]
+    },
+    {
+      "frontmatter": {},
+      "regularPath": "/guide/babel.html",
+      "relativePath": "guide/babel.md",
+      "key": "v-6ce1c4f6",
+      "path": "/guide/babel.html"
+    },
+    {
+      "title": "书籍/课程推荐",
+      "frontmatter": {},
+      "regularPath": "/guide/book.html",
+      "relativePath": "guide/book.md",
+      "key": "v-38038a4a",
+      "path": "/guide/book.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "书单",
+          "slug": "书单"
+        },
+        {
+          "level": 3,
+          "title": "JavaScript",
+          "slug": "javascript"
+        },
+        {
+          "level": 3,
+          "title": "CSS:",
+          "slug": "css"
+        },
+        {
+          "level": 3,
+          "title": "算法：",
+          "slug": "算法："
+        },
+        {
+          "level": 3,
+          "title": "安全：",
+          "slug": "安全："
+        },
+        {
+          "level": 3,
+          "title": "canvas：",
+          "slug": "canvas："
+        },
+        {
+          "level": 3,
+          "title": "Node",
+          "slug": "node"
+        },
+        {
+          "level": 3,
+          "title": "网络",
+          "slug": "网络"
+        },
+        {
+          "level": 2,
+          "title": "关于知识付费",
+          "slug": "关于知识付费"
+        },
+        {
+          "level": 3,
+          "title": "知乎live",
+          "slug": "知乎live"
+        },
+        {
+          "level": 3,
+          "title": "掘金册子",
+          "slug": "掘金册子"
+        },
+        {
+          "level": 3,
+          "title": "极客时间",
+          "slug": "极客时间"
+        },
+        {
+          "level": 3,
+          "title": "慕课网",
+          "slug": "慕课网"
         }
       ]
     },
@@ -838,56 +845,6 @@ export const siteData = {
       ]
     },
     {
-      "title": "如何实现一个Event",
-      "frontmatter": {},
-      "regularPath": "/guide/event.html",
-      "relativePath": "guide/event.md",
-      "key": "v-69018a14",
-      "path": "/guide/event.html",
-      "headers": [
-        {
-          "level": 2,
-          "title": "前言",
-          "slug": "前言"
-        },
-        {
-          "level": 2,
-          "title": "基本构造",
-          "slug": "基本构造"
-        },
-        {
-          "level": 3,
-          "title": "初始化class",
-          "slug": "初始化class"
-        },
-        {
-          "level": 3,
-          "title": "监听与触发",
-          "slug": "监听与触发"
-        },
-        {
-          "level": 2,
-          "title": "升级改造",
-          "slug": "升级改造"
-        },
-        {
-          "level": 3,
-          "title": "监听/触发器升级",
-          "slug": "监听-触发器升级"
-        },
-        {
-          "level": 3,
-          "title": "移除监听",
-          "slug": "移除监听"
-        },
-        {
-          "level": 3,
-          "title": "发现问题",
-          "slug": "发现问题"
-        }
-      ]
-    },
-    {
       "title": "Event Loop详解",
       "frontmatter": {},
       "regularPath": "/guide/eventLoop.html",
@@ -1068,6 +1025,56 @@ export const siteData = {
       ]
     },
     {
+      "title": "如何实现一个Event",
+      "frontmatter": {},
+      "regularPath": "/guide/event.html",
+      "relativePath": "guide/event.md",
+      "key": "v-69018a14",
+      "path": "/guide/event.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "前言",
+          "slug": "前言"
+        },
+        {
+          "level": 2,
+          "title": "基本构造",
+          "slug": "基本构造"
+        },
+        {
+          "level": 3,
+          "title": "初始化class",
+          "slug": "初始化class"
+        },
+        {
+          "level": 3,
+          "title": "监听与触发",
+          "slug": "监听与触发"
+        },
+        {
+          "level": 2,
+          "title": "升级改造",
+          "slug": "升级改造"
+        },
+        {
+          "level": 3,
+          "title": "监听/触发器升级",
+          "slug": "监听-触发器升级"
+        },
+        {
+          "level": 3,
+          "title": "移除监听",
+          "slug": "移除监听"
+        },
+        {
+          "level": 3,
+          "title": "发现问题",
+          "slug": "发现问题"
+        }
+      ]
+    },
+    {
       "title": "React Fiber 架构解析",
       "frontmatter": {},
       "regularPath": "/guide/fiber.html",
@@ -1238,81 +1245,6 @@ export const siteData = {
       ]
     },
     {
-      "title": "HTML基础",
-      "frontmatter": {},
-      "regularPath": "/guide/htmlBasic.html",
-      "relativePath": "guide/htmlBasic.md",
-      "key": "v-7636ce16",
-      "path": "/guide/htmlBasic.html",
-      "headers": [
-        {
-          "level": 2,
-          "title": "doctype(文档类型) 的作用是什么？✨",
-          "slug": "doctype-文档类型-的作用是什么？✨"
-        },
-        {
-          "level": 2,
-          "title": "这三种模式的区别是什么？(接上一问追问)",
-          "slug": "这三种模式的区别是什么？-接上一问追问"
-        },
-        {
-          "level": 2,
-          "title": "HTML、XML 和 XHTML 有什么区别？",
-          "slug": "html、xml-和-xhtml-有什么区别？"
-        },
-        {
-          "level": 2,
-          "title": "什么是data-属性？",
-          "slug": "什么是data-属性？"
-        },
-        {
-          "level": 2,
-          "title": "你对HTML语义化的理解？✨",
-          "slug": "你对html语义化的理解？✨"
-        },
-        {
-          "level": 2,
-          "title": "HTML5与HTML4的不同之处",
-          "slug": "html5与html4的不同之处"
-        },
-        {
-          "level": 2,
-          "title": "有哪些常用的meta标签？",
-          "slug": "有哪些常用的meta标签？"
-        },
-        {
-          "level": 2,
-          "title": "src和href的区别？",
-          "slug": "src和href的区别？"
-        },
-        {
-          "level": 2,
-          "title": "知道img的srcset的作用是什么？（追问）",
-          "slug": "知道img的srcset的作用是什么？（追问）"
-        },
-        {
-          "level": 2,
-          "title": "还有哪一个标签能起到跟srcset相似作用？（追问）",
-          "slug": "还有哪一个标签能起到跟srcset相似作用？（追问）"
-        },
-        {
-          "level": 2,
-          "title": "script标签中defer和async的区别？✨",
-          "slug": "script标签中defer和async的区别？✨"
-        },
-        {
-          "level": 2,
-          "title": "有几种前端储存的方式？✨",
-          "slug": "有几种前端储存的方式？✨"
-        },
-        {
-          "level": 2,
-          "title": "这些方式的区别是什么？（追问）✨",
-          "slug": "这些方式的区别是什么？（追问）✨"
-        }
-      ]
-    },
-    {
       "title": "HTTP协议",
       "frontmatter": {},
       "regularPath": "/guide/http.html",
@@ -1433,27 +1365,77 @@ export const siteData = {
       ]
     },
     {
-      "title": "HTTP笔试部分",
+      "title": "HTML基础",
       "frontmatter": {},
-      "regularPath": "/guide/httpWritten.html",
-      "relativePath": "guide/httpWritten.md",
-      "key": "v-0dcf6a96",
-      "path": "/guide/httpWritten.html",
+      "regularPath": "/guide/htmlBasic.html",
+      "relativePath": "guide/htmlBasic.md",
+      "key": "v-7636ce16",
+      "path": "/guide/htmlBasic.html",
       "headers": [
         {
           "level": 2,
-          "title": "缓存题",
-          "slug": "缓存题"
+          "title": "doctype(文档类型) 的作用是什么？✨",
+          "slug": "doctype-文档类型-的作用是什么？✨"
         },
         {
-          "level": 3,
-          "title": "问题一：当点击“重新访问 page 页”链接重新加载该页面后， head.png 如何二次加载？",
-          "slug": "问题一：当点击“重新访问-page-页”链接重新加载该页面后，-head-png-如何二次加载？"
+          "level": 2,
+          "title": "这三种模式的区别是什么？(接上一问追问)",
+          "slug": "这三种模式的区别是什么？-接上一问追问"
         },
         {
-          "level": 3,
-          "title": "问题二：如果将上述信息中的 Cache-Control 设置为 private，那么结果又会如何呢？",
-          "slug": "问题二：如果将上述信息中的-cache-control-设置为-private，那么结果又会如何呢？"
+          "level": 2,
+          "title": "HTML、XML 和 XHTML 有什么区别？",
+          "slug": "html、xml-和-xhtml-有什么区别？"
+        },
+        {
+          "level": 2,
+          "title": "什么是data-属性？",
+          "slug": "什么是data-属性？"
+        },
+        {
+          "level": 2,
+          "title": "你对HTML语义化的理解？✨",
+          "slug": "你对html语义化的理解？✨"
+        },
+        {
+          "level": 2,
+          "title": "HTML5与HTML4的不同之处",
+          "slug": "html5与html4的不同之处"
+        },
+        {
+          "level": 2,
+          "title": "有哪些常用的meta标签？",
+          "slug": "有哪些常用的meta标签？"
+        },
+        {
+          "level": 2,
+          "title": "src和href的区别？",
+          "slug": "src和href的区别？"
+        },
+        {
+          "level": 2,
+          "title": "知道img的srcset的作用是什么？（追问）",
+          "slug": "知道img的srcset的作用是什么？（追问）"
+        },
+        {
+          "level": 2,
+          "title": "还有哪一个标签能起到跟srcset相似作用？（追问）",
+          "slug": "还有哪一个标签能起到跟srcset相似作用？（追问）"
+        },
+        {
+          "level": 2,
+          "title": "script标签中defer和async的区别？✨",
+          "slug": "script标签中defer和async的区别？✨"
+        },
+        {
+          "level": 2,
+          "title": "有几种前端储存的方式？✨",
+          "slug": "有几种前端储存的方式？✨"
+        },
+        {
+          "level": 2,
+          "title": "这些方式的区别是什么？（追问）✨",
+          "slug": "这些方式的区别是什么？（追问）✨"
         }
       ]
     },
@@ -1494,6 +1476,31 @@ export const siteData = {
           "level": 3,
           "title": "总结",
           "slug": "总结"
+        }
+      ]
+    },
+    {
+      "title": "HTTP笔试部分",
+      "frontmatter": {},
+      "regularPath": "/guide/httpWritten.html",
+      "relativePath": "guide/httpWritten.md",
+      "key": "v-0dcf6a96",
+      "path": "/guide/httpWritten.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "缓存题",
+          "slug": "缓存题"
+        },
+        {
+          "level": 3,
+          "title": "问题一：当点击“重新访问 page 页”链接重新加载该页面后， head.png 如何二次加载？",
+          "slug": "问题一：当点击“重新访问-page-页”链接重新加载该页面后，-head-png-如何二次加载？"
+        },
+        {
+          "level": 3,
+          "title": "问题二：如果将上述信息中的 Cache-Control 设置为 private，那么结果又会如何呢？",
+          "slug": "问题二：如果将上述信息中的-cache-control-设置为-private，那么结果又会如何呢？"
         }
       ]
     },
@@ -1668,6 +1675,76 @@ export const siteData = {
       ]
     },
     {
+      "title": "前端性能优化-加载篇",
+      "frontmatter": {},
+      "regularPath": "/guide/load.html",
+      "relativePath": "guide/load.md",
+      "key": "v-1b672d60",
+      "path": "/guide/load.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "前言",
+          "slug": "前言"
+        },
+        {
+          "level": 2,
+          "title": "首屏加载",
+          "slug": "首屏加载"
+        },
+        {
+          "level": 3,
+          "title": "白屏的定义",
+          "slug": "白屏的定义"
+        },
+        {
+          "level": 3,
+          "title": "白屏加载的问题分析",
+          "slug": "白屏加载的问题分析"
+        },
+        {
+          "level": 3,
+          "title": "白屏的性能优化",
+          "slug": "白屏的性能优化"
+        },
+        {
+          "level": 3,
+          "title": "FMP(首次有意义绘制)",
+          "slug": "fmp-首次有意义绘制"
+        },
+        {
+          "level": 3,
+          "title": "TTI(可交互时间)",
+          "slug": "tti-可交互时间"
+        },
+        {
+          "level": 2,
+          "title": "组件加载",
+          "slug": "组件加载"
+        },
+        {
+          "level": 3,
+          "title": "组件懒加载",
+          "slug": "组件懒加载"
+        },
+        {
+          "level": 3,
+          "title": "组件预加载",
+          "slug": "组件预加载"
+        },
+        {
+          "level": 3,
+          "title": "keep-alive",
+          "slug": "keep-alive"
+        },
+        {
+          "level": 2,
+          "title": "小结",
+          "slug": "小结"
+        }
+      ]
+    },
+    {
       "title": "JavaScript笔试部分",
       "frontmatter": {},
       "regularPath": "/guide/jsWritten.html",
@@ -1743,72 +1820,77 @@ export const siteData = {
       ]
     },
     {
-      "title": "前端性能优化-加载篇",
+      "title": "JavaScript的运行机制",
       "frontmatter": {},
-      "regularPath": "/guide/load.html",
-      "relativePath": "guide/load.md",
-      "key": "v-1b672d60",
-      "path": "/guide/load.html",
+      "regularPath": "/guide/mechanism.html",
+      "relativePath": "guide/mechanism.md",
+      "key": "v-561489d6",
+      "path": "/guide/mechanism.html",
       "headers": [
         {
           "level": 2,
-          "title": "前言",
-          "slug": "前言"
+          "title": "JavaScript的执行环境",
+          "slug": "javascript的执行环境"
+        },
+        {
+          "level": 3,
+          "title": "JavaScript引擎(JavaScript Engine)",
+          "slug": "javascript引擎-javascript-engine"
+        },
+        {
+          "level": 3,
+          "title": "JavaScript运行时（JavaScript Runtime）",
+          "slug": "javascript运行时（javascript-runtime）"
+        },
+        {
+          "level": 3,
+          "title": "可执行代码",
+          "slug": "可执行代码"
         },
         {
           "level": 2,
-          "title": "首屏加载",
-          "slug": "首屏加载"
+          "title": "JavaScript执行",
+          "slug": "javascript执行"
         },
         {
           "level": 3,
-          "title": "白屏的定义",
-          "slug": "白屏的定义"
+          "title": "堆",
+          "slug": "堆"
         },
         {
           "level": 3,
-          "title": "白屏加载的问题分析",
-          "slug": "白屏加载的问题分析"
+          "title": "调用栈",
+          "slug": "调用栈"
         },
         {
           "level": 3,
-          "title": "白屏的性能优化",
-          "slug": "白屏的性能优化"
+          "title": "执行上下文(execution context)",
+          "slug": "执行上下文-execution-context"
         },
         {
           "level": 3,
-          "title": "FMP(首次有意义绘制)",
-          "slug": "fmp-首次有意义绘制"
-        },
-        {
-          "level": 3,
-          "title": "TTI(可交互时间)",
-          "slug": "tti-可交互时间"
-        },
-        {
-          "level": 2,
-          "title": "组件加载",
-          "slug": "组件加载"
-        },
-        {
-          "level": 3,
-          "title": "组件懒加载",
-          "slug": "组件懒加载"
-        },
-        {
-          "level": 3,
-          "title": "组件预加载",
-          "slug": "组件预加载"
-        },
-        {
-          "level": 3,
-          "title": "keep-alive",
-          "slug": "keep-alive"
+          "title": "执行过程",
+          "slug": "执行过程"
         },
         {
           "level": 2,
           "title": "小结",
           "slug": "小结"
+        },
+        {
+          "level": 3,
+          "title": "this是怎么被绑定的?",
+          "slug": "this是怎么被绑定的"
+        },
+        {
+          "level": 3,
+          "title": "作用域链是怎么形成的？",
+          "slug": "作用域链是怎么形成的？"
+        },
+        {
+          "level": 3,
+          "title": "闭包是怎么形成的？",
+          "slug": "闭包是怎么形成的？"
         }
       ]
     },
@@ -1923,146 +2005,6 @@ export const siteData = {
       ]
     },
     {
-      "title": "JavaScript的运行机制",
-      "frontmatter": {},
-      "regularPath": "/guide/mechanism.html",
-      "relativePath": "guide/mechanism.md",
-      "key": "v-561489d6",
-      "path": "/guide/mechanism.html",
-      "headers": [
-        {
-          "level": 2,
-          "title": "JavaScript的执行环境",
-          "slug": "javascript的执行环境"
-        },
-        {
-          "level": 3,
-          "title": "JavaScript引擎(JavaScript Engine)",
-          "slug": "javascript引擎-javascript-engine"
-        },
-        {
-          "level": 3,
-          "title": "JavaScript运行时（JavaScript Runtime）",
-          "slug": "javascript运行时（javascript-runtime）"
-        },
-        {
-          "level": 3,
-          "title": "可执行代码",
-          "slug": "可执行代码"
-        },
-        {
-          "level": 2,
-          "title": "JavaScript执行",
-          "slug": "javascript执行"
-        },
-        {
-          "level": 3,
-          "title": "堆",
-          "slug": "堆"
-        },
-        {
-          "level": 3,
-          "title": "调用栈",
-          "slug": "调用栈"
-        },
-        {
-          "level": 3,
-          "title": "执行上下文(execution context)",
-          "slug": "执行上下文-execution-context"
-        },
-        {
-          "level": 3,
-          "title": "执行过程",
-          "slug": "执行过程"
-        },
-        {
-          "level": 2,
-          "title": "小结",
-          "slug": "小结"
-        },
-        {
-          "level": 3,
-          "title": "this是怎么被绑定的?",
-          "slug": "this是怎么被绑定的"
-        },
-        {
-          "level": 3,
-          "title": "作用域链是怎么形成的？",
-          "slug": "作用域链是怎么形成的？"
-        },
-        {
-          "level": 3,
-          "title": "闭包是怎么形成的？",
-          "slug": "闭包是怎么形成的？"
-        }
-      ]
-    },
-    {
-      "title": "技术面试",
-      "frontmatter": {},
-      "regularPath": "/guide/project.html",
-      "relativePath": "guide/project.md",
-      "key": "v-571d1f56",
-      "path": "/guide/project.html",
-      "headers": [
-        {
-          "level": 2,
-          "title": "自我介绍",
-          "slug": "自我介绍"
-        },
-        {
-          "level": 3,
-          "title": "为什么需要自我介绍",
-          "slug": "为什么需要自我介绍"
-        },
-        {
-          "level": 3,
-          "title": "自我介绍的几个必备要素",
-          "slug": "自我介绍的几个必备要素"
-        },
-        {
-          "level": 3,
-          "title": "自我介绍要有目的性",
-          "slug": "自我介绍要有目的性"
-        },
-        {
-          "level": 3,
-          "title": "如何准备自我介绍",
-          "slug": "如何准备自我介绍"
-        },
-        {
-          "level": 2,
-          "title": "技术考察",
-          "slug": "技术考察"
-        },
-        {
-          "level": 3,
-          "title": "多重提问",
-          "slug": "多重提问"
-        },
-        {
-          "level": 3,
-          "title": "答题法则",
-          "slug": "答题法则"
-        },
-        {
-          "level": 3,
-          "title": "刻意引导",
-          "slug": "刻意引导"
-        },
-        {
-          "level": 2,
-          "title": "向面试官提问",
-          "slug": "向面试官提问"
-        },
-        {
-          "level": 2,
-          "title": "总结",
-          "slug": "总结"
-        }
-      ]
-    },
-    {
       "title": "React面试题",
       "frontmatter": {},
       "regularPath": "/guide/react.html",
@@ -2139,6 +2081,71 @@ export const siteData = {
           "level": 2,
           "title": "redux异步中间件之间的优劣?",
           "slug": "redux异步中间件之间的优劣"
+        }
+      ]
+    },
+    {
+      "title": "技术面试",
+      "frontmatter": {},
+      "regularPath": "/guide/project.html",
+      "relativePath": "guide/project.md",
+      "key": "v-571d1f56",
+      "path": "/guide/project.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "自我介绍",
+          "slug": "自我介绍"
+        },
+        {
+          "level": 3,
+          "title": "为什么需要自我介绍",
+          "slug": "为什么需要自我介绍"
+        },
+        {
+          "level": 3,
+          "title": "自我介绍的几个必备要素",
+          "slug": "自我介绍的几个必备要素"
+        },
+        {
+          "level": 3,
+          "title": "自我介绍要有目的性",
+          "slug": "自我介绍要有目的性"
+        },
+        {
+          "level": 3,
+          "title": "如何准备自我介绍",
+          "slug": "如何准备自我介绍"
+        },
+        {
+          "level": 2,
+          "title": "技术考察",
+          "slug": "技术考察"
+        },
+        {
+          "level": 3,
+          "title": "多重提问",
+          "slug": "多重提问"
+        },
+        {
+          "level": 3,
+          "title": "答题法则",
+          "slug": "答题法则"
+        },
+        {
+          "level": 3,
+          "title": "刻意引导",
+          "slug": "刻意引导"
+        },
+        {
+          "level": 2,
+          "title": "向面试官提问",
+          "slug": "向面试官提问"
+        },
+        {
+          "level": 2,
+          "title": "总结",
+          "slug": "总结"
         }
       ]
     },
@@ -2659,8 +2666,13 @@ export const siteData = {
         },
         {
           "level": 2,
-          "title": "如何利用webpack来优化前端性能？（提高性能和体验）",
-          "slug": "如何利用webpack来优化前端性能？（提高性能和体验）"
+          "title": "如何用webpack来优化前端性能？",
+          "slug": "如何用webpack来优化前端性能？"
+        },
+        {
+          "level": 2,
+          "title": "如何提高webpack的打包速度?",
+          "slug": "如何提高webpack的打包速度"
         },
         {
           "level": 2,
@@ -2784,9 +2796,7 @@ export const siteData = {
               "collapsable": false,
               "children": [
                 "webpack",
-                "babel",
-                "git",
-                "test"
+                "babel"
               ]
             },
             {
