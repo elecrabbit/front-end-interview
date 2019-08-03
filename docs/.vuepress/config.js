@@ -150,6 +150,16 @@ function renderSiderBar() {
     ]
 },
 {
+  title: '工程化',
+  collapsable: false,
+  children: [
+        'webpack',
+        'babel',
+        'git',
+        'test'
+    ]
+},
+{
   title: '安全',
   collapsable: false,
   children: [

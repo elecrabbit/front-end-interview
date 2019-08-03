@@ -79,6 +79,8 @@ Vue组件通信的方法如下:
 
 还有一些用solt插槽或者ref实例进行通信的，使用场景过于有限就不赘述了。
 
+> 详细可以参考这篇文章[vue中8种组件通信方式](https://juejin.im/post/5d267dcdf265da1b957081a3),不过太偏门的通信方式根本不会用到,单做知识点了解即可
+
 ## computed和watch有什么区别?
 
 computed:
@@ -167,25 +169,7 @@ Object.defineProperty的优势如下:
 * 当 Vue Component render 函数被执行的时候, data 上会被 触碰(touch), 即被读, getter 方法会被调用, 此时 Vue 会去记录此 Vue component 所依赖的所有 data。(这一过程被称为依赖收集)
 * data 被改动时（主要是用户操作）, 即被写, setter 方法会被调用, 此时 Vue 会去通知所有依赖于此 data 的组件去调用他们的 render 函数进行更新。
 
-## 虚拟DOM的优劣如何?
-
-优点:
-
-* 保证性能下限: 虚拟DOM可以经过diff找出最小差异,然后批量进行patch,这种操作虽然比不上手动优化,但是比起粗暴的DOM操作性能要好很多,因此虚拟DOM可以保证性能下限
-* 无需手动操作DOM: 虚拟DOM的diff和patch都是在一次更新中自动进行的,我们无需手动操作DOM,极大提高开发效率
-* 跨平台: 虚拟DOM本质上是JavaScript对象,而DOM与平台强相关,相比之下虚拟DOM可以进行更方便地跨平台操作,例如服务器渲染、移动端开发等等
-
-缺点:
-
-* 无法进行极致优化: 在一些性能要求极高的应用中虚拟DOM无法进行针对性的极致优化,比如VScode采用直接手动操作DOM的方式进行极端的性能优化
-
-## 虚拟DOM实现原理?
-
-* 虚拟DOM本质上是JavaScript对象,是对真实DOM的抽象
-* 状态变更时，记录新树和旧树的差异
-* 最后把差异更新到真正的dom中
-
-> 详细实现见[虚拟DOM原理?](virtualDom.md)
+> [深入响应式系统](reactivity.md)
 
 ## 既然Vue通过数据劫持可以精准探测数据变化,为什么还需要虚拟DOM进行diff检测差异?
 
