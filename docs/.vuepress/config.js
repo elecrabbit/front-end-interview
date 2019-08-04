@@ -74,7 +74,7 @@ function renderSiderBar() {
     children: [
           'resume',
           'project',
-          'hr'
+          // 'hr'
       ]
   },
   {
@@ -133,6 +133,9 @@ function renderSiderBar() {
         'virtualDom',
         'devsProxy',
         'setState',
+        'redux',
+        'fiber',
+        'reactHook',
     ]
 },
 {
@@ -158,10 +161,18 @@ function renderSiderBar() {
     ]
 },
 {
+  title: '工程化原理',
+  collapsable: false,
+  children: [
+        'ast',
+        
+    ]
+},
+{
   title: '安全',
   collapsable: false,
   children: [
-        'vuePrinciple',
+        'security',
     ]
 },
 {

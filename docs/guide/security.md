@@ -1,7 +1,5 @@
 # 前端安全面试题
 
-本部分的主体来源于饿了么团队的[node-interview](https://github.com/ElemeFE/node-interview/blob/master/sections/zh-cn/security.md)项目,由于上述项目是针对node的,我们在此基础上做了对前端安全的拓展与删减工作.
-
 ## 有哪些可能引起前端安全的的问题?
 
 * 跨站脚本 (Cross-Site Scripting, XSS): 一种代码注入方式, 为了与 CSS 区分所以被称作 XSS. 早期常见于网络论坛, 起因是网站没有对用户的输入进行严格的限制, 使得攻击者可以将脚本上传到帖子让其他人浏览到有恶意脚本的页面, 其注入方式很简单包括但不限于 JavaScript / VBScript / CSS / Flash 等
@@ -412,8 +410,9 @@ DNS劫持由于涉嫌违法,已经被监管起来,现在很少会有DNS劫持,�
 
 ---
 
-参考:
+强烈建议阅读下面两篇前端安全文章:
 
 [前端安全系列（一）：如何防止XSS攻击？
 ](https://tech.meituan.com/2018/09/27/fe-security.html)
+
 [前端安全系列（二）：如何防止CSRF攻击？](https://tech.meituan.com/2018/10/11/fe-security-csrf.html)
