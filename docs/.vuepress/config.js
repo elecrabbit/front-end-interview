@@ -154,9 +154,7 @@ function renderSiderBar() {
   collapsable: false,
   children: [
         'webpack',
-        'babel',
-        // 'git',
-        // 'test'
+        'engineering',
     ]
 },
 {
