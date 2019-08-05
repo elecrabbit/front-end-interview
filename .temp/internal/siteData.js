@@ -35,61 +35,6 @@ export const siteData = {
       "path": "/"
     },
     {
-      "title": "指南使用手册",
-      "frontmatter": {},
-      "regularPath": "/guide/",
-      "relativePath": "guide/README.md",
-      "key": "v-a6b0f6ea",
-      "path": "/guide/",
-      "headers": [
-        {
-          "level": 2,
-          "title": "项目结构概览",
-          "slug": "项目结构概览"
-        },
-        {
-          "level": 2,
-          "title": "模块概览",
-          "slug": "模块概览"
-        },
-        {
-          "level": 3,
-          "title": "前端基础",
-          "slug": "前端基础"
-        },
-        {
-          "level": 3,
-          "title": "框架解读",
-          "slug": "框架解读"
-        },
-        {
-          "level": 3,
-          "title": "工程化",
-          "slug": "工程化"
-        },
-        {
-          "level": 3,
-          "title": "Typescript",
-          "slug": "typescript"
-        },
-        {
-          "level": 3,
-          "title": "性能优化",
-          "slug": "性能优化"
-        },
-        {
-          "level": 3,
-          "title": "计算机基础",
-          "slug": "计算机基础"
-        },
-        {
-          "level": 3,
-          "title": "细分领域",
-          "slug": "细分领域"
-        }
-      ]
-    },
-    {
       "title": "React组件复用指南",
       "frontmatter": {},
       "regularPath": "/guide/abstract.html",
@@ -155,6 +100,14 @@ export const siteData = {
       ]
     },
     {
+      "title": "算法面试题",
+      "frontmatter": {},
+      "regularPath": "/guide/algorithm.html",
+      "relativePath": "guide/algorithm.md",
+      "key": "v-dae534d4",
+      "path": "/guide/algorithm.html"
+    },
+    {
       "title": "如何写一个babel",
       "frontmatter": {},
       "regularPath": "/guide/ast.html",
@@ -216,6 +169,61 @@ export const siteData = {
           "level": 2,
           "title": "最后",
           "slug": "最后"
+        }
+      ]
+    },
+    {
+      "title": "指南使用手册",
+      "frontmatter": {},
+      "regularPath": "/guide/",
+      "relativePath": "guide/README.md",
+      "key": "v-a6b0f6ea",
+      "path": "/guide/",
+      "headers": [
+        {
+          "level": 2,
+          "title": "项目结构概览",
+          "slug": "项目结构概览"
+        },
+        {
+          "level": 2,
+          "title": "模块概览",
+          "slug": "模块概览"
+        },
+        {
+          "level": 3,
+          "title": "前端基础",
+          "slug": "前端基础"
+        },
+        {
+          "level": 3,
+          "title": "框架解读",
+          "slug": "框架解读"
+        },
+        {
+          "level": 3,
+          "title": "工程化",
+          "slug": "工程化"
+        },
+        {
+          "level": 3,
+          "title": "Typescript",
+          "slug": "typescript"
+        },
+        {
+          "level": 3,
+          "title": "性能优化",
+          "slug": "性能优化"
+        },
+        {
+          "level": 3,
+          "title": "计算机基础",
+          "slug": "计算机基础"
+        },
+        {
+          "level": 3,
+          "title": "细分领域",
+          "slug": "细分领域"
         }
       ]
     },
@@ -432,161 +440,6 @@ export const siteData = {
       ]
     },
     {
-      "title": "框架通用面试题",
-      "frontmatter": {},
-      "regularPath": "/guide/common.html",
-      "relativePath": "guide/common.md",
-      "key": "v-c64d1774",
-      "path": "/guide/common.html",
-      "headers": [
-        {
-          "level": 2,
-          "title": "为什么选择使用框架而不是原生?",
-          "slug": "为什么选择使用框架而不是原生"
-        },
-        {
-          "level": 2,
-          "title": "虚拟DOM的优劣如何?",
-          "slug": "虚拟dom的优劣如何"
-        },
-        {
-          "level": 2,
-          "title": "虚拟DOM实现原理?",
-          "slug": "虚拟dom实现原理"
-        }
-      ]
-    },
-    {
-      "title": "手写组件",
-      "frontmatter": {},
-      "regularPath": "/guide/component.html",
-      "relativePath": "guide/component.md",
-      "key": "v-909d7754",
-      "path": "/guide/component.html",
-      "headers": [
-        {
-          "level": 2,
-          "title": "前言",
-          "slug": "前言"
-        },
-        {
-          "level": 2,
-          "title": "前端组件库的设计原则",
-          "slug": "前端组件库的设计原则"
-        },
-        {
-          "level": 3,
-          "title": "细粒度的考量",
-          "slug": "细粒度的考量"
-        },
-        {
-          "level": 3,
-          "title": "通用性考量",
-          "slug": "通用性考量"
-        },
-        {
-          "level": 2,
-          "title": "实现轮播图组件",
-          "slug": "实现轮播图组件"
-        },
-        {
-          "level": 3,
-          "title": "轮播图基本原理",
-          "slug": "轮播图基本原理"
-        },
-        {
-          "level": 3,
-          "title": "轮播图基础实现",
-          "slug": "轮播图基础实现"
-        },
-        {
-          "level": 3,
-          "title": "轮播图的动画效果",
-          "slug": "轮播图的动画效果"
-        },
-        {
-          "level": 3,
-          "title": "改进方向",
-          "slug": "改进方向"
-        },
-        {
-          "level": 2,
-          "title": "实现级联选择组件",
-          "slug": "实现级联选择组件"
-        },
-        {
-          "level": 2,
-          "title": "实现自动完成组件",
-          "slug": "实现自动完成组件"
-        }
-      ]
-    },
-    {
-      "title": "如何搭建一个组件库的开发环境",
-      "frontmatter": {},
-      "regularPath": "/guide/componentCli.html",
-      "relativePath": "guide/componentCli.md",
-      "key": "v-9ec1af54",
-      "path": "/guide/componentCli.html",
-      "headers": [
-        {
-          "level": 2,
-          "title": "技术选型",
-          "slug": "技术选型"
-        },
-        {
-          "level": 3,
-          "title": "css 解决方案",
-          "slug": "css-解决方案"
-        },
-        {
-          "level": 3,
-          "title": "js 解决方案",
-          "slug": "js-解决方案"
-        },
-        {
-          "level": 2,
-          "title": "如何快速启动一个组件库项目",
-          "slug": "如何快速启动一个组件库项目"
-        },
-        {
-          "level": 3,
-          "title": "打包工具(rollup vs webpack)",
-          "slug": "打包工具-rollup-vs-webpack"
-        },
-        {
-          "level": 3,
-          "title": "代码检测",
-          "slug": "代码检测"
-        },
-        {
-          "level": 3,
-          "title": "commit 规范",
-          "slug": "commit-规范"
-        },
-        {
-          "level": 3,
-          "title": "测试工具",
-          "slug": "测试工具"
-        },
-        {
-          "level": 3,
-          "title": "其它",
-          "slug": "其它"
-        },
-        {
-          "level": 3,
-          "title": "快速启动脚手架",
-          "slug": "快速启动脚手架"
-        },
-        {
-          "level": 3,
-          "title": "参考链接",
-          "slug": "参考链接"
-        }
-      ]
-    },
-    {
       "title": "CSS基础",
       "frontmatter": {},
       "regularPath": "/guide/cssBasic.html",
@@ -757,20 +610,109 @@ export const siteData = {
       ]
     },
     {
-      "title": "设计模式",
+      "title": "框架通用面试题",
       "frontmatter": {},
-      "regularPath": "/guide/designPatterns.html",
-      "relativePath": "guide/designPatterns.md",
-      "key": "v-1d743fcc",
-      "path": "/guide/designPatterns.html"
+      "regularPath": "/guide/common.html",
+      "relativePath": "guide/common.md",
+      "key": "v-c64d1774",
+      "path": "/guide/common.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "为什么选择使用框架而不是原生?",
+          "slug": "为什么选择使用框架而不是原生"
+        },
+        {
+          "level": 2,
+          "title": "虚拟DOM的优劣如何?",
+          "slug": "虚拟dom的优劣如何"
+        },
+        {
+          "level": 2,
+          "title": "虚拟DOM实现原理?",
+          "slug": "虚拟dom实现原理"
+        }
+      ]
     },
     {
-      "title": "实现深克隆",
+      "title": "如何搭建一个组件库的开发环境",
       "frontmatter": {},
-      "regularPath": "/guide/deepclone.html",
-      "relativePath": "guide/deepclone.md",
-      "key": "v-d47e3e54",
-      "path": "/guide/deepclone.html",
+      "regularPath": "/guide/componentCli.html",
+      "relativePath": "guide/componentCli.md",
+      "key": "v-9ec1af54",
+      "path": "/guide/componentCli.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "技术选型",
+          "slug": "技术选型"
+        },
+        {
+          "level": 3,
+          "title": "css 解决方案",
+          "slug": "css-解决方案"
+        },
+        {
+          "level": 3,
+          "title": "js 解决方案",
+          "slug": "js-解决方案"
+        },
+        {
+          "level": 2,
+          "title": "如何快速启动一个组件库项目",
+          "slug": "如何快速启动一个组件库项目"
+        },
+        {
+          "level": 3,
+          "title": "打包工具(rollup vs webpack)",
+          "slug": "打包工具-rollup-vs-webpack"
+        },
+        {
+          "level": 3,
+          "title": "代码检测",
+          "slug": "代码检测"
+        },
+        {
+          "level": 3,
+          "title": "commit 规范",
+          "slug": "commit-规范"
+        },
+        {
+          "level": 3,
+          "title": "测试工具",
+          "slug": "测试工具"
+        },
+        {
+          "level": 3,
+          "title": "其它",
+          "slug": "其它"
+        },
+        {
+          "level": 3,
+          "title": "快速启动脚手架",
+          "slug": "快速启动脚手架"
+        },
+        {
+          "level": 3,
+          "title": "参考链接",
+          "slug": "参考链接"
+        }
+      ]
+    },
+    {
+      "frontmatter": {},
+      "regularPath": "/guide/composite.html",
+      "relativePath": "guide/composite.md",
+      "key": "v-45f5ac96",
+      "path": "/guide/composite.html"
+    },
+    {
+      "title": "手写组件",
+      "frontmatter": {},
+      "regularPath": "/guide/component.html",
+      "relativePath": "guide/component.md",
+      "key": "v-909d7754",
+      "path": "/guide/component.html",
       "headers": [
         {
           "level": 2,
@@ -779,30 +721,70 @@ export const siteData = {
         },
         {
           "level": 2,
-          "title": "浅克隆",
-          "slug": "浅克隆"
-        },
-        {
-          "level": 2,
-          "title": "深克隆",
-          "slug": "深克隆"
+          "title": "前端组件库的设计原则",
+          "slug": "前端组件库的设计原则"
         },
         {
           "level": 3,
-          "title": "JSON.parse方法",
-          "slug": "json-parse方法"
+          "title": "细粒度的考量",
+          "slug": "细粒度的考量"
         },
         {
           "level": 3,
-          "title": "2.2 构造一个深克隆函数",
-          "slug": "_2-2-构造一个深克隆函数"
+          "title": "通用性考量",
+          "slug": "通用性考量"
         },
         {
           "level": 2,
-          "title": "总结",
-          "slug": "总结"
+          "title": "实现轮播图组件",
+          "slug": "实现轮播图组件"
+        },
+        {
+          "level": 3,
+          "title": "轮播图基本原理",
+          "slug": "轮播图基本原理"
+        },
+        {
+          "level": 3,
+          "title": "轮播图基础实现",
+          "slug": "轮播图基础实现"
+        },
+        {
+          "level": 3,
+          "title": "轮播图的动画效果",
+          "slug": "轮播图的动画效果"
+        },
+        {
+          "level": 3,
+          "title": "改进方向",
+          "slug": "改进方向"
+        },
+        {
+          "level": 2,
+          "title": "实现级联选择组件",
+          "slug": "实现级联选择组件"
+        },
+        {
+          "level": 2,
+          "title": "实现自动完成组件",
+          "slug": "实现自动完成组件"
         }
       ]
+    },
+    {
+      "frontmatter": {},
+      "regularPath": "/guide/dataStructure.html",
+      "relativePath": "guide/dataStructure.md",
+      "key": "v-48a310d6",
+      "path": "/guide/dataStructure.html"
+    },
+    {
+      "title": "设计模式",
+      "frontmatter": {},
+      "regularPath": "/guide/designPatterns.html",
+      "relativePath": "guide/designPatterns.md",
+      "key": "v-1d743fcc",
+      "path": "/guide/designPatterns.html"
     },
     {
       "title": "Proxy比defineproperty优劣对比?",
@@ -866,6 +848,46 @@ export const siteData = {
           "level": 3,
           "title": "3.3 Proxy的其他优势",
           "slug": "_3-3-proxy的其他优势"
+        }
+      ]
+    },
+    {
+      "title": "实现深克隆",
+      "frontmatter": {},
+      "regularPath": "/guide/deepclone.html",
+      "relativePath": "guide/deepclone.md",
+      "key": "v-d47e3e54",
+      "path": "/guide/deepclone.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "前言",
+          "slug": "前言"
+        },
+        {
+          "level": 2,
+          "title": "浅克隆",
+          "slug": "浅克隆"
+        },
+        {
+          "level": 2,
+          "title": "深克隆",
+          "slug": "深克隆"
+        },
+        {
+          "level": 3,
+          "title": "JSON.parse方法",
+          "slug": "json-parse方法"
+        },
+        {
+          "level": 3,
+          "title": "2.2 构造一个深克隆函数",
+          "slug": "_2-2-构造一个深克隆函数"
+        },
+        {
+          "level": 2,
+          "title": "总结",
+          "slug": "总结"
         }
       ]
     },
@@ -1171,6 +1193,21 @@ export const siteData = {
           "level": 3,
           "title": "例子",
           "slug": "例子"
+        }
+      ]
+    },
+    {
+      "title": "前端性能优化-执行篇",
+      "frontmatter": {},
+      "regularPath": "/guide/execute.html",
+      "relativePath": "guide/execute.md",
+      "key": "v-09708bd6",
+      "path": "/guide/execute.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "动画性能优化",
+          "slug": "动画性能优化"
         }
       ]
     },
@@ -1775,6 +1812,76 @@ export const siteData = {
       ]
     },
     {
+      "title": "前端性能优化-加载篇",
+      "frontmatter": {},
+      "regularPath": "/guide/load.html",
+      "relativePath": "guide/load.md",
+      "key": "v-1b672d60",
+      "path": "/guide/load.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "前言",
+          "slug": "前言"
+        },
+        {
+          "level": 2,
+          "title": "首屏加载",
+          "slug": "首屏加载"
+        },
+        {
+          "level": 3,
+          "title": "白屏的定义",
+          "slug": "白屏的定义"
+        },
+        {
+          "level": 3,
+          "title": "白屏加载的问题分析",
+          "slug": "白屏加载的问题分析"
+        },
+        {
+          "level": 3,
+          "title": "白屏的性能优化",
+          "slug": "白屏的性能优化"
+        },
+        {
+          "level": 3,
+          "title": "FMP(首次有意义绘制)",
+          "slug": "fmp-首次有意义绘制"
+        },
+        {
+          "level": 3,
+          "title": "TTI(可交互时间)",
+          "slug": "tti-可交互时间"
+        },
+        {
+          "level": 2,
+          "title": "组件加载",
+          "slug": "组件加载"
+        },
+        {
+          "level": 3,
+          "title": "组件懒加载",
+          "slug": "组件懒加载"
+        },
+        {
+          "level": 3,
+          "title": "组件预加载",
+          "slug": "组件预加载"
+        },
+        {
+          "level": 3,
+          "title": "keep-alive",
+          "slug": "keep-alive"
+        },
+        {
+          "level": 2,
+          "title": "小结",
+          "slug": "小结"
+        }
+      ]
+    },
+    {
       "title": "JavaScript笔试部分",
       "frontmatter": {},
       "regularPath": "/guide/jsWritten.html",
@@ -1850,76 +1957,6 @@ export const siteData = {
       ]
     },
     {
-      "title": "前端性能优化-加载篇",
-      "frontmatter": {},
-      "regularPath": "/guide/load.html",
-      "relativePath": "guide/load.md",
-      "key": "v-1b672d60",
-      "path": "/guide/load.html",
-      "headers": [
-        {
-          "level": 2,
-          "title": "前言",
-          "slug": "前言"
-        },
-        {
-          "level": 2,
-          "title": "首屏加载",
-          "slug": "首屏加载"
-        },
-        {
-          "level": 3,
-          "title": "白屏的定义",
-          "slug": "白屏的定义"
-        },
-        {
-          "level": 3,
-          "title": "白屏加载的问题分析",
-          "slug": "白屏加载的问题分析"
-        },
-        {
-          "level": 3,
-          "title": "白屏的性能优化",
-          "slug": "白屏的性能优化"
-        },
-        {
-          "level": 3,
-          "title": "FMP(首次有意义绘制)",
-          "slug": "fmp-首次有意义绘制"
-        },
-        {
-          "level": 3,
-          "title": "TTI(可交互时间)",
-          "slug": "tti-可交互时间"
-        },
-        {
-          "level": 2,
-          "title": "组件加载",
-          "slug": "组件加载"
-        },
-        {
-          "level": 3,
-          "title": "组件懒加载",
-          "slug": "组件懒加载"
-        },
-        {
-          "level": 3,
-          "title": "组件预加载",
-          "slug": "组件预加载"
-        },
-        {
-          "level": 3,
-          "title": "keep-alive",
-          "slug": "keep-alive"
-        },
-        {
-          "level": 2,
-          "title": "小结",
-          "slug": "小结"
-        }
-      ]
-    },
-    {
       "title": "JavaScript的运行机制",
       "frontmatter": {},
       "regularPath": "/guide/mechanism.html",
@@ -1991,36 +2028,6 @@ export const siteData = {
           "level": 3,
           "title": "闭包是怎么形成的？",
           "slug": "闭包是怎么形成的？"
-        }
-      ]
-    },
-    {
-      "title": "为什么会有这个项目",
-      "frontmatter": {},
-      "regularPath": "/guide/preface.html",
-      "relativePath": "guide/preface.md",
-      "key": "v-13d67076",
-      "path": "/guide/preface.html",
-      "headers": [
-        {
-          "level": 2,
-          "title": "大量的过时问题",
-          "slug": "大量的过时问题"
-        },
-        {
-          "level": 2,
-          "title": "深入浅出的不多",
-          "slug": "深入浅出的不多"
-        },
-        {
-          "level": 2,
-          "title": "缺乏基础知识",
-          "slug": "缺乏基础知识"
-        },
-        {
-          "level": 2,
-          "title": "方向不够全面",
-          "slug": "方向不够全面"
         }
       ]
     },
@@ -2101,6 +2108,36 @@ export const siteData = {
           "level": 3,
           "title": "查看内存泄漏",
           "slug": "查看内存泄漏"
+        }
+      ]
+    },
+    {
+      "title": "为什么会有这个项目",
+      "frontmatter": {},
+      "regularPath": "/guide/preface.html",
+      "relativePath": "guide/preface.md",
+      "key": "v-13d67076",
+      "path": "/guide/preface.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "大量的过时问题",
+          "slug": "大量的过时问题"
+        },
+        {
+          "level": 2,
+          "title": "深入浅出的不多",
+          "slug": "深入浅出的不多"
+        },
+        {
+          "level": 2,
+          "title": "缺乏基础知识",
+          "slug": "缺乏基础知识"
+        },
+        {
+          "level": 2,
+          "title": "方向不够全面",
+          "slug": "方向不够全面"
         }
       ]
     },
@@ -2715,66 +2752,59 @@ export const siteData = {
       ]
     },
     {
-      "title": "TCP面试题",
+      "title": "字符串类面试题",
       "frontmatter": {},
-      "regularPath": "/guide/tcp.html",
-      "relativePath": "guide/tcp.md",
-      "key": "v-176f5554",
-      "path": "/guide/tcp.html",
+      "regularPath": "/guide/string.html",
+      "relativePath": "guide/string.md",
+      "key": "v-00ee637a",
+      "path": "/guide/string.html",
       "headers": [
         {
           "level": 2,
-          "title": "TCP 的特性",
-          "slug": "tcp-的特性"
+          "title": "解析 URL Params 为对象",
+          "slug": "解析-url-params-为对象"
         },
         {
           "level": 2,
-          "title": "请简述TCP\\UDP的区别",
-          "slug": "请简述tcp-udp的区别"
+          "title": "模板引擎实现",
+          "slug": "模板引擎实现"
         },
         {
           "level": 2,
-          "title": "TCP粘包是怎么回事，如何处理? ✨",
-          "slug": "tcp粘包是怎么回事，如何处理-✨"
+          "title": "转化为驼峰命名",
+          "slug": "转化为驼峰命名"
         },
         {
           "level": 2,
-          "title": "为什么udp不会粘包？",
-          "slug": "为什么udp不会粘包？"
+          "title": "查找字符串中出现最多的字符和个数",
+          "slug": "查找字符串中出现最多的字符和个数"
         },
         {
           "level": 2,
-          "title": "如何理解 TCP backlog？",
-          "slug": "如何理解-tcp-backlog？"
+          "title": "字符串查找",
+          "slug": "字符串查找"
         },
         {
           "level": 2,
-          "title": "常用端口号与对应的服务",
-          "slug": "常用端口号与对应的服务"
+          "title": "实现千位分隔符",
+          "slug": "实现千位分隔符"
         },
         {
           "level": 2,
-          "title": "说一说OSI七层模型",
-          "slug": "说一说osi七层模型"
+          "title": "判断是否是电话号码",
+          "slug": "判断是否是电话号码"
         },
         {
           "level": 2,
-          "title": "讲一下三次握手？✨",
-          "slug": "讲一下三次握手？✨"
+          "title": "验证是否是邮箱",
+          "slug": "验证是否是邮箱"
         },
         {
           "level": 2,
-          "title": "讲一下四次握手？✨",
-          "slug": "讲一下四次握手？✨"
+          "title": "验证是否是身份证",
+          "slug": "验证是否是身份证"
         }
       ]
-    },
-    {
-      "frontmatter": {},
-      "regularPath": "/guide/type.html",
-      "relativePath": "guide/type.md",
-      "key": "v-14677eb0",
-      "path": "/guide/type.html"
     },
     {
       "title": "虚拟DOM原理",
@@ -2825,6 +2855,13 @@ export const siteData = {
           "slug": "virtual-dom的优化"
         }
       ]
+    },
+    {
+      "frontmatter": {},
+      "regularPath": "/guide/type.html",
+      "relativePath": "guide/type.md",
+      "key": "v-14677eb0",
+      "path": "/guide/type.html"
     },
     {
       "title": "Vue面试题",
@@ -2923,6 +2960,61 @@ export const siteData = {
           "level": 2,
           "title": "Vuex原理?",
           "slug": "vuex原理"
+        }
+      ]
+    },
+    {
+      "title": "TCP面试题",
+      "frontmatter": {},
+      "regularPath": "/guide/tcp.html",
+      "relativePath": "guide/tcp.md",
+      "key": "v-176f5554",
+      "path": "/guide/tcp.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "TCP 的特性",
+          "slug": "tcp-的特性"
+        },
+        {
+          "level": 2,
+          "title": "请简述TCP\\UDP的区别",
+          "slug": "请简述tcp-udp的区别"
+        },
+        {
+          "level": 2,
+          "title": "TCP粘包是怎么回事，如何处理? ✨",
+          "slug": "tcp粘包是怎么回事，如何处理-✨"
+        },
+        {
+          "level": 2,
+          "title": "为什么udp不会粘包？",
+          "slug": "为什么udp不会粘包？"
+        },
+        {
+          "level": 2,
+          "title": "如何理解 TCP backlog？",
+          "slug": "如何理解-tcp-backlog？"
+        },
+        {
+          "level": 2,
+          "title": "常用端口号与对应的服务",
+          "slug": "常用端口号与对应的服务"
+        },
+        {
+          "level": 2,
+          "title": "说一说OSI七层模型",
+          "slug": "说一说osi七层模型"
+        },
+        {
+          "level": 2,
+          "title": "讲一下三次握手？✨",
+          "slug": "讲一下三次握手？✨"
+        },
+        {
+          "level": 2,
+          "title": "讲一下四次握手？✨",
+          "slug": "讲一下四次握手？✨"
         }
       ]
     },
@@ -3074,6 +3166,13 @@ export const siteData = {
               ]
             },
             {
+              "title": "数据结构与算法",
+              "collapsable": false,
+              "children": [
+                "algorithm"
+              ]
+            },
+            {
               "title": "前端框架",
               "collapsable": false,
               "children": [
@@ -3132,14 +3231,6 @@ export const siteData = {
             },
             {
               "title": "计算机基础",
-              "collapsable": false,
-              "children": [
-                "http",
-                "tcp"
-              ]
-            },
-            {
-              "title": "数据结构与算法",
               "collapsable": false,
               "children": [
                 "http",

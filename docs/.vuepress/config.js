@@ -118,6 +118,13 @@ function renderSiderBar() {
   ]
 },
 {
+  title: '数据结构与算法',
+  collapsable: false,
+  children: [
+        'algorithm',
+    ]
+},
+{
   title: '前端框架',
   collapsable: false,
   children: [
@@ -177,14 +184,6 @@ function renderSiderBar() {
 },
 {
   title: '计算机基础',
-  collapsable: false,
-  children: [
-        'http',
-        'tcp',
-    ]
-},
-{
-  title: '数据结构与算法',
   collapsable: false,
   children: [
         'http',
