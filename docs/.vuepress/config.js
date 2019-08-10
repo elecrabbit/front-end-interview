@@ -135,33 +135,37 @@ function renderSiderBar() {
 },
 {
   title: '框架原理详解',
-  collapsable: false,
+  collapsable: true,
   children: [
         'virtualDom',
         'devsProxy',
         'setState',
         'redux',
         'fiber',
+        'abstract',
         'reactHook',
     ]
 },
 {
   title: '框架实战技巧',
-  collapsable: false,
+  collapsable: true,
   children: [
+        'componentCli',
         'component',
+        'carousel',
     ]
 },
 {
   title: '性能优化',
-  collapsable: false,
+  collapsable: true,
   children: [
         'load',
+        'execute',
     ]
 },
 {
   title: '工程化',
-  collapsable: false,
+  collapsable: true,
   children: [
         'webpack',
         'engineering',
@@ -169,22 +173,27 @@ function renderSiderBar() {
 },
 {
   title: '工程化原理',
-  collapsable: false,
+  collapsable: true,
   children: [
         'ast',
-        
+        'WebpackHMR',
+        'webpackPlugin',
+        'webpackPluginDesign',
+        'webpackMoudle',
+        'webpackLoader',
+        'babelPlugin',
     ]
 },
 {
   title: '安全',
-  collapsable: false,
+  collapsable: true,
   children: [
         'security',
     ]
 },
 {
   title: '计算机基础',
-  collapsable: false,
+  collapsable: true,
   children: [
         'http',
         'tcp',
