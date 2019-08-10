@@ -74,7 +74,7 @@ function renderSiderBar() {
     children: [
           'resume',
           'project',
-          // 'hr'
+          'hr',
       ]
   },
   {
@@ -140,6 +140,7 @@ function renderSiderBar() {
         'virtualDom',
         'devsProxy',
         'setState',
+        'router',
         'redux',
         'fiber',
         'abstract',
