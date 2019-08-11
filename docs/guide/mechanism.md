@@ -1,5 +1,7 @@
 # JavaScript的运行机制
 
+点击关注本[公众号](#公众号)获取文档最新更新,并可以领取配套于本指南的 **《前端面试手册》** 以及**最标准的简历模板**.
+
 了解JavaScript运行机制有助于我们避免bug，并写出高性能的代码，当然还有一大用处就是有助于我们通过造火箭环节的面试。
 
 具体而言你会搞清楚以下问题：
@@ -252,3 +254,15 @@ play函数的执行上下文伪代码如下
 参考
 1. [ecma标准](http://www.ecma-international.org/ecma-262/6.0/#sec-for-statement-runtime-semantics-labelledevaluation)
 2. [JavaScript调用栈到异步](https://www.valentinog.com/blog/engines/)
+
+---
+
+## 公众号
+
+想要实时关注笔者最新的文章和最新的文档更新请关注公众号**程序员面试官**,后续的文章会优先在公众号更新.
+
+**简历模板:** 关注公众号回复「模板」获取
+
+**《前端面试手册》:** 配套于本指南的突击手册,关注公众号回复「fed」获取
+
+![2019-08-12-03-18-41]( https://xiaomuzhu-image.oss-cn-beijing.aliyuncs.com/d846f65d5025c4b6c4619662a0669503.png)

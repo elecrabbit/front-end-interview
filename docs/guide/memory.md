@@ -1,5 +1,7 @@
 # JavaScript内存管理
 
+点击关注本[公众号](#公众号)获取文档最新更新,并可以领取配套于本指南的 **《前端面试手册》** 以及**最标准的简历模板**.
+
 ## 前言
 
 像C语言这样的底层语言一般都有底层的内存管理接口，比如 malloc()和free()。另一方面，JavaScript创建变量（对象，字符串等）时分配内存，并且在不再使用它们时“自动”释放。 后一个过程称为垃圾回收。这个“自动”是混乱的根源，并让JavaScript（和其他高级语言）开发者感觉他们可以不关心内存管理，这是错误的。
@@ -175,3 +177,15 @@ setInterval(replaceThing, 1000);
 [深入浅出Node.js](https://book.douban.com/subject/25768396/)
 
 [MDN内存管理](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Memory_Management)
+
+---
+
+## 公众号
+
+想要实时关注笔者最新的文章和最新的文档更新请关注公众号**程序员面试官**,后续的文章会优先在公众号更新.
+
+**简历模板:** 关注公众号回复「模板」获取
+
+**《前端面试手册》:** 配套于本指南的突击手册,关注公众号回复「fed」获取
+
+![2019-08-12-03-18-41]( https://xiaomuzhu-image.oss-cn-beijing.aliyuncs.com/d846f65d5025c4b6c4619662a0669503.png)

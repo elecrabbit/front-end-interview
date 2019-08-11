@@ -1,10 +1,26 @@
 # HTML基础
 
+点击关注本[公众号](#公众号)获取文档最新更新,并可以领取配套于本指南的 **《前端面试手册》** 以及**最标准的简历模板**.
+
+* [doctype(文档类型) 的作用是什么？✨](#doctype的作用是什么？✨)
+* [这三种模式的区别是什么？(接上一问追问)](#这三种模式的区别是什么？)
+* [HTML、XML 和 XHTML 有什么区别？](#html、xhtml、xml有什么区别)
+* [什么是data-属性？](#什么是data-属性？)
+* [你对HTML语义化的理解？✨](#你对html语义化的理解？✨)
+* [HTML5与HTML4的不同之处](#html5与html4的不同之处)
+* [有哪些常用的meta标签？](#有哪些常用的meta标签？)
+* [src和href的区别？](#src和href的区别？)
+* [知道img的srcset的作用是什么？（追问）](#知道img的srcset的作用是什么？（追问）)
+* [还有哪一个标签能起到跟srcset相似作用？（追问）](#还有哪一个标签能起到跟srcset相似作用？（追问）)
+* [script标签中defer和async的区别？✨](#script标签中defer和async的区别？✨)
+* [有几种前端储存的方式？✨](#有几种前端储存的方式？✨)
+* [这些方式的区别是什么？（追问）✨](#这些方式的区别是什么？（追问）✨)
+
 本章是HTML考点的非重难点，因此我们采用简略回答的方式进行撰写，所以不会有太多详细的解释。
 
 > 我们约定，每个问题后我们标记『✨』的为高频面试题
 
-## doctype(文档类型) 的作用是什么？✨
+## doctype的作用是什么？✨
 
 DOCTYPE是html5标准网页声明，且必须声明在HTML文档的第一行。来告知浏览器的解析器用什么文档标准解析这个文档，不同的渲染模式会影响到浏览器对于 CSS 代码甚至 JavaScript 脚本的解析
 
@@ -15,13 +31,13 @@ DOCTYPE是html5标准网页声明，且必须声明在HTML文档的第一行。�
 
 > IE8还有一种介乎于上述两者之间的近乎标准的模式，但是基本淘汰了。
 
-## 这三种模式的区别是什么？(接上一问追问)
+## 这三种模式的区别是什么？
 
 * 标准模式(standards mode)：页面按照 HTML 与 CSS 的定义渲染
 * 怪异模式(quirks mode)模式： 会模拟更旧的浏览器的行为
 * 近乎标准(almost standards)模式： 会实施了一种表单元格尺寸的怪异行为（与IE7之前的单元格布局方式一致），除此之外符合标准定义
 
-## HTML、XML 和 XHTML 有什么区别？
+## HTML、XHTML、XML有什么区别
 
 * HTML(超文本标记语言): 在html4.0之前HTML先有实现再有标准，导致HTML非常混乱和松散
 * XML(可扩展标记语言): 主要用于存储数据和结构，可扩展，大家熟悉的JSON也是相似的作用，但是更加轻量高效，所以XML现在市场越来越小了
@@ -171,3 +187,15 @@ cookies、localstorage、sessionstorage、Web SQL、IndexedDB
 4. [响应式图片MDN](https://developer.mozilla.org/zh-CN/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images)
 5. [张鑫旭-srcset释义](https://www.zhangxinxu.com/wordpress/2014/10/responsive-images-srcset-size-w-descriptor/)
 6. [picture元素-MDN](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/picture)
+
+---
+
+## 公众号
+
+想要实时关注笔者最新的文章和最新的文档更新请关注公众号**程序员面试官**,后续的文章会优先在公众号更新.
+
+**简历模板:** 关注公众号回复「模板」获取
+
+**《前端面试手册》:** 配套于本指南的突击手册,关注公众号回复「fed」获取
+
+![2019-08-12-03-18-41]( https://xiaomuzhu-image.oss-cn-beijing.aliyuncs.com/d846f65d5025c4b6c4619662a0669503.png)

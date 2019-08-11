@@ -93,7 +93,7 @@ function renderSiderBar() {
         'jsBasic',
         'browser',
         'dom',
-        'designPatterns',
+        // 'designPatterns',
       ]
   },
   {
@@ -116,6 +116,14 @@ function renderSiderBar() {
     'event',
     'mechanism',
   ]
+},
+{
+  title: '计算机基础',
+  collapsable: true,
+  children: [
+        'http',
+        'tcp',
+    ]
 },
 {
   title: '数据结构与算法',
@@ -192,13 +200,12 @@ function renderSiderBar() {
         'security',
     ]
 },
-{
-  title: '计算机基础',
-  collapsable: true,
-  children: [
-        'http',
-        'tcp',
-    ]
-},
+// {
+//   title: 'Node',
+//   collapsable: true,
+//   children: [
+//         'node',
+//     ]
+// },
 ])
 }

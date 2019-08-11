@@ -1,5 +1,7 @@
 # webpack loader实现
 
+点击关注本[公众号](#公众号)获取文档最新更新,并可以领取配套于本指南的 **《前端面试手册》** 以及**最标准的简历模板**.
+
 本文来源于作者小 boy的[手把手教你撸一个 Webpack Loader
 ](https://juejin.im/post/5a698a316fb9a01c9f5b9ca0)
 
@@ -331,3 +333,15 @@ module.exports = function(source) {
 - 遵循原则设计和开发 loader。
 
 最后，Talk is cheep，赶紧动手撸一个 loader 耍耍吧～
+
+---
+
+## 公众号
+
+想要实时关注笔者最新的文章和最新的文档更新请关注公众号**程序员面试官**,后续的文章会优先在公众号更新.
+
+**简历模板:** 关注公众号回复「模板」获取
+
+**《前端面试手册》:** 配套于本指南的突击手册,关注公众号回复「fed」获取
+
+![2019-08-12-03-18-41]( https://xiaomuzhu-image.oss-cn-beijing.aliyuncs.com/d846f65d5025c4b6c4619662a0669503.png)

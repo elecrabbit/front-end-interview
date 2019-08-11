@@ -1,11 +1,14 @@
 # Webpack 模块机制
 
+点击关注本[公众号](#公众号)获取文档最新更新,并可以领取配套于本指南的 **《前端面试手册》** 以及**最标准的简历模板**.
+
+
 本文来源于饿了么前端团队[从 Bundle 文件看 Webpack 模块机制](https://zhuanlan.zhihu.com/p/25954788)
 
 ---
 
 我们知道 Webpack 是一个模块打包工具，但是它打包后的 bundle 文件到底长什么样呢？本文将通过一个最简单的示例，分析 Webpack 打包后为我们生成的代码，来阐述项目代码运行时的模块机制。<br />**示例所用 Webpack 版本为 2.3.0**
-<a name="sNcBq"></a>
+
 ### 准备点材料
 webpack.config.js
 
@@ -44,8 +47,9 @@ console.log(b.name)
 console.log(c.name)
 ```
 简单来说，就是以 a.js 为入口文件，将 a.js，b.js 和 c.js 打包到 dist/bundle.js 文件中。<br />完整的示例代码请戳 [how-webpack-modules-work](https://link.zhihu.com/?target=https%3A//github.com/ywwhack/how-webpack-modules-work/tree/00-setup)<br />进入正题前，先思考个问题：**b.js 中 的 'module b runs' 会输出几次？**<br />换句话说，a.js 和 c.js 都引用了 b.js， 那么console.log('module b runs') 到底执行了几次？<br />答案是 1 次。为什么？我们往下看。
-<a name="FbvE0"></a>
+
 ### 模块初始化函数
+
 在 [build.js](https://link.zhihu.com/?target=https%3A//github.com/ywwhack/how-webpack-modules-work/blob/00-setup/dist/bundle.js%23L1) 中，有一个 modules 变量
 
 ```js
@@ -95,7 +99,7 @@ function (module, __webpack_exports__, __webpack_require__) {
   })
 }
 ```
-<a name="uz9jN"></a>
+
 ### modules && __webpack_exports**__**
 上面提到的模块初始化函数中，第一个参数叫 module，第二个参数叫 __webpack_exports__，它们有什么联系和区别呢？<br />module 可以理解成模块的「元信息」，里面不仅存着我们真正用到的模块内容，也存了一些模块 id 等信息。<br />__webpack_exports__ 是我们真正「require」时得到的对象。<br />这两个对象之间有如下的关系：module.exports === __webpack_exports__<br />在模块初始化函数执行过程中，会对 __webpack_exports__（刚传入的时候为空对象）赋上新的属性，这也是为什么我叫这个函数为模块初始化函数的原因 -- 整个过程就是为了「构造」出一个新的 __webpack_exports__对象。<br />Webpack 中还有一个 installedModules 变量，通过它来保存这些已加载过的模块的引用。
 <a name="PhWhy"></a>
@@ -151,9 +155,9 @@ function __webpack_require__(moduleId) {
 __webpack_require__ 做了以下几件事：
 
 1. 根据 moduleId 查看 installedModules 中是否存在相应的 module ，如果存在就返回对应的 module.exports
-1. 如果 module 不存在，就创建一个新的 module 对象，并且使 installedModules[moduleId] 指向新建的 module 对象
-1. 根据 moduleId 从 modules 对象中找到对应的模块初始化函数并执行，依次传入 module，module.exports，__webpack_require__。可以看到，__webpack_require__ 被当作参数传入，使得所有模块内部都可以通过调用该函数来引入其他模块
-1. 最后一步，返回 module.exports
+2. 如果 module 不存在，就创建一个新的 module 对象，并且使 installedModules[moduleId] 指向新建的 module 对象
+3. 根据 moduleId 从 modules 对象中找到对应的模块初始化函数并执行，依次传入 module，module.exports，__webpack_require__。可以看到，__webpack_require__ 被当作参数传入，使得所有模块内部都可以通过调用该函数来引入其他模块
+4. 最后一步，返回 module.exports
 <a name="qGMwk"></a>
 ### 最后，我们来改造一下 bundle.js
 ```js
@@ -215,3 +219,15 @@ __webpack_require__ 做了以下几件事：
 - 一个模块加载函数 -- require
 
 了解这些「黑盒」，有助于我们更好的理解模块化。在此之上，还可以进一步去研究加了 Code Splitting 之后的代码的样子，以及思考如何生成这样一个 bundle 文件。这些内容也非常丰富，值得大家去探索。
+
+---
+
+## 公众号
+
+想要实时关注笔者最新的文章和最新的文档更新请关注公众号**程序员面试官**,后续的文章会优先在公众号更新.
+
+**简历模板:** 关注公众号回复「模板」获取
+
+**《前端面试手册》:** 配套于本指南的突击手册,关注公众号回复「fed」获取
+
+![2019-08-12-03-18-41]( https://xiaomuzhu-image.oss-cn-beijing.aliyuncs.com/d846f65d5025c4b6c4619662a0669503.png)

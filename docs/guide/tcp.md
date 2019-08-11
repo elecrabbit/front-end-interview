@@ -1,5 +1,7 @@
 # TCP面试题
 
+点击关注本[公众号](#公众号)获取文档最新更新,并可以领取配套于本指南的 **《前端面试手册》** 以及**最标准的简历模板**.
+
 TCP的面试题通常情况下前端不会涉及太多，此章主要面对node.js工程师。
 
 ## TCP 的特性
@@ -187,3 +189,15 @@ TCP 的连接的拆除需要发送四个包，因此称为四次挥手(Four-way 
 
 1. [饿了么面试](https://github.com/ElemeFE/node-interview/blob/master/sections/zh-cn/network.md#net)
 2. [TCP](https://hit-alibaba.github.io/interview/basic/network/TCP.html)
+
+---
+
+## 公众号
+
+想要实时关注笔者最新的文章和最新的文档更新请关注公众号**程序员面试官**,后续的文章会优先在公众号更新.
+
+**简历模板:** 关注公众号回复「模板」获取
+
+**《前端面试手册》:** 配套于本指南的突击手册,关注公众号回复「fed」获取
+
+![2019-08-12-03-18-41]( https://xiaomuzhu-image.oss-cn-beijing.aliyuncs.com/d846f65d5025c4b6c4619662a0669503.png)

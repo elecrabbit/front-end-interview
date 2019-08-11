@@ -1,5 +1,7 @@
 # redux原理全解
 
+点击关注本[公众号](#公众号)获取文档最新更新,并可以领取配套于本指南的 **《前端面试手册》** 以及**最标准的简历模板**.
+
 本文主体来源于美团点评技术团队的博客[Redux从设计到源码](https://tech.meituan.com/2017/07/14/redux-design-code.html),对其中的源码解读相关的内容进行了删减和拓展,redux实现部分来源于[完全理解 redux](https://github.com/brickspert/blog/issues/22#state)
 
 ---
@@ -1214,3 +1216,16 @@ action 是一个对象，必须包含 type 字段
 扩展 dispatch 函数！
 
 你再看 redux 流程图，是不是大彻大悟了？<br />[](https://link.juejin.im?target=https%3A%2F%2Fuser-images.githubusercontent.com%2F12526493%2F48312444-8ff2e100-e5e9-11e8-844a-48ffd9933265.png)<br />[![](https://cdn.nlark.com/yuque/0/2019/webp/128853/1564750024043-bb461692-4aff-483a-a21d-657701930260.webp#align=left&display=inline&height=671&originHeight=671&originWidth=1240&size=0&status=done&width=1240)](https://link.juejin.im?target=https%3A%2F%2Fuser-images.githubusercontent.com%2F12526493%2F48312444-8ff2e100-e5e9-11e8-844a-48ffd9933265.png)<br />
+
+
+---
+
+## 公众号
+
+想要实时关注笔者最新的文章和最新的文档更新请关注公众号**程序员面试官**,后续的文章会优先在公众号更新.
+
+**简历模板:** 关注公众号回复「模板」获取
+
+**《前端面试手册》:** 配套于本指南的突击手册,关注公众号回复「fed」获取
+
+![2019-08-12-03-18-41]( https://xiaomuzhu-image.oss-cn-beijing.aliyuncs.com/d846f65d5025c4b6c4619662a0669503.png)

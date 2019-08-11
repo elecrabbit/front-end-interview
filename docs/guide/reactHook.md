@@ -1,5 +1,7 @@
 # React-hooks 抽象组件
 
+点击关注本[公众号](#公众号)获取文档最新更新,并可以领取配套于本指南的 **《前端面试手册》** 以及**最标准的简历模板**.
+
 本文主要内容来源于前端精读系列的[怎么用 React Hooks 造轮子](https://github.com/dt-fe/weekly/blob/v2/080.%E7%B2%BE%E8%AF%BB%E3%80%8A%E6%80%8E%E4%B9%88%E7%94%A8%20React%20Hooks%20%E9%80%A0%E8%BD%AE%E5%AD%90%E3%80%8B.md)
 
 ## 1 引言
@@ -759,8 +761,14 @@ value(obj => (obj.a = 2)); // immutable
 
 欢迎大家的持续补充。
 
-## 4 更多讨论
+---
 
-> 讨论地址是：[精读《怎么用 React Hooks 造轮子》 · Issue #112 · dt-fe/weekly](https://github.com/dt-fe/weekly/issues/112)
+## 公众号
 
-**如果你想参与讨论，请[点击这里](https://github.com/dt-fe/weekly)，每周都有新的主题，周末或周一发布。前端精读 - 帮你筛选靠谱的内容。**
+想要实时关注笔者最新的文章和最新的文档更新请关注公众号**程序员面试官**,后续的文章会优先在公众号更新.
+
+**简历模板:** 关注公众号回复「模板」获取
+
+**《前端面试手册》:** 配套于本指南的突击手册,关注公众号回复「fed」获取
+
+![2019-08-12-03-18-41]( https://xiaomuzhu-image.oss-cn-beijing.aliyuncs.com/d846f65d5025c4b6c4619662a0669503.png)

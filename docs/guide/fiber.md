@@ -1,5 +1,7 @@
 # React Fiber 架构解析
 
+点击关注本[公众号](#公众号)获取文档最新更新,并可以领取配套于本指南的 **《前端面试手册》** 以及**最标准的简历模板**.
+
 ---
 本文来源于[Max Koretskyi aka Wizard](https://medium.com/@maxim.koretskyi)
 的[Inside Fiber: in-depth overview of the new reconciliation algorithm in React
@@ -421,3 +423,15 @@ function commitAllHostEffects() {
 ### 更新后的生命周期方法
 
 commitAllLifecycles 是 React 调用所有剩余生命周期方法的函数。在 React 的当前实现中，唯一会调用的变更方法就是 `componentDidUpdate`。<br />我们终于讲完了。让我知道您对该文章的看法或在评论中提出问题。我还有关于调度程序、子调和过程以及如何构建副作用列表的文章来对这些内容提供深入的解释。我还计划制作一个视频，在这里我将展示如何使用本文作为基础来调试应用程序。
+
+---
+
+## 公众号
+
+想要实时关注笔者最新的文章和最新的文档更新请关注公众号**程序员面试官**,后续的文章会优先在公众号更新.
+
+**简历模板:** 关注公众号回复「模板」获取
+
+**《前端面试手册》:** 配套于本指南的突击手册,关注公众号回复「fed」获取
+
+![2019-08-12-03-18-41]( https://xiaomuzhu-image.oss-cn-beijing.aliyuncs.com/d846f65d5025c4b6c4619662a0669503.png)

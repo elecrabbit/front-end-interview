@@ -1,5 +1,7 @@
 # 虚拟DOM原理
 
+点击关注本[公众号](#公众号)获取文档最新更新,并可以领取配套于本指南的 **《前端面试手册》** 以及**最标准的简历模板**.
+
 > 写完之后才发现了一篇百度EFE的好文,大家可以移步[Vitual DOM 的内部工作原理](https://efe.baidu.com/blog/the-inner-workings-of-virtual-dom/)
 
 ## 什么是Virtual DOM
@@ -355,3 +357,15 @@ snabbdom.js已经是社区内主流的Virtual DOM实现了,vue 2.0阶段与snabb
 * [snabbdom](https://github.com/snabbdom/snabbdom/blob/master/src/snabbdom.ts)
 * [解析snabbdom源码](https://github.com/creeperyang/blog/issues/33)
 * [nerv](https://github.com/yelouafi/petit-dom/blob/5412b18ad26108762ebf5624ac1c5bd70c578e57/src/vdom.js#L690)
+
+---
+
+## 公众号
+
+想要实时关注笔者最新的文章和最新的文档更新请关注公众号**程序员面试官**,后续的文章会优先在公众号更新.
+
+**简历模板:** 关注公众号回复「模板」获取
+
+**《前端面试手册》:** 配套于本指南的突击手册,关注公众号回复「fed」获取
+
+![2019-08-12-03-18-41]( https://xiaomuzhu-image.oss-cn-beijing.aliyuncs.com/d846f65d5025c4b6c4619662a0669503.png)

@@ -1,5 +1,7 @@
 # 如何开发Babel插件
 
+点击关注本[公众号](#公众号)获取文档最新更新,并可以领取配套于本指南的 **《前端面试手册》** 以及**最标准的简历模板**.
+
 本文来源于[通过开发 Babel 插件理解抽象语法树（AST）](https://www.zcfy.cc/article/347),原文来源于[understanding-asts-building-babel-plugin](https://www.sitepoint.com/understanding-asts-building-babel-plugin/)
 
 ---
@@ -374,3 +376,15 @@ var doubleAndSquare = function doubleAndSquare(x) {
 };
 ```
 一旦你理解了这些规则，唯一的限制就是解析器和你的想象力。
+
+---
+
+## 公众号
+
+想要实时关注笔者最新的文章和最新的文档更新请关注公众号**程序员面试官**,后续的文章会优先在公众号更新.
+
+**简历模板:** 关注公众号回复「模板」获取
+
+**《前端面试手册》:** 配套于本指南的突击手册,关注公众号回复「fed」获取
+
+![2019-08-12-03-18-41]( https://xiaomuzhu-image.oss-cn-beijing.aliyuncs.com/d846f65d5025c4b6c4619662a0669503.png)
