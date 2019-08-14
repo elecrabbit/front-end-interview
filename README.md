@@ -2,7 +2,7 @@
 
 <p align="center">
 <a href="https://github.com/xiaomuzhu/front-end-interview" target="_blank">
-	<img src="https://xiaomuzhu-image.oss-cn-beijing.aliyuncs.com/c175b5df4be8300bdc20fe3bd4f2b69b.png" width=""/>
+	<img src="https://xiaomuzhu-image.oss-cn-beijing.aliyuncs.com/8e6b34bbdb4f62402b4a4314c69fd861.png" width=""/>
 </a>
 </p>
 

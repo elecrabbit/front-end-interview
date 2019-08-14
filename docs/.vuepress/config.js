@@ -130,6 +130,7 @@ function renderSiderBar() {
   collapsable: false,
   children: [
         'algorithm',
+        'string',
     ]
 },
 {
