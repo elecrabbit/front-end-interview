@@ -7,11 +7,9 @@
 </p>
 
 <p align="center">
-  <a href="https://snailclimb.gitee.io/javaguide"><img src="https://img.shields.io/badge/阅读-read-brightgreen.svg" alt="阅读"></a>
-  <a href="#联系我"><img src="https://img.shields.io/badge/chat-微信群-blue.svg" alt="微信群"></a>
+  <a href="https://www.cxymsg.com/"><img src="https://img.shields.io/badge/阅读-read-brightgreen.svg" alt="阅读"></a>
   <a href="#公众号"><img src="https://img.shields.io/badge/%E5%85%AC%E4%BC%97%E5%8F%B7-JavaGuide-lightgrey.svg" alt="公众号"></a>
-  <a href="#公众号"><img src="https://img.shields.io/badge/PDF-Java面试突击-important.svg" alt="公众号"></a>
-  <a href="#投稿"><img src="https://img.shields.io/badge/support-投稿-critical.svg" alt="投稿"></a>
+  <a href="#公众号"><img src="https://img.shields.io/badge/PDF-前端面试手册-important.svg" alt="公众号"></a>
 </p>
 
 建议选择基于VuePress的在线文档阅读方式: https://www.cxymsg.com/
@@ -129,6 +127,35 @@
 ### 前端安全
 
 * [前端安全面试题](docs/guide/security.md)
+
+## 说明
+
+### 关于读者
+
+本项目一开始并没有要做一个仅仅面向面试的项目,而是希望借助面试的形式进一步巩固、完善自身的知识，同时为初学者提供一个参考路径。
+
+* 对于前端新人: 本项目的面试题都是相对高频的题目,且有一定的难度,非常适合作为学习教程,相对复杂的面试题我们都有更详细的原理详解,总之,这是可以当做前端学习手册的项目.
+* 对于面试候选人: 本项目梳理了主流的面试题,并且有意去掉了一些相对简单的面试题,对于有一定难度的面试题也有更详细的详解部分,这是查漏补缺同时完善知识体系的「良药」,而如果你只想快速应对面试,我们也提供了纯面试化的《前端面试手册》关注[公众号](#公众号)即可获取。
+
+### 关于内容
+
+本项目的主要内容来源由三部分组成:
+
+* 作者手打: 主要搜集了近几年的主流面试题,并针对每个面试题进行回答
+* 作者之前的博客: 部分比较长篇的原理详解来源于作者之前的博客内容
+* 转载: 一些面试题在网上已经有非常好的对应文章,没有必要进行二次创作,因此作者按照转载规范进行了转载,如有侵权立即删除
+
+### 关于后续
+
+本项目的主体内容基本完成,但是依然缺乏校审和拓展内容,例如[JavaScript的运行机制](docs/guide/mechanism.md)这篇文章虽然是作者花费了大量精力完成的,主要参照的就是[ECMA规范](https://www.ecma-international.org/publications/standards/Ecma-262.htm),但是经过反复考证依然无法保证作者理解的规范是否正确,而且在网络上搜索不到基于最新规范的文章与作者的文章对应,所以需要更多的人参与进来来验证文章的正确性.
+
+面试题部分作者分为了七大模块,虽然大体完成了,但是依然有几个重要的模块需要打磨:
+
+* 数据结构与算法: 这部分仅仅列举了一些非常常见的查找、排序算法，还没有更深入的讲解,也缺少数据结构部分的内容
+* TypeScript: 这部分我另开了一个项目,已经脱离面试的范畴了,更像是一本深入浅出的手册,但是只完成了一半
+* 细分领域: 这部分其实难度更大一些,如果说上述各部分属于前端范畴的通用知识的话,这部分就更加专业化也更加细分,也是我认为的前端岗位未来的进化方向,由于可视化和图形这两个领域相对更冷门、专业化程度更高,所以排期更靠后,我们会优先更新移动端和Node的内容,也欢迎各个领域的专业开发者贡献内容
+
+当然,除此之外其他已经完成的内容难免有需要补充和拓展的地方.
 
 ## 公众号
 
